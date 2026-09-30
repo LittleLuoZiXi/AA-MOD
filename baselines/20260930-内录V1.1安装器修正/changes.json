@@ -1,0 +1,301 @@
+{
+  "Baseline": "20260930-内录V1.1安装器修正",
+  "ComparedWith": "20260929-内录V1.0正式封板",
+  "Comparison": "Original RecorderMod snapshot file bytes, SHA-256; absence may be archive scope or cleanup, not a removed feature",
+  "Counts": {
+    "Added": 4,
+    "Modified": 21,
+    "AbsentFromSnapshot": 0,
+    "Unchanged": 163
+  },
+  "Files": [
+    {
+      "Path": "DEVELOPMENT.md",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "CCA79F1026FA57D600B7B1347068E4CEFD8B65D4353292478BA5EBD4D8BF1555",
+        "Bytes": 14394
+      },
+      "After": {
+        "Sha256": "C2A8A5E1E4D2B4130D6063E1D454073E5B12D53FEF314B55654A7FCDE303281D",
+        "Bytes": 16721
+      }
+    },
+    {
+      "Path": "manifest.json",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "32B537AACEFE2DAF82E0298D6BDD4F175EDD68C2843811CF52144AF382130078",
+        "Bytes": 331
+      },
+      "After": {
+        "Sha256": "E61447CEFCCAA7C66CE1F260FE6AF81A27FA747FEDFEA8117DF66CB3F2A0A79C",
+        "Bytes": 348
+      }
+    },
+    {
+      "Path": "packaging/build-development-installer.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "F4C4096D94E36EB9701742B326F08E7E46C058067CC3807C10FA1F418D9F8B84",
+        "Bytes": 8410
+      },
+      "After": {
+        "Sha256": "B246722742D8EA064F72259E45FA7C6C18AF7244B23D16869F70D41C8EDB80FC",
+        "Bytes": 8469
+      }
+    },
+    {
+      "Path": "packaging/build-r6-support.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "D440E7322F4DCBA00E68F417F30B91AE0DAF3AD309A3A1C71DE25D73F9D5F53C",
+        "Bytes": 9123
+      },
+      "After": {
+        "Sha256": "07BCD3A0B23BFFB4C50AEB17226BB157D48FF179BB04F24935AFEBDC19C3C427",
+        "Bytes": 9245
+      }
+    },
+    {
+      "Path": "packaging/build-release.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "BC5663BB8D6205F20AA3FFADB2A2E99CDAF3ADAA8B1D3F618A20E093E9E79D50",
+        "Bytes": 12867
+      },
+      "After": {
+        "Sha256": "FF371C6DFE27E72C1B927F1A43CFB276A5B024DC65C62CC1EC6DFF913CCD5F54",
+        "Bytes": 12882
+      }
+    },
+    {
+      "Path": "packaging/build-v1-online-support.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "DE935A9997049C9001B1AE25E6D45B4BDF1CB8E820C756C8B5BC4E6A9E708379",
+        "Bytes": 1755
+      },
+      "After": {
+        "Sha256": "EFF4C270A764DE9FFAF767F0451EAC859C04C04C7A966887B17AB26E708AC86D",
+        "Bytes": 1768
+      }
+    },
+    {
+      "Path": "packaging/ExecutableShell.cs.in",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "726F0FF7DB9F328EFD942834E3369FB7FD7D8A6F29DF76E4012EDCD12F80747E",
+        "Bytes": 2598
+      },
+      "After": {
+        "Sha256": "5F39C55A17D1FCCEFFC2DCD264BACBC8DBE0D945E2C67F0E892EFC8B480C3603",
+        "Bytes": 2598
+      }
+    },
+    {
+      "Path": "packaging/Installer.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "AC3E33D074167D5C246F32382A769843E78682BDE4DA716654A3D30440229512",
+        "Bytes": 46031
+      },
+      "After": {
+        "Sha256": "B02F3920684AADD5288CFF68D1441D1E9653960F20A7397B8313878EAB80BAF5",
+        "Bytes": 46726
+      }
+    },
+    {
+      "Path": "packaging/Loader.cs.in",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "6C710667C16387A1C2441912EE8DF2D0584957421AF4A335EB974C67B63431CA",
+        "Bytes": 2774
+      },
+      "After": {
+        "Sha256": "7FB22EBC2F7F004AD9A4C97868BCBC07D3E618E0F4A3E93900565108FFAB2C46",
+        "Bytes": 2774
+      }
+    },
+    {
+      "Path": "packaging/rebuild-v11-installer-ui.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "9397DEB6FA8A582ADDE61F5946FB38228E65B208332AB35630CB80DE25D2BF67",
+        "Bytes": 13948
+      }
+    },
+    {
+      "Path": "packaging/save-v11-baseline.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "D086F160AA0811653A7F3F771083A04AD5EF3B73AD0B316AE2CA41C3E9FC5421",
+        "Bytes": 32618
+      }
+    },
+    {
+      "Path": "packaging/test-v1-installers.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "A00FA6FBA68349D5D9185D70A90263B9F3A6F7D45FC8FD1E413F881CF88C5198",
+        "Bytes": 4781
+      },
+      "After": {
+        "Sha256": "8F016C48366B930B88D4627C3826FBD9D5F434CBF48D2794ABBFD21BB03C76F9",
+        "Bytes": 4787
+      }
+    },
+    {
+      "Path": "packaging/test-v1-real-exe.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "4E437BFC9C2DEAD45B90C7C558A3DCFB0DB8B95BC01BEEB5EC7FE8BD03F7F958",
+        "Bytes": 3445
+      },
+      "After": {
+        "Sha256": "DE191411E5DFDAA1BA089FC28F9FA1A2C7B0088F37F20F986FF6EB911C14275E",
+        "Bytes": 3736
+      }
+    },
+    {
+      "Path": "packaging/USER-GUIDE.txt",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "0C77CA35E31A997892D7B9C96E818E52261937182772970AB6D94CD40EDC9E05",
+        "Bytes": 5216
+      },
+      "After": {
+        "Sha256": "54523D4876E0463D6DA2FD22D61CA9B0920FEDCF5CEB3F079EA578A50E5A00B9",
+        "Bytes": 6044
+      }
+    },
+    {
+      "Path": "packaging/V1AssemblyInfo.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "DE11038AAB60C8CD1DDC250313252C3BEAAE75443FED34BAE5FE5674A755D855",
+        "Bytes": 213
+      },
+      "After": {
+        "Sha256": "5189D3318E39DC3E57E9C6C8FFDE7CC276FA68C5FE827F2AFF01310EC55696DF",
+        "Bytes": 213
+      }
+    },
+    {
+      "Path": "packaging/V1DeliveredTests.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "0D0196E36BF7ED175B7802A305FD139FC02A2FC6ED826BA16799659CEAE9307C",
+        "Bytes": 13878
+      },
+      "After": {
+        "Sha256": "4D2A5E36D3EA9C8961C16C0D3722A1A5EB8677B9D5BCB0EBB9394100EAEB56B8",
+        "Bytes": 13994
+      }
+    },
+    {
+      "Path": "packaging/V1ExeDriver.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "126FCB63D31BDC3492BED5AB2EE63B07CE9831E9F5681A6416FFAEF1F1857746",
+        "Bytes": 12962
+      },
+      "After": {
+        "Sha256": "BFE265FFC986228BBC36936C4D55B2558E700F77C54CF571C974E3482FA8C57E",
+        "Bytes": 18910
+      }
+    },
+    {
+      "Path": "packaging/V1Hardware.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "8A96FDEFA1E662E13C0CB83AA6B06571E00599308A246005DF8693A568779AB7",
+        "Bytes": 4046
+      },
+      "After": {
+        "Sha256": "399545616AA59F5305B88229D9365453D29E27FED69E865207934B173D4537C4",
+        "Bytes": 4231
+      }
+    },
+    {
+      "Path": "packaging/V1Installer.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "271AE3C72B77939A7EE4158D049D736C8174BE0B766A4D4264087432367C151C",
+        "Bytes": 21318
+      },
+      "After": {
+        "Sha256": "0AD341E51C1190B5A71498E6B19E0BFF1FBDB4053083094F30459EDB871E516B",
+        "Bytes": 25971
+      }
+    },
+    {
+      "Path": "packaging/V1InstallerTests.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "722F14A0DD7456E6E638FFEBC8089ECEFB4921202EA3432674C8336ACBCEC496",
+        "Bytes": 58117
+      },
+      "After": {
+        "Sha256": "7AEDD962FBB5AE7411DB5AB0EC94E7B576B255EB6F242E8256A7F41FBA1C19BD",
+        "Bytes": 74080
+      }
+    },
+    {
+      "Path": "packaging/verify-r6-payload.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "7C3E77D2F1B966FD7A8ED3CF0475C91FC6D9E9CAACC1BDF104CED57B1D800EB2",
+        "Bytes": 4226
+      },
+      "After": {
+        "Sha256": "09857847B3CFB599F46B8B44FAAC811DB63B07B2891AEAA394C145954B2B8152",
+        "Bytes": 4258
+      }
+    },
+    {
+      "Path": "src/AzureArchive.Recorder.csproj",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "EE83B32B67686C5516CDFC7B6CCAE4A608AFE84AC240FDB2AAD4D03A52316F07",
+        "Bytes": 1296
+      },
+      "After": {
+        "Sha256": "B1E2A567DF8F897E2EFDCA42C62B827DB892D138D2B8949659CA8DD380B87183",
+        "Bytes": 1296
+      }
+    },
+    {
+      "Path": "src/Plugin.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "DFC1A98D9642A405838A030C7AFB64C36BD64609EEAC1A0E091288B5F7241F8E",
+        "Bytes": 45143
+      },
+      "After": {
+        "Sha256": "78FE5444F4C9912819865B3899897F887E90AEDD2AE99CD6825735C6D05BCA02",
+        "Bytes": 45143
+      }
+    },
+    {
+      "Path": "tests/test-v11-protected-runtime.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "8B6F53EE0635FD610339C91D8BEBBE3A97B089A3ED22EEB62499C3F18EE52493",
+        "Bytes": 12510
+      }
+    },
+    {
+      "Path": "tests/V1.1-RUNTIME-VERIFICATION.md",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "982EFBA513564554B0D9B267D9E69DFAC7F56CAA64B305EAE26F970D1A015634",
+        "Bytes": 4298
+      }
+    }
+  ]
+}
