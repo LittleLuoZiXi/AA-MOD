@@ -1,0 +1,631 @@
+{
+  "Baseline": "20260929-内录V1.0正式封板",
+  "ComparedWith": "20260928-教程与命名用户验收通过",
+  "Comparison": "Original RecorderMod snapshot file bytes, SHA-256; absence may be archive scope or cleanup, not a removed feature",
+  "Counts": {
+    "Added": 38,
+    "Modified": 20,
+    "AbsentFromSnapshot": 4,
+    "Unchanged": 126
+  },
+  "Files": [
+    {
+      "Path": "DEVELOPMENT.md",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "DB9C32EB77BB97F70196F7F2F104DEED77A5060E32D3823444EE644596324094",
+        "Bytes": 8450
+      },
+      "After": {
+        "Sha256": "CCA79F1026FA57D600B7B1347068E4CEFD8B65D4353292478BA5EBD4D8BF1555",
+        "Bytes": 14394
+      }
+    },
+    {
+      "Path": "handoff-kit/先读我.md",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "124EC20BE2DBAD26B125A443AB0F1CB06EBEF93B4D4F3FA27742A34384DB5306",
+        "Bytes": 4707
+      },
+      "After": null
+    },
+    {
+      "Path": "handoff-kit/校验交接包.ps1",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "9425AC5BE354A8D5ACD27622D6D5F7BD1F9695549C020586F6E905CC8D1CFAA0",
+        "Bytes": 1310
+      },
+      "After": null
+    },
+    {
+      "Path": "handoff-kit/AGENTS.md",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "0370086D4C0A1E6FDEB1110081366B743CABB8272F556623FB1F642D3D28CC68",
+        "Bytes": 2501
+      },
+      "After": null
+    },
+    {
+      "Path": "manifest.json",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "43C3430AFC568FEDF9637D6F9E76968B689569ECE4CCC0AA863935E711D2AD31",
+        "Bytes": 321
+      },
+      "After": {
+        "Sha256": "32B537AACEFE2DAF82E0298D6BDD4F175EDD68C2843811CF52144AF382130078",
+        "Bytes": 331
+      }
+    },
+    {
+      "Path": "packaging/build-development-installer.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "C2DD0FFF05D22F8410FEC3031DF5C49A82AC289C8EE695D4B87938827242DA50",
+        "Bytes": 11579
+      },
+      "After": {
+        "Sha256": "F4C4096D94E36EB9701742B326F08E7E46C058067CC3807C10FA1F418D9F8B84",
+        "Bytes": 8410
+      }
+    },
+    {
+      "Path": "packaging/build-dlss-supplement.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "13E0F6490BF46501E2E0324FADF35311E05B9E1D89E6DADDA2C430793A964161",
+        "Bytes": 14734
+      }
+    },
+    {
+      "Path": "packaging/build-enhancer.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "0635E086A0E7DC8529CB591DE788E498426BF7396CEA979298C04D606C746548",
+        "Bytes": 912
+      },
+      "After": {
+        "Sha256": "0099FDFA1341A672581AE68F9D1392EFF7A2B75D36D531485352A3E080C35C4C",
+        "Bytes": 2977
+      }
+    },
+    {
+      "Path": "packaging/build-r6-support.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "D440E7322F4DCBA00E68F417F30B91AE0DAF3AD309A3A1C71DE25D73F9D5F53C",
+        "Bytes": 9123
+      }
+    },
+    {
+      "Path": "packaging/build-release.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "27426C88122A9D05C94DF17202B93118D6A07091C70AF98D02F72C9D280E2BAB",
+        "Bytes": 9780
+      },
+      "After": {
+        "Sha256": "BC5663BB8D6205F20AA3FFADB2A2E99CDAF3ADAA8B1D3F618A20E093E9E79D50",
+        "Bytes": 12867
+      }
+    },
+    {
+      "Path": "packaging/build-v1-online-support.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "DE935A9997049C9001B1AE25E6D45B4BDF1CB8E820C756C8B5BC4E6A9E708379",
+        "Bytes": 1755
+      }
+    },
+    {
+      "Path": "packaging/DependencyTests.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "708B27F4965C4052052B4896BFE367AF0F6E7B15AA09FE15BBC4FBB078EA8068",
+        "Bytes": 12295
+      },
+      "After": {
+        "Sha256": "C006C3EC6DD5FE3812F34A00D9FF85231351066711ABFBD441A4954F727E1EF0",
+        "Bytes": 13099
+      }
+    },
+    {
+      "Path": "packaging/DLSS-SUPPLEMENT-AUDIT.md",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "05B09F5D8A02EFA326F0D6B017EF37A51A50BEFE586A639BA59044AEF81A5F42",
+        "Bytes": 5194
+      }
+    },
+    {
+      "Path": "packaging/DLSS-SUPPLEMENT-GUIDE.txt",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "C654F0CC9C3BB533EF3817F4211946162EC1407CEFCEA361235A003A6274173D",
+        "Bytes": 2691
+      }
+    },
+    {
+      "Path": "packaging/DlssSupplementInstaller.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "80A6999D2014BD78235959C5A905FF683E8D0AAC5CB29B285EFD63A089529273",
+        "Bytes": 18732
+      }
+    },
+    {
+      "Path": "packaging/enhancer-runtime-modules.json",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "85E44A78A5E6D92DE1205FD1917BF32930FE60991B3B225D581ED7E74D451102",
+        "Bytes": 1593
+      }
+    },
+    {
+      "Path": "packaging/ExecutableShell.cs.in",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "84EBA07946136FCD66AAB99BA3E61F1CD04B0E49CE6213810D2C7DAA06FE3156",
+        "Bytes": 2409
+      },
+      "After": {
+        "Sha256": "726F0FF7DB9F328EFD942834E3369FB7FD7D8A6F29DF76E4012EDCD12F80747E",
+        "Bytes": 2598
+      }
+    },
+    {
+      "Path": "packaging/ffmpeg-vendor/BUILD-CONFIG.txt",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "DF360F33A49920D1A34396E5F34483EEA775EF5F24A71A02DBD3DD41B911E69D",
+        "Bytes": 2247
+      }
+    },
+    {
+      "Path": "packaging/ffmpeg-vendor/COPYING.GPLv3.txt",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "8CEB4B9EE5ADEDDE47B31E975C1D90C73AD27B6B165A1DCD80C7C545EB65B903",
+        "Bytes": 35147
+      }
+    },
+    {
+      "Path": "packaging/ffmpeg-vendor/PROVENANCE.json",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "F7F24B47B9DFC24ADD5B240D447E816847A57F98BBAC3456BA4C4AE40995B998",
+        "Bytes": 772
+      }
+    },
+    {
+      "Path": "packaging/ffmpeg-vendor/UPSTREAM-README.txt",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "D694901BAD3D99B2F3748E983B8BDAA8CF594E35E128CB872E07ED11D0CFD344",
+        "Bytes": 43770
+      }
+    },
+    {
+      "Path": "packaging/ffmpeg-vendor/VERSION.txt",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "CFBD4A8EE9C9ED3295A34C19C57B6FE0A82567E653CEE6849A247F7E86536820",
+        "Bytes": 2222
+      }
+    },
+    {
+      "Path": "packaging/FfmpegTests.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "2C948CA405C604BF944D15F0924C717A6E18701D56B5126505E6FFE745B40D9D",
+        "Bytes": 18202
+      },
+      "After": {
+        "Sha256": "2A2E31002EEEE28F756CB8B57816CC2C4E3CB70744B2EC02335AF446003DD06E",
+        "Bytes": 18736
+      }
+    },
+    {
+      "Path": "packaging/Installer.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "43CA65FD800C7F78B4CA4BF1C5F8B3C05A129FCE735601AFC16EFA146D8992E4",
+        "Bytes": 40391
+      },
+      "After": {
+        "Sha256": "AC3E33D074167D5C246F32382A769843E78682BDE4DA716654A3D30440229512",
+        "Bytes": 46031
+      }
+    },
+    {
+      "Path": "packaging/Loader.cs.in",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "4C8CE8CB271B0E26C1F0DCD46FD8CBA5B355B64205BE994F94A6994A8F659492",
+        "Bytes": 2641
+      },
+      "After": {
+        "Sha256": "6C710667C16387A1C2441912EE8DF2D0584957421AF4A335EB974C67B63431CA",
+        "Bytes": 2774
+      }
+    },
+    {
+      "Path": "packaging/ONLINE-DLSS-SOURCES.md",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "F1EF81D0C9C7DE339BB01C32153EB3EC6B8C67E538333D134DA18EDE240362AD",
+        "Bytes": 6224
+      }
+    },
+    {
+      "Path": "packaging/OnlineDlssInstall.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "743AB895C2806368ADF2FD8790A613E32BA5A9D722CA79D64AC30A93E4B56F03",
+        "Bytes": 38680
+      }
+    },
+    {
+      "Path": "packaging/protect-executable.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "52429294B564FC22EAB8CB98ADE490B7B21697D718A7DA818FA6AE9184A68458",
+        "Bytes": 5112
+      },
+      "After": {
+        "Sha256": "DE54EC4623F5B6202197ED9A2812F8BE1919C9215F89433DC924F41FE98BA265",
+        "Bytes": 5615
+      }
+    },
+    {
+      "Path": "packaging/R6-INSTALLER-TEST-RESULTS.md",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "8775CA260AAAB0BD29D038447F3BB8657885EA71733218D6358F10F792194A82",
+        "Bytes": 6481
+      }
+    },
+    {
+      "Path": "packaging/R6InstallerTests.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "062A560FEBD087B51FAA819DDD93C935BCD496FFF899543E8BD913FB9422CF0B",
+        "Bytes": 28612
+      }
+    },
+    {
+      "Path": "packaging/rebuild-v1-installer-ui.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "45580BDFF374117928C91E73D7EB81D68108BBA6A08B1A04EF30EC2CC5D3A3B9",
+        "Bytes": 5752
+      }
+    },
+    {
+      "Path": "packaging/SafetyTests.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "D474A52670C356A69A514490E032EC40AB7B64470718E18613192D84508F3876",
+        "Bytes": 11463
+      },
+      "After": {
+        "Sha256": "1A04CC62AD4922172A46EC440A399C14B3C1329566ECA8F5586DB76B93E1943E",
+        "Bytes": 11475
+      }
+    },
+    {
+      "Path": "packaging/save-v1-baseline.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "409AA38055F9AB275253F3DC2F891607D04A94FB48998FC0E994C76FBBF11337",
+        "Bytes": 32104
+      }
+    },
+    {
+      "Path": "packaging/test-r6-installers.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "82CB0CFC25F1F839CD98B2EDB40E7824748D7A47A4B472BFA14D828AFF145504",
+        "Bytes": 7388
+      }
+    },
+    {
+      "Path": "packaging/test-v1-delivered.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "FFC06000B84E6F9E1B3CFEFD644F8F11184558195BD97B441D23BC500B01E279",
+        "Bytes": 5193
+      }
+    },
+    {
+      "Path": "packaging/test-v1-installers.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "A00FA6FBA68349D5D9185D70A90263B9F3A6F7D45FC8FD1E413F881CF88C5198",
+        "Bytes": 4781
+      }
+    },
+    {
+      "Path": "packaging/test-v1-real-exe.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "4E437BFC9C2DEAD45B90C7C558A3DCFB0DB8B95BC01BEEB5EC7FE8BD03F7F958",
+        "Bytes": 3445
+      }
+    },
+    {
+      "Path": "packaging/tools/Obfuscar-LICENSE.txt",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "97E442E29D50B501151A2A4EDF79252E75EA02217816E9281B6657045559EDDB",
+        "Bytes": 1159
+      }
+    },
+    {
+      "Path": "packaging/USER-GUIDE.txt",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "FCC3D39277A7645124CF0A264369A668FD1974B458102609255087767ADBFB19",
+        "Bytes": 4361
+      },
+      "After": {
+        "Sha256": "0C77CA35E31A997892D7B9C96E818E52261937182772970AB6D94CD40EDC9E05",
+        "Bytes": 5216
+      }
+    },
+    {
+      "Path": "packaging/V1-INSTALLER-VERIFICATION.md",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "C31FFCFDEAE3CE161116BFF8BD6133B91015C69DCC5308ACCA04F55732FACAFF",
+        "Bytes": 8182
+      }
+    },
+    {
+      "Path": "packaging/V1AssemblyInfo.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "DE11038AAB60C8CD1DDC250313252C3BEAAE75443FED34BAE5FE5674A755D855",
+        "Bytes": 213
+      }
+    },
+    {
+      "Path": "packaging/V1DeliveredTests.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "0D0196E36BF7ED175B7802A305FD139FC02A2FC6ED826BA16799659CEAE9307C",
+        "Bytes": 13878
+      }
+    },
+    {
+      "Path": "packaging/V1ExeDriver.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "126FCB63D31BDC3492BED5AB2EE63B07CE9831E9F5681A6416FFAEF1F1857746",
+        "Bytes": 12962
+      }
+    },
+    {
+      "Path": "packaging/V1Hardware.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "8A96FDEFA1E662E13C0CB83AA6B06571E00599308A246005DF8693A568779AB7",
+        "Bytes": 4046
+      }
+    },
+    {
+      "Path": "packaging/V1Installer.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "271AE3C72B77939A7EE4158D049D736C8174BE0B766A4D4264087432367C151C",
+        "Bytes": 21318
+      }
+    },
+    {
+      "Path": "packaging/V1InstallerTests.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "722F14A0DD7456E6E638FFEBC8089ECEFB4921202EA3432674C8336ACBCEC496",
+        "Bytes": 58117
+      }
+    },
+    {
+      "Path": "packaging/VariantSwitchTests.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "7EF8EC4EC1E42D0A7D708A85F96869CF0F19ECF0C6EEDF991DE780968408FA3C",
+        "Bytes": 3611
+      },
+      "After": {
+        "Sha256": "9295DD954E37394DFF4C9BF6BFCBD565EB0ABD7D0FF9FF3AEA00197EA3823CC8",
+        "Bytes": 3615
+      }
+    },
+    {
+      "Path": "packaging/verify-frozen-runtime.py",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "54A9E8212ED1D04493C31BB5672FC492374C122026B127D93C3412B382490285",
+        "Bytes": 5502
+      }
+    },
+    {
+      "Path": "packaging/verify-r6-payload.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "7C3E77D2F1B966FD7A8ED3CF0475C91FC6D9E9CAACC1BDF104CED57B1D800EB2",
+        "Bytes": 4226
+      }
+    },
+    {
+      "Path": "src/AzureArchive.Recorder.csproj",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "F38F691F33542211A177CE53F9F5DEF17562A77A5362A746E5CF67C505249919",
+        "Bytes": 1296
+      },
+      "After": {
+        "Sha256": "EE83B32B67686C5516CDFC7B6CCAE4A608AFE84AC240FDB2AAD4D03A52316F07",
+        "Bytes": 1296
+      }
+    },
+    {
+      "Path": "src/Deployment.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "3D7F63ED826EE8005EACB7996B25CC474DBB1AAAB5F802732CEC4D9DDDBE02F8",
+        "Bytes": 2318
+      },
+      "After": {
+        "Sha256": "1073344662C1396DE7A3F300442D3F2DEC7097D30C614EBD49AE9329BFE4A156",
+        "Bytes": 2440
+      }
+    },
+    {
+      "Path": "src/DlssComponents.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "0B1CBC6A991881FE104253B2AFDBA9E236C14F7EF3AB599B5DDCF8C9DB5D9441",
+        "Bytes": 7750
+      }
+    },
+    {
+      "Path": "src/NativeRecorderTutorial.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "F51BF308AA4B59FAF0963499506038375D3A2C191D8A0887690138412DDA0244",
+        "Bytes": 11970
+      },
+      "After": {
+        "Sha256": "46585FA57E6BA9B45F1FBCEF928FAEFD25AC5D8833518A2F39719A3835CD39C4",
+        "Bytes": 11976
+      }
+    },
+    {
+      "Path": "src/NativeRecorderUi.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "B496288EA2CE3F5831B35E0E696F91DFA8F29BEF47D507F2511E32D23C6D899C",
+        "Bytes": 17584
+      },
+      "After": {
+        "Sha256": "60609F28E060CF3D3D1BDD948297E86A0C0E497882159228979D5806C524F43E",
+        "Bytes": 18153
+      }
+    },
+    {
+      "Path": "src/Plugin.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "51E8247043165E4E2FA837F357DA5A3C6F5A50E38A9F013DD3A047405D48EAEF",
+        "Bytes": 44212
+      },
+      "After": {
+        "Sha256": "DFC1A98D9642A405838A030C7AFB64C36BD64609EEAC1A0E091288B5F7241F8E",
+        "Bytes": 45143
+      }
+    },
+    {
+      "Path": "src/UiDiagnostics.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "D261D0E06718AB91775D17FC07DA7755D8D2D2F8F0C618AFDF04AA92807CC3F4",
+        "Bytes": 23664
+      },
+      "After": {
+        "Sha256": "6EF2A5EA831BF502573C8020BAFA644294670631A4F392FC6CB7D10F7446FBA3",
+        "Bytes": 27195
+      }
+    },
+    {
+      "Path": "test-fixture/RecorderSmoke.aap2",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "0F2233ECAF1F941FCB86BF78EDF9845D4F2DBD85749006AB936AF785D1F18E4D",
+        "Bytes": 8822
+      },
+      "After": null
+    },
+    {
+      "Path": "tests/DlssComponentsTests.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "128AA608E8B087E113FC13928FC20A38778330ACDD52F14A4589FCC58C0FA2DE",
+        "Bytes": 6266
+      }
+    },
+    {
+      "Path": "tests/test-dlss-components.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "DD646C8E382F7C46434BB318FC8AC1BAA17C6ED236B342101653227BBA2A1B7C",
+        "Bytes": 799
+      }
+    },
+    {
+      "Path": "tests/test-final-protected-runtime.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "FC6A9FB82D1F133375A18505DA3355D758ECB53ECC0E976539D4ABC5962667C2",
+        "Bytes": 11715
+      }
+    },
+    {
+      "Path": "tests/test-runtime-dlss-ui.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "1B74DFB670B1528B9D82105DA371AFD52575A01961408D0E54CAE61C8B9EA432",
+        "Bytes": 9689
+      }
+    },
+    {
+      "Path": "tests/V1-DLSS-RUNTIME-VERIFICATION.md",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "22BA45144C54624525F88B93AF2469DA8ADA8DB529368AD0F0E35710B6765CAE",
+        "Bytes": 9844
+      }
+    }
+  ]
+}
