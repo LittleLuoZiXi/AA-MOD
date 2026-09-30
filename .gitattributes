@@ -1,0 +1,2 @@
+# Preserve sealed source snapshots byte for byte, including original line endings.
+* -text

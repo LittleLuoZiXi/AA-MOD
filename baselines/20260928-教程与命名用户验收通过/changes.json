@@ -1,0 +1,619 @@
+{
+  "Baseline": "20260928-教程与命名用户验收通过",
+  "ComparedWith": "20260928-DLSS总开关已验证",
+  "Comparison": "Original RecorderMod snapshot file bytes, SHA-256; absence may be archive scope or cleanup, not a removed feature",
+  "Counts": {
+    "Added": 20,
+    "Modified": 10,
+    "AbsentFromSnapshot": 34,
+    "Unchanged": 120
+  },
+  "Files": [
+    {
+      "Path": "assets/tutorial/arona-guide.png",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "CC93D8406298B915997B11C44A4A2158781BD773B689814C361AA6A134C45DB2",
+        "Bytes": 913589
+      }
+    },
+    {
+      "Path": "assets/tutorial/arona-page-02.png",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "8D1EDDF8ABFA4987D83FB2D85585ADEDC5B539B0D78D871FF9B93B61B2A3B5F3",
+        "Bytes": 917396
+      }
+    },
+    {
+      "Path": "assets/tutorial/arona-page-03.png",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "F6712A9F501B8D449529DC09B966C76FC300D710F59BCF11E4FC1A46956E7D06",
+        "Bytes": 883550
+      }
+    },
+    {
+      "Path": "assets/tutorial/arona-page-04.png",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "114B835625B810F6BB0DF5E72CFA4623FC3879E1BB21E370FF155F79130E09FD",
+        "Bytes": 868242
+      }
+    },
+    {
+      "Path": "assets/tutorial/arona-page-05.png",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "A03A2B1761A4C4575F96A8B99B31E658F83D0DCA9DB2D1232CB5F533EF411790",
+        "Bytes": 961080
+      }
+    },
+    {
+      "Path": "assets/tutorial/arona-page-06.png",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "0B678773819BDAEB5EE047F0E11F231A9E3F2E0A218DCB068C7F0021D539726A",
+        "Bytes": 831776
+      }
+    },
+    {
+      "Path": "assets/tutorial/ASSET-SOURCES.md",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "771B9F926948C3B20E6F80A1954CD6DDD49CAA5F8C6CD1E20A5544092F048E7B",
+        "Bytes": 5219
+      }
+    },
+    {
+      "Path": "assets/tutorial/asset-validation.json",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "24E57CC1CAB0154CEACFC43542A7B83CB4CBB08ABB95FAF7C60DF09299B42523",
+        "Bytes": 1771
+      }
+    },
+    {
+      "Path": "assets/tutorial/pose-04-refinement.json",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "F8EC655B9D8D175ECA3969E603F827303B709502F7F0D3F58EB930E247976058",
+        "Bytes": 1319
+      }
+    },
+    {
+      "Path": "assets/tutorial/pose-prompts.json",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "B12246175F4837C78B74311B281DCD681E7B61DC16D22F3F32947D5DCC8C0F77",
+        "Bytes": 9023
+      }
+    },
+    {
+      "Path": "assets/tutorial/reference/arona-official-stamp.png",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "99F0D5CFA60E720C811D9C7FAFE407B3ECE659A08FF478F4DB541E68A7939BC5",
+        "Bytes": 62508
+      }
+    },
+    {
+      "Path": "assets/tutorial/reference/arona-official-standing.png",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "F3B6C192795202478905064F408CB3168BB7C9FCE02F6A3B53C010B6CB6F15C5",
+        "Bytes": 105094
+      }
+    },
+    {
+      "Path": "assets/tutorial/reference/official-guide-layout.png",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "4E3FD292FF18BA1F4DCC932E6E36C68311247500F08C88A7F272ACD9C7706547",
+        "Bytes": 540419
+      }
+    },
+    {
+      "Path": "build.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "07C1600B57B39A12DB67DAA642E2B7A144354EC5243CDAD5AF84487FC5CF19CE",
+        "Bytes": 2869
+      },
+      "After": {
+        "Sha256": "7708BBE5EF9D2E281CD02A460C2383EFFA06F69B32ED66CC9841C53FAAF05423",
+        "Bytes": 3470
+      }
+    },
+    {
+      "Path": "CHECKPOINT.md",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "8D79D76260DCF39D7C867739C79AE276C7CC3F440F33D6C5C1CAAB8E89B7F636",
+        "Bytes": 5851
+      },
+      "After": {
+        "Sha256": "2A114A2268EF767D02372E97A4972AD1D9E537AB02CC9156D5178216E157291B",
+        "Bytes": 6547
+      }
+    },
+    {
+      "Path": "DEVELOPMENT.md",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "B776D13B9215EB042A5272251BE9A1BE38599B03ACB116AE34F139FAED87F35E",
+        "Bytes": 2671
+      },
+      "After": {
+        "Sha256": "DB9C32EB77BB97F70196F7F2F104DEED77A5060E32D3823444EE644596324094",
+        "Bytes": 8450
+      }
+    },
+    {
+      "Path": "handoff-kit/先读我.md",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "124EC20BE2DBAD26B125A443AB0F1CB06EBEF93B4D4F3FA27742A34384DB5306",
+        "Bytes": 4707
+      }
+    },
+    {
+      "Path": "handoff-kit/校验交接包.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "9425AC5BE354A8D5ACD27622D6D5F7BD1F9695549C020586F6E905CC8D1CFAA0",
+        "Bytes": 1310
+      }
+    },
+    {
+      "Path": "handoff-kit/AGENTS.md",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "0370086D4C0A1E6FDEB1110081366B743CABB8272F556623FB1F642D3D28CC68",
+        "Bytes": 2501
+      }
+    },
+    {
+      "Path": "HANDOFF.md",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "28F7AD6274613A2AD75F600AE3BE7BB768F9141E4C75A563D2CE47C267EE071F",
+        "Bytes": 22842
+      },
+      "After": {
+        "Sha256": "F42B6F1435AE34D656A0F2A651FCA8639B17B97FD816E3D8ED64B7BDDFE2CE15",
+        "Bytes": 23195
+      }
+    },
+    {
+      "Path": "packaging/freeze.log",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "B0C676F72F67FD35A0FB65692C216F25A9010CE3A9F5DD83EFD604752B334356",
+        "Bytes": 8857
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/Installer.generated.cs",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "C3CBD788561A32F2253D1A6E322B328EE5E9CDCB3B7861ABBD0645FE4CE04DEF",
+        "Bytes": 40446
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/obfuscated/Mapping.txt",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "86130FC5D4234E64F7540532BB42DF6CAF006C35D56A44FEB25BAA0E114926CE",
+        "Bytes": 141453
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/installer/encrypted-core.bin",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "E123E0804ACC9AA16B0F1B593BACDD795390035EE37F98434EA96763FD132DD5",
+        "Bytes": 249687072
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/installer/ExecutableShell.generated.cs",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "60003C013718083AA6212505E089AA8300F16F1FEC567B6B0217945ED953053E",
+        "Bytes": 2519
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/installer/obfuscar.generated.xml",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "3ACED9CD275DF3CC507DBDC07A863F0E0BD0F75915DD4FC804A6617BD94DA077",
+        "Bytes": 1129
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/installer/obfuscated/Mapping.txt",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "EAE96D9118EB3215D62FC324AF0DDA13DD95BA224D1699E54F0C1A2750AC30DC",
+        "Bytes": 29977
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/installer/protection-proof.json",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "0C6715722280AFD037AF4D0805DF34F9A03FF044BE708D5AE63CCFDA1D68EA89",
+        "Bytes": 599
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/uninstaller/encrypted-core.bin",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "D4487D9A2DB348C7A5019AB9E5954C1CC4BDFEE6E1D7C81F003CFEBD8B6CD23D",
+        "Bytes": 27248
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/uninstaller/ExecutableShell.generated.cs",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "433358FFF28D2911898842CE80725C526614D73B3810E1D4AEEB91D2946F2829",
+        "Bytes": 2519
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/uninstaller/obfuscar.generated.xml",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "4EAD5C4717A584976F3EF1672EC425B91679A10A341B4203E6C1969F9191EC71",
+        "Bytes": 1137
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/uninstaller/obfuscated/Mapping.txt",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "53FAD0E564B03B3D556630BB198C86D34681F2A895A22285735D0E4153379775",
+        "Bytes": 29263
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/protected-build/uninstaller/protection-proof.json",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "759F09CF164BCAAC5EC164AD63FCBA5BA57BB62AE255E82A33ED6FFA910F59A5",
+        "Bytes": 641
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/pybuild/EnhanceHost/Analysis-00.toc",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "8484AD3CD877818398147D7CB48741091722A7C49641FF5EE086D470ED1FFC14",
+        "Bytes": 137924
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/pybuild/EnhanceHost/COLLECT-00.toc",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "0518C611BDD5B290C4EB9B78B1A105E2906B99F9F9189B3BFE8B5E15218515D5",
+        "Bytes": 38443
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/pybuild/EnhanceHost/EnhanceHost.pkg",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "E977D2F64DBB64733190332933696DB6892940F94E07A68274732B7B39A2DE20",
+        "Bytes": 4403821
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/pybuild/EnhanceHost/EXE-00.toc",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "9AC60FCA9F2859CE4579B4E08950AD24E18F8998BABB962AB0C083D43CB22BEB",
+        "Bytes": 4305
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/pybuild/EnhanceHost/PKG-00.toc",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "6DD3C565CD266390694112C3141100C98DE307BA057569DD5523F4593921EB8B",
+        "Bytes": 2423
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/pybuild/EnhanceHost/PYZ-00.pyz",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "2268EB59EC144D350E4F61EFA730F403625B0C42D75D1F559511CEF57A12C2EC",
+        "Bytes": 4376238
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/pybuild/EnhanceHost/PYZ-00.toc",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "1938408D95586708103736D80AEBBF524D86A1F1B643451CDA89EA6A4988CE23",
+        "Bytes": 70868
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/pybuild/EnhanceHost/warn-EnhanceHost.txt",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "11B92D3B43644A29FF8A5593F5D585C1E848764251F92AAD670A736933E005D4",
+        "Bytes": 27243
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/pybuild/EnhanceHost/xref-EnhanceHost.html",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "0428A7F75C60E4C9024C94AD2433F3D55DE87AADF964368510FB4BABF0B83511",
+        "Bytes": 862909
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/recorder.payload",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "A7427093D9C99CC1DA0DE4D46B2F1E05505DCD1F1F3E4F2AC45DE598A6ECDA52",
+        "Bytes": 66896
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/Obfuscar-LICENSE.txt",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "97E442E29D50B501151A2A4EDF79252E75EA02217816E9281B6657045559EDDB",
+        "Bytes": 1159
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/obfuscar.nupkg",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "8790E1E36D613613311EC512129A6701C63576428692F20A95988A351FDC3187",
+        "Bytes": 3239544
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/obfuscar/_rels/.rels",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "6F220CDD1B00A32E2A93252555EF728EF6A24D6390AABDA830D32C9081F37BE1",
+        "Bytes": 502
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/obfuscar/.signature.p7s",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "FB1A4688CF40B4AA182DB58071B3200C5D1AB454946069DFF2D148B1CE366DEB",
+        "Bytes": 25936
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/obfuscar/[Content_Types].xml",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "1572DDF0263D79172C3A2727E60BF7C2A42ED076E2CCFD9E8E83C436CB6BDFDE",
+        "Bytes": 847
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/obfuscar/Obfuscar.nuspec",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "12F3F4927C3D7E29381F69F570BB91B6F1E1F85A2BFB6C04368C01E730818E8E",
+        "Bytes": 1354
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/obfuscar/package/services/metadata/core-properties/9c0b0cdb6ed347cbab51b4dd2ee782d0.psmdcp",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "5756AEB7D9E33288ADF8059B24C43C3795DFD404F8425A2FAB0876509D6B25D9",
+        "Bytes": 962
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/obfuscar/Potion-icon.png",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "CC41EFF3520C0ACC8FE5722EC7DA6A1D8903D6D3D9217F1AB3586FE3E736DB11",
+        "Bytes": 78465
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/obfuscar/readme.md",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "0CF1883D2B4D5521A55E5AECB4EE90EB1937BD87805D02C405466897E28C07DE",
+        "Bytes": 1843
+      },
+      "After": null
+    },
+    {
+      "Path": "packaging/tools/obfuscar/tools/Obfuscar.Console.exe.config",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "9EC5AFE6858C4CCC16E46ACA1C60499D13928617F9153C5F9017CF7615DB5BDC",
+        "Bytes": 18745
+      },
+      "After": null
+    },
+    {
+      "Path": "README.md",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "C5E8A4599DEF5AA5ADCDAB2BBC837114ADA84BB9211BFBF1C760100954910F85",
+        "Bytes": 14107
+      },
+      "After": {
+        "Sha256": "43E8F1EFC82A78DEA0DB4331EA432286063AFC1FDA4A3E592416F31C23D08263",
+        "Bytes": 14457
+      }
+    },
+    {
+      "Path": "src/AzureArchive.Recorder.csproj",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "8594B09B1C0A6A92DB6A5E3F5B2FD15CAB5F3D062358076C5CBE67386662A110",
+        "Bytes": 566
+      },
+      "After": {
+        "Sha256": "F38F691F33542211A177CE53F9F5DEF17562A77A5362A746E5CF67C505249919",
+        "Bytes": 1296
+      }
+    },
+    {
+      "Path": "src/DailyExportNaming.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "7D48ACD8FBD1EBB73221A470451197F3976D148B7F1B75560FB5D192DE00C9E1",
+        "Bytes": 3378
+      }
+    },
+    {
+      "Path": "src/NativeRecorderTutorial.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "F51BF308AA4B59FAF0963499506038375D3A2C191D8A0887690138412DDA0244",
+        "Bytes": 11970
+      }
+    },
+    {
+      "Path": "src/NativeRecorderUi.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "347009302CA7D4CC068188BB9DA88761D6AF24592A54477528AE96E0519C09AC",
+        "Bytes": 16622
+      },
+      "After": {
+        "Sha256": "B496288EA2CE3F5831B35E0E696F91DFA8F29BEF47D507F2511E32D23C6D899C",
+        "Bytes": 17584
+      }
+    },
+    {
+      "Path": "src/Plugin.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "73A8E6FE295353C00C8CB967480C069E5D43FB2C18BF9261C02F88FD8A92B1F1",
+        "Bytes": 44048
+      },
+      "After": {
+        "Sha256": "51E8247043165E4E2FA837F357DA5A3C6F5A50E38A9F013DD3A047405D48EAEF",
+        "Bytes": 44212
+      }
+    },
+    {
+      "Path": "src/UiDiagnostics.cs",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "BFFB4FE79EC76B3BD5D59CF6C76BEE6ED4198D6A24322606FC2862BBDECBF23C",
+        "Bytes": 15762
+      },
+      "After": {
+        "Sha256": "D261D0E06718AB91775D17FC07DA7755D8D2D2F8F0C618AFDF04AA92807CC3F4",
+        "Bytes": 23664
+      }
+    },
+    {
+      "Path": "test-fixture/RecorderSmoke.aap.lock",
+      "Change": "AbsentFromSnapshot",
+      "Before": {
+        "Sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "Bytes": 0
+      },
+      "After": null
+    },
+    {
+      "Path": "tests/DailyExportNamingTests.cs",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "6A6A5F6F9D25A969A4C2E1A872F35386C21A182A0996B0B74787CF2182D87E8F",
+        "Bytes": 3725
+      }
+    },
+    {
+      "Path": "tests/run-aa-smoke.ps1",
+      "Change": "Modified",
+      "Before": {
+        "Sha256": "C7AA23B2C366B1C844B17EC14F4D29949377CD0BFD2DBC5B087918A8FE871614",
+        "Bytes": 4785
+      },
+      "After": {
+        "Sha256": "5636845FD6741759775850C64F264D45296AE58B6C8A7D7AB21E0798C1AD4F50",
+        "Bytes": 5190
+      }
+    },
+    {
+      "Path": "tests/test-daily-export-naming.ps1",
+      "Change": "Added",
+      "Before": null,
+      "After": {
+        "Sha256": "88081CA7CFC4EEF03757A5A360C014A6A9D33803EEBE9E8BB55C3190F1036222",
+        "Bytes": 391
+      }
+    }
+  ]
+}

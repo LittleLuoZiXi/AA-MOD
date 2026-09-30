@@ -1,0 +1,7 @@
+{
+  "name": "AzureArchiveRecorder",
+  "version_number": "0.2.1",
+  "website_url": "",
+  "description": "剧情内录：原生风格设置弹窗、按次选择目录（默认 Windows 视频）、进度界面与离屏逐帧 MP4 导出；支持 DLSS5Tool 显卡适配。F8/F9 设置，F10 停止。",
+  "dependencies": []
+}

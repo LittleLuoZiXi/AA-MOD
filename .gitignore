@@ -1,0 +1,17 @@
+# This branch archives source, not generated installers or runtime dependencies.
+**/bin/
+**/obj/
+**/.venv/
+**/__pycache__/
+*.pyc
+*.pyo
+*.exe
+*.dll
+*.pdb
+*.zip
+*.7z
+*.mp4
+*.mkv
+*.mov
+*.wav
+*.log

@@ -1,0 +1,757 @@
+{
+  "baseline": "20260928-教程与命名用户验收通过",
+  "version": "0.2.1",
+  "originalBaselineManifestSha256": "7227E3FF605A773B923B70A78CB685D787ACB1C2C0BFF762D4218346064400FA",
+  "files": [
+    {
+      "path": "assets/tutorial/arona-guide.png",
+      "bytes": 913589,
+      "sha256": "CC93D8406298B915997B11C44A4A2158781BD773B689814C361AA6A134C45DB2"
+    },
+    {
+      "path": "assets/tutorial/arona-page-02.png",
+      "bytes": 917396,
+      "sha256": "8D1EDDF8ABFA4987D83FB2D85585ADEDC5B539B0D78D871FF9B93B61B2A3B5F3"
+    },
+    {
+      "path": "assets/tutorial/arona-page-03.png",
+      "bytes": 883550,
+      "sha256": "F6712A9F501B8D449529DC09B966C76FC300D710F59BCF11E4FC1A46956E7D06"
+    },
+    {
+      "path": "assets/tutorial/arona-page-04.png",
+      "bytes": 868242,
+      "sha256": "114B835625B810F6BB0DF5E72CFA4623FC3879E1BB21E370FF155F79130E09FD"
+    },
+    {
+      "path": "assets/tutorial/arona-page-05.png",
+      "bytes": 961080,
+      "sha256": "A03A2B1761A4C4575F96A8B99B31E658F83D0DCA9DB2D1232CB5F533EF411790"
+    },
+    {
+      "path": "assets/tutorial/arona-page-06.png",
+      "bytes": 831776,
+      "sha256": "0B678773819BDAEB5EE047F0E11F231A9E3F2E0A218DCB068C7F0021D539726A"
+    },
+    {
+      "path": "assets/tutorial/ASSET-SOURCES.md",
+      "bytes": 5219,
+      "sha256": "771B9F926948C3B20E6F80A1954CD6DDD49CAA5F8C6CD1E20A5544092F048E7B"
+    },
+    {
+      "path": "assets/tutorial/asset-validation.json",
+      "bytes": 1771,
+      "sha256": "24E57CC1CAB0154CEACFC43542A7B83CB4CBB08ABB95FAF7C60DF09299B42523"
+    },
+    {
+      "path": "assets/tutorial/pose-04-refinement.json",
+      "bytes": 1319,
+      "sha256": "F8EC655B9D8D175ECA3969E603F827303B709502F7F0D3F58EB930E247976058"
+    },
+    {
+      "path": "assets/tutorial/pose-prompts.json",
+      "bytes": 9023,
+      "sha256": "B12246175F4837C78B74311B281DCD681E7B61DC16D22F3F32947D5DCC8C0F77"
+    },
+    {
+      "path": "assets/tutorial/reference/arona-official-stamp.png",
+      "bytes": 62508,
+      "sha256": "99F0D5CFA60E720C811D9C7FAFE407B3ECE659A08FF478F4DB541E68A7939BC5"
+    },
+    {
+      "path": "assets/tutorial/reference/arona-official-standing.png",
+      "bytes": 105094,
+      "sha256": "F3B6C192795202478905064F408CB3168BB7C9FCE02F6A3B53C010B6CB6F15C5"
+    },
+    {
+      "path": "assets/tutorial/reference/official-guide-layout.png",
+      "bytes": 540419,
+      "sha256": "4E3FD292FF18BA1F4DCC932E6E36C68311247500F08C88A7F272ACD9C7706547"
+    },
+    {
+      "path": "bridge/enhance.py",
+      "bytes": 8307,
+      "sha256": "AFEB7B169249614E0152D3A4C4EFF98376E69E38379F8EEF7F43B1C6B5DAD19A"
+    },
+    {
+      "path": "bridge/gpu_profiles.json",
+      "bytes": 886,
+      "sha256": "F606C193831D62E90A71D5998D94CAD398834544265B97445442F2F7F000DF64"
+    },
+    {
+      "path": "bridge/requirements.txt",
+      "bytes": 95,
+      "sha256": "D0DC1AFFD922630093495759370A45A143ECAC09B6C3A9074E66323DAB078F5C"
+    },
+    {
+      "path": "bridge/vendor/DLSS5Tool-LICENSE",
+      "bytes": 1102,
+      "sha256": "A08DE3E6A482C0DBF94ACAEC2962CC2D121AF03328F9002F491D2DF9E3EF314F"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/__init__.py",
+      "bytes": 150,
+      "sha256": "64E1F051D653E741C07A2DBBF556CC19533C82A76DE7A91179BF129D324A03F0"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/__main__.py",
+      "bytes": 108,
+      "sha256": "6B0A291CEE4658676A225EFD6925799620B742D73BF3C569879A2EDB2AD122E4"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/about_dialog.py",
+      "bytes": 6693,
+      "sha256": "BF65F786C6D2F91F9AF6965A22771E22738D0E9210B45325F618C9CC676FBC98"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/amd_devtest_ui.py",
+      "bytes": 16907,
+      "sha256": "A13F3610973D161CC15CA4F7190E6F37E9B455CE675CA78109FD77EC4E07BE80"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/amd_devtest.py",
+      "bytes": 31648,
+      "sha256": "7AB379457700E28F3508B0C77712A3227E57EF749F2AB0BAC30CC98946D994BE"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/app_settings.py",
+      "bytes": 13429,
+      "sha256": "08E451F3E63303ED200E2996D9ECDA6EBFC1C7898248F27ACD9D6A93924248B2"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/app_version.py",
+      "bytes": 119,
+      "sha256": "538AC776FB4621F2AC30514B2988A994AC06735C6BABCB73943496E1D17AC056"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/cuda_hdr_yuv.py",
+      "bytes": 6736,
+      "sha256": "DDADEB728153D03E91FB01CC1517C30B56CC9E686CF0D24608B43B7B48685C8E"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/cuda_interop.py",
+      "bytes": 3081,
+      "sha256": "889FDD69BDA85A868F57CE972AE7457B697F5169A4DBD9540C1553783E88A6B7"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/cuda_sdr_yuv.py",
+      "bytes": 6314,
+      "sha256": "2FB4E65777CE5A4F9B625E51B034DC683F3311DA3E9874B7AE24CA2CEEEC9755"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/cuda_session.py",
+      "bytes": 3330,
+      "sha256": "07FBF8248B8141203BE719D31AA02AEE7E5420DEE090A3DF0D3378D51446FB55"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/delta_update.py",
+      "bytes": 20659,
+      "sha256": "AA3C9FDB6B913C7C4203E6FE71EF2C3308A772BD80FD40D774A57D695793AA94"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/depth_acceleration.py",
+      "bytes": 1350,
+      "sha256": "37FE7B2AA9C3D872FBA945D608E6A2E67E2EB2B2EB934C6000A844C5591BC382"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/diagnostics.py",
+      "bytes": 57145,
+      "sha256": "C4A77AB02C66671288A71756DFB5F35BEB3B2E862262B4EB55A82B8372C17752"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/dlss_engine.py",
+      "bytes": 33485,
+      "sha256": "2DFE3D9071891678A14F746921E9EEC678A6C1D701D3E5EA715F73B69E16E64A"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/dlss_host_process.py",
+      "bytes": 23857,
+      "sha256": "4ABAD88265D9F08A2D4142C59B4C933B5B32221B228FE89BF3AF9650A9A7E9BD"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/encoding_contract.py",
+      "bytes": 2361,
+      "sha256": "01C9451C573B798F8C62EAF57194C089453CE9ECEE86ABA3695624CC70C50CFF"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/export_queue.py",
+      "bytes": 5750,
+      "sha256": "EFDFDFB7386EDF93070D759EBD3F7C36B4E106034153E91DCE23453CDDAEA5CD"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/frame_generation_ui.py",
+      "bytes": 242,
+      "sha256": "47DC8436AEC81E4822F8663BAD12EDD628D82A5EF82C1E4757492A33A36EBC41"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/frame_generation.py",
+      "bytes": 37044,
+      "sha256": "80BAA80F6C643C12A3642971429786E5A2215EB57161C34F47A3F3A2F116ECF9"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/frame_timeline.py",
+      "bytes": 9842,
+      "sha256": "26FAA6C04032B2499D65955B8E71F6145A29A7087B99828CC59AF6463624BA90"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/gpu_export_process.py",
+      "bytes": 12267,
+      "sha256": "371E91E6054FC5E3C4DCE17FDC24A660750BA251B25B78F3BC59C71681830ABD"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/gpu_export_runtime.py",
+      "bytes": 5013,
+      "sha256": "844BAADFB94C03408C514DFC9E63C482B775F8C01F7F919E0EFCB8B850220D94"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/gpu_flow.py",
+      "bytes": 9325,
+      "sha256": "52382520DA96A0F2C2A5DA93369E96050F1E5A58F4E59FECE471A7DCF9C995E3"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/gpu_video_export.py",
+      "bytes": 6545,
+      "sha256": "04E562CEA6D35AFB2003D614560D4FD23A86A9328812509416F9D2A9FC53177B"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/gui.py",
+      "bytes": 446949,
+      "sha256": "BF38DDE8FB14BDCBFC4D3750C55F9FFE64DF3A298F46B32FEC51F4732775C39F"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_cache.py",
+      "bytes": 4251,
+      "sha256": "2A4BEE44367E1204AC31F9228532EEE8BB2C94CEFA9C639F78238B34527E522C"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_client.py",
+      "bytes": 20250,
+      "sha256": "71F6242967D1531061E6FB458E02A14BBA3A5F128D0CF73BA8BA114FA6AC3A48"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_color.py",
+      "bytes": 3383,
+      "sha256": "D1E1649F91E41D8E6C3DA2BFD960CCE195332A867F697DF76A1CDDFD3731C052"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_execution.py",
+      "bytes": 1030,
+      "sha256": "6A1EFD745D9F5D0A848E391AAC6F320CDB4B034AC4F9AB370236D3D7927BE87C"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_export_ui.py",
+      "bytes": 9430,
+      "sha256": "561056704059D3EC41883FF6BAA3F1A14D6779F5418C018C058237F4EE854A9D"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_export.py",
+      "bytes": 6038,
+      "sha256": "BA2B0249F0140852459BEC8239DC59FFD0F5245113207936D834A049883DB62B"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_flow.py",
+      "bytes": 1950,
+      "sha256": "E1B3DF6D85A7B7A26E217BB68A10456E7BE2960DC55662ADE6347659ADAD704E"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_inputs.py",
+      "bytes": 1551,
+      "sha256": "2105AF35DC4031BD7C8A7F5271848D3B5654BC8ED925605AB1E11EC15F8D8FB5"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_parameters.py",
+      "bytes": 3230,
+      "sha256": "4FB0BA6724A77558D7678766F1BC502B1A568BE9C4C4644888FB9C10D8ABFCDC"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_public.py",
+      "bytes": 1461,
+      "sha256": "FD7F223B53398DD6A3194E8352810EF58E569A8FEDCF8347ADF0FF4499677090"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_settings_ui.py",
+      "bytes": 10464,
+      "sha256": "EF23C86C3A0090F464D5D31ACFDBEB0565CD77281D7B7F7C1ACEBF1B127E59F7"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_transport.py",
+      "bytes": 2865,
+      "sha256": "8651F56DF322282438BC0CB0D907054C322E2FEA04A6D45F65249060A17F3EF9"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_visualization.py",
+      "bytes": 1423,
+      "sha256": "9E815632700A585A948ABD2D96B880F7E0C0231F41918E614EC4EFF77B2AB65E"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/guidance_worker.py",
+      "bytes": 29600,
+      "sha256": "3B6EB42B782475FF99E5606018DD9493280D44A9DE1B6E461428AFEFA476B1FE"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/host_queue.py",
+      "bytes": 302,
+      "sha256": "C1210CA01DBFABF715E252760D638CDCDAE8A1D3B328C4FB11C53355DE68F427"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/i18n.py",
+      "bytes": 2293,
+      "sha256": "093CC247D8924B2AFA8D6E66AE203EAEF1BAEC50B827848B38906FC6621B240C"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/image_sequence_dialog.py",
+      "bytes": 16383,
+      "sha256": "A4C64FD3E8557F209BBF8734179DA90E136A785834780CABA0B55AC67C66F9BB"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/image_sequence.py",
+      "bytes": 19786,
+      "sha256": "7DB2826E69030379B5B18742194EBF7299BFDBCC6F5876974C66074960498CE6"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/mod_paths.py",
+      "bytes": 9311,
+      "sha256": "6AE4924BC3EDB24A24D5241D36A5A4D2A2A72B159A73CDCFD568AEB974616A0B"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/nvenc_yuv.py",
+      "bytes": 10492,
+      "sha256": "F40DC5E9BFFEC35060CAD71357A68CCBB56889786136B23E458926BDB0932B4B"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/nvofa.py",
+      "bytes": 11440,
+      "sha256": "36CA59432ACDF311B6FA50CBC79144FB2DB5317B7D94EC67D81D2FA8F7BC405B"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/packet_mux.py",
+      "bytes": 6710,
+      "sha256": "9ED61974BD3A77BA9A72C08E04439672A8900B01FD0DCC6FB184C4689C8ED9EF"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/parallel_export_worker.py",
+      "bytes": 8124,
+      "sha256": "65FC4C346FC5DFC06F0512BE295B78035538AB5D8D1E1568FD5CD3FB074DB6FD"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/parallel_export.py",
+      "bytes": 9231,
+      "sha256": "692D777CD8E48D32F912DC671F81A5AF7BF6F337CB681BEBCFE8D0490A4A40CC"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/paths.py",
+      "bytes": 1340,
+      "sha256": "8808C9A1FF21F59875C853984ED6E3BEDD0D8F7B81652DEAD356CDB590C16B1C"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/performance_profiles.py",
+      "bytes": 1401,
+      "sha256": "709327EC8FEC01CFE8938602F2737CB7FE76B84D7060C0FEEBC3EF7437C8351A"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/preview_audio.py",
+      "bytes": 6670,
+      "sha256": "F30A86B39C776576AEC666B404D10A6A5656E5F5A6CE9E64D1944E0E163552D9"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/preview_comparison.py",
+      "bytes": 23682,
+      "sha256": "04A203780E893C6D3EBBBED454CF79AB5D721F5A3DE902CAC8AD823147AE0F96"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/preview_decoder.py",
+      "bytes": 4983,
+      "sha256": "B619D3B78CA35C25DA9582AF9EAE8BF3142A695F745C8A3A73A63944E10C54E2"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/queue_list.py",
+      "bytes": 18534,
+      "sha256": "10477DDB81777CAB44200E71BB7685B04FE68778DE5061FDF16B2CFBED250442"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/render_cache.py",
+      "bytes": 25100,
+      "sha256": "EA9236260458549D4615DFF183D644774A7327C9B2C0DC18253A4D4923BEEFDB"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/shared_cache_budget.py",
+      "bytes": 4864,
+      "sha256": "5A122C416017691D378B6BF4C9B74F94FB36D016E4F6DAD545EFB23EA88FE322"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/shared_render_preview.py",
+      "bytes": 20692,
+      "sha256": "4DD8EC2EEA003CF073ACD30BD1BA771184C190473CB5EB2C868BB81E9FBD87B9"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/super_resolution.py",
+      "bytes": 17493,
+      "sha256": "79E0DBEFD77104EC11157E1D9F78C59CDDA5F937FE86F930770F29A9E3204D0C"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/ui_icons.py",
+      "bytes": 17204,
+      "sha256": "38AF7F788997E4FE7CC700CCA0A9C7934A45E1F9AA414776CF7B25FA0B10519A"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/ui_theme.py",
+      "bytes": 30584,
+      "sha256": "F6907EF95386B735B6C3D76228BB0E7B14B8C02A55B5805133C60C2DEB3149E7"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/ui_widgets.py",
+      "bytes": 73469,
+      "sha256": "2FDB0A61CC9E950B92F9BD6F0C9E3E61F631B2A4E525C8CBCCD85D0EDED5A870"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/update_helper.py",
+      "bytes": 6324,
+      "sha256": "7AF11DE7462515826976371EBF360CBD32979DABE4F2893916F179CA202FBB40"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/updater.py",
+      "bytes": 11825,
+      "sha256": "0FF9023B3C4DEEF58B503443C040F4477ED27C865CC8D49EDE8CC3883604C430"
+    },
+    {
+      "path": "bridge/vendor/dlss5tool/video_export.py",
+      "bytes": 38895,
+      "sha256": "3D5F14095ED7805A22F2D13A83210C641EED043AF4EA82D8F5C59787AEBC9A15"
+    },
+    {
+      "path": "bridge/vendor/RECORDER-PATCHES.md",
+      "bytes": 886,
+      "sha256": "5446BB6F456ABFB5A2B7B21171AD44B9734B41020B98982B0101125DE0791D0D"
+    },
+    {
+      "path": "build.ps1",
+      "bytes": 3470,
+      "sha256": "7708BBE5EF9D2E281CD02A460C2383EFFA06F69B32ED66CC9841C53FAAF05423"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 6547,
+      "sha256": "2A114A2268EF767D02372E97A4972AD1D9E537AB02CC9156D5178216E157291B"
+    },
+    {
+      "path": "DEVELOPMENT.md",
+      "bytes": 8450,
+      "sha256": "DB9C32EB77BB97F70196F7F2F104DEED77A5060E32D3823444EE644596324094"
+    },
+    {
+      "path": "DLSS-RTX-TEST-PLAN.md",
+      "bytes": 14953,
+      "sha256": "98D11AAF147DC619E47328EC21A918C047F8F9BC69352700E7719F6BBFC15DF1"
+    },
+    {
+      "path": "handoff-kit/先读我.md",
+      "bytes": 4707,
+      "sha256": "124EC20BE2DBAD26B125A443AB0F1CB06EBEF93B4D4F3FA27742A34384DB5306"
+    },
+    {
+      "path": "handoff-kit/校验交接包.ps1",
+      "bytes": 1310,
+      "sha256": "9425AC5BE354A8D5ACD27622D6D5F7BD1F9695549C020586F6E905CC8D1CFAA0"
+    },
+    {
+      "path": "handoff-kit/AGENTS.md",
+      "bytes": 2501,
+      "sha256": "0370086D4C0A1E6FDEB1110081366B743CABB8272F556623FB1F642D3D28CC68"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 23195,
+      "sha256": "F42B6F1435AE34D656A0F2A651FCA8639B17B97FD816E3D8ED64B7BDDFE2CE15"
+    },
+    {
+      "path": "install-gpu-runtime.ps1",
+      "bytes": 1623,
+      "sha256": "678E5BF861C2252B18333F7D9DF0511AB87B92C2209BF61CF55BBAAE490664C1"
+    },
+    {
+      "path": "install.ps1",
+      "bytes": 1781,
+      "sha256": "12D27268DC8242C7BEA5E6A0B3622965E2B730D8DA3C7EC11D6C5B130B0165F4"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 321,
+      "sha256": "43C3430AFC568FEDF9637D6F9E76968B689569ECE4CCC0AA863935E711D2AD31"
+    },
+    {
+      "path": "package.ps1",
+      "bytes": 1327,
+      "sha256": "4A8030E70B574345433B185AAA4C8B845B37988CD18CCCC1B7B7573D9CD8B3EE"
+    },
+    {
+      "path": "packaging/build-development-installer.ps1",
+      "bytes": 11579,
+      "sha256": "C2DD0FFF05D22F8410FEC3031DF5C49A82AC289C8EE695D4B87938827242DA50"
+    },
+    {
+      "path": "packaging/build-enhancer.ps1",
+      "bytes": 912,
+      "sha256": "0635E086A0E7DC8529CB591DE788E498426BF7396CEA979298C04D606C746548"
+    },
+    {
+      "path": "packaging/build-handoff.ps1",
+      "bytes": 6140,
+      "sha256": "8252C224CD2EA657297667DE09BACA60BD57C04869DA8843BD8EEBB6C9453296"
+    },
+    {
+      "path": "packaging/build-release.ps1",
+      "bytes": 9780,
+      "sha256": "27426C88122A9D05C94DF17202B93118D6A07091C70AF98D02F72C9D280E2BAB"
+    },
+    {
+      "path": "packaging/DependencyTests.cs",
+      "bytes": 12295,
+      "sha256": "708B27F4965C4052052B4896BFE367AF0F6E7B15AA09FE15BBC4FBB078EA8068"
+    },
+    {
+      "path": "packaging/enhance_entry.py",
+      "bytes": 2028,
+      "sha256": "6F003D76B31E23F6C8C4BB0223804D12FF4E6D833EBFBA96CB9124D1BBB8FF63"
+    },
+    {
+      "path": "packaging/EnhanceHost.spec",
+      "bytes": 1308,
+      "sha256": "0C620D4E7922273A3A0F90C5E8AEC5F2235D3F67CE38B2F637B8EF018D2C1265"
+    },
+    {
+      "path": "packaging/ExecutableShell.cs.in",
+      "bytes": 2409,
+      "sha256": "84EBA07946136FCD66AAB99BA3E61F1CD04B0E49CE6213810D2C7DAA06FE3156"
+    },
+    {
+      "path": "packaging/export-handoff-zip.ps1",
+      "bytes": 3800,
+      "sha256": "8306E8663BB5BA47728647557FDAB2BBEF0A486856AA35CC4A622F0EAB011B61"
+    },
+    {
+      "path": "packaging/FfmpegTests.cs",
+      "bytes": 18202,
+      "sha256": "2C948CA405C604BF944D15F0924C717A6E18701D56B5126505E6FFE745B40D9D"
+    },
+    {
+      "path": "packaging/Installer.cs",
+      "bytes": 40391,
+      "sha256": "43CA65FD800C7F78B4CA4BF1C5F8B3C05A129FCE735601AFC16EFA146D8992E4"
+    },
+    {
+      "path": "packaging/Loader.cs.in",
+      "bytes": 2641,
+      "sha256": "4C8CE8CB271B0E26C1F0DCD46FD8CBA5B355B64205BE994F94A6994A8F659492"
+    },
+    {
+      "path": "packaging/LocalVerificationInstall.cs",
+      "bytes": 2663,
+      "sha256": "41541AE935D65C300B86DAB81C83F374EEE3670B29FAF7ACDB4246A2B6456E6F"
+    },
+    {
+      "path": "packaging/obfuscar.xml",
+      "bytes": 1119,
+      "sha256": "548074CE4C7CAC66313C121AE54618D2849644C4693FAD01515FE558B644A25B"
+    },
+    {
+      "path": "packaging/protect-executable.ps1",
+      "bytes": 5112,
+      "sha256": "52429294B564FC22EAB8CB98ADE490B7B21697D718A7DA818FA6AE9184A68458"
+    },
+    {
+      "path": "packaging/ProtectionTests.cs",
+      "bytes": 7555,
+      "sha256": "2E6B10FFCAECA5ACA02C606745561968CFB3E7539F6D0EBCDC450A8EDF0D3AC1"
+    },
+    {
+      "path": "packaging/RELEASE-VERIFICATION.md",
+      "bytes": 14520,
+      "sha256": "19EDFC78ACCC2E4425951850F549CFBB98EB9AF704D70F360DF5CEEA35193D23"
+    },
+    {
+      "path": "packaging/SafetyTests.cs",
+      "bytes": 11463,
+      "sha256": "D474A52670C356A69A514490E032EC40AB7B64470718E18613192D84508F3876"
+    },
+    {
+      "path": "packaging/THIRD-PARTY.txt",
+      "bytes": 366950,
+      "sha256": "27A95D584F6B8EF388980933696A78EBF94CD86EA7E44E115E7FECB929E62B21"
+    },
+    {
+      "path": "packaging/USER-GUIDE.txt",
+      "bytes": 4361,
+      "sha256": "FCC3D39277A7645124CF0A264369A668FD1974B458102609255087767ADBFB19"
+    },
+    {
+      "path": "packaging/VariantSwitchTests.cs",
+      "bytes": 3611,
+      "sha256": "7EF8EC4EC1E42D0A7D708A85F96869CF0F19ECF0C6EEDF991DE780968408FA3C"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14457,
+      "sha256": "43E8F1EFC82A78DEA0DB4331EA432286063AFC1FDA4A3E592416F31C23D08263"
+    },
+    {
+      "path": "setup-dlss.ps1",
+      "bytes": 838,
+      "sha256": "83BCB16436B7EAE273BFF0E4DA104BF3609E33D80D5EA27C593B1A71524425F3"
+    },
+    {
+      "path": "src/AzureArchive.Recorder.csproj",
+      "bytes": 1296,
+      "sha256": "F38F691F33542211A177CE53F9F5DEF17562A77A5362A746E5CF67C505249919"
+    },
+    {
+      "path": "src/DailyExportNaming.cs",
+      "bytes": 3378,
+      "sha256": "7D48ACD8FBD1EBB73221A470451197F3976D148B7F1B75560FB5D192DE00C9E1"
+    },
+    {
+      "path": "src/Deployment.cs",
+      "bytes": 2318,
+      "sha256": "3D7F63ED826EE8005EACB7996B25CC474DBB1AAAB5F802732CEC4D9DDDBE02F8"
+    },
+    {
+      "path": "src/Encoder.cs",
+      "bytes": 10168,
+      "sha256": "6D1DD410F848DA0CD5217B50BBDD352B9620EE568800A34B79D80AB5687871A6"
+    },
+    {
+      "path": "src/EnhancementMonitor.cs",
+      "bytes": 7456,
+      "sha256": "2F9B6EC38042B77BF5AF0B931F96F0CF38DDB6B15004A326203086F738A867C8"
+    },
+    {
+      "path": "src/FolderPicker.cs",
+      "bytes": 3840,
+      "sha256": "6B9A07561E190891607BB9BC30A63C8A97D0053DA42D9B16609CA410FDEE17BB"
+    },
+    {
+      "path": "src/FrameReadback.cs",
+      "bytes": 3144,
+      "sha256": "07CBF3C3BFC9E0DDCDDCC94B6A21FD1872AF828DCEBE7EF35868EAA3965C0173"
+    },
+    {
+      "path": "src/GpuProfiles.cs",
+      "bytes": 7384,
+      "sha256": "B766E219DA0C6C57D349618D9C4157593FFBDBBE906285AA588131DFF40D2E94"
+    },
+    {
+      "path": "src/MonitorResolution.cs",
+      "bytes": 2660,
+      "sha256": "583270FFBD3CE9E59AC93825596B266B49B512762E97897D636CA21F03D1514F"
+    },
+    {
+      "path": "src/NativeRecorderTutorial.cs",
+      "bytes": 11970,
+      "sha256": "F51BF308AA4B59FAF0963499506038375D3A2C191D8A0887690138412DDA0244"
+    },
+    {
+      "path": "src/NativeRecorderUi.cs",
+      "bytes": 17584,
+      "sha256": "B496288EA2CE3F5831B35E0E696F91DFA8F29BEF47D507F2511E32D23C6D899C"
+    },
+    {
+      "path": "src/NullableAttributes.cs",
+      "bytes": 668,
+      "sha256": "ABF2574F0FEC7FD24F383D49776E150D57D1C82FC830C4F33610A79A08D39415"
+    },
+    {
+      "path": "src/OptionalHooks.cs",
+      "bytes": 1186,
+      "sha256": "A035039EDFCF1D92E347062A302F7D02CA8A995A7F530BDFF1CFFB5123917C11"
+    },
+    {
+      "path": "src/Plugin.cs",
+      "bytes": 44212,
+      "sha256": "51E8247043165E4E2FA837F357DA5A3C6F5A50E38A9F013DD3A047405D48EAEF"
+    },
+    {
+      "path": "src/UiDiagnostics.cs",
+      "bytes": 23664,
+      "sha256": "D261D0E06718AB91775D17FC07DA7755D8D2D2F8F0C618AFDF04AA92807CC3F4"
+    },
+    {
+      "path": "test-fixture/RecorderSmoke.aap2",
+      "bytes": 8822,
+      "sha256": "0F2233ECAF1F941FCB86BF78EDF9845D4F2DBD85749006AB936AF785D1F18E4D"
+    },
+    {
+      "path": "tests/DailyExportNamingTests.cs",
+      "bytes": 3725,
+      "sha256": "6A6A5F6F9D25A969A4C2E1A872F35386C21A182A0996B0B74787CF2182D87E8F"
+    },
+    {
+      "path": "tests/EnhancementMonitorTests.cs",
+      "bytes": 4823,
+      "sha256": "95E654B54A1F824FDA45780024EA0034D28BAF51AFA730BCF53D096978783CFE"
+    },
+    {
+      "path": "tests/run_rtx_stage.py",
+      "bytes": 5213,
+      "sha256": "91C25FD95BD65DFABB037E2685B91E0EA2AD5B39D768B7B2988F0D4451154058"
+    },
+    {
+      "path": "tests/run-aa-smoke.ps1",
+      "bytes": 5190,
+      "sha256": "5636845FD6741759775850C64F264D45296AE58B6C8A7D7AB21E0798C1AD4F50"
+    },
+    {
+      "path": "tests/test_profiles.py",
+      "bytes": 3010,
+      "sha256": "2E5C8572BE140D77C3DC44DE3B4A70BDBAFB7E56F0723BE60067FDE63EB3A66D"
+    },
+    {
+      "path": "tests/test_progress_publish.py",
+      "bytes": 2960,
+      "sha256": "9080B6930E87EB1C43FE30616E463585B60953F1BE84F503944F0474494D0A27"
+    },
+    {
+      "path": "tests/test-daily-export-naming.ps1",
+      "bytes": 391,
+      "sha256": "88081CA7CFC4EEF03757A5A360C014A6A9D33803EEBE9E8BB55C3190F1036222"
+    },
+    {
+      "path": "tests/test-enhancement-monitor.ps1",
+      "bytes": 454,
+      "sha256": "825FE78462BAD7D3B9AC7CCC224594F3BE323FD37E042FB1B0AFC4EA7B3FCF21"
+    },
+    {
+      "path": "tests/test-optional-hooks.ps1",
+      "bytes": 1361,
+      "sha256": "A3191870ACF466ACE0DC1EE5985D9940AF7607BE1C18D922B87A825472849378"
+    },
+    {
+      "path": "tests/verify_enhanced_output.py",
+      "bytes": 6663,
+      "sha256": "D48ED9B884C21EF8277EE3A24C97BBCB8CD94840031E9E2FB78F33F7980BF92C"
+    },
+    {
+      "path": "tests/verify-cpu.ps1",
+      "bytes": 3183,
+      "sha256": "998F565189EEE0052FF5B47623BC6A12984A1ADCD22A100F3522D3C8444BB611"
+    },
+    {
+      "path": "tests/verify-folder-picker.ps1",
+      "bytes": 1933,
+      "sha256": "61F97D809EC4420EB37AAD8534523FB1A3DA572E95EC62E7D665379A9D989C7D"
+    },
+    {
+      "path": "tests/verify-runtime-output.ps1",
+      "bytes": 3077,
+      "sha256": "7BC072E9D0DC9CC7DA7C883DD0A0DC72492FC3239E832B7EEBF43BCD5EA9F69E"
+    },
+    {
+      "path": "tests/verify-timeline.ps1",
+      "bytes": 1239,
+      "sha256": "DC0CBBB59E153705FFD08BB5280C3AB9FF285B6E1125E94F0F051123729ACE39"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 9408,
+      "sha256": "3735BDC3F69619705D767BD47EC1166894BD58C6258B85C08A6CBDA8CEAEAF61"
+    }
+  ]
+}
