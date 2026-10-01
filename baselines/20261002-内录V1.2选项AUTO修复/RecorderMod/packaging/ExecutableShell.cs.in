@@ -1,0 +1,62 @@
+using System;
+using System.IO;
+using System.IO.Compression;
+using System.Reflection;
+using System.Security.Cryptography;
+using System.Windows.Forms;
+
+[assembly: AssemblyVersion("1.2.0.0")]
+[assembly: AssemblyFileVersion("1.2.0.0")]
+[assembly: AssemblyInformationalVersion("1.2.0")]
+[assembly: AssemblyProduct("AzureArchive 内录 V1.2")]
+
+internal static class ProtectedExecutable
+{
+    [STAThread]
+    private static int Main(string[] args)
+    {
+        try
+        {
+            var host=Assembly.GetExecutingAssembly();
+            AppDomain.CurrentDomain.SetData("AARecorder.InstallerHost",host.Location);
+            byte[] image;
+            using(var resource=host.GetManifestResourceStream("aa.encrypted-core"))
+            {
+                if(resource==null)throw new InvalidDataException("安装组件缺失，请重新获取完整安装包。");
+                using(var aes=Aes.Create())
+                {
+                    aes.Key=Convert.FromBase64String("@@KEY@@");
+                    aes.IV=Convert.FromBase64String("@@IV@@");
+                    using(var decrypt=aes.CreateDecryptor())
+                    using(var crypto=new CryptoStream(resource,decrypt,CryptoStreamMode.Read))
+                    using(var gzip=new GZipStream(crypto,CompressionMode.Decompress))
+                    using(var output=new MemoryStream())
+                    {
+                        gzip.CopyTo(output);
+                        image=output.ToArray();
+                    }
+                }
+            }
+            Assembly core;
+            try
+            {
+                using(var hash=SHA256.Create())
+                    if(BitConverter.ToString(hash.ComputeHash(image)).Replace("-","")!="@@COREHASH@@")
+                        throw new InvalidDataException("安装组件完整性检查失败，请重新获取安装包。");
+                core=Assembly.Load(image);
+            }
+            finally { Array.Clear(image,0,image.Length); }
+            var entry=core.EntryPoint;
+            if(entry==null)throw new InvalidDataException("安装组件入口缺失。");
+            var result=entry.Invoke(null,new object[]{args});
+            return result is int?(int)result:0;
+        }
+        catch(Exception ex)
+        {
+            var invocation=ex as TargetInvocationException;
+            if(invocation!=null&&invocation.InnerException!=null)ex=invocation.InnerException;
+            MessageBox.Show("操作失败，程序即将终止。\n\n"+ex.Message,"内录 MOD 安装错误",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            return 1;
+        }
+    }
+}
