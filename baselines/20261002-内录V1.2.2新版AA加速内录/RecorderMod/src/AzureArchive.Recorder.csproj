@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>AzureArchive.Recorder</AssemblyName>
+    <Version>1.2.2</Version>
+    <GameRoot>$(MSBuildThisFileDirectory)..\..</GameRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../assets/tutorial/arona-guide.png" LogicalName="recorder.tutorial.arona.page-01.png" />
+    <EmbeddedResource Include="../assets/tutorial/arona-page-02.png" LogicalName="recorder.tutorial.arona.page-02.png" />
+    <EmbeddedResource Include="../assets/tutorial/arona-page-03.png" LogicalName="recorder.tutorial.arona.page-03.png" />
+    <EmbeddedResource Include="../assets/tutorial/arona-page-04.png" LogicalName="recorder.tutorial.arona.page-04.png" />
+    <EmbeddedResource Include="../assets/tutorial/arona-page-05.png" LogicalName="recorder.tutorial.arona.page-05.png" />
+    <EmbeddedResource Include="../assets/tutorial/arona-page-06.png" LogicalName="recorder.tutorial.arona.page-06.png" />
+    <Reference Include="$(GameRoot)\BepInEx\core\*.dll" Private="false" />
+    <Reference Include="$(GameRoot)\BepInEx\interop\*.dll" Private="false" />
+  </ItemGroup>
+</Project>

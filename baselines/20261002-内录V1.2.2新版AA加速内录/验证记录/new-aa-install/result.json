@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "version": "1.2.2",
+  "target": "C:\\Users\\Luo Tian Xing\\Downloads\\AzureArchive_100_fix",
+  "mode": "exact release payload through InstallCore; not a GUI installer test",
+  "existing_files_unchanged": 490,
+  "receipt_files_verified": 201,
+  "plugin_sha256": "C3AED2EA7B7FD2C30D612F140BD0DE674D072964DE68406E246F2457136DD762",
+  "active_profile": "Recorder",
+  "dlss_installed": false,
+  "aa_started": false,
+  "verified_utc": "2026-10-02T11:58:48.3863398Z"
+}

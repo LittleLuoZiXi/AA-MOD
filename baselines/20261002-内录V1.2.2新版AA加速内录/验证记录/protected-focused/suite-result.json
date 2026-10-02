@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-02T11:52:47.2742964Z",
+  "status": "passed",
+  "game_root": "D:\\test2\\newhost-20261002",
+  "driver": "D:\\test2\\newhost-20261002\\RecorderMod\\tests\\run-choice-smoke.ps1",
+  "driver_sha256": "A20DB4C32CA9D9007B5CC8A743454C4D3D1323D56E0041350CCD742987D11DB7",
+  "candidate_dll": "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\1.2.2\\AzureArchive.Recorder.dll",
+  "candidate_sha256": "C3AED2EA7B7FD2C30D612F140BD0DE674D072964DE68406E246F2457136DD762",
+  "pwsh": "C:\\Users\\Luo Tian Xing\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+  "resumed_from": "",
+  "cases": [
+    {
+      "name": "01-auto-direct60",
+      "status": "passed",
+      "started_utc": "2026-10-02T11:52:47.2787807Z",
+      "run_directory": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9",
+      "driver_exit": 0,
+      "app_exit": 0,
+      "evidence": [
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\diagnostics.txt",
+          "sha256": "B579E4B696CE3F0FAFD35725509EDF1C9AD84F6B012751C15063AE8BE00AA82B"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\invocation.json",
+          "sha256": "4E1D9D99C8F385DA6FD9EC986BE911AF01CCC584C95F4A8870C78C11152F1258"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\recording-progress.json",
+          "sha256": "03EEA7B31A861F7EAF919DB025A3BE3B7E0BC6DA4EAC6D7887C82F3F0180CFC9"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\summary.json",
+          "sha256": "29B9AB518C6CD8745546733A16A10B0288E9AE34F8424EDF102A782837BB3996"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\timing-options-checks.jsonl",
+          "sha256": "7ACB0AF002DC8A60A24FB62E9F3FBD0F16F68280E01AFBC9DB84FEC8668C499F"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\timing-options-result.json",
+          "sha256": "1CC46ABE3A128487D13836EBD41C8CA0F2FC6E022424FAC66AB2C7FE80B0A77A"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\published\\20261002-3.mp4.ffprobe.json",
+          "sha256": "AE7AA86505DCE1DB86F4CAA44C1CCD170D19B03AF340121013FA7D1F092C1746"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\captures\\ChoiceConsecutiveAuto_20261002_195315_cc6c50aa75bd4062935a1ea0a15e5f88\\completed.json",
+          "sha256": "451349E8438B9C5967B7B3ECA703A853BB85388BF1337988277AE9D5CBC61A8D"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\captures\\ChoiceConsecutiveAuto_20261002_195315_cc6c50aa75bd4062935a1ea0a15e5f88\\controls-recording.json",
+          "sha256": "26C97895CAE8F08D65FDD2F9BCB0BA1FCE9CFBF770E3954CAA997C4F65A9CBF3"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\captures\\ChoiceConsecutiveAuto_20261002_195315_cc6c50aa75bd4062935a1ea0a15e5f88\\recording.json",
+          "sha256": "75206DB636BDF1A558729E2619DAB1A80A2CD59C01A6488F4518B0CF1472344D"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\captures\\ChoiceConsecutiveAuto_20261002_195315_cc6c50aa75bd4062935a1ea0a15e5f88\\recording.mp4.ffprobe.json",
+          "sha256": "222C1A715E1F5E06E0B56A3163ADB185D00E919DDFA8C1362470CE8D2C5D44F0"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\captures\\ChoiceConsecutiveAuto_20261002_195315_cc6c50aa75bd4062935a1ea0a15e5f88\\restored-window.json",
+          "sha256": "4C94B3B3585318418BAF8AF37B2E8315C07073B9E72AE961E603618ED742CFDC"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\captures\\ChoiceConsecutiveAuto_20261002_195315_cc6c50aa75bd4062935a1ea0a15e5f88\\script-events.jsonl",
+          "sha256": "039382D7A1906F75150846640E6150B812DBE91A17194F81591169411376C42E"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\captures\\ChoiceConsecutiveAuto_20261002_195315_cc6c50aa75bd4062935a1ea0a15e5f88\\source\\build.json",
+          "sha256": "CBCCAF9EF2F863ECF4213B132F760F0DEA72D329BC5FF0D6360012D2AF0F36E4"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195247-698-ChoiceConsecutiveAuto-60fps-67ffa9\\captures\\ChoiceConsecutiveAuto_20261002_195315_cc6c50aa75bd4062935a1ea0a15e5f88\\source\\scenario\\manifest.json",
+          "sha256": "42F9764754C85C8F91EF13FFFDDF67969033271973A21550CAB132E562767623"
+        }
+      ],
+      "failure": null,
+      "choice_evidence": {
+        "selected_option_indices": [
+          1,
+          1
+        ],
+        "route": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          7
+        ],
+        "on_select_calls": 2,
+        "completed_countdowns_seconds": [
+          4.000025,
+          4.000025
+        ],
+        "optional_update_probe_required": false
+      },
+      "finished_utc": "2026-10-02T11:53:41.0609246Z"
+    },
+    {
+      "name": "02-plain-measured60",
+      "status": "passed",
+      "started_utc": "2026-10-02T11:53:41.0650153Z",
+      "run_directory": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308",
+      "driver_exit": 0,
+      "app_exit": 0,
+      "evidence": [
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\diagnostics.txt",
+          "sha256": "D9C46BF7F7E253352931D3E91DA5FFC90A646DC1B4698542AF34B1F06D8BA46D"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\invocation.json",
+          "sha256": "947E76A76B2748EE59893F5C85C6FF32B6A650B610BA7979BAA837E5F0345E0E"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\recording-progress.json",
+          "sha256": "5921FF7E57C0F91F7072B0A8C636439FA3EC906A8890EFAA113C4F5578FDBF09"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\summary.json",
+          "sha256": "9108E05A4F59F4AF72ABB5E40573624EF961A063A9244E04D91C763AC817E896"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\timing-options-checks.jsonl",
+          "sha256": "7ACB0AF002DC8A60A24FB62E9F3FBD0F16F68280E01AFBC9DB84FEC8668C499F"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\timing-options-result.json",
+          "sha256": "883EF89BAF4E5F8AF8CB6C529C02FDB17B5605E829D7210BC5FEA9E4F8DCBCB3"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\published\\20261002-4.mp4.ffprobe.json",
+          "sha256": "C6075EECC7D44AFE73F61B5805C3ACC1E28D2A8449AF46425C4A82B1A3302F31"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\completed.json",
+          "sha256": "9DBD99168E4789C8B23E3CFDD1C96FC36AA4CFEC56E6DDD115CE673CE46AB5E7"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\controls-preflight.json",
+          "sha256": "43D67400941DE85A8143B4ED6DE5C553D7CCA37BBFBB39660151AB59F456CB76"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\controls-recording.json",
+          "sha256": "FAB69C2E46B3A0056FC2FA6C3FC4C0FEA4340195BB71BFA73AE2C8ACC8C3CCE3"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\preflight-events.jsonl",
+          "sha256": "33143CF238014E4613579F876FAD102A95B1B93C705F086ACE9D20C3156F0549"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\preflight-start.json",
+          "sha256": "7882F8D0AA3125CF340DE7CE02CEDA1B18E61C219383C2C022C3F29DC3CFE6E6"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\preflight.json",
+          "sha256": "3F99035BC64714A158A096B040932775B10D69D18DBFA3F59B95131173A724ED"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\recording.json",
+          "sha256": "C81C6462FAC5EE2C4515D581920B3B0DF3FD513B693A562CFE59A5CAAB277619"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\recording.mp4.ffprobe.json",
+          "sha256": "3B69EDDB65D74480F4A88D8A1835149C09CD84149129C9AD2EF73B9B03A7958E"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\restored-window.json",
+          "sha256": "4C94B3B3585318418BAF8AF37B2E8315C07073B9E72AE961E603618ED742CFDC"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\script-events.jsonl",
+          "sha256": "7860D0D0EB337BCAB9C298E195E942CB57CCCFB058658BDFABE92BB7A6C7B70F"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\source\\build.json",
+          "sha256": "39071F243F0E546554C853D71C3C3EFF448E9FACBC12D0EB7A7003BA0A44A1B3"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195341-480-PlainNoChoice-60fps-984308\\captures\\PlainNoChoice_20261002_195409_05dc25c9a3d546b8aba7fd93a0da78f5\\source\\scenario\\manifest.json",
+          "sha256": "42F9764754C85C8F91EF13FFFDDF67969033271973A21550CAB132E562767623"
+        }
+      ],
+      "failure": null,
+      "finished_utc": "2026-10-02T11:54:55.3982622Z"
+    },
+    {
+      "name": "03-no-default-direct30",
+      "status": "passed",
+      "started_utc": "2026-10-02T11:54:55.3995074Z",
+      "run_directory": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773",
+      "driver_exit": 1,
+      "app_exit": 1,
+      "evidence": [
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\diagnostics.txt",
+          "sha256": "ABC61D060058525BD88846D503AB2128892D7818D50CD7967FFAE05C82771C88"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\invocation.json",
+          "sha256": "95DD31162880A2874ABE4A2E225D77374FA4D2ACD3D6DDA77D1B767066C2A79A"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\recording-progress.json",
+          "sha256": "DDEADAF7045F3CD760BCB682703157F6DE70176AAF1F1B024677E1A028A44EF0"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\recording-refused.json",
+          "sha256": "139212B1C15E25B65E55932AB485B02CF8677FB2C1674113D74D45327FA0EDC7"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\summary.json",
+          "sha256": "DE01B483529881F39057259EE41D71E78B3A9E694AAE73BDA9DF1E62054A96EC"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\captures\\ChoiceNoDefault_20261002_195513_c42e18bedb9d4494926d62a135016cc5\\recording.json",
+          "sha256": "A3C4FDE80664BDCC01A7EF70B9A04B8044DE70EDD7049B4EB5DCECE15B5F9E96"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\captures\\ChoiceNoDefault_20261002_195513_c42e18bedb9d4494926d62a135016cc5\\script-events.jsonl",
+          "sha256": "0318BAF470A52D05C821708C4436C3D1AFF8F8150850DA40FE5BB83419772797"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\captures\\ChoiceNoDefault_20261002_195513_c42e18bedb9d4494926d62a135016cc5\\video.partial.mp4.ffprobe.json",
+          "sha256": "5E6510D6F9B52E78BE1A51958964211463800E000E3CE278DDEC2480E2A405DC"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\captures\\ChoiceNoDefault_20261002_195513_c42e18bedb9d4494926d62a135016cc5\\source\\build.json",
+          "sha256": "9310E2CBDB0C2918E0C9594FC9D0473508708B06F57C172599A2D9902771A68C"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195455-805-ChoiceNoDefault-30fps-c1f773\\captures\\ChoiceNoDefault_20261002_195513_c42e18bedb9d4494926d62a135016cc5\\source\\scenario\\manifest.json",
+          "sha256": "42F9764754C85C8F91EF13FFFDDF67969033271973A21550CAB132E562767623"
+        }
+      ],
+      "failure": null,
+      "finished_utc": "2026-10-02T11:55:20.6923984Z"
+    },
+    {
+      "name": "04-no-default-measured30",
+      "status": "passed",
+      "started_utc": "2026-10-02T11:55:20.6935294Z",
+      "run_directory": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195521-076-ChoiceNoDefault-30fps-900fdd",
+      "driver_exit": 1,
+      "app_exit": 1,
+      "evidence": [
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195521-076-ChoiceNoDefault-30fps-900fdd\\diagnostics.txt",
+          "sha256": "1F455EF21D2FC9A9BE266CABA68E88D0750B1F3E76A24539A67DA52600DACB24"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195521-076-ChoiceNoDefault-30fps-900fdd\\invocation.json",
+          "sha256": "616B8D64CAB41AF49269E1E6436B81899FA1C75431CC23B09610089BFE64B66A"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195521-076-ChoiceNoDefault-30fps-900fdd\\recording-refused.json",
+          "sha256": "139212B1C15E25B65E55932AB485B02CF8677FB2C1674113D74D45327FA0EDC7"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195521-076-ChoiceNoDefault-30fps-900fdd\\summary.json",
+          "sha256": "566B2C4A49A93B52EFCA027F202532AA8ECB2E00E298DD8FA2E0632381958A2B"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195521-076-ChoiceNoDefault-30fps-900fdd\\captures\\ChoiceNoDefault_20261002_195538_7cdce38d1393431f93c7ec1b47f1b3fc\\preflight-events.jsonl",
+          "sha256": "FE745B6C016CC70645D12D6FDF7C440FF285B193C61A975C86CE161ADD65092B"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195521-076-ChoiceNoDefault-30fps-900fdd\\captures\\ChoiceNoDefault_20261002_195538_7cdce38d1393431f93c7ec1b47f1b3fc\\preflight-start.json",
+          "sha256": "C0B92BC9D293E29CD564BCFFC4BE50764CD3A122A9BC2E8AD6351301AF994071"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195521-076-ChoiceNoDefault-30fps-900fdd\\captures\\ChoiceNoDefault_20261002_195538_7cdce38d1393431f93c7ec1b47f1b3fc\\source\\build.json",
+          "sha256": "8247D0DA119B08B080967574BDC8B2D452F349F02BB73329E3D6A601CCB31650"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195521-076-ChoiceNoDefault-30fps-900fdd\\captures\\ChoiceNoDefault_20261002_195538_7cdce38d1393431f93c7ec1b47f1b3fc\\source\\scenario\\manifest.json",
+          "sha256": "42F9764754C85C8F91EF13FFFDDF67969033271973A21550CAB132E562767623"
+        }
+      ],
+      "failure": null,
+      "finished_utc": "2026-10-02T11:55:52.3619975Z"
+    },
+    {
+      "name": "05-cancel-preflight30",
+      "status": "passed",
+      "started_utc": "2026-10-02T11:55:52.3636098Z",
+      "run_directory": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195552-763-PlainNoChoice-30fps-1f6dca",
+      "driver_exit": 1,
+      "app_exit": 2,
+      "evidence": [
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195552-763-PlainNoChoice-30fps-1f6dca\\diagnostics.txt",
+          "sha256": "F7FBAD2C6DFCE6C2A948ACD3AC168BF2B198B34A9FED0D0D89F0163E67060BE6"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195552-763-PlainNoChoice-30fps-1f6dca\\invocation.json",
+          "sha256": "2746A01971A81DEA533570AAD9C32A2E8190C41BB98012ABB5AAA363EEF74B62"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195552-763-PlainNoChoice-30fps-1f6dca\\summary.json",
+          "sha256": "A5275E3F98256604B344B6EADC838C6027AF54337D14DE339509148709E3906E"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195552-763-PlainNoChoice-30fps-1f6dca\\captures\\PlainNoChoice_20261002_195610_60f4bdfe53b84f10a22bf60e92645416\\preflight-cancelled.json",
+          "sha256": "4250E1B75FA183F9BFEA4CB375640B6DAC4C39A852BCAE61FC1EF708CF135949"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195552-763-PlainNoChoice-30fps-1f6dca\\captures\\PlainNoChoice_20261002_195610_60f4bdfe53b84f10a22bf60e92645416\\preflight-events.jsonl",
+          "sha256": "A9C49FAAFEC30418C933F5899C2B49281234EFD469D919CAF38AC546531160BD"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195552-763-PlainNoChoice-30fps-1f6dca\\captures\\PlainNoChoice_20261002_195610_60f4bdfe53b84f10a22bf60e92645416\\preflight-start.json",
+          "sha256": "F4CDB8F0E2058DE34FC77AD657D6FFD38A8617444DD3F377C24DF119B1F07070"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195552-763-PlainNoChoice-30fps-1f6dca\\captures\\PlainNoChoice_20261002_195610_60f4bdfe53b84f10a22bf60e92645416\\source\\build.json",
+          "sha256": "4512F769AFAA741189C53C1B73F069B54EED831819988DE495F2F9BF9322854C"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195552-763-PlainNoChoice-30fps-1f6dca\\captures\\PlainNoChoice_20261002_195610_60f4bdfe53b84f10a22bf60e92645416\\source\\scenario\\manifest.json",
+          "sha256": "42F9764754C85C8F91EF13FFFDDF67969033271973A21550CAB132E562767623"
+        }
+      ],
+      "failure": null,
+      "finished_utc": "2026-10-02T11:56:15.0440817Z"
+    },
+    {
+      "name": "06-cancel-before-render30",
+      "status": "passed",
+      "started_utc": "2026-10-02T11:56:15.0462773Z",
+      "run_directory": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770",
+      "driver_exit": 1,
+      "app_exit": 2,
+      "evidence": [
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770\\diagnostics.txt",
+          "sha256": "3BE9BBEBAB55867F3469CE2D4F0CF4D123379D7B426D4E20F3C051D995E78232"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770\\invocation.json",
+          "sha256": "622CFCB51DA17625CFE0002D46BD280DADA79410294C131F5E2B3CB1E6BCCE97"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770\\summary.json",
+          "sha256": "1D793573E8A2ECD631C1C979385F1AE6E0EFA4502B6ED2864F855191B28D53F0"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770\\captures\\PlainNoChoice_20261002_195633_a35e2a16c03d4532a80700d164e7dfb5\\preflight-cancelled.json",
+          "sha256": "4250E1B75FA183F9BFEA4CB375640B6DAC4C39A852BCAE61FC1EF708CF135949"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770\\captures\\PlainNoChoice_20261002_195633_a35e2a16c03d4532a80700d164e7dfb5\\preflight-events.jsonl",
+          "sha256": "84B8259D858C6AE249D5A0F4FE8CBE14AA87EF92A6806B0E8EE7C1F8395D76C2"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770\\captures\\PlainNoChoice_20261002_195633_a35e2a16c03d4532a80700d164e7dfb5\\preflight-start.json",
+          "sha256": "8A9B1CFA7A4E18BD21BC2ECD9DE9D387BDB1AFCDB8C3FE1DCC47669F5571EB2D"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770\\captures\\PlainNoChoice_20261002_195633_a35e2a16c03d4532a80700d164e7dfb5\\preflight.json",
+          "sha256": "A95457CEBC094C3DB2A0ABA963ACE508EFD03278E40600303F76361134D569E5"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770\\captures\\PlainNoChoice_20261002_195633_a35e2a16c03d4532a80700d164e7dfb5\\source\\build.json",
+          "sha256": "FDCA974CBB0E6A009B61654E26945EB3164496FFBAD44DCE5318335D2FD9168E"
+        },
+        {
+          "path": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195615-424-PlainNoChoice-30fps-f65770\\captures\\PlainNoChoice_20261002_195633_a35e2a16c03d4532a80700d164e7dfb5\\source\\scenario\\manifest.json",
+          "sha256": "42F9764754C85C8F91EF13FFFDDF67969033271973A21550CAB132E562767623"
+        }
+      ],
+      "failure": null,
+      "finished_utc": "2026-10-02T11:56:51.2718295Z"
+    }
+  ],
+  "failure": null,
+  "finished_utc": "2026-10-02T11:56:51.2736871Z"
+}

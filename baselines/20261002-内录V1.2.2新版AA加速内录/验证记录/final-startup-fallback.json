@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "catalog_entry": {
+    "passed": true,
+    "mode": "catalog-entry",
+    "choice_probe": false,
+    "timed_out": false,
+    "error": null,
+    "evidence": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195728-225-catalog-entry",
+    "config_restored": true
+  },
+  "realtime_fallback_summary": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195759-012-TitleNoChoice-30fps-fb18fc\\summary.json",
+  "fallback_completed": [
+    {
+      "output": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195759-012-TitleNoChoice-30fps-fb18fc\\published\\20261002-5.mp4",
+      "originalVideo": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195759-012-TitleNoChoice-30fps-fb18fc\\published\\20261002-5.mp4",
+      "workingVideo": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-195759-012-TitleNoChoice-30fps-fb18fc\\captures\\TitleNoChoice_20261002_195816_382c0424c76e4fde811dd9fb6a3255e8\\recording.mp4",
+      "frames": 349,
+      "plannedFrames": null,
+      "plannedVideoSeconds": null,
+      "totalWasMeasured": false,
+      "timingMode": "native-realtime",
+      "fastSimulationHz": 0,
+      "nativeSeconds": 11.604945637795026,
+      "measuredNativeSeconds": null,
+      "liveCapture": {
+        "sourceIntervals": 3415,
+        "fastSimulationHz": 0,
+        "samplingFps": 60,
+        "inputFrames": 697,
+        "composites": 787,
+        "skippedComposites": 2628,
+        "maximumSampleAgeSeconds": 0.7903118947520853,
+        "compositeHz": 60,
+        "maximumSourceStepSeconds": 0.8061565160751343,
+        "sourceStepsOver100ms": 4,
+        "sourceStepsOver1Second": 0,
+        "scaledSeconds": 10.690152971292264,
+        "clockClampSeconds": 0.9159538447856903,
+        "clampedSourceSteps": 3,
+        "maximumDeltaTime": 0.33333334
+      },
+      "readbackDiagnostics": {
+        "gpuWaitCount": 3,
+        "gpuWaitSeconds": 0.0291478,
+        "maximumGpuWaitSeconds": 0.0110481
+      },
+      "encoderQueue": {
+        "EnqueueWaitCount": 6,
+        "EnqueueWaitSeconds": 1.3131050000000002,
+        "MaxEnqueueWaitSeconds": 0.78737,
+        "ImageWaitCount": 6,
+        "ImageWaitSeconds": 1.3130599000000003,
+        "MaxImageWaitSeconds": 0.7873422000000001,
+        "PcmWaitCount": 0,
+        "PcmWaitSeconds": 0,
+        "MaxPcmWaitSeconds": 0,
+        "PeakQueuedImages": 3,
+        "PeakBufferedPcmBytes": 327680,
+        "QueuedImages": 0,
+        "BufferedPcmBytes": 0,
+        "QueuedItems": 0,
+        "ActiveItems": 0,
+        "ImageCapacity": 3,
+        "PcmByteCapacity": 4608000
+      },
+      "durationDifferenceSeconds": null,
+      "audioSamples": 556032,
+      "reason": "剧情播放完成",
+      "enhanced": false,
+      "renderSeconds": 11.3097882,
+      "totalSeconds": 16.4760739,
+      "videoSeconds": 11.633333333333333
+    }
+  ],
+  "fallback_config_restored": true,
+  "plugin_sha256": "C3AED2EA7B7FD2C30D612F140BD0DE674D072964DE68406E246F2457136DD762"
+}

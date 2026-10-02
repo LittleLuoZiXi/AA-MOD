@@ -1,0 +1,46 @@
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.IO.Compression;
+using System.Reflection;
+using System.Security.Cryptography;
+using BepInEx;
+using BepInEx.Unity.IL2CPP;
+
+[assembly: AssemblyVersion("1.2.2.0")]
+[assembly: AssemblyFileVersion("1.2.2.0")]
+[assembly: AssemblyInformationalVersion("1.2.2")]
+
+[BepInPlugin("azurearchive.recorder","AzureArchiveRecorder","1.2.2")]
+public sealed class RecorderLoader : BasePlugin
+{
+    BasePlugin? core;
+    public override void Load()
+    {
+        var expected=Path.GetFullPath(Path.Combine(Paths.GameRootPath,"AzureArchive.exe"));
+        var process=Process.GetCurrentProcess();
+        if(!string.Equals(process.MainModule?.FileName,expected,StringComparison.OrdinalIgnoreCase))
+            throw new InvalidOperationException("此 MOD 只能由 AzureArchive 加载。");
+        using(var exe=File.OpenRead(expected))using(var hash=SHA256.Create())
+            if(Convert.ToHexString(hash.ComputeHash(exe))!="@@HOSTHASH@@")
+                throw new InvalidOperationException("AzureArchive 版本不匹配；此包适用于 1.0 fix4。");
+        if(!File.Exists(Path.Combine(Paths.GameRootPath,"GameAssembly.dll")) || !Directory.Exists(Path.Combine(Paths.GameRootPath,"AzureArchive_Data")))
+            throw new InvalidOperationException("AzureArchive 安装不完整。");
+        var location=Path.GetDirectoryName(typeof(RecorderLoader).Assembly.Location)!;
+        var modRoot=Directory.GetParent(location)!.FullName;
+        AppContext.SetData("AzureArchive.Recorder.RuntimeRoot",Path.Combine(modRoot,"runtime"));
+        using var resource=typeof(RecorderLoader).Assembly.GetManifestResourceStream("recorder.payload")!;
+        using var encrypted=new MemoryStream();resource.CopyTo(encrypted);
+        using var aes=Aes.Create();aes.Key=Convert.FromBase64String("@@KEY@@");aes.IV=Convert.FromBase64String("@@IV@@");
+        var bytes=encrypted.ToArray();
+        using var decrypt=aes.CreateDecryptor();var compressed=decrypt.TransformFinalBlock(bytes,0,bytes.Length);
+        using var input=new MemoryStream(compressed);using var gzip=new GZipStream(input,CompressionMode.Decompress);
+        using var output=new MemoryStream();gzip.CopyTo(output);var image=output.ToArray();
+        if(Convert.ToHexString(SHA256.HashData(image))!="@@COREHASH@@")throw new InvalidDataException("内录组件完整性检查失败，请重新安装。");
+        var assembly=Assembly.Load(image);
+        core=(BasePlugin)Activator.CreateInstance(assembly.GetType("AzureArchive.Recorder.RecorderPlugin",true)!)!;
+        core.Load();Array.Clear(image,0,image.Length);
+        Log.LogInfo("Protected recorder 1.2.2 loaded inside AzureArchive.");
+    }
+    public override bool Unload()=>core?.Unload()??false;
+}

@@ -1,0 +1,448 @@
+{
+  "created_utc": "2026-10-02T11:50:06.492187+00:00",
+  "reference_report": "D:\\test2\\evidence\\native-timing-final-20261002\\fixed60-menu\\full30-menu-frames.json",
+  "reference_video": "D:\\test2\\work\\smoke-runs\\20261002-124800-584-Scenario-30fps-9eecdc\\published\\20261002-22.mp4",
+  "reference_frame": 162,
+  "execution": "Sequential CPU operations; original MP4 files are read only.",
+  "videos": [
+    {
+      "tag": "30fps",
+      "summary": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-193522-007-Scenario-30fps-d93368\\summary.json",
+      "video": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-193522-007-Scenario-30fps-d93368\\published\\20261002-1.mp4",
+      "file_bytes": 80934075,
+      "probe": {
+        "command": [
+          "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffprobe.exe",
+          "-v",
+          "error",
+          "-show_streams",
+          "-show_format",
+          "-of",
+          "json",
+          "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-193522-007-Scenario-30fps-d93368\\published\\20261002-1.mp4"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.073,
+        "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-ffprobe.stdout.txt",
+        "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-ffprobe.stderr.txt"
+      },
+      "streams": [
+        {
+          "index": 0,
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 3120,
+          "height": 2080,
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "start_time": "0.000000",
+          "duration": "421.333333",
+          "nb_frames": "12640",
+          "sample_rate": null,
+          "channels": null
+        },
+        {
+          "index": 1,
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "421.333000",
+          "nb_frames": "19751",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "format_duration_seconds": "421.333333",
+      "video_minus_audio_duration_seconds": 0.000333,
+      "source_stat_before": {
+        "size": 80934075,
+        "mtime_ns": 1790941164081848400
+      },
+      "full_decode": {
+        "command": [
+          "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffmpeg.exe",
+          "-hide_banner",
+          "-nostdin",
+          "-nostats",
+          "-loglevel",
+          "info",
+          "-xerror",
+          "-err_detect",
+          "explode",
+          "-hwaccel",
+          "none",
+          "-threads",
+          "4",
+          "-i",
+          "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-193522-007-Scenario-30fps-d93368\\published\\20261002-1.mp4",
+          "-map",
+          "0:v:0",
+          "-map",
+          "0:a:0",
+          "-af",
+          "volumedetect",
+          "-f",
+          "null",
+          "-"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 12.069,
+        "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-full-decode-audio.stdout.txt",
+        "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-full-decode-audio.stderr.txt",
+        "log_error_lines": [],
+        "final_decoded_video_frames": 12640,
+        "frame_count_matches_probe": true
+      },
+      "audio_statistics": {
+        "mean_volume": -12.1,
+        "max_volume": 0.0,
+        "n_samples": 40448000,
+        "non_silent_evidence": true,
+        "sample_count_note": "Final volumedetect sample count across all channels; earlier zero is filter initialization."
+      },
+      "menu_scan_command": {
+        "command": [
+          "D:\\test2\\work\\RecorderMod\\.venv\\Scripts\\python.exe",
+          "D:\\test2\\newhost-20261002\\RecorderMod\\tests\\check-menu-frames.py",
+          "--ReferenceVideo",
+          "D:\\test2\\work\\smoke-runs\\20261002-124800-584-Scenario-30fps-9eecdc\\published\\20261002-22.mp4",
+          "--InputVideo",
+          "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-193522-007-Scenario-30fps-d93368\\published\\20261002-1.mp4",
+          "--OutputReport",
+          "D:\\test2\\newhost-20261002\\verification\\media\\30fps-menu-frames.json",
+          "--FFmpeg",
+          "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffmpeg.exe",
+          "--ReferenceFrame",
+          "162",
+          "--decode-threads",
+          "4"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 12.911,
+        "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-menu-scan.stdout.txt",
+        "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-menu-scan.stderr.txt"
+      },
+      "menu_scan": {
+        "report": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-menu-frames.json",
+        "scanned_frames": 12640,
+        "scanned_duration_seconds": 421.333333,
+        "matched_frame_count": 0,
+        "matched_runs": [],
+        "highest_nonmatch_correlation": 0.199477,
+        "scope": "all_decoded_frames"
+      },
+      "previews": [
+        {
+          "time_seconds": 210,
+          "path": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-middle-210s.jpg",
+          "extraction": {
+            "command": [
+              "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffmpeg.exe",
+              "-hide_banner",
+              "-nostdin",
+              "-loglevel",
+              "error",
+              "-n",
+              "-ss",
+              "210",
+              "-threads",
+              "2",
+              "-i",
+              "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-193522-007-Scenario-30fps-d93368\\published\\20261002-1.mp4",
+              "-map",
+              "0:v:0",
+              "-frames:v",
+              "1",
+              "-vf",
+              "scale=780:-2",
+              "-q:v",
+              "3",
+              "-update",
+              "1",
+              "D:\\test2\\newhost-20261002\\verification\\media\\30fps-middle-210s.jpg"
+            ],
+            "exit_code": 0,
+            "wall_seconds": 0.307,
+            "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-middle-preview.stdout.txt",
+            "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-middle-preview.stderr.txt"
+          },
+          "visual_review": {
+            "reviewed": true,
+            "result": "Visible story scene and dialogue text; no obvious black/corrupt frame or MENU control in the inspected still."
+          }
+        },
+        {
+          "time_seconds": 350,
+          "path": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-later-350s.jpg",
+          "extraction": {
+            "command": [
+              "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffmpeg.exe",
+              "-hide_banner",
+              "-nostdin",
+              "-loglevel",
+              "error",
+              "-n",
+              "-ss",
+              "350",
+              "-threads",
+              "2",
+              "-i",
+              "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-193522-007-Scenario-30fps-d93368\\published\\20261002-1.mp4",
+              "-map",
+              "0:v:0",
+              "-frames:v",
+              "1",
+              "-vf",
+              "scale=780:-2",
+              "-q:v",
+              "3",
+              "-update",
+              "1",
+              "D:\\test2\\newhost-20261002\\verification\\media\\30fps-later-350s.jpg"
+            ],
+            "exit_code": 0,
+            "wall_seconds": 0.132,
+            "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-later-preview.stdout.txt",
+            "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\30fps-later-preview.stderr.txt"
+          },
+          "visual_review": {
+            "reviewed": true,
+            "result": "Visible story scene and dialogue text; no obvious black/corrupt frame or MENU control in the inspected still."
+          }
+        }
+      ],
+      "source_stat_after": {
+        "size": 80934075,
+        "mtime_ns": 1790941164081848400
+      },
+      "source_size_and_mtime_unchanged": true
+    },
+    {
+      "tag": "60fps",
+      "summary": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-194001-462-Scenario-60fps-a2e181\\summary.json",
+      "video": "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-194001-462-Scenario-60fps-a2e181\\published\\20261002-2.mp4",
+      "file_bytes": 118848008,
+      "probe": {
+        "command": [
+          "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffprobe.exe",
+          "-v",
+          "error",
+          "-show_streams",
+          "-show_format",
+          "-of",
+          "json",
+          "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-194001-462-Scenario-60fps-a2e181\\published\\20261002-2.mp4"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.071,
+        "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-ffprobe.stdout.txt",
+        "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-ffprobe.stderr.txt"
+      },
+      "streams": [
+        {
+          "index": 0,
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 3120,
+          "height": 2080,
+          "r_frame_rate": "60/1",
+          "avg_frame_rate": "60/1",
+          "start_time": "0.000000",
+          "duration": "421.316667",
+          "nb_frames": "25279",
+          "sample_rate": null,
+          "channels": null
+        },
+        {
+          "index": 1,
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "421.316000",
+          "nb_frames": "19751",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "format_duration_seconds": "421.316667",
+      "video_minus_audio_duration_seconds": 0.000667,
+      "source_stat_before": {
+        "size": 118848008,
+        "mtime_ns": 1790941582123369000
+      },
+      "full_decode": {
+        "command": [
+          "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffmpeg.exe",
+          "-hide_banner",
+          "-nostdin",
+          "-nostats",
+          "-loglevel",
+          "info",
+          "-xerror",
+          "-err_detect",
+          "explode",
+          "-hwaccel",
+          "none",
+          "-threads",
+          "4",
+          "-i",
+          "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-194001-462-Scenario-60fps-a2e181\\published\\20261002-2.mp4",
+          "-map",
+          "0:v:0",
+          "-map",
+          "0:a:0",
+          "-af",
+          "volumedetect",
+          "-f",
+          "null",
+          "-"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 22.504,
+        "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-full-decode-audio.stdout.txt",
+        "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-full-decode-audio.stderr.txt",
+        "log_error_lines": [],
+        "final_decoded_video_frames": 25279,
+        "frame_count_matches_probe": true
+      },
+      "audio_statistics": {
+        "mean_volume": -12.1,
+        "max_volume": 0.0,
+        "n_samples": 40448000,
+        "non_silent_evidence": true,
+        "sample_count_note": "Final volumedetect sample count across all channels; earlier zero is filter initialization."
+      },
+      "menu_scan_command": {
+        "command": [
+          "D:\\test2\\work\\RecorderMod\\.venv\\Scripts\\python.exe",
+          "D:\\test2\\newhost-20261002\\RecorderMod\\tests\\check-menu-frames.py",
+          "--ReferenceVideo",
+          "D:\\test2\\work\\smoke-runs\\20261002-124800-584-Scenario-30fps-9eecdc\\published\\20261002-22.mp4",
+          "--InputVideo",
+          "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-194001-462-Scenario-60fps-a2e181\\published\\20261002-2.mp4",
+          "--OutputReport",
+          "D:\\test2\\newhost-20261002\\verification\\media\\60fps-menu-frames.json",
+          "--FFmpeg",
+          "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffmpeg.exe",
+          "--ReferenceFrame",
+          "162",
+          "--decode-threads",
+          "4"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 24.178,
+        "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-menu-scan.stdout.txt",
+        "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-menu-scan.stderr.txt"
+      },
+      "menu_scan": {
+        "report": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-menu-frames.json",
+        "scanned_frames": 25279,
+        "scanned_duration_seconds": 421.316667,
+        "matched_frame_count": 0,
+        "matched_runs": [],
+        "highest_nonmatch_correlation": 0.204367,
+        "scope": "all_decoded_frames"
+      },
+      "previews": [
+        {
+          "time_seconds": 210,
+          "path": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-middle-210s.jpg",
+          "extraction": {
+            "command": [
+              "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffmpeg.exe",
+              "-hide_banner",
+              "-nostdin",
+              "-loglevel",
+              "error",
+              "-n",
+              "-ss",
+              "210",
+              "-threads",
+              "2",
+              "-i",
+              "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-194001-462-Scenario-60fps-a2e181\\published\\20261002-2.mp4",
+              "-map",
+              "0:v:0",
+              "-frames:v",
+              "1",
+              "-vf",
+              "scale=780:-2",
+              "-q:v",
+              "3",
+              "-update",
+              "1",
+              "D:\\test2\\newhost-20261002\\verification\\media\\60fps-middle-210s.jpg"
+            ],
+            "exit_code": 0,
+            "wall_seconds": 0.18,
+            "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-middle-preview.stdout.txt",
+            "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-middle-preview.stderr.txt"
+          },
+          "visual_review": {
+            "reviewed": true,
+            "result": "Visible story scene and dialogue text; no obvious black/corrupt frame or MENU control in the inspected still."
+          }
+        },
+        {
+          "time_seconds": 350,
+          "path": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-later-350s.jpg",
+          "extraction": {
+            "command": [
+              "D:\\test2\\newhost-20261002\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg\\ffmpeg.exe",
+              "-hide_banner",
+              "-nostdin",
+              "-loglevel",
+              "error",
+              "-n",
+              "-ss",
+              "350",
+              "-threads",
+              "2",
+              "-i",
+              "D:\\test2\\newhost-20261002\\smoke-runs\\20261002-194001-462-Scenario-60fps-a2e181\\published\\20261002-2.mp4",
+              "-map",
+              "0:v:0",
+              "-frames:v",
+              "1",
+              "-vf",
+              "scale=780:-2",
+              "-q:v",
+              "3",
+              "-update",
+              "1",
+              "D:\\test2\\newhost-20261002\\verification\\media\\60fps-later-350s.jpg"
+            ],
+            "exit_code": 0,
+            "wall_seconds": 0.136,
+            "stdout": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-later-preview.stdout.txt",
+            "stderr": "D:\\test2\\newhost-20261002\\verification\\media\\60fps-later-preview.stderr.txt"
+          },
+          "visual_review": {
+            "reviewed": true,
+            "result": "Visible story scene and dialogue text; no obvious black/corrupt frame or MENU control in the inspected still."
+          }
+        }
+      ],
+      "source_stat_after": {
+        "size": 118848008,
+        "mtime_ns": 1790941582123369000
+      },
+      "source_size_and_mtime_unchanged": true
+    }
+  ],
+  "limitations": [
+    "Full decode and non-silence statistics do not establish perceived audiovisual synchronization throughout the film.",
+    "MENU scan detects the supplied appearance in a fixed ROI only; moved, redesigned, faint, or substantially rescaled controls can be missed.",
+    "Four low-resolution stills cover selected middle/later points only, not full visual continuity."
+  ],
+  "completed_utc": "2026-10-02T11:51:19.061925+00:00",
+  "visual_review": "Both 210-second and 350-second previews were inspected for each video; corresponding scenes agree between 30fps and 60fps in these stills."
+}

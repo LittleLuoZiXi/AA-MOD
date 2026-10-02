@@ -1,0 +1,1051 @@
+{
+  "Passed": true,
+  "Variant": "protected-V1.2.2",
+  "Version": "1.2.2",
+  "PayloadSha256": "C3AB207211F84AD2388EDC6E26D76DC2571ACAF337F6B9E61EA1D8500EDB3776",
+  "ZipEntries": 202,
+  "VerifiedReceiptFiles": 201,
+  "DedicatedUninstaller": true,
+  "NoBundledDlssNative": true,
+  "EmbeddedPortablePdb": null,
+  "TutorialResources": [
+    {
+      "Resource": "recorder.tutorial.arona.page-01.png",
+      "Bytes": 913589,
+      "Sha256": "CC93D8406298B915997B11C44A4A2158781BD773B689814C361AA6A134C45DB2"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-02.png",
+      "Bytes": 917396,
+      "Sha256": "8D1EDDF8ABFA4987D83FB2D85585ADEDC5B539B0D78D871FF9B93B61B2A3B5F3"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-03.png",
+      "Bytes": 883550,
+      "Sha256": "F6712A9F501B8D449529DC09B966C76FC300D710F59BCF11E4FC1A46956E7D06"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-04.png",
+      "Bytes": 868242,
+      "Sha256": "114B835625B810F6BB0DF5E72CFA4623FC3879E1BB21E370FF155F79130E09FD"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-05.png",
+      "Bytes": 961080,
+      "Sha256": "A03A2B1761A4C4575F96A8B99B31E658F83D0DCA9DB2D1232CB5F533EF411790"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-06.png",
+      "Bytes": 831776,
+      "Sha256": "0B678773819BDAEB5EE047F0E11F231A9E3F2E0A218DCB068C7F0021D539726A"
+    }
+  ],
+  "Files": [
+    {
+      "Path": "mods/AzureArchiveRecorder/第三方许可.txt",
+      "Bytes": 366950,
+      "Sha256": "27A95D584F6B8EF388980933696A78EBF94CD86EA7E44E115E7FECB929E62B21"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/使用说明.txt",
+      "Bytes": 8151,
+      "Sha256": "A21FA5754CC41A40C16D499D324E906598D068863714E791DF47E9F362FA750B"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/卸载内录MOD.exe",
+      "Bytes": 38400,
+      "Sha256": "99AFAD92551E7D8ED41B773B3884F80ED684BE2F636272679AB981FEE6204933"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/1.2.2/AzureArchive.Recorder.dll",
+      "Bytes": 5421568,
+      "Sha256": "C3AED2EA7B7FD2C30D612F140BD0DE674D072964DE68406E246F2457136DD762"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/1.2.2/manifest.json",
+      "Bytes": 350,
+      "Sha256": "93759D73C1EECD448A68208AC2286E6996B8018FFEFE11AB5E245E0599AD1D63"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/EnhanceHost.exe",
+      "Bytes": 4772772,
+      "Sha256": "E7575D00D221CCE43FE602E056B6D79218778659C623182B6AA8E0667E2D98E8"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/ffmpeg/BUILD-CONFIG.txt",
+      "Bytes": 2247,
+      "Sha256": "DF360F33A49920D1A34396E5F34483EEA775EF5F24A71A02DBD3DD41B911E69D"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/ffmpeg/COPYING.GPLv3.txt",
+      "Bytes": 35147,
+      "Sha256": "8CEB4B9EE5ADEDDE47B31E975C1D90C73AD27B6B165A1DCD80C7C545EB65B903"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/ffmpeg/ffmpeg.exe",
+      "Bytes": 148234240,
+      "Sha256": "B1383F5D07470D503EDECDAEE4BDDC5891E986E916A698299B357F79CFE445FD"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/ffmpeg/ffprobe.exe",
+      "Bytes": 148097536,
+      "Sha256": "012BDDDED3CBC5204055210D7FF4F0B3F7521BCA441A694939856D01909F5756"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/ffmpeg/PROVENANCE.json",
+      "Bytes": 772,
+      "Sha256": "F7F24B47B9DFC24ADD5B240D447E816847A57F98BBAC3456BA4C4AE40995B998"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/ffmpeg/UPSTREAM-README.txt",
+      "Bytes": 43770,
+      "Sha256": "D694901BAD3D99B2F3748E983B8BDAA8CF594E35E128CB872E07ED11D0CFD344"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/ffmpeg/VERSION.txt",
+      "Bytes": 2222,
+      "Sha256": "CFBD4A8EE9C9ED3295A34C19C57B6FE0A82567E653CEE6849A247F7E86536820"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_asyncio.pyd",
+      "Bytes": 75056,
+      "Sha256": "C32C4CDE3BA5364FE60693CFDF77E7A5033B812E3B771C31CF3BF062C7694BB7"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_bz2.pyd",
+      "Bytes": 88880,
+      "Sha256": "54268C5CBEFD96D9DF377B40817CC09447D3A0A6734C300C442C0DDE30CC75D7"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_ctypes.pyd",
+      "Bytes": 131888,
+      "Sha256": "EB533050B0B61203CC4918DA1826372ADD87FE4ACDDB3F6E7B31301C7F93E67D"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_decimal.pyd",
+      "Bytes": 263984,
+      "Sha256": "539F8C32A3EAFCF717CDDBCCF243167610671C5243EC3C7C40987D81066A557F"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_hashlib.pyd",
+      "Bytes": 70448,
+      "Sha256": "D99963665F72156067B432753D153EA456D0A0FA49D235C9B61BDB0A0D372BA4"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_lzma.pyd",
+      "Bytes": 168240,
+      "Sha256": "6337C7E78B7753865B2759CF296449B9D7AF6AAE0708B364AB9550DAD00272BE"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_multiprocessing.pyd",
+      "Bytes": 39728,
+      "Sha256": "D7A31223CC28115A179BDEE1B48D690B5AB40377BD362B4D996A14268BEE3FE5"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_overlapped.pyd",
+      "Bytes": 59696,
+      "Sha256": "51A995C207D62F0260B0DAD3EA2CEECEF8EC97C68A39633A71BF6528B70778FE"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_queue.pyd",
+      "Bytes": 36144,
+      "Sha256": "58E25F92FDB920E0F3A57F444F89E35076D26758E8362098161F6AC7E6E6E04C"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_socket.pyd",
+      "Bytes": 87344,
+      "Sha256": "371AE9F492330C021CB371A2E5BE88ECB38B4E0DCB45A9F47376502B7920FF17"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_ssl.pyd",
+      "Bytes": 180528,
+      "Sha256": "D71677BB53DF30A58510D0985174132F12374207310AA4895D8A6B8B8FCC66A3"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_uuid.pyd",
+      "Bytes": 29488,
+      "Sha256": "894F95ED8BE644B3778A9836AFD9BDBD6BD31DF7788FD2683AFF830B60BADEFA"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/_wmi.pyd",
+      "Bytes": 41264,
+      "Sha256": "EA6EE0A2091687F2D68BFA6F871AF2377C073A1B980DB87082FB8887CCA12A65"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-console-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "015BD08815C7B934A8952C3A7578E9CE59F21136E8A880D42BBD414BEC2C6058"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-datetime-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "5534812CDBDAE94BA45CB216E5EB9AF686B853948DF54365103555ABBBAF9D9A"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-debug-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "837D2B1B2CD03E03FC6CCB050698B6B5763AF17C201304872342A5EAE9E0A2D2"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-errorhandling-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "DE43B165F568C276C00E95ACD454E3092F352A18E95874595F4F4658C06D2EC7"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-fibers-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "3CEBC45BF479AD74CFABF2C6BFD4994D7AD639ED1221025981D19CEDF9CE0416"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-fibers-l1-1-1.dll",
+      "Bytes": 22872,
+      "Sha256": "5EF70308BCCA628CE6B0E2856B15B1C7AE340C3F9BBBC4C1071D8C191A34A5C3"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-file-l1-1-0.dll",
+      "Bytes": 27008,
+      "Sha256": "250AC829F2617BCAC1C6E5B8C4F630462E20765863BA573526A3E11BBFB94A9A"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-file-l1-2-0.dll",
+      "Bytes": 22888,
+      "Sha256": "AE14079A114733F60CE87B92CBA42ACD8083C2CD67594E53BC37DC0B97A4B465"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-file-l2-1-0.dll",
+      "Bytes": 22912,
+      "Sha256": "914BF26A298713119477EA0A8E7BD43171B91344EBE24FB47AD77C49686E3D87"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-handle-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "AB5489955E371B15F77906C08EC3C7AFFE2C7A46A08C514CA628768B4478974B"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-heap-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "C70F9644D8377FA39C5B71F2E9734C1400D7598904FDEB772E8502099982DCB7"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-interlocked-l1-1-0.dll",
+      "Bytes": 22888,
+      "Sha256": "F8129710188E407BB0E6F46D30AEBA277D67B947ECE5FE09E883FDE2323F3AE6"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-kernel32-legacy-l1-1-1.dll",
+      "Bytes": 22888,
+      "Sha256": "5200B16CB2DDC61CFC07373A9A84AA85A3AB50806CA96C879C883275832944C1"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-libraryloader-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "48786FB88B001DCD1F63ACEA903D3CA9CC0B3060D5A325E3F2F3CBC3BFD53166"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-localization-l1-2-0.dll",
+      "Bytes": 22872,
+      "Sha256": "9EC3898F7EBA91FAA28B51616C211A2689E3A13AEEF8DE6E13CB674E49D689EB"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-memory-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "3A6CBC524C99E1CD80D5368F5601402A37AD602528B1AB628093573EF638EB3B"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-namedpipe-l1-1-0.dll",
+      "Bytes": 22888,
+      "Sha256": "97145EF89C44949FCF0F04AC834A8BC7D687EF49EE73AE9FC32F3C11136B7201"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-processenvironment-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "8BC7C10B1851AEA644E9C9F381CDB935E091FEE6B0BE3D3AEDC6FFFAAC96ADB7"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-processthreads-l1-1-0.dll",
+      "Bytes": 22912,
+      "Sha256": "D8030B777617C71F0F94564607699DBF7561487D779DB9756AED378C5675213F"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-processthreads-l1-1-1.dll",
+      "Bytes": 22872,
+      "Sha256": "F5E676713340F73A03A3D41A6EC9883B431DA7D16C7F07BD0A920FB80E6C0753"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-profile-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "F023D47E44D3EEA6B0743580F57E8C6BA81E79D5EBFA7DA26250076C647B980E"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-rtlsupport-l1-1-0.dll",
+      "Bytes": 22888,
+      "Sha256": "9746D8930704153578A628C010638A5F818FFE5A927E25591B108E256DC6AFCA"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-string-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "7C53AE24C982D16FFD1BF7F918D115B11B7F30E57BC7FEAA18CB9781E4ABB926"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-synch-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "56D9D62CA5DBA79A6581B8D574A7D8B2A64A5ECB71E47DCF06ED0285708B1859"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-synch-l1-2-0.dll",
+      "Bytes": 22888,
+      "Sha256": "F6482BBEC5612C39ECB4822787A333F2B7570F7A5F922A4059BE41BA957BB372"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-sysinfo-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "272D02765FDD3582618236C2D309ABBA069642F9BC1062EDE069D0C144E17007"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-sysinfo-l1-2-0.dll",
+      "Bytes": 22912,
+      "Sha256": "8A0900788859D0EB51C2F48F50CC6ED376A120B518100FA20E11D7702CCDE260"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-timezone-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "FF35DE6C03812B332E140F17DADE25C5DD4775156DA9EEB1EAAE3FDDD27236EC"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-core-util-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "191EF3E98641A57296F19D572D8EB62489470FF1EF6030D136AF170C2F835173"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-conio-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "54EE5EC719A051496FF60AA00DBEAA94B9A7D2CDAC27FE9B7317F1A666B6A2AA"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-convert-l1-1-0.dll",
+      "Bytes": 26992,
+      "Sha256": "8B94662429171019FCD63C70BBF2095A075170599704A5E7DCDBE3DA13F3A429"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-environment-l1-1-0.dll",
+      "Bytes": 22912,
+      "Sha256": "39E5929593709E8AF3BC9E0A75EC1155778D6F4A247F4CDFC58928AD6DB88434"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-filesystem-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "5A8ECEBAC32EDF4E1F3C5C6C1C8EA1A1ADD6CDA4F9C9CB26F752FB295BEA6865"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-heap-l1-1-0.dll",
+      "Bytes": 22872,
+      "Sha256": "C71080CBCB43BF1F8F3E391DEB12A582EB0ABEFC80946F340675A2C616E4FEB4"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-locale-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "6C68648E524187E03C4AD9AAA4A99113C6EE9F29FB39CC0ED93F951975138E63"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-math-l1-1-0.dll",
+      "Bytes": 31064,
+      "Sha256": "D4FBCCCBE29371CBCE431E43B2EB4F7BA9A6F04A3D740A071F02457A505E9DC8"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-private-l1-1-0.dll",
+      "Bytes": 76120,
+      "Sha256": "29BF3D90617D3781D19B332D6CEB9F20BA5CE082EC74BF6C34D5D4AEE56E48A1"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-process-l1-1-0.dll",
+      "Bytes": 22896,
+      "Sha256": "47C1935942E3AC0812E4DCF18C0E265E565F0194A3349111C299712F5565F7AC"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-runtime-l1-1-0.dll",
+      "Bytes": 26968,
+      "Sha256": "72ADC1B3677E0814D9C4EBF0964000E84BB2ACF67336C8963061665E44F78029"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-stdio-l1-1-0.dll",
+      "Bytes": 26968,
+      "Sha256": "900AFC3989673C9BB1A687ED38C192F46DB9E6BA6D11A668898A539E7FC23798"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-string-l1-1-0.dll",
+      "Bytes": 26968,
+      "Sha256": "FCF12466CC12FD3B73611FC0763A5A1F9D44E90349513C34A0C83B0F36421793"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-time-l1-1-0.dll",
+      "Bytes": 22912,
+      "Sha256": "886E57C4A6ADB299B38F02945369F590A67DA4E79A798359FC60AAA067212D7C"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/api-ms-win-crt-utility-l1-1-0.dll",
+      "Bytes": 22912,
+      "Sha256": "5F8F26B216ADE615B67A41F6FBBB910972FC6153315A65BB8F09912BE50215B1"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/base_library.zip",
+      "Bytes": 1333490,
+      "Sha256": "9D5634BC7607890C0E60C8179C3AD90CD69511B7006B06C217E99F912E1DE106"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/gpu_profiles.json",
+      "Bytes": 886,
+      "Sha256": "F606C193831D62E90A71D5998D94CAD398834544265B97445442F2F7F000DF64"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/libcrypto-3-x64.dll",
+      "Bytes": 8003376,
+      "Sha256": "35E0AE43AF2876903B00BA955E400F6DA1787DEFB1BA18B7FF35E540C7F4ED66"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/libffi-8.dll",
+      "Bytes": 43824,
+      "Sha256": "34985FC0A2D5942DD6C0CF3205549DC56ED6EBEF410884419C87E5FE4E00E988"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/libssl-3-x64.dll",
+      "Bytes": 1599280,
+      "Sha256": "5BB445DF170AC3DF4524CD1F7EDBAD09BB249B77D1144F58EBD1615F730D162E"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/pyexpat.pyd",
+      "Bytes": 226096,
+      "Sha256": "6805F27FE87F66249F1A94098EBE4FA387E93BF1F0F751B49DB55C25ECFB966D"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/python3.dll",
+      "Bytes": 71984,
+      "Sha256": "C57BC21E131857F26DB78D1512FBFCF67CAC3273EE8B1CD704ED5645EC250884"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/python312.dll",
+      "Bytes": 6985520,
+      "Sha256": "C1CE6D603041759061139F482C4B90C4AC9DB676E30ABF52FDA66A794AAB1BD0"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/select.pyd",
+      "Bytes": 34608,
+      "Sha256": "F04B6CB67A4FE77545BF7EBFB320B6AD216B5DC743215A33D70CD081233C94AC"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/ucrtbase.dll",
+      "Bytes": 1362264,
+      "Sha256": "3239227D27667BA20D10A880751924E5719DE0078F9FCE232D149D383F7681F6"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/unicodedata.pyd",
+      "Bytes": 1143600,
+      "Sha256": "6429FE36429AF848FAEA82122EBD7F5C72B05D9BA643D0B3A92EAFAF9F27D10C"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/VCRUNTIME140_1.dll",
+      "Bytes": 49792,
+      "Sha256": "1F2D41C4AA5DB0BC33EBF7B66D72943A817D7CE6CBE880502A9403823633093F"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/VCRUNTIME140.dll",
+      "Bytes": 124544,
+      "Sha256": "D5E4D9A3E835FA679450145D6A7D94E36573A509317111904D9B3712C30D9066"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/_core.cp312-win_amd64.pyd",
+      "Bytes": 29696,
+      "Sha256": "4C4BEFD6772AD1DCCABF0476203DF4D780D4DABE40C706DFD89E6F459CE03A80"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/bitstream.cp312-win_amd64.pyd",
+      "Bytes": 41472,
+      "Sha256": "1DDEFF611A17789864854C312D919967D7F12A96BB9CF183C894AD759A5F7CEE"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/buffer.cp312-win_amd64.pyd",
+      "Bytes": 41472,
+      "Sha256": "04827A9D5CB9EF5C904A8EC8E8E2AEF84C0272A1B9BF66BC9904F4FB17BB7586"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/bytesource.cp312-win_amd64.pyd",
+      "Bytes": 31232,
+      "Sha256": "3980C16CAA18E510449B344D2B8B3748C1481F0E96093A545866BD4E40570DD2"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/descriptor.cp312-win_amd64.pyd",
+      "Bytes": 35840,
+      "Sha256": "A2F43322149DF8C85EDA14114ABE3BD8D75E296F0B0A49887CC87C56FDBC7765"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/dictionary.cp312-win_amd64.pyd",
+      "Bytes": 56320,
+      "Sha256": "49EA4B54B56C06F98B49DABEE7F072D6A56F5DA5FB0F5CC08E9B8CA45614E40F"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/error.cp312-win_amd64.pyd",
+      "Bytes": 130560,
+      "Sha256": "04CC3D3B650F1D0157820FF4F90E246481FC8B05F34E9222960F07D0CC0270B6"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/format.cp312-win_amd64.pyd",
+      "Bytes": 49664,
+      "Sha256": "DFF94619ED125C047D57CF14982EB5C77BB652B5C2EC5550D4B0DC15347B0B2B"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/frame.cp312-win_amd64.pyd",
+      "Bytes": 46592,
+      "Sha256": "E9088FCE98173830684B8098BDD71B1F0C5487A328DE641710CE2E3A827F2966"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/logging.cp312-win_amd64.pyd",
+      "Bytes": 69632,
+      "Sha256": "B8BA1EC6EB1C6FB5C356A582447010D00EA057263C32282A78AA1BC61001D152"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/opaque.cp312-win_amd64.pyd",
+      "Bytes": 32768,
+      "Sha256": "DE59FFD97C8B4524A7839B0786FED30F99F4B0526A05C908584C972E7ECC1CF5"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/option.cp312-win_amd64.pyd",
+      "Bytes": 54272,
+      "Sha256": "B55059122F917BFC0F9ADB45B7FEA65A8CC440E62675E95B9964655B69319C13"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/packet.cp312-win_amd64.pyd",
+      "Bytes": 91648,
+      "Sha256": "E9CD22355FD472E95DE442463B0ED27EEDB7C01DE05F0C8806A499E725498F28"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/plane.cp312-win_amd64.pyd",
+      "Bytes": 38400,
+      "Sha256": "6382ED516902BDBC326485CF2CD9DAAE41B393F2D943C472344D6B5E8B039465"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/stream.cp312-win_amd64.pyd",
+      "Bytes": 64512,
+      "Sha256": "123FC5A30074DBD1D36D2AC3DEF671F1F8691A16C2B851A0493214FA33E13668"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/utils.cp312-win_amd64.pyd",
+      "Bytes": 32256,
+      "Sha256": "A9A81DA0EB62EF69431FAB4B40FA3FF3332B0C7E4E3EB32BA9E0F39ED40A6DB2"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/audio/codeccontext.cp312-win_amd64.pyd",
+      "Bytes": 43008,
+      "Sha256": "B7879633EB0B9EC0D44F8B80949D1085F2F19EA0030FB37F298754E3269F19E9"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/audio/fifo.cp312-win_amd64.pyd",
+      "Bytes": 55296,
+      "Sha256": "17E9C7FFB9B7B17C79DE71FB1AB124850B06AE3FC64B2185CA3C344E3950DA03"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/audio/format.cp312-win_amd64.pyd",
+      "Bytes": 39936,
+      "Sha256": "44A597329C17013FBDFAB691429906525933B2C534095A9FAA5AA0BC357449FD"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/audio/frame.cp312-win_amd64.pyd",
+      "Bytes": 65536,
+      "Sha256": "E9CE3C7D166ED10665FCBA33BBE09B9A394FA541954D564CF273580FA2D0853D"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/audio/layout.cp312-win_amd64.pyd",
+      "Bytes": 56832,
+      "Sha256": "D2CDD015F8711DAFFE50BEA2D0EF30F1DCEC467336DB9D85D4C12510626E0C4C"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/audio/plane.cp312-win_amd64.pyd",
+      "Bytes": 35840,
+      "Sha256": "EBBC7D2A96F5A2FAEEBB3533061555094EC124AF6C7FA0C78CA70F3F33EE858A"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/audio/resampler.cp312-win_amd64.pyd",
+      "Bytes": 56832,
+      "Sha256": "C8068DACA632E4D8808E12838020F83BBE2D8E74935E725960CB27791984CF90"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/audio/stream.cp312-win_amd64.pyd",
+      "Bytes": 43008,
+      "Sha256": "2598824BD958879A7119DCA177261F8D05F1FC9EA979AEAC3E1B32C27B816E7E"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/codec/codec.cp312-win_amd64.pyd",
+      "Bytes": 76288,
+      "Sha256": "79CDFFD3EFB15B77431AF7690BE0EF78EDFF9C0B5D73D42CA45EDE5C275A78B2"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/codec/context.cp312-win_amd64.pyd",
+      "Bytes": 120320,
+      "Sha256": "C0F48314E67A9E8BA6BCEBBD4971CACE016C853B222A461CA4168913D8C310CD"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/codec/hwaccel.cp312-win_amd64.pyd",
+      "Bytes": 64512,
+      "Sha256": "46D9CD97BDCA1A8A73BB3989FBB84E8D54AF2B4A50BF4F796343C5C43F683B7C"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/container/core.cp312-win_amd64.pyd",
+      "Bytes": 113152,
+      "Sha256": "A84F76F5DBA529A71AACFE13A353EFE042F1E0F5918C86D3C498976D5C38CD58"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/container/input.cp312-win_amd64.pyd",
+      "Bytes": 78848,
+      "Sha256": "7093725A2338F38482492B520B2574698E6378531B82567FC39768ECF02FCF47"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/container/output.cp312-win_amd64.pyd",
+      "Bytes": 84480,
+      "Sha256": "A48B18CC1B9D475818A7B3D6B0BD01D72D1363C8C5A15BE117CC947C56D64D84"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/container/pyio.cp312-win_amd64.pyd",
+      "Bytes": 46080,
+      "Sha256": "4B3591004807774A41E4F7B8665752DDABB1D50A2913809684E8F4582F9F24FA"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/container/streams.cp312-win_amd64.pyd",
+      "Bytes": 70656,
+      "Sha256": "D2817BB554AC36434F99BD25B4677A7DF431FC2790A9EAD54A616F853BC516EB"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/filter/context.cp312-win_amd64.pyd",
+      "Bytes": 157184,
+      "Sha256": "83E7AEEA13DA5211DDE3E61FEFF53636A159040142425218270D814A6759111E"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/filter/filter.cp312-win_amd64.pyd",
+      "Bytes": 36864,
+      "Sha256": "4184520E02FBFE9E6F03F8E43200B74B0095087D69EA9BF455B6AAC51D089567"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/filter/graph.cp312-win_amd64.pyd",
+      "Bytes": 80896,
+      "Sha256": "0EBF00D70E2733317ACCE91CAA282D12DD96367C54052EA1AFA481E0DA5600CC"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/filter/link.cp312-win_amd64.pyd",
+      "Bytes": 51712,
+      "Sha256": "473212949105DC701B734405495646A4B5A0EEF55C62A55FEB28F266ABFDF969"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/filter/loudnorm.cp312-win_amd64.pyd",
+      "Bytes": 38400,
+      "Sha256": "A84361CE749D3E276420EE262A140578763FB9C7693BBCC34FDF405E4498A517"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/sidedata/motionvectors.cp312-win_amd64.pyd",
+      "Bytes": 55808,
+      "Sha256": "9473BCF68762D550F15A8A1F077A1EB45CDE9C85FC50127C1C7CBA02520B8B9A"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/sidedata/sidedata.cp312-win_amd64.pyd",
+      "Bytes": 65024,
+      "Sha256": "BCF21D7C9681ECCDDAA96305EFD514B68F7C1D5853B22EF7AA2AD1AD0B473B20"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/subtitles/codeccontext.cp312-win_amd64.pyd",
+      "Bytes": 37888,
+      "Sha256": "9382026408C5AD58C306F04B16027752EDEF458F4A8B009FE519769484F391AE"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/subtitles/stream.cp312-win_amd64.pyd",
+      "Bytes": 36352,
+      "Sha256": "8B49B0AD1F1468E8C73D104EF4C9D51A62A248628D86FEBDCFC6F2CA2CD613E2"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/subtitles/subtitle.cp312-win_amd64.pyd",
+      "Bytes": 88576,
+      "Sha256": "35D6C28C2A85FC1C73904B195BC483DA2C99FEB0717B417F81F70D559FB244CB"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/video/codeccontext.cp312-win_amd64.pyd",
+      "Bytes": 60416,
+      "Sha256": "3639A8FE5B9F8E477D5586A89A7CF57A3CC607318E2137D686DA1CD24102AF59"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/video/format.cp312-win_amd64.pyd",
+      "Bytes": 72192,
+      "Sha256": "1653D5AC4E9F9EF10AB947A404AA6CF51CECDF9890601A779D5E215EA2BC126F"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/video/frame.cp312-win_amd64.pyd",
+      "Bytes": 269312,
+      "Sha256": "613D823FC3D5BB11207620E5E09EF09F3EADBCCDF98D16BC1408A85C64134AE8"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/video/plane.cp312-win_amd64.pyd",
+      "Bytes": 41984,
+      "Sha256": "938EDFB2CCD3F527683097D9CC989BE4332A2FC75C98B7F760CF049A95094A24"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/video/reformatter.cp312-win_amd64.pyd",
+      "Bytes": 59392,
+      "Sha256": "B63C913F65536873D2EC7E3F577164688C80B97BD29DC2597048492C8EC101DB"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av/video/stream.cp312-win_amd64.pyd",
+      "Bytes": 49152,
+      "Sha256": "84755319F29945A838F116C77FD850136CF31E85351077C78312F2F027348CA9"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/avcodec-62-0e5d10f45b1f7779d52f41b1cb11c018.dll",
+      "Bytes": 19130880,
+      "Sha256": "273EB25AA4F81C9B60BE7BAB35CB83341C3ACB2EB57E4C7973E3ED80A6039181"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/avdevice-62-6a083fbc7c2774f0ed607443d44f35ba.dll",
+      "Bytes": 153600,
+      "Sha256": "F6B1D2272D5E63DC98AC36047ECB07D2D333180A3C3968A6D74BD3BD23491E19"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/avfilter-11-3c27319333c80da03690c986db8adec1.dll",
+      "Bytes": 5707776,
+      "Sha256": "445BD671C5A8C82CEC89F30C3CA2649117AC7C202940E3A7023837465ED96D91"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/avformat-62-407dba287210475ea61d13af276e616a.dll",
+      "Bytes": 2808320,
+      "Sha256": "BF9A63889B89903576A3E03AAB0D5F4A529269EF8B22510E4F8E1635546CD744"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/avutil-60-4a46c55818495f36528dd037c395c733.dll",
+      "Bytes": 1149952,
+      "Sha256": "B45DB5BC7EFD21840FC60023DFDA7FAF025BEB0D0D566201B33B83D5E16A9D2B"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libaom-ff6891b94cecc5968480531b3dccc8d5.dll",
+      "Bytes": 9861632,
+      "Sha256": "093D2E8F61DB0785A5082D6ACB081BE01690F3F914101B9B2134C3C961C5EE51"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libdav1d-51b9f1556841dcb5a57beacf6dcd1595.dll",
+      "Bytes": 2119168,
+      "Sha256": "51B9F1556841DCB5A57BEACF6DCD1595A383A442F977ADEA603AA32A2D18CC78"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libgcc_s_seh-1-2a627f0e950d831468ca56f6918ee6b2.dll",
+      "Bytes": 148480,
+      "Sha256": "E0132D4E8ED12BA651A92312C0D54413C80DFFA4477950A4B18B9023DBD8D34F"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libgmp-10-131edc8db6e092035cfdddafefe84ca7.dll",
+      "Bytes": 540160,
+      "Sha256": "131EDC8DB6E092035CFDDDAFEFE84CA7D7CE63DB31D1D5E60F2EBEE98E3C43B6"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libiconv-2-60c678f49f8bf5c96e4522845408d795.dll",
+      "Bytes": 1134592,
+      "Sha256": "60C678F49F8BF5C96E4522845408D795EFF4FC79B30C3FB2E03C433CBED20405"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libmp3lame-0-7b58a586180b0da69d581418c03934ab.dll",
+      "Bytes": 424960,
+      "Sha256": "7B58A586180B0DA69D581418C03934AB7801D64FEB40311AD57CDEDBDC54EFEE"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libogg-0-fe7e666b50bb2ca359edd022765d4d82.dll",
+      "Bytes": 33280,
+      "Sha256": "FE7E666B50BB2CA359EDD022765D4D828AFD2AB8FDE89F029701B063F017561C"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libopencore-amrnb-0-affa633fc615dfc51dcdbda6f66c9f7f.dll",
+      "Bytes": 179712,
+      "Sha256": "AFFA633FC615DFC51DCDBDA6F66C9F7FB47B80DCD3FC3C1D3934FF40BE6E6782"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libopencore-amrwb-0-45aabdc5d64384f6953da9b5e43a5203.dll",
+      "Bytes": 97280,
+      "Sha256": "45AABDC5D64384F6953DA9B5E43A5203EE3952BDCDB7A4A23B22DDF55957EF64"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libopenh264-7-a28855b065d509c784905ccac2f8795e.dll",
+      "Bytes": 888320,
+      "Sha256": "26DF4EC6FBBCC54D1376C368818C91283446CFBCDEF08C712175C4E81930E232"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libopus-0-7b214f1ef05bbddd97a06d50c4c475c4.dll",
+      "Bytes": 451584,
+      "Sha256": "7B214F1EF05BBDDD97A06D50C4C475C44FE5130E8164567A07A97705BFC03816"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libsharpyuv-617cdf58d1e7a3f6166b0522905c9c91.dll",
+      "Bytes": 51200,
+      "Sha256": "617CDF58D1E7A3F6166B0522905C9C913C3F8A14DD55121E6FE44E4EF28B2AC5"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libspeex-1-eb1452e6457b86d368a396e6a22e97e0.dll",
+      "Bytes": 152064,
+      "Sha256": "EB1452E6457B86D368A396E6A22E97E0995EBED757E308F0CDCFE618BB71064C"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libstdc++-6-327705944359b51c39090f5437337383.dll",
+      "Bytes": 2455040,
+      "Sha256": "B45B49167BBB81B741828D9E5FD94172571ECED40EE08A5AC152003B07DFAD92"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libSvtAv1Enc-b3321ebbb409cdba6f80e04879fa02ce.dll",
+      "Bytes": 8223744,
+      "Sha256": "B3321EBBB409CDBA6F80E04879FA02CE0575F59905470C0B1DDEFC75E1F83D8D"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libtwolame-0-94e54544e90421ca877542fdde20071a.dll",
+      "Bytes": 168960,
+      "Sha256": "94E54544E90421CA877542FDDE20071A35745F150192237098A7FBF28431547C"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libvorbis-0-9f8e53f2007c797f8da9c211955cfc71.dll",
+      "Bytes": 262144,
+      "Sha256": "B7F2DE614DFF4EA45283FDEBDA724827DECB38E28ECF98459707666D40991D10"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libvorbisenc-2-ffa4b4c659a31d546be381656f040a78.dll",
+      "Bytes": 583168,
+      "Sha256": "DC7BE007279C0E3F776D64B36AE751B9549CF51F5AC9FD2B716321A3AACFF9E4"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libvpx-1-da6fca51fbce21159980b1dadcd86dfb.dll",
+      "Bytes": 2611712,
+      "Sha256": "3D2473345F35E84949F5BF2116DE75F9E5B04FB44C9055FBB57BE39293BE2FBB"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libwebp-ef9945e008bb2b4713ea1e50d9500b42.dll",
+      "Bytes": 729088,
+      "Sha256": "D6DA56F880FF7014AD3065C90C30A6C38A3AA97B1862ABC729212FEC503AE780"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libwebpmux-af63085d15621f8a1d30c7060cdde1ce.dll",
+      "Bytes": 78336,
+      "Sha256": "7102411C45D6049812ABDBB143DA9517C00C778394680C8F26646CA7697801C4"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libwinpthread-1-7f19735fedb461389ef94ff4057cef96.dll",
+      "Bytes": 60928,
+      "Sha256": "7F19735FEDB461389EF94FF4057CEF96EE838638FEEAB2BF330E1BD09D935B87"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libx264-165-11ed6a233462fe268a51e595a3873920.dll",
+      "Bytes": 2378240,
+      "Sha256": "11ED6A233462FE268A51E595A3873920DC5251796374D58795E8E5D1510A4C64"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/libx265-eee5149aa3046c760a0c36ff7d4dbca9.dll",
+      "Bytes": 22057472,
+      "Sha256": "9E88CFFD16E7EE556486BB6526B648EDFFED3540C50E931C6AD1DC6F24D60486"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/swresample-6-95685c119c5e1fde7518042944eb4285.dll",
+      "Bytes": 180224,
+      "Sha256": "37345974C27965667D25B860D98746658247013BFD06A174F6453FB6EE19A14E"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/swscale-9-76399095ca2629e278fc77396bd50d84.dll",
+      "Bytes": 1881088,
+      "Sha256": "6C3EEA9D3E2A82BE43522DE48310EBABB4EF80C430C2FCB781344A3068BE062E"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/av.libs/zlib1-93beefd91b990aa9e40396de359419b6.dll",
+      "Bytes": 118784,
+      "Sha256": "93BEEFD91B990AA9E40396DE359419B66F0038C47B0A846EDC4DD5226E5EAD55"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/__init__.py",
+      "Bytes": 6793,
+      "Sha256": "957A91BFD98FFB07A10CD789B7C5C46806568476B61E34C7AD56A00092B981A5"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/config-3.py",
+      "Bytes": 748,
+      "Sha256": "DE28C7B5213CCA148F09469916584611B3D66C1C8C432880259D6A3A92380213"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/config.py",
+      "Bytes": 123,
+      "Sha256": "6C6367ABCE55995AE4A8D3C199420EC53AFAB287CB17DFC2F430378AF75DD301"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/cv2.pyd",
+      "Bytes": 70775296,
+      "Sha256": "129E0FFA58A12FE971678B9FB820D3C2D45CE7529B386C37DF9E10B51C06F93E"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/load_config_py3.py",
+      "Bytes": 271,
+      "Sha256": "FF583A5874BE8F848E73C2F61B3A71680995926479C9BC436E6565C5CCE7CA07"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/opencv_videoio_ffmpeg4120_64.dll",
+      "Bytes": 28349440,
+      "Sha256": "A0F01E4EE5E97B4A513CD70F01FAFADC0DD187BA5D1293CB7FC6B77E7D17C631"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/version.py",
+      "Bytes": 96,
+      "Sha256": "6BE3D69B891FA5631D98132E05AA8250AB0551F8B87633E01944734910690D71"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/data/__init__.py",
+      "Bytes": 73,
+      "Sha256": "F4CE16721ED7F623A4DCC443BA600D1856DB610CB2C3D53C13A8CA028CC68F6D"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/gapi/__init__.py",
+      "Bytes": 10621,
+      "Sha256": "74F5FD2A142A31B0A4707B70C0BE3637F0FBF8A940EEC4372E7BA87E5A5CEDB8"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/mat_wrapper/__init__.py",
+      "Bytes": 1164,
+      "Sha256": "C44707EA1C76F35518AE572B6C1989D76C2ADA7E850432E41805DFE112D4E306"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/misc/__init__.py",
+      "Bytes": 38,
+      "Sha256": "495BD79594CCE174673E372C85C4DD8F4FFDF2B3A73FD4623955B0D55DE0D462"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/misc/version.py",
+      "Bytes": 95,
+      "Sha256": "C93A418793FCB15B9B4316C0741B8336740E490E94F3B7D1EBE8CD5F6F23815C"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/typing/__init__.py",
+      "Bytes": 5545,
+      "Sha256": "9600F0514552B14E048A4E138B4F1FD8251226B40CF4FAD2615AB709CEB7ACBD"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/cv2/utils/__init__.py",
+      "Bytes": 344,
+      "Sha256": "2B16990B35B569AF1CA7239DC10F7B24EC62F27A46626B1E2F1271D2E1AA3554"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe",
+      "Bytes": 87638016,
+      "Sha256": "2CE797A0F88D7F067180338FB227F7B1928EA727BD9A4D7A1D022F7C52AF71A3"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/imageio_ffmpeg/binaries/README.md",
+      "Bytes": 45,
+      "Sha256": "B0D36DFB1BA1EA5CA873A6F6DBCC2295B7A7944AEA875071D91A6AAD1870E77D"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/fft/_pocketfft_umath.cp312-win_amd64.pyd",
+      "Bytes": 279040,
+      "Sha256": "25CC37ACD3D849C0FDE1E0DC0112979DEC4EC4279B7826D1A45395FE966068C9"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/linalg/_umath_linalg.cp312-win_amd64.pyd",
+      "Bytes": 108032,
+      "Sha256": "88C8D38D7B2F483542442292E149CA335462D1467B8E835B00A71A8B27125CF5"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/random/_bounded_integers.cp312-win_amd64.pyd",
+      "Bytes": 208384,
+      "Sha256": "0434A5B271F935DEB8623BB8663F33132A70A8F4D1936C14432E16D4F6EB46FC"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/random/_common.cp312-win_amd64.pyd",
+      "Bytes": 152064,
+      "Sha256": "9A39D43E0EF73DFB5A8B1ABCE92FF0063BFFCD580D8BE275F468961B24B153AF"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/random/_generator.cp312-win_amd64.pyd",
+      "Bytes": 714752,
+      "Sha256": "6DDE7168FC52DCAD27779D45DCC6828B91EC0D05BB6094C86D6AFF8A1EE8E1B3"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/random/_mt19937.cp312-win_amd64.pyd",
+      "Bytes": 83456,
+      "Sha256": "3331809B214FC30E2FC167F742CA3B1A84B567D185D4194FA8893A032010EEB4"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/random/_pcg64.cp312-win_amd64.pyd",
+      "Bytes": 93696,
+      "Sha256": "448B71A0B7D9037D9655008FBC3081070FA801F757B83F9A3EE6E0934C095AA8"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/random/_philox.cp312-win_amd64.pyd",
+      "Bytes": 77312,
+      "Sha256": "9C989E7B0FC383E2FA5AA15DE2F17C5875B690DC64C44891EE1E1D54CE7CAC4A"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/random/_sfc64.cp312-win_amd64.pyd",
+      "Bytes": 60416,
+      "Sha256": "5732D38725CB5177C9DE1E1D4BDB67389283A53986F87A5E52CA9255EC98C733"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/random/bit_generator.cp312-win_amd64.pyd",
+      "Bytes": 163328,
+      "Sha256": "EEF81BF02FA9F387D6C4A18D52B22AF58B737C01608F0D594130586A06022807"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/random/mtrand.cp312-win_amd64.pyd",
+      "Bytes": 603136,
+      "Sha256": "339F40F24231643777DE36D5FF8121A07CCF2C4A66ADD63307D25F9D431C9928"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/_core/_multiarray_tests.cp312-win_amd64.pyd",
+      "Bytes": 64000,
+      "Sha256": "24ADBE4BBF7B2A6208AEB800D11B8B6957C925D3C796552B3A55E1B4E278754E"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy/_core/_multiarray_umath.cp312-win_amd64.pyd",
+      "Bytes": 4178432,
+      "Sha256": "D98A8F4CE703BF7158F639D24FF4A55ECE2753A306A3F7074B4FA670660AFEE5"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy-2.2.6.dist-info/DELVEWHEEL",
+      "Bytes": 446,
+      "Sha256": "513B04BCAA783E2CEE07D76110F470D50FD5F12599006A93953588607F61C953"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy-2.2.6.dist-info/entry_points.txt",
+      "Bytes": 172,
+      "Sha256": "E265C336124343D187A8C05E449F01DCF962C531669171AA537455B9A736D2AD"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy-2.2.6.dist-info/INSTALLER",
+      "Bytes": 4,
+      "Sha256": "CEEBAE7B8927A3227E5303CF5E0F1F7B34BB542AD7250AC03FBCDE36EC2F1508"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy-2.2.6.dist-info/LICENSE.txt",
+      "Bytes": 47709,
+      "Sha256": "14256CC3A2C9D32AC284DA96B937FEB44F72DD90BEE2317AC3020166846AD99D"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy-2.2.6.dist-info/METADATA",
+      "Bytes": 60844,
+      "Sha256": "229F3544B02805E0F6A12030E155D8A45FD3A4100B3291574175E6A76F20E1E1"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy-2.2.6.dist-info/RECORD",
+      "Bytes": 108709,
+      "Sha256": "A4D9CBA1BA991B226C2EA16852279C2B762A2AC75F678E21DD9EAA36E0429763"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy-2.2.6.dist-info/REQUESTED",
+      "Bytes": 0,
+      "Sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy-2.2.6.dist-info/WHEEL",
+      "Bytes": 85,
+      "Sha256": "E743DE01BA6503A3E4234858398A1E69C07D512D51E8482EC9F3A7B1C707D165"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy.libs/libscipy_openblas64_-13e2df515630b4a41f92893938845698.dll",
+      "Bytes": 20390912,
+      "Sha256": "6547E9FB966E9773CAEE2755E91A8BF4D6F3A2F0EEBF9646B0158F8675EA4AB5"
+    },
+    {
+      "Path": "mods/AzureArchiveRecorder/runtime/_internal/numpy.libs/msvcp140-263139962577ecda4cd9469ca360a746.dll",
+      "Bytes": 575056,
+      "Sha256": "A4C2229BDC2A2A630ACDC095B4D86008E5C3E3BC7773174354F3DA4F5BEB9CDE"
+    }
+  ],
+  "NoInstallerEntryPointInvoked": true
+}

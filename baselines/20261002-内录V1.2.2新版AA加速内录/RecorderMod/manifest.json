@@ -1,0 +1,7 @@
+{
+  "name": "AzureArchiveRecorder",
+  "version_number": "1.2.2",
+  "website_url": "",
+  "description": "内录 V1.2.2：原生设置、六页新手教程、日期序号命名与音画同步 MP4。DLSS 组件缺失时红字提示并禁用；安装器可选安装 DLSS，并按显卡获取组件。F8/F9 设置，F10 停止。",
+  "dependencies": []
+}

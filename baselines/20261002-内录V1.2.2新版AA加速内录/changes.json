@@ -1,0 +1,383 @@
+[
+  {
+    "path": "CONTINUE-V1.2.1.md",
+    "status": "added",
+    "sha256": "8911BD2EAE7095D43ACBBB29B6D494289759B12B5280ED2868A2FA894BB160DC"
+  },
+  {
+    "path": "CONTINUE-V1.2.2.md",
+    "status": "added",
+    "sha256": "930F7A841EC56538ED8794B0AB511ADCCDF4AAC16B0FF4766EB1C9DF253A562A"
+  },
+  {
+    "path": "HANDOFF.md",
+    "status": "modified",
+    "previousSha256": "F42B6F1435AE34D656A0F2A651FCA8639B17B97FD816E3D8ED64B7BDDFE2CE15",
+    "sha256": "47A760D7306ECDF9AA791575B6CDA95A97D1D66D796CE07E526210686D0A46CB"
+  },
+  {
+    "path": "manifest.json",
+    "status": "modified",
+    "previousSha256": "617E19121E3DEC2BF6F3C7186916733E2C6057447E6BF661141CF332BE947C3B",
+    "sha256": "93759D73C1EECD448A68208AC2286E6996B8018FFEFE11AB5E245E0599AD1D63"
+  },
+  {
+    "path": "packaging/build-development-installer.ps1",
+    "status": "modified",
+    "previousSha256": "C9BDF7B3A891831777F6FC01D4E8408AF71C934F60898A694FC94E2A0B6D34BE",
+    "sha256": "9AF13DD335AF1CB91E353C8D54DC1704356112801D449ECFD4FEF9232681F9A3"
+  },
+  {
+    "path": "packaging/build-r6-support.ps1",
+    "status": "modified",
+    "previousSha256": "EB29FFD52E84D54217FA79D5BD775D52394BCAECFA9D9F710756255959C49520",
+    "sha256": "7A561E1B4B524B48E57216B8E9B77391928E53DFE5ACD38C7FE24CF883B23174"
+  },
+  {
+    "path": "packaging/build-release.ps1",
+    "status": "modified",
+    "previousSha256": "0A9BEC7708C038DA1D5CCC9FE90A27098FC87DC594497EBFE256DF9F15E22DDC",
+    "sha256": "B6D347FB375748B3A1702B0020451A7E442DBA8138019E3FC77D8A967B45A342"
+  },
+  {
+    "path": "packaging/BUILD-V1.2.1.md",
+    "status": "added",
+    "sha256": "7485A8B030B2BC98F27B8B9531B7E5EF0D6F3A8B933DA0A4FB6B68A545150525"
+  },
+  {
+    "path": "packaging/ExecutableShell.cs.in",
+    "status": "modified",
+    "previousSha256": "9F1CD2A9662D25B764D0E7D15901BF9106A4572F8BB04C06DCA8D798A80358E9",
+    "sha256": "47BD76D3540DA619E821EC5F9DDF8B3EB89301FE05EFA84FCC48D12BE1F327FC"
+  },
+  {
+    "path": "packaging/Installer.cs",
+    "status": "modified",
+    "previousSha256": "A35A76CBFD65F6F2DD65CCD0A69C59A0756A7B0615D1E797A0A2B42840EF441B",
+    "sha256": "47A0B4936C80D7717C1C9F9F9876248910B1128EA9D0A0BF05BD870C1B9FA095"
+  },
+  {
+    "path": "packaging/Loader.cs.in",
+    "status": "modified",
+    "previousSha256": "3763465F6984597702374590ACA10F2991495D1D755B46B12032000E51D0F1B3",
+    "sha256": "D4D7559531EA53A64710AD76CB6C8A11CE93DB3738010430247CD87FFECC8C09"
+  },
+  {
+    "path": "packaging/test-v1-installers.ps1",
+    "status": "modified",
+    "previousSha256": "CAA441073E2FCF87A06A416F816C54DDFEF0A0BB165A15A268E26A1AA1135D5F",
+    "sha256": "C44B20530E1FBD9FCC6307A34958890B5B45C5FB8A291E08383C15B8B27EA5D7"
+  },
+  {
+    "path": "packaging/test-v1-real-exe.ps1",
+    "status": "modified",
+    "previousSha256": "CAF3A8E216FB56473F5C8A3D6A0F742C82E507A99ED8D3E3F1D721DAF8E57E57",
+    "sha256": "FE269631F50E4E0B4C2A3B32CC09FE22AEAF485C1614DA15198F3666A94B6689"
+  },
+  {
+    "path": "packaging/USER-GUIDE.txt",
+    "status": "modified",
+    "previousSha256": "99A468BF74132C3EDA8DEE58B38A429527EA29EBEFD35C08BA85CA202300E1CF",
+    "sha256": "A21FA5754CC41A40C16D499D324E906598D068863714E791DF47E9F362FA750B"
+  },
+  {
+    "path": "packaging/V1AssemblyInfo.cs",
+    "status": "modified",
+    "previousSha256": "C762171A3D42A2D05A1EA4C257CA6A345842FB7EE81CE51F9F7D48B8EFA68D84",
+    "sha256": "E9FCB526EBEBA90EDC037677C283AD2FB9AAE8157F706F16B7B29198B7ED885D"
+  },
+  {
+    "path": "packaging/V1ExeDriver.cs",
+    "status": "modified",
+    "previousSha256": "E849447F7A2343C40AC06EB87A6B26251CD8B785C464574E6FE7C7866F210EAC",
+    "sha256": "5625641505968CB4D097153B926AD16A1BDDEAC002DD5846E14024DC42196560"
+  },
+  {
+    "path": "packaging/V1Installer.cs",
+    "status": "modified",
+    "previousSha256": "4B90DBA7E03D0F1C5B2B7E8826EA70B9745304D726A95ACFD8C788CC3FC791F9",
+    "sha256": "95C3761EBBA2801CF0586471A6934915B5E0630D85F2A51650ED7505524BF0D0"
+  },
+  {
+    "path": "packaging/V1InstallerTests.cs",
+    "status": "modified",
+    "previousSha256": "5EF7C38DC7410A73E457E7B219BBF1D189EBD8315A65DC13A988E9E879657B54",
+    "sha256": "188059CEF8E37432EF1C4AFC4B9B2399002B719E1BE871EDDA018F2FB7164000"
+  },
+  {
+    "path": "packaging/verify-r6-payload.ps1",
+    "status": "modified",
+    "previousSha256": "DACF6CE0E020D0FA9D2F525BF66E752578AECB1E49B56413A7211FBE63BC4792",
+    "sha256": "F2F0F419BFD97A8DB290DEEF1224C4166C2A982D1DE06AB0B7E617FDB6FD3EC1"
+  },
+  {
+    "path": "README.md",
+    "status": "modified",
+    "previousSha256": "79DCE91F043C661785940D093552C6F06E674F4AC7F66D196798F305CDBB96B1",
+    "sha256": "39AE7C344EA758767E18E5351EB281F8CF35F0F3317486C49214B3D4C4ED90ED"
+  },
+  {
+    "path": "src/AzureArchive.Recorder.csproj",
+    "status": "modified",
+    "previousSha256": "B1E2A567DF8F897E2EFDCA42C62B827DB892D138D2B8949659CA8DD380B87183",
+    "sha256": "B505C6CD9CAE26CC23F98045AE725D0086B53B2BC7948DAAA1DA17E078807513"
+  },
+  {
+    "path": "src/ChoiceProbe.cs",
+    "status": "modified",
+    "previousSha256": "E9114E039E6337EAD297D43DC9088E3E8A45CB16DAA0390470B1D25576211048",
+    "sha256": "B097CA417AFD096A9EA18887DD499EA8376C98E4BE838A83BE078BE57ABCCB98"
+  },
+  {
+    "path": "src/DiagnosticHostReady.cs",
+    "status": "added",
+    "sha256": "D7A6B3708D030DFD66854338E3F567E8506ED215D02F26996B9729B5E9964E26"
+  },
+  {
+    "path": "src/Encoder.cs",
+    "status": "modified",
+    "previousSha256": "6D1DD410F848DA0CD5217B50BBDD352B9620EE568800A34B79D80AB5687871A6",
+    "sha256": "A16F591190222CCCE2A22E424A335160907DF7F4A630F0E3CB8B5308BA34E537"
+  },
+  {
+    "path": "src/EncoderWorkQueue.cs",
+    "status": "added",
+    "sha256": "ECF3BA7F9CA8684FABC1D8E48FD95211FA92890993DE64F29B2C0FCDAB74317B"
+  },
+  {
+    "path": "src/FrameReadback.cs",
+    "status": "modified",
+    "previousSha256": "07CBF3C3BFC9E0DDCDDCC94B6A21FD1872AF828DCEBE7EF35868EAA3965C0173",
+    "sha256": "62345D15D7A5D209E1BFC0B68FC9E96587C8CBA44F655C7FE8E2AED5379953A9"
+  },
+  {
+    "path": "src/NativeCaptureTimeline.cs",
+    "status": "added",
+    "sha256": "CC439ACC34D39CFA99BBB99E5BAD61783B71AFA8409357D33467BD1F7578AB2E"
+  },
+  {
+    "path": "src/NativeCompositeSchedule.cs",
+    "status": "added",
+    "sha256": "C10212FE890E57202629054D843B7A405F869E1995DF5034A8DCBCE286F7CF5C"
+  },
+  {
+    "path": "src/NativeLiveCaptureTimeline.cs",
+    "status": "added",
+    "sha256": "C3582AE8B2D38838C745088D7DBE2ED303F3245E2B07D88BA41E7343DDDCBFBC"
+  },
+  {
+    "path": "src/NativeRecorderUi.cs",
+    "status": "modified",
+    "previousSha256": "60609F28E060CF3D3D1BDD948297E86A0C0E497882159228979D5806C524F43E",
+    "sha256": "38DDC539D21196FDA8A0BCB7579A3663CE6F3229A09A5BAE4EDC7E4F67AAAC24"
+  },
+  {
+    "path": "src/NativeRecorderUi.Timing.cs",
+    "status": "added",
+    "sha256": "4E5804560EBD89790B88856749BCA638F916BB4E0CF85ECF945679E1AD8685D5"
+  },
+  {
+    "path": "src/NativeTimingSmoke.cs",
+    "status": "added",
+    "sha256": "02B4CFFDFCA9534B930F415FC369CE94B9CB069322ED5EC4C03D0906F179DA0B"
+  },
+  {
+    "path": "src/Plugin.cs",
+    "status": "modified",
+    "previousSha256": "7A81CEC6606F5E17D7BC399E20E0F9C50123797CF17AD4450A7EFADE691AD7DB",
+    "sha256": "62CF0081E748038DC020D4EFA23D72693B45C8B8F0B36361AA9DAF9FC05C8A38"
+  },
+  {
+    "path": "src/PreflightDiagnostics.cs",
+    "status": "added",
+    "sha256": "8C82DDB3E34F877756A1BE09FC93C6C60040E4F2BD9A16235DECF6296DC621E6"
+  },
+  {
+    "path": "src/RecordingCameras.cs",
+    "status": "added",
+    "sha256": "BA35853265250D095814C8EDB39FC7E39AE8294008EB8954949F36AC400BF05C"
+  },
+  {
+    "path": "src/RecordingControls.cs",
+    "status": "added",
+    "sha256": "F2A57BDE707DD4B80F73157BA0EEE5D299592837AB7E7137CDB2B1967E34F031"
+  },
+  {
+    "path": "src/RecordingDurationPlan.cs",
+    "status": "added",
+    "sha256": "95B886E5AD11B84901CEA577CFFC7244AA1BEC5772760DC81ED148E2FE2D9B17"
+  },
+  {
+    "path": "src/RecordingFastClock.cs",
+    "status": "added",
+    "sha256": "CAC7374254458CEC56E8746D6809839C524FFC3C6AEEFA16E24ACF3C0D0B8BD6"
+  },
+  {
+    "path": "src/RecordingLiveClock.cs",
+    "status": "added",
+    "sha256": "352DFF01237EA5A4437D90BACFB426AEC4F61211D75910880F8C79FC4F6049EA"
+  },
+  {
+    "path": "src/RecordingNativeClock.cs",
+    "status": "added",
+    "sha256": "9EDA0FAB7ABC053DCC5144F27C529933375483ED83B6466A96556FE6039B1BCB"
+  },
+  {
+    "path": "src/RecordingPreflight.cs",
+    "status": "added",
+    "sha256": "38B1FC2B1045DF6CBCF09F0F16DC1BF599A725CDA7F87AAFEF5BD801E4B03B96"
+  },
+  {
+    "path": "src/RecordingUiSmoke.cs",
+    "status": "added",
+    "sha256": "87580981435BD68134B47CEA1C82229D796E90EA5D5A7D3770C05B2FA4D61F15"
+  },
+  {
+    "path": "src/TimingDiagnostics.cs",
+    "status": "added",
+    "sha256": "5DB340C20BB031B15F56AA50CBB3DEAE7447D37B947CF094B14AEDCE2A4344AA"
+  },
+  {
+    "path": "src/UiDiagnostics.cs",
+    "status": "modified",
+    "previousSha256": "6EF2A5EA831BF502573C8020BAFA644294670631A4F392FC6CB7D10F7446FBA3",
+    "sha256": "E726D2C3984AF5FB2C6F8FA8E1C708F5BFA74FC64E2026FE02EBA985A54159C0"
+  },
+  {
+    "path": "tests/check-menu-frames.py",
+    "status": "added",
+    "sha256": "423EBAEE67C33900093FF9BECE13A04B2D108273B3D3EAC8596561C674181716"
+  },
+  {
+    "path": "tests/choice-fixtures/ChoiceLoop.aap2",
+    "status": "added",
+    "sha256": "A25990CEB451DB902CDE725DEFC86CB08D48B3EEEC6640EF4BC69AEF4FBCDBB7"
+  },
+  {
+    "path": "tests/choice-fixtures/MenuDialogue.aap2",
+    "status": "added",
+    "sha256": "0A71FA3EBEB59EFE724F6B190FA0B8F59E45BBB534E62F9203DE57CF40ED8613"
+  },
+  {
+    "path": "tests/choice-fixtures/TitleNoChoice.aap2",
+    "status": "added",
+    "sha256": "91071B3C5A06017F4B5E87EFA2A5AA1D2892E9888AAE439EE242145ECB2EF327"
+  },
+  {
+    "path": "tests/EncoderCleanupTests.cs",
+    "status": "added",
+    "sha256": "0A664FD985FD4C284E1D31A15D71744D7C12E0FD041C58D9A82D08C23185216E"
+  },
+  {
+    "path": "tests/EncoderResamplingTests.cs",
+    "status": "added",
+    "sha256": "AAF5B9B282C9F385BDE36FC2B4CAB9B2246CE4D38B9A9EA7EA11580980096F19"
+  },
+  {
+    "path": "tests/EncoderWorkQueueTests.cs",
+    "status": "added",
+    "sha256": "7628DD423B4789CD94B8A37EED3C7CEEED8E3ECB3F2B2553B25FAC64DB2E0C41"
+  },
+  {
+    "path": "tests/NativeCaptureTimelineTests.cs",
+    "status": "added",
+    "sha256": "E503715198D3ECA2D8AD1827F341F415154441345CEABFA563360184AFE6D6E2"
+  },
+  {
+    "path": "tests/NativeCompositeScheduleTests.cs",
+    "status": "added",
+    "sha256": "B39D762348A1A8627B1280673FC9B42705B665B7EB3891CE6216A2D4BB281687"
+  },
+  {
+    "path": "tests/NativeLiveCaptureTimelineTests.cs",
+    "status": "added",
+    "sha256": "2706959CE8EA21FEEB3ABCBBB703D7321BBB76F75D21409D580608C51BE17A9F"
+  },
+  {
+    "path": "tests/README.md",
+    "status": "modified",
+    "previousSha256": "CC31FD9FF75D5EADC605CDBFFD6E1F71667E09F29BD69D68EE78682AEFA7070E",
+    "sha256": "EEE83F27E9E6B94D9FE57DC0F077D870AA9A53191A1CB739971D3E4B641BA9C0"
+  },
+  {
+    "path": "tests/RecordingDurationPlanTests.cs",
+    "status": "added",
+    "sha256": "B4158BAAB5D40524CB7DEC60298EE856AB86FAE9D69F5D3BD2E28523E0A3A92F"
+  },
+  {
+    "path": "tests/run-choice-smoke.ps1",
+    "status": "modified",
+    "previousSha256": "D9291606DCE7ABDDA5E730849621566A8802BF62AC2FC9FE23685A7B32C8FEF9",
+    "sha256": "A20DB4C32CA9D9007B5CC8A743454C4D3D1323D56E0041350CCD742987D11DB7"
+  },
+  {
+    "path": "tests/run-entry-smoke.ps1",
+    "status": "added",
+    "sha256": "1B6DB5AC5BD41FEB688B0F14AEA6AA9195E04926920F0F3E88BB32D4F4C3B0D5"
+  },
+  {
+    "path": "tests/test-choice-diagnostics.cs",
+    "status": "added",
+    "sha256": "32C3F3408983F269FB5C40FA925A3EC20EDF24100EA4C314B3CA566B33115857"
+  },
+  {
+    "path": "tests/test-choice-diagnostics.ps1",
+    "status": "added",
+    "sha256": "42098C3223A6886EDD59F9D8B20DCB1CE070446A65FD68FB3C86EA918144DB41"
+  },
+  {
+    "path": "tests/test-encoder-cleanup.ps1",
+    "status": "added",
+    "sha256": "B2DEB4AADCBC7C0EA33E1912A149A0B53402D5811C8A513518876166BAEC7A3B"
+  },
+  {
+    "path": "tests/test-encoder-resampling.ps1",
+    "status": "added",
+    "sha256": "556E9CC2AF56FA1ECD7C34202A0474EEB535E4F526FBF59E5DC0CB2DE62F7060"
+  },
+  {
+    "path": "tests/test-encoder-work-queue.ps1",
+    "status": "added",
+    "sha256": "AB5353B5808FED5C833425D3BB558714C8493B3886F17D632792A1699665F2BB"
+  },
+  {
+    "path": "tests/test-native-capture-timeline.ps1",
+    "status": "added",
+    "sha256": "FFE8A6B33AF62BE3EEF07995543F6FBBD296B6520610C090C873D53D2A87011D"
+  },
+  {
+    "path": "tests/test-native-composite-schedule.ps1",
+    "status": "added",
+    "sha256": "DD1D2483507DC8CA186272D56F7E07F87978AB683797EB16C6A097C35792D1CB"
+  },
+  {
+    "path": "tests/test-native-live-capture-timeline.ps1",
+    "status": "added",
+    "sha256": "84B39893B919D6CC23E7AAFA2A9A2546301D4C742681C451C552AEE8E518B2B4"
+  },
+  {
+    "path": "tests/test-recording-duration.ps1",
+    "status": "added",
+    "sha256": "1AA228D095A4A0D1B94A3FD326AB95719406E8EE00ED42ADA332C862EA14E383"
+  },
+  {
+    "path": "V1.2.1-CHANGELOG.md",
+    "status": "added",
+    "sha256": "ED3A1F486A02114427B3379D7C257F6790C6DE9EF586E90967F479DE8A303D5E"
+  },
+  {
+    "path": "V1.2.1-NATIVE-TIMING-MENU.md",
+    "status": "added",
+    "sha256": "86D04AB702503CE2482036D3DFFB55A0C9F91CA809F2670DAA23F0BD262A5962"
+  },
+  {
+    "path": "V1.2.1-TITLE-HOTFIX.md",
+    "status": "added",
+    "sha256": "D73BC38E1B232C59FBAE877FD4744B1D663656EBCBB7DA8903A97DC73C916AAE"
+  },
+  {
+    "path": "V1.2.1-VERIFICATION.md",
+    "status": "added",
+    "sha256": "0AFBD2AF19CD282FD44531829727DC71FB6352E3A9F0F550C5BA030EE281A7CB"
+  }
+]
