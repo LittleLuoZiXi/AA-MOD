@@ -1,0 +1,70 @@
+{
+  "Version": "1.2.3",
+  "RestoredUtc": "2026-10-04T10:08:40.5988569Z",
+  "Python": {
+    "Version": "3.12.14",
+    "Base": "C:\\Users\\Luo Tian Xing\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "Environment": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\.venv",
+    "Source": "Existing offline Codex bundled runtime",
+    "PyInstaller": "6.11.1",
+    "PyInstallerIndex": "https://pypi.org/simple",
+    "Requirements": "dependency-verification/python-build-requirements.txt"
+  },
+  "Obfuscar": {
+    "Version": "2.2.50",
+    "PackageUrl": "https://api.nuget.org/v3-flatcontainer/obfuscar/2.2.50/obfuscar.2.2.50.nupkg",
+    "PackageSha256": "8790E1E36D613613311EC512129A6701C63576428692F20A95988A351FDC3187",
+    "Path": "tools/obfuscar",
+    "VersionCommand": "2.2.50.0",
+    "Dependencies": "All tools/ files from the official NuGet package"
+  },
+  "FFmpeg": {
+    "Source": "E:\\AzureArchive_100_fix\\mods\\AzureArchiveRecorder\\runtime\\ffmpeg",
+    "FfmpegSha256": "B1383F5D07470D503EDECDAEE4BDDC5891E986E916A698299B357F79CFE445FD",
+    "FfprobeSha256": "012BDDDED3CBC5204055210D7FF4F0B3F7521BCA441A694939856D01909F5756",
+    "BothMatchBuildReleasePins": true
+  },
+  "FrozenRuntime": {
+    "Source": "E:\\AzureArchive_100_fix\\mods\\AzureArchiveRecorder\\runtime",
+    "CodeObjectsChecked": 42,
+    "Passed": true,
+    "Report": "dependency-verification/frozen-runtime-source-check.json",
+    "SourceUnchanged": true
+  },
+  "InstallerCore": {
+    "Passed": true,
+    "Count": 67,
+    "Evidence": "D:\\test2\\开发\\V1.2.3\\V1.2.3安装测试\\test-20261004-180702-995ca535",
+    "Includes": "V1.2.2 upgrade in both directions, all enabled profiles migration, config and unknown-file retention, malformed receipt/payload rejection, rollback, uninstall retention",
+    "FirstEvidenceMovedFrom": "E:\\V1.2.3安装测试\\test-20261004-180409-0bc50a03",
+    "FirstEvidenceMovedTo": "D:\\test2\\开发\\V1.2.3\\V1.2.3安装测试\\initial-path-correction-test-20261004-180409-0bc50a03",
+    "PathCorrection": "Initial generated test directory was moved back after explicit full-path validation; empty self-created E test root removed; rerun completed inside V1.2.3"
+  },
+  "ConfigRetention": {
+    "Reviewed": true,
+    "Source": "Installer.cs",
+    "Install": "Only Recording.FFmpegPath is updated; all other text lines, sections and unknown keys are preserved. Existing inactive profile recorder config is never rewritten.",
+    "Profile": "Only the recorder EnabledMods version is changed; extra profile/item JSON fields are retained.",
+    "Uninstall": "User recorder config, tutorial state and export counter are intentionally preserved."
+  },
+  "NoDlssDownload": true,
+  "NoAaLaunched": true,
+  "NoFormalAaMutation": true,
+  "ReleaseBuildRun": true,
+  "ReleaseBuildPending": "Protected artifact built; awaiting final runtime two-process acceptance with the protected DLL.",
+  "PowerShellSyntaxCheck": "Passed for every changed packaging .ps1 file",
+  "LatestProtectedBuild": {
+    "BuildProof": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\build-proof.json",
+    "Installer": "D:\\test2\\开发\\V1.2.3\\交付\\AzureArchive内录V1.2.3-加壳安装.exe",
+    "InstallerSha256": "06D81933A62A23B8DBDD71145FE16396DA67990E543371A0B7CA2F5C33B67853",
+    "Plugin": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\stage\\mods\\AzureArchiveRecorder\\1.2.3\\AzureArchive.Recorder.dll",
+    "PluginSha256": "2FB5E3052423E059E6DBFCFD25B324344A075327874AD28275DB5B6C0BA1FB89",
+    "VerifiedPayloadFiles": 201,
+    "NoBundledDlssNative": true,
+    "SourceFiles": 77,
+    "SourceStable": true,
+    "SourceStabilityReport": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\build-source-stability.json",
+    "ProtectionTests": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\protection-tests.log",
+    "InstalledIntoGame": false
+  }
+}

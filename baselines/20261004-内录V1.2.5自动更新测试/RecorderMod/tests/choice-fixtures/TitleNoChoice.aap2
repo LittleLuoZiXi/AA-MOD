@@ -1,0 +1,230 @@
+AAP2
+{
+  "LegacySourceVersion": "absent",
+  "FormatVersion": 2,
+  "ProjectId": "fc61833e-02ab-469a-9fd2-765c63ebcd6d",
+  "ProjectName": "TitleNoChoice",
+  "PreviewBgName": 2460344605,
+  "PreviewHeader": "Recorder title regression",
+  "PreviewTitle": "Title animation",
+  "nodes": [
+    {
+      "Title": "Title animation",
+      "Header": "Recorder title regression",
+      "Guid": "00000000-0000-0000-0000-000000000000",
+      "ConnectionsTo": [
+        "aeca0d2b-9edb-4546-aebe-77c508899f80"
+      ],
+      "X": 0,
+      "Y": 200,
+      "Kind": "entry"
+    },
+    {
+      "Scripts": [
+        {
+          "LineId": "9e601c9c-2ee9-4c33-8966-5b32cd638d54",
+          "text": "PASS TitleNoChoice normal narration",
+          "popup": "",
+          "bgEffect": 0,
+          "bgName": 2460344605,
+          "bgFriendlyName": "BG_View_Schale",
+          "sound": "",
+          "voice": "55b9bd75-f42a-43fd-a9c7-44c8a739fa9e",
+          "transition": 0,
+          "bgmId": 0,
+          "selectionGroup": 0,
+          "additionalPrompt": "",
+          "characters": [
+            {
+              "name": "",
+              "faceId": "00",
+              "startingPos": 0,
+              "endingPos": 0,
+              "displayOrder": 1,
+              "emoticon": -1,
+              "action": 0,
+              "effect": 0,
+              "appear": 0,
+              "shapeOverride": 0
+            },
+            {
+              "name": "",
+              "faceId": "00",
+              "startingPos": 0,
+              "endingPos": 0,
+              "displayOrder": 1,
+              "emoticon": -1,
+              "action": 0,
+              "effect": 0,
+              "appear": 0,
+              "shapeOverride": 0
+            },
+            {
+              "name": "",
+              "faceId": "00",
+              "startingPos": 0,
+              "endingPos": 0,
+              "displayOrder": 1,
+              "emoticon": -1,
+              "action": 0,
+              "effect": 0,
+              "appear": 0,
+              "shapeOverride": 0
+            },
+            {
+              "name": "",
+              "faceId": "00",
+              "startingPos": 0,
+              "endingPos": 0,
+              "displayOrder": 1,
+              "emoticon": -1,
+              "action": 0,
+              "effect": 0,
+              "appear": 0,
+              "shapeOverride": 0
+            },
+            {
+              "name": "",
+              "faceId": "00",
+              "startingPos": 0,
+              "endingPos": 0,
+              "displayOrder": 1,
+              "emoticon": -1,
+              "action": 0,
+              "effect": 0,
+              "appear": 0,
+              "shapeOverride": 0
+            },
+            {
+              "name": "",
+              "faceId": "00",
+              "startingPos": 0,
+              "endingPos": 0,
+              "displayOrder": 1,
+              "emoticon": -1,
+              "action": 0,
+              "effect": 0,
+              "appear": 0,
+              "shapeOverride": 0
+            }
+          ],
+          "speakerSlotNum": 0,
+          "highlightedSlotNums": [],
+          "isDialogScript": true,
+          "placeText": ""
+        }
+      ],
+      "NodeName": "START",
+      "Guid": "aeca0d2b-9edb-4546-aebe-77c508899f80",
+      "ConnectionsTo": [
+        "857b98e0-3216-4483-807c-50c51da88dbd"
+      ],
+      "X": 0,
+      "Y": 0,
+      "Kind": "dialogue"
+    },
+    {
+      "IsEnding": true,
+      "EndText": "Recorder title regression end",
+      "NeHeader": "",
+      "NeTitle": "",
+      "NeScriptDirty": {
+        "LineId": "31545431-e0a8-48a6-854a-7d5465b8a1fd",
+        "text": "",
+        "popup": "",
+        "bgEffect": 0,
+        "bgName": 0,
+        "bgFriendlyName": "",
+        "sound": "",
+        "voice": "8be3b6bc-945e-4d22-b2f4-e854d9c010b3",
+        "transition": 0,
+        "bgmId": 0,
+        "selectionGroup": 0,
+        "additionalPrompt": "",
+        "characters": [
+          {
+            "name": "",
+            "faceId": "00",
+            "startingPos": 0,
+            "endingPos": 0,
+            "displayOrder": 1,
+            "emoticon": -1,
+            "action": 0,
+            "effect": 0,
+            "appear": 0,
+            "shapeOverride": 0
+          },
+          {
+            "name": "",
+            "faceId": "00",
+            "startingPos": 0,
+            "endingPos": 0,
+            "displayOrder": 1,
+            "emoticon": -1,
+            "action": 0,
+            "effect": 0,
+            "appear": 0,
+            "shapeOverride": 0
+          },
+          {
+            "name": "",
+            "faceId": "00",
+            "startingPos": 0,
+            "endingPos": 0,
+            "displayOrder": 1,
+            "emoticon": -1,
+            "action": 0,
+            "effect": 0,
+            "appear": 0,
+            "shapeOverride": 0
+          },
+          {
+            "name": "",
+            "faceId": "00",
+            "startingPos": 0,
+            "endingPos": 0,
+            "displayOrder": 1,
+            "emoticon": -1,
+            "action": 0,
+            "effect": 0,
+            "appear": 0,
+            "shapeOverride": 0
+          },
+          {
+            "name": "",
+            "faceId": "00",
+            "startingPos": 0,
+            "endingPos": 0,
+            "displayOrder": 1,
+            "emoticon": -1,
+            "action": 0,
+            "effect": 0,
+            "appear": 0,
+            "shapeOverride": 0
+          },
+          {
+            "name": "",
+            "faceId": "00",
+            "startingPos": 0,
+            "endingPos": 0,
+            "displayOrder": 1,
+            "emoticon": -1,
+            "action": 0,
+            "effect": 0,
+            "appear": 0,
+            "shapeOverride": 0
+          }
+        ],
+        "speakerSlotNum": 0,
+        "highlightedSlotNums": [],
+        "isDialogScript": false,
+        "placeText": ""
+      },
+      "Guid": "857b98e0-3216-4483-807c-50c51da88dbd",
+      "ConnectionsTo": [],
+      "X": 0,
+      "Y": -1000,
+      "Kind": "exit"
+    }
+  ]
+}

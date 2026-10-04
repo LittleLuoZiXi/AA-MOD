@@ -1,0 +1,16 @@
+<Obfuscator>
+  <Var name="InPath" value="C:\Users\49024\Desktop\AA测试\RTX开发测试\AA\RecorderMod\build" />
+  <Var name="OutPath" value="C:\Users\49024\Desktop\AA测试\RTX开发测试\AA\RecorderMod\packaging\obfuscated" />
+  <Var name="KeepPublicApi" value="true" />
+  <Var name="HidePrivateApi" value="true" />
+  <Var name="HideStrings" value="true" />
+  <Var name="RenameProperties" value="false" />
+  <Var name="RegenerateDebugInfo" value="false" />
+  <AssemblySearchPath path="C:\Users\49024\Desktop\AA测试\RTX开发测试\AA\dotnet" />
+  <AssemblySearchPath path="C:\Users\49024\Desktop\AA测试\RTX开发测试\AA\BepInEx\core" />
+  <AssemblySearchPath path="C:\Users\49024\Desktop\AA测试\RTX开发测试\AA\BepInEx\interop" />
+  <Module file="C:\Users\49024\Desktop\AA测试\RTX开发测试\AA\RecorderMod\build\AzureArchive.Recorder.Core.dll">
+    <SkipType rx=".*AnonymousType.*" skipMethods="true" skipFields="true" skipProperties="true" />
+    <SkipMethod type="*" rx="^(Prefix|Postfix|Transpiler|Finalizer|Prepare|TargetMethod|TargetMethods|Cleanup)$" />
+  </Module>
+</Obfuscator>

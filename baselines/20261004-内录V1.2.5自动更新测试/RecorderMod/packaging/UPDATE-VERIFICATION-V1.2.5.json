@@ -1,0 +1,54 @@
+{
+  "Version": "1.2.5",
+  "BasedOn": "1.2.4",
+  "FeatureChanges": false,
+  "RecordedUtc": "2026-10-04T12:14:31.7828204Z",
+  "Transport": {
+    "Assertions": 89,
+    "Passed": true,
+    "Framework": "net6.0 / C#10",
+    "Protected": true,
+    "Network": "Injected memory responses, no public downloads"
+  },
+  "Session": {
+    "Assertions": 56,
+    "Passed": true,
+    "Framework": "net6.0 / C#10",
+    "AAOrHelperLaunched": false
+  },
+  "Installer": {
+    "ProcessChecks": 21,
+    "PriorV124OwnershipChecks": 2,
+    "HelperProtectionChecks": 2,
+    "Passed": true,
+    "Host": "Isolated compiled synthetic AA process; no production AA launched"
+  },
+  "Payload": {
+    "Files": 202,
+    "ZipEntries": 203,
+    "AllHashesPassed": true,
+    "NoBundledDlssNative": true
+  },
+  "FinalExeProtection": {
+    "Checks": 6,
+    "Passed": true
+  },
+  "FrozenBridge": {
+    "Files": 42,
+    "Passed": true,
+    "Changed": false
+  },
+  "SourceInputs": {
+    "Verified": 100,
+    "ChangedDuringBuild": 0,
+    "PriorV124FilesUnchanged": 269
+  },
+  "NotRepeated": [
+    "Long story recording timing",
+    "NVIDIA DLSS execution",
+    "Unity UI smoke; V1.2.4 historical evidence only"
+  ],
+  "UserAcceptance": "Actual GitHub automatic update from the formal V1.2.4 remains for user validation after publishing.",
+  "LocalEvidenceDirectory": "D:\\test2\\开发\\V1.2.5\\交付\\验证记录",
+  "FinalBuild": "D:\\test2\\开发\\V1.2.5\\交付\\构建记录\\protected-V1.2.5-20261004-201207-dd9261ab"
+}

@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "inputGeneratedVariant": "exec-86fbe2e6-3253-4f73-a61d-3990af69f18c.png",
+  "officialReference": "reference/arona-official-standing.png",
+  "finalAsset": "arona-page-04.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the edit target, the thinking-pose Arona chibi tutorial sprite. Image 2 is her official standing reference. Make ONLY her facial expression distinctly thoughtful and curious, clearly different from a simple friendly smile: direct both blue pupils slightly upward to one side, lift one eyebrow, gently lower the other, and use a tiny round 'o' mouth instead of a smile. Keep the eyes cute and natural, not crossed. Keep her fingertip touching her chin, blank tablet, exact full-body pose, proportions, navy linework, pastel flat cel shading, costume, short light blue hair with pink ends, white hair bow and CYAN BLUE HORIZONTAL RING HALO completely unchanged. The halo must remain a slim flat cyan double ring with blue segmented details floating above the bow, not a pink symbol, heart, or antenna. No question marks or additional marks. Do not add or remove props. Full body, complete halo and shoes, same portrait framing and safe margins, true transparent alpha background, no floor or shadow, no text, no logo."
+}

@@ -1,0 +1,27 @@
+{
+  "Version": "1.2.4",
+  "Status": "LocalVerificationPassedAwaitingUserAcceptance",
+  "SourceFilesVerified": 269,
+  "PreviousV123SourceFilesUnchanged": 251,
+  "Files": [
+    {
+      "Name": "AzureArchive内录V1.2.4-加壳安装.exe",
+      "Bytes": 255266816,
+      "Sha256": "912F2784BC22CCB0232309E00CFDD0736CA4053D16A166BDBDA8442412682034"
+    },
+    {
+      "Name": "AzureArchive内录V1.2.4-最新源码.zip",
+      "Bytes": 7020710,
+      "Sha256": "6C48D36E62E8AB3483EF344F2C51803C2BB32455992A9A8339EAD098CC3CD0F5"
+    },
+    {
+      "Name": "AARecorder-V1.2.4-update.zip",
+      "Bytes": 255740322,
+      "Sha256": "C1440ABD133B98D1F5FAC8F316922C022AB7695C48DBC3036E434E3A587D6DDB"
+    }
+  ],
+  "PublishedToGitHub": false,
+  "FormalAAInstalled": false,
+  "V123PublishedCommit": "2ebd5f1dfcafdaba842c08149a660f31d37b580e",
+  "RecordedUtc": "2026-10-04T12:05:14.6865337Z"
+}

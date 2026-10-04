@@ -1,0 +1,31 @@
+{
+  "Version": "1.2.5",
+  "BasedOn": "1.2.4",
+  "FeatureChanges": false,
+  "Status": "LocalVerificationPassedAwaitingGitHubPublicationAndUserAutoUpdate",
+  "SourceFilesVerified": 271,
+  "PreviousV124SourceFilesUnchanged": 269,
+  "Files": [
+    {
+      "Name": "AzureArchive内录V1.2.5-加壳安装.exe",
+      "Bytes": 255266816,
+      "Sha256": "865105244A1E996B8DD352485D1D5589DC8185363B96C40DCE753321F8B5087B"
+    },
+    {
+      "Name": "AzureArchive内录V1.2.5-最新源码.zip",
+      "Bytes": 7024829,
+      "Sha256": "0AEFACEAEE609F4336F7BAB11F23656BB2B530C53D5190BC43E5CF35B0854BF3"
+    },
+    {
+      "Name": "AARecorder-V1.2.5-update.zip",
+      "Bytes": 255740342,
+      "Sha256": "A8B29275C5E93B0587E07C84495AADA212A9E711551173F8A6871A281F295AD2"
+    }
+  ],
+  "PublishedToGitHub": false,
+  "FormalAAInstalled": false,
+  "FormalAAVersionForUserTest": "1.2.4",
+  "ExpectedGitHubTag": "recorder-v1.2.5",
+  "ExpectedBaselinePath": "baselines/20261004-内录V1.2.5自动更新测试",
+  "RecordedUtc": "2026-10-04T12:14:32.6355417Z"
+}

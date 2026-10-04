@@ -1,0 +1,1347 @@
+[
+  {
+    "path": "assets/tutorial/arona-guide.png",
+    "bytes": 913589,
+    "sha256": "CC93D8406298B915997B11C44A4A2158781BD773B689814C361AA6A134C45DB2"
+  },
+  {
+    "path": "assets/tutorial/arona-page-02.png",
+    "bytes": 917396,
+    "sha256": "8D1EDDF8ABFA4987D83FB2D85585ADEDC5B539B0D78D871FF9B93B61B2A3B5F3"
+  },
+  {
+    "path": "assets/tutorial/arona-page-03.png",
+    "bytes": 883550,
+    "sha256": "F6712A9F501B8D449529DC09B966C76FC300D710F59BCF11E4FC1A46956E7D06"
+  },
+  {
+    "path": "assets/tutorial/arona-page-04.png",
+    "bytes": 868242,
+    "sha256": "114B835625B810F6BB0DF5E72CFA4623FC3879E1BB21E370FF155F79130E09FD"
+  },
+  {
+    "path": "assets/tutorial/arona-page-05.png",
+    "bytes": 961080,
+    "sha256": "A03A2B1761A4C4575F96A8B99B31E658F83D0DCA9DB2D1232CB5F533EF411790"
+  },
+  {
+    "path": "assets/tutorial/arona-page-06.png",
+    "bytes": 831776,
+    "sha256": "0B678773819BDAEB5EE047F0E11F231A9E3F2E0A218DCB068C7F0021D539726A"
+  },
+  {
+    "path": "assets/tutorial/ASSET-SOURCES.md",
+    "bytes": 5219,
+    "sha256": "771B9F926948C3B20E6F80A1954CD6DDD49CAA5F8C6CD1E20A5544092F048E7B"
+  },
+  {
+    "path": "assets/tutorial/asset-validation.json",
+    "bytes": 1771,
+    "sha256": "24E57CC1CAB0154CEACFC43542A7B83CB4CBB08ABB95FAF7C60DF09299B42523"
+  },
+  {
+    "path": "assets/tutorial/pose-04-refinement.json",
+    "bytes": 1319,
+    "sha256": "F8EC655B9D8D175ECA3969E603F827303B709502F7F0D3F58EB930E247976058"
+  },
+  {
+    "path": "assets/tutorial/pose-prompts.json",
+    "bytes": 9023,
+    "sha256": "B12246175F4837C78B74311B281DCD681E7B61DC16D22F3F32947D5DCC8C0F77"
+  },
+  {
+    "path": "assets/tutorial/reference/arona-official-stamp.png",
+    "bytes": 62508,
+    "sha256": "99F0D5CFA60E720C811D9C7FAFE407B3ECE659A08FF478F4DB541E68A7939BC5"
+  },
+  {
+    "path": "assets/tutorial/reference/arona-official-standing.png",
+    "bytes": 105094,
+    "sha256": "F3B6C192795202478905064F408CB3168BB7C9FCE02F6A3B53C010B6CB6F15C5"
+  },
+  {
+    "path": "assets/tutorial/reference/official-guide-layout.png",
+    "bytes": 540419,
+    "sha256": "4E3FD292FF18BA1F4DCC932E6E36C68311247500F08C88A7F272ACD9C7706547"
+  },
+  {
+    "path": "bridge/enhance.py",
+    "bytes": 8307,
+    "sha256": "AFEB7B169249614E0152D3A4C4EFF98376E69E38379F8EEF7F43B1C6B5DAD19A"
+  },
+  {
+    "path": "bridge/gpu_profiles.json",
+    "bytes": 886,
+    "sha256": "F606C193831D62E90A71D5998D94CAD398834544265B97445442F2F7F000DF64"
+  },
+  {
+    "path": "bridge/requirements.txt",
+    "bytes": 95,
+    "sha256": "D0DC1AFFD922630093495759370A45A143ECAC09B6C3A9074E66323DAB078F5C"
+  },
+  {
+    "path": "bridge/vendor/DLSS5Tool-LICENSE",
+    "bytes": 1102,
+    "sha256": "A08DE3E6A482C0DBF94ACAEC2962CC2D121AF03328F9002F491D2DF9E3EF314F"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/__init__.py",
+    "bytes": 150,
+    "sha256": "64E1F051D653E741C07A2DBBF556CC19533C82A76DE7A91179BF129D324A03F0"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/__main__.py",
+    "bytes": 108,
+    "sha256": "6B0A291CEE4658676A225EFD6925799620B742D73BF3C569879A2EDB2AD122E4"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/about_dialog.py",
+    "bytes": 6693,
+    "sha256": "BF65F786C6D2F91F9AF6965A22771E22738D0E9210B45325F618C9CC676FBC98"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/amd_devtest_ui.py",
+    "bytes": 16907,
+    "sha256": "A13F3610973D161CC15CA4F7190E6F37E9B455CE675CA78109FD77EC4E07BE80"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/amd_devtest.py",
+    "bytes": 31648,
+    "sha256": "7AB379457700E28F3508B0C77712A3227E57EF749F2AB0BAC30CC98946D994BE"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/app_settings.py",
+    "bytes": 13429,
+    "sha256": "08E451F3E63303ED200E2996D9ECDA6EBFC1C7898248F27ACD9D6A93924248B2"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/app_version.py",
+    "bytes": 119,
+    "sha256": "538AC776FB4621F2AC30514B2988A994AC06735C6BABCB73943496E1D17AC056"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/cuda_hdr_yuv.py",
+    "bytes": 6736,
+    "sha256": "DDADEB728153D03E91FB01CC1517C30B56CC9E686CF0D24608B43B7B48685C8E"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/cuda_interop.py",
+    "bytes": 3081,
+    "sha256": "889FDD69BDA85A868F57CE972AE7457B697F5169A4DBD9540C1553783E88A6B7"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/cuda_sdr_yuv.py",
+    "bytes": 6314,
+    "sha256": "2FB4E65777CE5A4F9B625E51B034DC683F3311DA3E9874B7AE24CA2CEEEC9755"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/cuda_session.py",
+    "bytes": 3330,
+    "sha256": "07FBF8248B8141203BE719D31AA02AEE7E5420DEE090A3DF0D3378D51446FB55"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/delta_update.py",
+    "bytes": 20659,
+    "sha256": "AA3C9FDB6B913C7C4203E6FE71EF2C3308A772BD80FD40D774A57D695793AA94"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/depth_acceleration.py",
+    "bytes": 1350,
+    "sha256": "37FE7B2AA9C3D872FBA945D608E6A2E67E2EB2B2EB934C6000A844C5591BC382"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/diagnostics.py",
+    "bytes": 57145,
+    "sha256": "C4A77AB02C66671288A71756DFB5F35BEB3B2E862262B4EB55A82B8372C17752"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/dlss_engine.py",
+    "bytes": 33485,
+    "sha256": "2DFE3D9071891678A14F746921E9EEC678A6C1D701D3E5EA715F73B69E16E64A"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/dlss_host_process.py",
+    "bytes": 23857,
+    "sha256": "4ABAD88265D9F08A2D4142C59B4C933B5B32221B228FE89BF3AF9650A9A7E9BD"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/encoding_contract.py",
+    "bytes": 2361,
+    "sha256": "01C9451C573B798F8C62EAF57194C089453CE9ECEE86ABA3695624CC70C50CFF"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/export_queue.py",
+    "bytes": 5750,
+    "sha256": "EFDFDFB7386EDF93070D759EBD3F7C36B4E106034153E91DCE23453CDDAEA5CD"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/frame_generation_ui.py",
+    "bytes": 242,
+    "sha256": "47DC8436AEC81E4822F8663BAD12EDD628D82A5EF82C1E4757492A33A36EBC41"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/frame_generation.py",
+    "bytes": 37044,
+    "sha256": "80BAA80F6C643C12A3642971429786E5A2215EB57161C34F47A3F3A2F116ECF9"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/frame_timeline.py",
+    "bytes": 9842,
+    "sha256": "26FAA6C04032B2499D65955B8E71F6145A29A7087B99828CC59AF6463624BA90"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/gpu_export_process.py",
+    "bytes": 12267,
+    "sha256": "371E91E6054FC5E3C4DCE17FDC24A660750BA251B25B78F3BC59C71681830ABD"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/gpu_export_runtime.py",
+    "bytes": 5013,
+    "sha256": "844BAADFB94C03408C514DFC9E63C482B775F8C01F7F919E0EFCB8B850220D94"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/gpu_flow.py",
+    "bytes": 9325,
+    "sha256": "52382520DA96A0F2C2A5DA93369E96050F1E5A58F4E59FECE471A7DCF9C995E3"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/gpu_video_export.py",
+    "bytes": 6545,
+    "sha256": "04E562CEA6D35AFB2003D614560D4FD23A86A9328812509416F9D2A9FC53177B"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/gui.py",
+    "bytes": 446949,
+    "sha256": "BF38DDE8FB14BDCBFC4D3750C55F9FFE64DF3A298F46B32FEC51F4732775C39F"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_cache.py",
+    "bytes": 4251,
+    "sha256": "2A4BEE44367E1204AC31F9228532EEE8BB2C94CEFA9C639F78238B34527E522C"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_client.py",
+    "bytes": 20250,
+    "sha256": "71F6242967D1531061E6FB458E02A14BBA3A5F128D0CF73BA8BA114FA6AC3A48"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_color.py",
+    "bytes": 3383,
+    "sha256": "D1E1649F91E41D8E6C3DA2BFD960CCE195332A867F697DF76A1CDDFD3731C052"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_execution.py",
+    "bytes": 1030,
+    "sha256": "6A1EFD745D9F5D0A848E391AAC6F320CDB4B034AC4F9AB370236D3D7927BE87C"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_export_ui.py",
+    "bytes": 9430,
+    "sha256": "561056704059D3EC41883FF6BAA3F1A14D6779F5418C018C058237F4EE854A9D"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_export.py",
+    "bytes": 6038,
+    "sha256": "BA2B0249F0140852459BEC8239DC59FFD0F5245113207936D834A049883DB62B"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_flow.py",
+    "bytes": 1950,
+    "sha256": "E1B3DF6D85A7B7A26E217BB68A10456E7BE2960DC55662ADE6347659ADAD704E"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_inputs.py",
+    "bytes": 1551,
+    "sha256": "2105AF35DC4031BD7C8A7F5271848D3B5654BC8ED925605AB1E11EC15F8D8FB5"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_parameters.py",
+    "bytes": 3230,
+    "sha256": "4FB0BA6724A77558D7678766F1BC502B1A568BE9C4C4644888FB9C10D8ABFCDC"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_public.py",
+    "bytes": 1461,
+    "sha256": "FD7F223B53398DD6A3194E8352810EF58E569A8FEDCF8347ADF0FF4499677090"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_settings_ui.py",
+    "bytes": 10464,
+    "sha256": "EF23C86C3A0090F464D5D31ACFDBEB0565CD77281D7B7F7C1ACEBF1B127E59F7"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_transport.py",
+    "bytes": 2865,
+    "sha256": "8651F56DF322282438BC0CB0D907054C322E2FEA04A6D45F65249060A17F3EF9"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_visualization.py",
+    "bytes": 1423,
+    "sha256": "9E815632700A585A948ABD2D96B880F7E0C0231F41918E614EC4EFF77B2AB65E"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/guidance_worker.py",
+    "bytes": 29600,
+    "sha256": "3B6EB42B782475FF99E5606018DD9493280D44A9DE1B6E461428AFEFA476B1FE"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/host_queue.py",
+    "bytes": 302,
+    "sha256": "C1210CA01DBFABF715E252760D638CDCDAE8A1D3B328C4FB11C53355DE68F427"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/i18n.py",
+    "bytes": 2293,
+    "sha256": "093CC247D8924B2AFA8D6E66AE203EAEF1BAEC50B827848B38906FC6621B240C"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/image_sequence_dialog.py",
+    "bytes": 16383,
+    "sha256": "A4C64FD3E8557F209BBF8734179DA90E136A785834780CABA0B55AC67C66F9BB"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/image_sequence.py",
+    "bytes": 19786,
+    "sha256": "7DB2826E69030379B5B18742194EBF7299BFDBCC6F5876974C66074960498CE6"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/mod_paths.py",
+    "bytes": 9311,
+    "sha256": "6AE4924BC3EDB24A24D5241D36A5A4D2A2A72B159A73CDCFD568AEB974616A0B"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/nvenc_yuv.py",
+    "bytes": 10492,
+    "sha256": "F40DC5E9BFFEC35060CAD71357A68CCBB56889786136B23E458926BDB0932B4B"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/nvofa.py",
+    "bytes": 11440,
+    "sha256": "36CA59432ACDF311B6FA50CBC79144FB2DB5317B7D94EC67D81D2FA8F7BC405B"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/packet_mux.py",
+    "bytes": 6710,
+    "sha256": "9ED61974BD3A77BA9A72C08E04439672A8900B01FD0DCC6FB184C4689C8ED9EF"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/parallel_export_worker.py",
+    "bytes": 8124,
+    "sha256": "65FC4C346FC5DFC06F0512BE295B78035538AB5D8D1E1568FD5CD3FB074DB6FD"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/parallel_export.py",
+    "bytes": 9231,
+    "sha256": "692D777CD8E48D32F912DC671F81A5AF7BF6F337CB681BEBCFE8D0490A4A40CC"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/paths.py",
+    "bytes": 1340,
+    "sha256": "8808C9A1FF21F59875C853984ED6E3BEDD0D8F7B81652DEAD356CDB590C16B1C"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/performance_profiles.py",
+    "bytes": 1401,
+    "sha256": "709327EC8FEC01CFE8938602F2737CB7FE76B84D7060C0FEEBC3EF7437C8351A"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/preview_audio.py",
+    "bytes": 6670,
+    "sha256": "F30A86B39C776576AEC666B404D10A6A5656E5F5A6CE9E64D1944E0E163552D9"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/preview_comparison.py",
+    "bytes": 23682,
+    "sha256": "04A203780E893C6D3EBBBED454CF79AB5D721F5A3DE902CAC8AD823147AE0F96"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/preview_decoder.py",
+    "bytes": 4983,
+    "sha256": "B619D3B78CA35C25DA9582AF9EAE8BF3142A695F745C8A3A73A63944E10C54E2"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/queue_list.py",
+    "bytes": 18534,
+    "sha256": "10477DDB81777CAB44200E71BB7685B04FE68778DE5061FDF16B2CFBED250442"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/render_cache.py",
+    "bytes": 25100,
+    "sha256": "EA9236260458549D4615DFF183D644774A7327C9B2C0DC18253A4D4923BEEFDB"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/shared_cache_budget.py",
+    "bytes": 4864,
+    "sha256": "5A122C416017691D378B6BF4C9B74F94FB36D016E4F6DAD545EFB23EA88FE322"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/shared_render_preview.py",
+    "bytes": 20692,
+    "sha256": "4DD8EC2EEA003CF073ACD30BD1BA771184C190473CB5EB2C868BB81E9FBD87B9"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/super_resolution.py",
+    "bytes": 17493,
+    "sha256": "79E0DBEFD77104EC11157E1D9F78C59CDDA5F937FE86F930770F29A9E3204D0C"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/ui_icons.py",
+    "bytes": 17204,
+    "sha256": "38AF7F788997E4FE7CC700CCA0A9C7934A45E1F9AA414776CF7B25FA0B10519A"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/ui_theme.py",
+    "bytes": 30584,
+    "sha256": "F6907EF95386B735B6C3D76228BB0E7B14B8C02A55B5805133C60C2DEB3149E7"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/ui_widgets.py",
+    "bytes": 73469,
+    "sha256": "2FDB0A61CC9E950B92F9BD6F0C9E3E61F631B2A4E525C8CBCCD85D0EDED5A870"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/update_helper.py",
+    "bytes": 6324,
+    "sha256": "7AF11DE7462515826976371EBF360CBD32979DABE4F2893916F179CA202FBB40"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/updater.py",
+    "bytes": 11825,
+    "sha256": "0FF9023B3C4DEEF58B503443C040F4477ED27C865CC8D49EDE8CC3883604C430"
+  },
+  {
+    "path": "bridge/vendor/dlss5tool/video_export.py",
+    "bytes": 38895,
+    "sha256": "3D5F14095ED7805A22F2D13A83210C641EED043AF4EA82D8F5C59787AEBC9A15"
+  },
+  {
+    "path": "bridge/vendor/RECORDER-PATCHES.md",
+    "bytes": 886,
+    "sha256": "5446BB6F456ABFB5A2B7B21171AD44B9734B41020B98982B0101125DE0791D0D"
+  },
+  {
+    "path": "build.ps1",
+    "bytes": 3470,
+    "sha256": "7708BBE5EF9D2E281CD02A460C2383EFFA06F69B32ED66CC9841C53FAAF05423"
+  },
+  {
+    "path": "CHECKPOINT.md",
+    "bytes": 6547,
+    "sha256": "2A114A2268EF767D02372E97A4972AD1D9E537AB02CC9156D5178216E157291B"
+  },
+  {
+    "path": "CONTINUE-V1.2.1.md",
+    "bytes": 7195,
+    "sha256": "8911BD2EAE7095D43ACBBB29B6D494289759B12B5280ED2868A2FA894BB160DC"
+  },
+  {
+    "path": "CONTINUE-V1.2.2.md",
+    "bytes": 7421,
+    "sha256": "930F7A841EC56538ED8794B0AB511ADCCDF4AAC16B0FF4766EB1C9DF253A562A"
+  },
+  {
+    "path": "CONTINUE-V1.2.3.md",
+    "bytes": 6676,
+    "sha256": "68A54096BD8AD1F29F8CEA7D33C908BE1B24B586CA91B69A0CE1ABEB5EBC4D74"
+  },
+  {
+    "path": "CONTINUE-V1.2.4.md",
+    "bytes": 6521,
+    "sha256": "B40CAF7458AE805F454C93809A76EA1AE598D3AE9E1FD4420D6713A919AF3990"
+  },
+  {
+    "path": "DEVELOPMENT.md",
+    "bytes": 16721,
+    "sha256": "C2A8A5E1E4D2B4130D6063E1D454073E5B12D53FEF314B55654A7FCDE303281D"
+  },
+  {
+    "path": "DLSS-RTX-TEST-PLAN.md",
+    "bytes": 14953,
+    "sha256": "98D11AAF147DC619E47328EC21A918C047F8F9BC69352700E7719F6BBFC15DF1"
+  },
+  {
+    "path": "HANDOFF.md",
+    "bytes": 24957,
+    "sha256": "47A760D7306ECDF9AA791575B6CDA95A97D1D66D796CE07E526210686D0A46CB"
+  },
+  {
+    "path": "install-gpu-runtime.ps1",
+    "bytes": 1623,
+    "sha256": "678E5BF861C2252B18333F7D9DF0511AB87B92C2209BF61CF55BBAAE490664C1"
+  },
+  {
+    "path": "install.ps1",
+    "bytes": 1781,
+    "sha256": "12D27268DC8242C7BEA5E6A0B3622965E2B730D8DA3C7EC11D6C5B130B0165F4"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 428,
+    "sha256": "09BD2327B4F64D1F6783B6C9C9AC0C4FC876BC8F71FCB2B4B4FD671F6027CF24"
+  },
+  {
+    "path": "package.ps1",
+    "bytes": 1327,
+    "sha256": "4A8030E70B574345433B185AAA4C8B845B37988CD18CCCC1B7B7573D9CD8B3EE"
+  },
+  {
+    "path": "packaging/build-development-installer.ps1",
+    "bytes": 8513,
+    "sha256": "3BAF03D571923DFD3AC018FBCC43129260E3F9ED1339574A4974CF445E86329E"
+  },
+  {
+    "path": "packaging/build-dlss-supplement.ps1",
+    "bytes": 14734,
+    "sha256": "13E0F6490BF46501E2E0324FADF35311E05B9E1D89E6DADDA2C430793A964161"
+  },
+  {
+    "path": "packaging/build-enhancer.ps1",
+    "bytes": 2977,
+    "sha256": "0099FDFA1341A672581AE68F9D1392EFF7A2B75D36D531485352A3E080C35C4C"
+  },
+  {
+    "path": "packaging/build-handoff.ps1",
+    "bytes": 6140,
+    "sha256": "8252C224CD2EA657297667DE09BACA60BD57C04869DA8843BD8EEBB6C9453296"
+  },
+  {
+    "path": "packaging/build-r6-support.ps1",
+    "bytes": 9249,
+    "sha256": "5A3C6FCD29ED4D685AC49190243E3910B38CEEAB8F7C91853391116BC4545F01"
+  },
+  {
+    "path": "packaging/build-release.ps1",
+    "bytes": 13748,
+    "sha256": "539334969952EE0D25E7554DF43EA40A39122323F4A6FFE538AAD4D8C6FB7FE1"
+  },
+  {
+    "path": "packaging/build-v1-online-support.ps1",
+    "bytes": 1768,
+    "sha256": "EFF4C270A764DE9FFAF767F0451EAC859C04C04C7A966887B17AB26E708AC86D"
+  },
+  {
+    "path": "packaging/BUILD-V1.2.1.md",
+    "bytes": 3203,
+    "sha256": "7485A8B030B2BC98F27B8B9531B7E5EF0D6F3A8B933DA0A4FB6B68A545150525"
+  },
+  {
+    "path": "packaging/BUILD-V1.2.md",
+    "bytes": 1951,
+    "sha256": "E367F30DAB236EE8A8D3085E6F27572F1EE8B9B5FDD6E5745A2201B717B5DAC4"
+  },
+  {
+    "path": "packaging/DEPENDENCY-RESTORE-V1.2.3.json",
+    "bytes": 4116,
+    "sha256": "89C6FDC46EB6B034AEBC3AE4369CF7A626CED34B98AE2D8B9786E275C43EC41F"
+  },
+  {
+    "path": "packaging/dependency-verification/python-build-requirements.txt",
+    "bytes": 152,
+    "sha256": "A7E9706D06BBE3BFE45F4A655E1B05DC79D89BB38656CB86D8F3A247A5936913"
+  },
+  {
+    "path": "packaging/DependencyTests.cs",
+    "bytes": 13099,
+    "sha256": "C006C3EC6DD5FE3812F34A00D9FF85231351066711ABFBD441A4954F727E1EF0"
+  },
+  {
+    "path": "packaging/DLSS-SUPPLEMENT-AUDIT.md",
+    "bytes": 5194,
+    "sha256": "05B09F5D8A02EFA326F0D6B017EF37A51A50BEFE586A639BA59044AEF81A5F42"
+  },
+  {
+    "path": "packaging/DLSS-SUPPLEMENT-GUIDE.txt",
+    "bytes": 2691,
+    "sha256": "C654F0CC9C3BB533EF3817F4211946162EC1407CEFCEA361235A003A6274173D"
+  },
+  {
+    "path": "packaging/DlssSupplementInstaller.cs",
+    "bytes": 18732,
+    "sha256": "80A6999D2014BD78235959C5A905FF683E8D0AAC5CB29B285EFD63A089529273"
+  },
+  {
+    "path": "packaging/enhance_entry.py",
+    "bytes": 2028,
+    "sha256": "6F003D76B31E23F6C8C4BB0223804D12FF4E6D833EBFBA96CB9124D1BBB8FF63"
+  },
+  {
+    "path": "packaging/EnhanceHost.spec",
+    "bytes": 1308,
+    "sha256": "0C620D4E7922273A3A0F90C5E8AEC5F2235D3F67CE38B2F637B8EF018D2C1265"
+  },
+  {
+    "path": "packaging/enhancer-runtime-modules.json",
+    "bytes": 1593,
+    "sha256": "85E44A78A5E6D92DE1205FD1917BF32930FE60991B3B225D581ED7E74D451102"
+  },
+  {
+    "path": "packaging/ExecutableShell.cs.in",
+    "bytes": 2600,
+    "sha256": "F2ACD034F6B338C63C873EEC54110E1C4B8F57A5DE272C7B488BB714C283B1AA"
+  },
+  {
+    "path": "packaging/export-handoff-zip.ps1",
+    "bytes": 3800,
+    "sha256": "8306E8663BB5BA47728647557FDAB2BBEF0A486856AA35CC4A622F0EAB011B61"
+  },
+  {
+    "path": "packaging/ffmpeg-vendor/BUILD-CONFIG.txt",
+    "bytes": 2247,
+    "sha256": "DF360F33A49920D1A34396E5F34483EEA775EF5F24A71A02DBD3DD41B911E69D"
+  },
+  {
+    "path": "packaging/ffmpeg-vendor/COPYING.GPLv3.txt",
+    "bytes": 35147,
+    "sha256": "8CEB4B9EE5ADEDDE47B31E975C1D90C73AD27B6B165A1DCD80C7C545EB65B903"
+  },
+  {
+    "path": "packaging/ffmpeg-vendor/PROVENANCE.json",
+    "bytes": 772,
+    "sha256": "F7F24B47B9DFC24ADD5B240D447E816847A57F98BBAC3456BA4C4AE40995B998"
+  },
+  {
+    "path": "packaging/ffmpeg-vendor/UPSTREAM-README.txt",
+    "bytes": 43770,
+    "sha256": "D694901BAD3D99B2F3748E983B8BDAA8CF594E35E128CB872E07ED11D0CFD344"
+  },
+  {
+    "path": "packaging/ffmpeg-vendor/VERSION.txt",
+    "bytes": 2222,
+    "sha256": "CFBD4A8EE9C9ED3295A34C19C57B6FE0A82567E653CEE6849A247F7E86536820"
+  },
+  {
+    "path": "packaging/FfmpegTests.cs",
+    "bytes": 18736,
+    "sha256": "2A2E31002EEEE28F756CB8B57816CC2C4E3CB70744B2EC02335AF446003DD06E"
+  },
+  {
+    "path": "packaging/Installer.cs",
+    "bytes": 47043,
+    "sha256": "545179DFDE916AFF71FBE320538F56C6B83C2FB2CCC80EE2D0AD7A9E409266A6"
+  },
+  {
+    "path": "packaging/Loader.cs.in",
+    "bytes": 2774,
+    "sha256": "1688E555D11462AFA2EC7B28EA889819A559928FF3F27B994C6734A3A078427A"
+  },
+  {
+    "path": "packaging/LocalVerificationInstall.cs",
+    "bytes": 2663,
+    "sha256": "41541AE935D65C300B86DAB81C83F374EEE3670B29FAF7ACDB4246A2B6456E6F"
+  },
+  {
+    "path": "packaging/obfuscar.xml",
+    "bytes": 1119,
+    "sha256": "548074CE4C7CAC66313C121AE54618D2849644C4693FAD01515FE558B644A25B"
+  },
+  {
+    "path": "packaging/ONLINE-DLSS-SOURCES.md",
+    "bytes": 6224,
+    "sha256": "F1EF81D0C9C7DE339BB01C32153EB3EC6B8C67E538333D134DA18EDE240362AD"
+  },
+  {
+    "path": "packaging/OnlineDlssInstall.cs",
+    "bytes": 38680,
+    "sha256": "743AB895C2806368ADF2FD8790A613E32BA5A9D722CA79D64AC30A93E4B56F03"
+  },
+  {
+    "path": "packaging/protect-executable.ps1",
+    "bytes": 5931,
+    "sha256": "522AD04276D9C8B5F3C7DA1A55A9902842DA07CBB89A44C3DB74F91462732888"
+  },
+  {
+    "path": "packaging/ProtectionTests.cs",
+    "bytes": 7579,
+    "sha256": "B52F1A0968ACAF536382AF290A3B311974E71B8C64AE8692357B6CEF0B840030"
+  },
+  {
+    "path": "packaging/R6-INSTALLER-TEST-RESULTS.md",
+    "bytes": 6481,
+    "sha256": "8775CA260AAAB0BD29D038447F3BB8657885EA71733218D6358F10F792194A82"
+  },
+  {
+    "path": "packaging/R6InstallerTests.cs",
+    "bytes": 28612,
+    "sha256": "062A560FEBD087B51FAA819DDD93C935BCD496FFF899543E8BD913FB9422CF0B"
+  },
+  {
+    "path": "packaging/rebuild-v1-installer-ui.ps1",
+    "bytes": 5752,
+    "sha256": "45580BDFF374117928C91E73D7EB81D68108BBA6A08B1A04EF30EC2CC5D3A3B9"
+  },
+  {
+    "path": "packaging/rebuild-v11-installer-ui.ps1",
+    "bytes": 13948,
+    "sha256": "9397DEB6FA8A582ADDE61F5946FB38228E65B208332AB35630CB80DE25D2BF67"
+  },
+  {
+    "path": "packaging/RELEASE-VERIFICATION.md",
+    "bytes": 14520,
+    "sha256": "19EDFC78ACCC2E4425951850F549CFBB98EB9AF704D70F360DF5CEEA35193D23"
+  },
+  {
+    "path": "packaging/SafetyTests.cs",
+    "bytes": 11475,
+    "sha256": "1A04CC62AD4922172A46EC440A399C14B3C1329566ECA8F5586DB76B93E1943E"
+  },
+  {
+    "path": "packaging/save-v1-baseline.ps1",
+    "bytes": 32104,
+    "sha256": "409AA38055F9AB275253F3DC2F891607D04A94FB48998FC0E994C76FBBF11337"
+  },
+  {
+    "path": "packaging/save-v11-baseline.ps1",
+    "bytes": 32618,
+    "sha256": "D086F160AA0811653A7F3F771083A04AD5EF3B73AD0B316AE2CA41C3E9FC5421"
+  },
+  {
+    "path": "packaging/test-r6-installers.ps1",
+    "bytes": 7388,
+    "sha256": "82CB0CFC25F1F839CD98B2EDB40E7824748D7A47A4B472BFA14D828AFF145504"
+  },
+  {
+    "path": "packaging/test-update-installer.ps1",
+    "bytes": 4237,
+    "sha256": "6BDA46DEFBCE1CEAB2BDB14202187CE340101606CF709CB7BCCE4130CF1F358D"
+  },
+  {
+    "path": "packaging/test-v1-delivered.ps1",
+    "bytes": 5193,
+    "sha256": "FFC06000B84E6F9E1B3CFEFD644F8F11184558195BD97B441D23BC500B01E279"
+  },
+  {
+    "path": "packaging/test-v1-installers.ps1",
+    "bytes": 4778,
+    "sha256": "CF4D8B4681FC25F5A305082FEF55DB157E7285ADFA1C02B59AE806C9266C091A"
+  },
+  {
+    "path": "packaging/test-v1-real-exe.ps1",
+    "bytes": 3738,
+    "sha256": "0724A3A2444192C0522862F390E4B0EEF8DA54D222AB29996557866A5F254B97"
+  },
+  {
+    "path": "packaging/THIRD-PARTY.txt",
+    "bytes": 366950,
+    "sha256": "27A95D584F6B8EF388980933696A78EBF94CD86EA7E44E115E7FECB929E62B21"
+  },
+  {
+    "path": "packaging/tools/Obfuscar-LICENSE.txt",
+    "bytes": 1159,
+    "sha256": "97E442E29D50B501151A2A4EDF79252E75EA02217816E9281B6657045559EDDB"
+  },
+  {
+    "path": "packaging/UPDATE-PROTOCOL-V1.2.4.txt",
+    "bytes": 4048,
+    "sha256": "445375749C46E52E1C6E263DB90A1F02BC8E6322F98565680F93AD385C6B8D5B"
+  },
+  {
+    "path": "packaging/UPDATE-VERIFICATION-V1.2.4.json",
+    "bytes": 2503,
+    "sha256": "1AAB1A59E3FD8AFDC496C858E06FA8FBEC4D204F1CD27E98BAB66D4E3BBB9616"
+  },
+  {
+    "path": "packaging/UpdateHelper.cs",
+    "bytes": 9934,
+    "sha256": "F557982C8D1BDA7927774079BAFAFD2052E58FB0C143ECC6DDBAADF1870D54F2"
+  },
+  {
+    "path": "packaging/UpdateInstallerCore.cs",
+    "bytes": 11528,
+    "sha256": "C16399968C1205602B53076738278B205F7F1F69C37E5230E7100536C034A539"
+  },
+  {
+    "path": "packaging/UpdateInstallerTests.cs",
+    "bytes": 22814,
+    "sha256": "535D24713F01D5F3709F695CA0BE7A13DBAE8916ABE2CDA288B59B8E173053D7"
+  },
+  {
+    "path": "packaging/USER-GUIDE.txt",
+    "bytes": 9478,
+    "sha256": "C99151FBAEB8FB36BF80CF35B51812E4600867F2C20C045A56500A0D5360D898"
+  },
+  {
+    "path": "packaging/V1-INSTALLER-VERIFICATION.md",
+    "bytes": 8182,
+    "sha256": "C31FFCFDEAE3CE161116BFF8BD6133B91015C69DCC5308ACCA04F55732FACAFF"
+  },
+  {
+    "path": "packaging/V1AssemblyInfo.cs",
+    "bytes": 215,
+    "sha256": "198B50E100316AC91ECC32A9CEC7A764501925803A5293442E571BB3896DCDEC"
+  },
+  {
+    "path": "packaging/V1DeliveredTests.cs",
+    "bytes": 13994,
+    "sha256": "4D2A5E36D3EA9C8961C16C0D3722A1A5EB8677B9D5BCB0EBB9394100EAEB56B8"
+  },
+  {
+    "path": "packaging/V1ExeDriver.cs",
+    "bytes": 18922,
+    "sha256": "314273726E59288B8786C8B83AD8F1EB60BE5E8512F73D49B255590D5316AAA3"
+  },
+  {
+    "path": "packaging/V1Hardware.cs",
+    "bytes": 4231,
+    "sha256": "399545616AA59F5305B88229D9365453D29E27FED69E865207934B173D4537C4"
+  },
+  {
+    "path": "packaging/V1Installer.cs",
+    "bytes": 25995,
+    "sha256": "205B19DF3D5B2D9B1B3EEEAB775297CA0F59D94AF1D628927A93B5249AF03C47"
+  },
+  {
+    "path": "packaging/V1InstallerTests.cs",
+    "bytes": 79657,
+    "sha256": "9A665CA48B1F07E52BE905D2EBC8F34EEEF6F5EEBCD86C061800966974EA2021"
+  },
+  {
+    "path": "packaging/VariantSwitchTests.cs",
+    "bytes": 3615,
+    "sha256": "9295DD954E37394DFF4C9BF6BFCBD565EB0ABD7D0FF9FF3AEA00197EA3823CC8"
+  },
+  {
+    "path": "packaging/verify-frozen-runtime.py",
+    "bytes": 5502,
+    "sha256": "54A9E8212ED1D04493C31BB5672FC492374C122026B127D93C3412B382490285"
+  },
+  {
+    "path": "packaging/verify-r6-payload.ps1",
+    "bytes": 5547,
+    "sha256": "2C1089EC29BC47284BB8AED40933463ECF2E43A0A94CFC0736E7EF74EF207AB6"
+  },
+  {
+    "path": "README.md",
+    "bytes": 8707,
+    "sha256": "82C70B2197C4CDE5679CB4A60131B1A7B0E6E95683D78E62008172F7EFA5C366"
+  },
+  {
+    "path": "setup-dlss.ps1",
+    "bytes": 838,
+    "sha256": "83BCB16436B7EAE273BFF0E4DA104BF3609E33D80D5EA27C593B1A71524425F3"
+  },
+  {
+    "path": "src/AzureArchive.Recorder.csproj",
+    "bytes": 1296,
+    "sha256": "0B6806A611F2872CA98F523EBB139181558DA27A6112309963F44ACB804AAD57"
+  },
+  {
+    "path": "src/ChoiceProbe.cs",
+    "bytes": 4694,
+    "sha256": "B097CA417AFD096A9EA18887DD499EA8376C98E4BE838A83BE078BE57ABCCB98"
+  },
+  {
+    "path": "src/DailyExportNaming.cs",
+    "bytes": 3378,
+    "sha256": "7D48ACD8FBD1EBB73221A470451197F3976D148B7F1B75560FB5D192DE00C9E1"
+  },
+  {
+    "path": "src/Deployment.cs",
+    "bytes": 2440,
+    "sha256": "1073344662C1396DE7A3F300442D3F2DEC7097D30C614EBD49AE9329BFE4A156"
+  },
+  {
+    "path": "src/DiagnosticHostReady.cs",
+    "bytes": 604,
+    "sha256": "D7A6B3708D030DFD66854338E3F567E8506ED215D02F26996B9729B5E9964E26"
+  },
+  {
+    "path": "src/DlssComponents.cs",
+    "bytes": 7750,
+    "sha256": "0B1CBC6A991881FE104253B2AFDBA9E236C14F7EF3AB599B5DDCF8C9DB5D9441"
+  },
+  {
+    "path": "src/Encoder.cs",
+    "bytes": 15116,
+    "sha256": "A16F591190222CCCE2A22E424A335160907DF7F4A630F0E3CB8B5308BA34E537"
+  },
+  {
+    "path": "src/EncoderWorkQueue.cs",
+    "bytes": 9062,
+    "sha256": "ECF3BA7F9CA8684FABC1D8E48FD95211FA92890993DE64F29B2C0FCDAB74317B"
+  },
+  {
+    "path": "src/EnhancementMonitor.cs",
+    "bytes": 7456,
+    "sha256": "2F9B6EC38042B77BF5AF0B931F96F0CF38DDB6B15004A326203086F738A867C8"
+  },
+  {
+    "path": "src/FolderPicker.cs",
+    "bytes": 3843,
+    "sha256": "4D4EE0A8CF9637562A38BE06163E3DCB135FF2AD576B77D3EC374551BA40D421"
+  },
+  {
+    "path": "src/FrameReadback.cs",
+    "bytes": 4842,
+    "sha256": "62345D15D7A5D209E1BFC0B68FC9E96587C8CBA44F655C7FE8E2AED5379953A9"
+  },
+  {
+    "path": "src/GpuProfiles.cs",
+    "bytes": 7384,
+    "sha256": "B766E219DA0C6C57D349618D9C4157593FFBDBBE906285AA588131DFF40D2E94"
+  },
+  {
+    "path": "src/MonitorResolution.cs",
+    "bytes": 2660,
+    "sha256": "583270FFBD3CE9E59AC93825596B266B49B512762E97897D636CA21F03D1514F"
+  },
+  {
+    "path": "src/NativeCaptureTimeline.cs",
+    "bytes": 9582,
+    "sha256": "CC439ACC34D39CFA99BBB99E5BAD61783B71AFA8409357D33467BD1F7578AB2E"
+  },
+  {
+    "path": "src/NativeCompositeSchedule.cs",
+    "bytes": 2229,
+    "sha256": "C10212FE890E57202629054D843B7A405F869E1995DF5034A8DCBCE286F7CF5C"
+  },
+  {
+    "path": "src/NativeLiveCaptureTimeline.cs",
+    "bytes": 3720,
+    "sha256": "C3582AE8B2D38838C745088D7DBE2ED303F3245E2B07D88BA41E7343DDDCBFBC"
+  },
+  {
+    "path": "src/NativeRecorderTutorial.cs",
+    "bytes": 12001,
+    "sha256": "30DC3503B33F6CEC115988BC7B259B163AD7EC7F0CB6DB6C3CB558EDA607FAFA"
+  },
+  {
+    "path": "src/NativeRecorderUi.cs",
+    "bytes": 21287,
+    "sha256": "0FB92235874517D9532C447E4242828D5BA3D9986D306FC7BB24635030EFE00E"
+  },
+  {
+    "path": "src/NativeRecorderUi.Timing.cs",
+    "bytes": 4819,
+    "sha256": "59B4B07E4699F50484AB6503D1C3AF207717E1F42F4AB7CA61E13E56A7F8D3CA"
+  },
+  {
+    "path": "src/NativeRecorderUi.Update.cs",
+    "bytes": 15225,
+    "sha256": "B081232C690B5DC7B98527970529750AFE6D718B1AE5F225F52B17B4B964A1E5"
+  },
+  {
+    "path": "src/NativeTimingSmoke.cs",
+    "bytes": 10992,
+    "sha256": "02B4CFFDFCA9534B930F415FC369CE94B9CB069322ED5EC4C03D0906F179DA0B"
+  },
+  {
+    "path": "src/NullableAttributes.cs",
+    "bytes": 668,
+    "sha256": "ABF2574F0FEC7FD24F383D49776E150D57D1C82FC830C4F33610A79A08D39415"
+  },
+  {
+    "path": "src/OptionalHooks.cs",
+    "bytes": 1186,
+    "sha256": "A035039EDFCF1D92E347062A302F7D02CA8A995A7F530BDFF1CFFB5123917C11"
+  },
+  {
+    "path": "src/Plugin.cs",
+    "bytes": 52746,
+    "sha256": "700F3E5B578E86A7C98026188B90E81BD649AB46CE5A08EBA1F92280E74ED8D2"
+  },
+  {
+    "path": "src/PreferencesDiagnostics.cs",
+    "bytes": 12007,
+    "sha256": "5483C0628A76ADC9C0B31AA1A854711711670DDB7996B4696D405E834900B119"
+  },
+  {
+    "path": "src/PreflightDiagnostics.cs",
+    "bytes": 15284,
+    "sha256": "8C82DDB3E34F877756A1BE09FC93C6C60040E4F2BD9A16235DECF6296DC621E6"
+  },
+  {
+    "path": "src/RecorderUpdateClient.cs",
+    "bytes": 11118,
+    "sha256": "34C4F84B0769CFEDAF578E7E716F9C26A48A9DC198DBC089AAE939C965E27F3A"
+  },
+  {
+    "path": "src/RecorderUpdateDownload.cs",
+    "bytes": 13065,
+    "sha256": "F7C4339495E5987BB08EBC588C97C435AF28297430CA6C1286B16A054F897EC0"
+  },
+  {
+    "path": "src/RecorderUpdateSession.cs",
+    "bytes": 27096,
+    "sha256": "4FA31361DF50BFF84A6FC8C559B9349F814FA854BBC894A59CC3E5A34DD97B80"
+  },
+  {
+    "path": "src/RecordingCameras.cs",
+    "bytes": 5621,
+    "sha256": "BA35853265250D095814C8EDB39FC7E39AE8294008EB8954949F36AC400BF05C"
+  },
+  {
+    "path": "src/RecordingChoices.cs",
+    "bytes": 4399,
+    "sha256": "6F2B141809998D6AB6DAC159CFA7CC53A332B080D8339F99878CC185CA259EF1"
+  },
+  {
+    "path": "src/RecordingControls.cs",
+    "bytes": 5672,
+    "sha256": "F2A57BDE707DD4B80F73157BA0EEE5D299592837AB7E7137CDB2B1967E34F031"
+  },
+  {
+    "path": "src/RecordingDurationPlan.cs",
+    "bytes": 1189,
+    "sha256": "95B886E5AD11B84901CEA577CFFC7244AA1BEC5772760DC81ED148E2FE2D9B17"
+  },
+  {
+    "path": "src/RecordingFastClock.cs",
+    "bytes": 1866,
+    "sha256": "CAC7374254458CEC56E8746D6809839C524FFC3C6AEEFA16E24ACF3C0D0B8BD6"
+  },
+  {
+    "path": "src/RecordingLiveClock.cs",
+    "bytes": 5288,
+    "sha256": "352DFF01237EA5A4437D90BACFB426AEC4F61211D75910880F8C79FC4F6049EA"
+  },
+  {
+    "path": "src/RecordingNativeClock.cs",
+    "bytes": 7933,
+    "sha256": "9EDA0FAB7ABC053DCC5144F27C529933375483ED83B6466A96556FE6039B1BCB"
+  },
+  {
+    "path": "src/RecordingPreflight.cs",
+    "bytes": 6002,
+    "sha256": "38B1FC2B1045DF6CBCF09F0F16DC1BF599A725CDA7F87AAFEF5BD801E4B03B96"
+  },
+  {
+    "path": "src/RecordingUiSmoke.cs",
+    "bytes": 7515,
+    "sha256": "87580981435BD68134B47CEA1C82229D796E90EA5D5A7D3770C05B2FA4D61F15"
+  },
+  {
+    "path": "src/TimingDiagnostics.cs",
+    "bytes": 5374,
+    "sha256": "5DB340C20BB031B15F56AA50CBB3DEAE7447D37B947CF094B14AEDCE2A4344AA"
+  },
+  {
+    "path": "src/UiDiagnostics.cs",
+    "bytes": 37327,
+    "sha256": "50D0CCEBA6162F6B95FB0EC32CA48E7F2467B3D6988781F81D47B028CAB18E86"
+  },
+  {
+    "path": "src/UpdateDiagnostics.cs",
+    "bytes": 25936,
+    "sha256": "701A2C7AEADA260C8DA540B68232B1C316B85BD75058670B3ECD28E56280B21D"
+  },
+  {
+    "path": "tests/check-menu-frames.py",
+    "bytes": 15643,
+    "sha256": "423EBAEE67C33900093FF9BECE13A04B2D108273B3D3EAC8596561C674181716"
+  },
+  {
+    "path": "tests/choice-fixtures/ChoiceConsecutiveAuto.aap2",
+    "bytes": 16535,
+    "sha256": "0D103500DE0AA5B5EC36E7D9389A74CCF056AC2BC23DBFB61A08BD93F6E1C0E4"
+  },
+  {
+    "path": "tests/choice-fixtures/ChoiceDirectEnd.aap2",
+    "bytes": 12760,
+    "sha256": "0ECDB0F45E2804927D12CBF90EF06A8E7B80A043EA65695DCF7F2E16AC67BBD5"
+  },
+  {
+    "path": "tests/choice-fixtures/ChoiceLoop.aap2",
+    "bytes": 9917,
+    "sha256": "A25990CEB451DB902CDE725DEFC86CB08D48B3EEEC6640EF4BC69AEF4FBCDBB7"
+  },
+  {
+    "path": "tests/choice-fixtures/ChoiceNoDefault.aap2",
+    "bytes": 12760,
+    "sha256": "2A89EAF042E528B07B8373E499666F915F7622A13EA5AA7EC187555AF6584844"
+  },
+  {
+    "path": "tests/choice-fixtures/ChoiceSecondAuto.aap2",
+    "bytes": 12799,
+    "sha256": "31D006163C279B4C3E1B0B80FD19C04AB535D9BE6EB7708AE00F2BB981901D9D"
+  },
+  {
+    "path": "tests/choice-fixtures/expectations.json",
+    "bytes": 2446,
+    "sha256": "B6FA332990513B25B7F88EF1EA1BFE703275CAAA78482E7537CFA3D3FDFC5BDF"
+  },
+  {
+    "path": "tests/choice-fixtures/MenuDialogue.aap2",
+    "bytes": 18604,
+    "sha256": "0A71FA3EBEB59EFE724F6B190FA0B8F59E45BBB534E62F9203DE57CF40ED8613"
+  },
+  {
+    "path": "tests/choice-fixtures/PlainNoChoice.aap2",
+    "bytes": 6175,
+    "sha256": "EE90EADACBDE4CA83021248377D4F88AFC6D5A40E75531AE747170B582C45C6F"
+  },
+  {
+    "path": "tests/choice-fixtures/TitleNoChoice.aap2",
+    "bytes": 6229,
+    "sha256": "91071B3C5A06017F4B5E87EFA2A5AA1D2892E9888AAE439EE242145ECB2EF327"
+  },
+  {
+    "path": "tests/DailyExportNamingTests.cs",
+    "bytes": 3725,
+    "sha256": "6A6A5F6F9D25A969A4C2E1A872F35386C21A182A0996B0B74787CF2182D87E8F"
+  },
+  {
+    "path": "tests/DlssComponentsTests.cs",
+    "bytes": 6266,
+    "sha256": "128AA608E8B087E113FC13928FC20A38778330ACDD52F14A4589FCC58C0FA2DE"
+  },
+  {
+    "path": "tests/EncoderCleanupTests.cs",
+    "bytes": 9578,
+    "sha256": "0A664FD985FD4C284E1D31A15D71744D7C12E0FD041C58D9A82D08C23185216E"
+  },
+  {
+    "path": "tests/EncoderResamplingTests.cs",
+    "bytes": 35273,
+    "sha256": "AAF5B9B282C9F385BDE36FC2B4CAB9B2246CE4D38B9A9EA7EA11580980096F19"
+  },
+  {
+    "path": "tests/EncoderWorkQueueTests.cs",
+    "bytes": 16473,
+    "sha256": "7628DD423B4789CD94B8A37EED3C7CEEED8E3ECB3F2B2553B25FAC64DB2E0C41"
+  },
+  {
+    "path": "tests/EnhancementMonitorTests.cs",
+    "bytes": 4823,
+    "sha256": "95E654B54A1F824FDA45780024EA0034D28BAF51AFA730BCF53D096978783CFE"
+  },
+  {
+    "path": "tests/NativeCaptureTimelineTests.cs",
+    "bytes": 11281,
+    "sha256": "E503715198D3ECA2D8AD1827F341F415154441345CEABFA563360184AFE6D6E2"
+  },
+  {
+    "path": "tests/NativeCompositeScheduleTests.cs",
+    "bytes": 8384,
+    "sha256": "B39D762348A1A8627B1280673FC9B42705B665B7EB3891CE6216A2D4BB281687"
+  },
+  {
+    "path": "tests/NativeLiveCaptureTimelineTests.cs",
+    "bytes": 5953,
+    "sha256": "2706959CE8EA21FEEB3ABCBBB703D7321BBB76F75D21409D580608C51BE17A9F"
+  },
+  {
+    "path": "tests/README.md",
+    "bytes": 17254,
+    "sha256": "EEE83F27E9E6B94D9FE57DC0F077D870AA9A53191A1CB739971D3E4B641BA9C0"
+  },
+  {
+    "path": "tests/RecorderUpdateSessionTests.cs",
+    "bytes": 16677,
+    "sha256": "9F4DB261FFCE00340944E11848BF6C69FC7296288389D5F3EC28C6019C4F118D"
+  },
+  {
+    "path": "tests/RecorderUpdateTests.cs",
+    "bytes": 21138,
+    "sha256": "C1DFAFD97937C9BF55BF5BF0A5B7971BC8C7FBBC6EFF716313E0760B77713C8A"
+  },
+  {
+    "path": "tests/RecordingDurationPlanTests.cs",
+    "bytes": 2868,
+    "sha256": "B4158BAAB5D40524CB7DEC60298EE856AB86FAE9D69F5D3BD2E28523E0A3A92F"
+  },
+  {
+    "path": "tests/run_rtx_stage.py",
+    "bytes": 5213,
+    "sha256": "91C25FD95BD65DFABB037E2685B91E0EA2AD5B39D768B7B2988F0D4451154058"
+  },
+  {
+    "path": "tests/run-aa-smoke.ps1",
+    "bytes": 5190,
+    "sha256": "5636845FD6741759775850C64F264D45296AE58B6C8A7D7AB21E0798C1AD4F50"
+  },
+  {
+    "path": "tests/run-choice-smoke.ps1",
+    "bytes": 19988,
+    "sha256": "A20DB4C32CA9D9007B5CC8A743454C4D3D1323D56E0041350CCD742987D11DB7"
+  },
+  {
+    "path": "tests/run-entry-smoke.ps1",
+    "bytes": 4171,
+    "sha256": "3BD5E8392F30DD42C117CA5183D00362036D8CEF6AD76D845B17B6F185E4CBE4"
+  },
+  {
+    "path": "tests/run-preferences-smoke.ps1",
+    "bytes": 8621,
+    "sha256": "8DD51D6DAEEBD0A3263CE5C57EA1C0CB0E5132242DF1FD68FF83EE6E7DA6CCFE"
+  },
+  {
+    "path": "tests/run-update-ui-smoke.ps1",
+    "bytes": 9939,
+    "sha256": "726CEE674CED6D000E9FE664A6CF48094BA75D014DCA35ECB65FBF8E45E711CB"
+  },
+  {
+    "path": "tests/test_profiles.py",
+    "bytes": 3010,
+    "sha256": "2E5C8572BE140D77C3DC44DE3B4A70BDBAFB7E56F0723BE60067FDE63EB3A66D"
+  },
+  {
+    "path": "tests/test_progress_publish.py",
+    "bytes": 2960,
+    "sha256": "9080B6930E87EB1C43FE30616E463585B60953F1BE84F503944F0474494D0A27"
+  },
+  {
+    "path": "tests/test-choice-diagnostics.cs",
+    "bytes": 8520,
+    "sha256": "32C3F3408983F269FB5C40FA925A3EC20EDF24100EA4C314B3CA566B33115857"
+  },
+  {
+    "path": "tests/test-choice-diagnostics.ps1",
+    "bytes": 4498,
+    "sha256": "42098C3223A6886EDD59F9D8B20DCB1CE070446A65FD68FB3C86EA918144DB41"
+  },
+  {
+    "path": "tests/test-daily-export-naming.ps1",
+    "bytes": 391,
+    "sha256": "88081CA7CFC4EEF03757A5A360C014A6A9D33803EEBE9E8BB55C3190F1036222"
+  },
+  {
+    "path": "tests/test-dlss-components.ps1",
+    "bytes": 799,
+    "sha256": "DD646C8E382F7C46434BB318FC8AC1BAA17C6ED236B342101653227BBA2A1B7C"
+  },
+  {
+    "path": "tests/test-encoder-cleanup.ps1",
+    "bytes": 1361,
+    "sha256": "B2DEB4AADCBC7C0EA33E1912A149A0B53402D5811C8A513518876166BAEC7A3B"
+  },
+  {
+    "path": "tests/test-encoder-resampling.ps1",
+    "bytes": 1507,
+    "sha256": "556E9CC2AF56FA1ECD7C34202A0474EEB535E4F526FBF59E5DC0CB2DE62F7060"
+  },
+  {
+    "path": "tests/test-encoder-work-queue.ps1",
+    "bytes": 945,
+    "sha256": "AB5353B5808FED5C833425D3BB558714C8493B3886F17D632792A1699665F2BB"
+  },
+  {
+    "path": "tests/test-enhancement-monitor.ps1",
+    "bytes": 454,
+    "sha256": "825FE78462BAD7D3B9AC7CCC224594F3BE323FD37E042FB1B0AFC4EA7B3FCF21"
+  },
+  {
+    "path": "tests/test-final-protected-runtime.ps1",
+    "bytes": 11715,
+    "sha256": "FC6A9FB82D1F133375A18505DA3355D758ECB53ECC0E976539D4ABC5962667C2"
+  },
+  {
+    "path": "tests/test-native-capture-timeline.ps1",
+    "bytes": 294,
+    "sha256": "FFE8A6B33AF62BE3EEF07995543F6FBBD296B6520610C090C873D53D2A87011D"
+  },
+  {
+    "path": "tests/test-native-composite-schedule.ps1",
+    "bytes": 410,
+    "sha256": "DD1D2483507DC8CA186272D56F7E07F87978AB683797EB16C6A097C35792D1CB"
+  },
+  {
+    "path": "tests/test-native-live-capture-timeline.ps1",
+    "bytes": 359,
+    "sha256": "84B39893B919D6CC23E7AAFA2A9A2546301D4C742681C451C552AEE8E518B2B4"
+  },
+  {
+    "path": "tests/test-optional-hooks.ps1",
+    "bytes": 1361,
+    "sha256": "A3191870ACF466ACE0DC1EE5985D9940AF7607BE1C18D922B87A825472849378"
+  },
+  {
+    "path": "tests/test-recorder-update.ps1",
+    "bytes": 4689,
+    "sha256": "F8E1B4A01ED5EAAEDF6F68AD5F1C56465D8203867A5E71EC7E9F11BA66B48CFA"
+  },
+  {
+    "path": "tests/test-recording-duration.ps1",
+    "bytes": 293,
+    "sha256": "1AA228D095A4A0D1B94A3FD326AB95719406E8EE00ED42ADA332C862EA14E383"
+  },
+  {
+    "path": "tests/test-runtime-dlss-ui.ps1",
+    "bytes": 9689,
+    "sha256": "1B74DFB670B1528B9D82105DA371AFD52575A01961408D0E54CAE61C8B9EA432"
+  },
+  {
+    "path": "tests/test-update-session.ps1",
+    "bytes": 2463,
+    "sha256": "2664310BE43CB750FDD5A11CFFF03366BC4C2AF2ED2BD5A7F16C686B0C3A5908"
+  },
+  {
+    "path": "tests/test-v11-protected-runtime.ps1",
+    "bytes": 12510,
+    "sha256": "8B6F53EE0635FD610339C91D8BEBBE3A97B089A3ED22EEB62499C3F18EE52493"
+  },
+  {
+    "path": "tests/V1-DLSS-RUNTIME-VERIFICATION.md",
+    "bytes": 9844,
+    "sha256": "22BA45144C54624525F88B93AF2469DA8ADA8DB529368AD0F0E35710B6765CAE"
+  },
+  {
+    "path": "tests/V1.1-RUNTIME-VERIFICATION.md",
+    "bytes": 4298,
+    "sha256": "982EFBA513564554B0D9B267D9E69DFAC7F56CAA64B305EAE26F970D1A015634"
+  },
+  {
+    "path": "tests/verify_enhanced_output.py",
+    "bytes": 6663,
+    "sha256": "D48ED9B884C21EF8277EE3A24C97BBCB8CD94840031E9E2FB78F33F7980BF92C"
+  },
+  {
+    "path": "tests/verify-cpu.ps1",
+    "bytes": 3183,
+    "sha256": "998F565189EEE0052FF5B47623BC6A12984A1ADCD22A100F3522D3C8444BB611"
+  },
+  {
+    "path": "tests/verify-folder-picker.ps1",
+    "bytes": 1933,
+    "sha256": "61F97D809EC4420EB37AAD8534523FB1A3DA572E95EC62E7D665379A9D989C7D"
+  },
+  {
+    "path": "tests/verify-runtime-output.ps1",
+    "bytes": 3077,
+    "sha256": "7BC072E9D0DC9CC7DA7C883DD0A0DC72492FC3239E832B7EEBF43BCD5EA9F69E"
+  },
+  {
+    "path": "tests/verify-timeline.ps1",
+    "bytes": 1239,
+    "sha256": "DC0CBBB59E153705FFD08BB5280C3AB9FF285B6E1125E94F0F051123729ACE39"
+  },
+  {
+    "path": "UPDATE-PROTOCOL-V1.2.4.md",
+    "bytes": 6034,
+    "sha256": "8189A6F0E16F3C98E170C68EC0584A34C3324EF4428924BBA2EF771E2EF68C3F"
+  },
+  {
+    "path": "V1.2-CHANGELOG.md",
+    "bytes": 1617,
+    "sha256": "50749DD52691A258B3B0190A9A2F42D88E7E87799A8AB9FF62F056EF5BE24C2E"
+  },
+  {
+    "path": "V1.2-VERIFICATION.md",
+    "bytes": 4780,
+    "sha256": "AEA7351DC3F712BD6849A66E37697D788E8AB316FE89E2F8CB0584F07AE263A2"
+  },
+  {
+    "path": "V1.2.1-CHANGELOG.md",
+    "bytes": 1822,
+    "sha256": "ED3A1F486A02114427B3379D7C257F6790C6DE9EF586E90967F479DE8A303D5E"
+  },
+  {
+    "path": "V1.2.1-NATIVE-TIMING-MENU.md",
+    "bytes": 21142,
+    "sha256": "86D04AB702503CE2482036D3DFFB55A0C9F91CA809F2670DAA23F0BD262A5962"
+  },
+  {
+    "path": "V1.2.1-TITLE-HOTFIX.md",
+    "bytes": 10072,
+    "sha256": "D73BC38E1B232C59FBAE877FD4744B1D663656EBCBB7DA8903A97DC73C916AAE"
+  },
+  {
+    "path": "V1.2.1-VERIFICATION.md",
+    "bytes": 5469,
+    "sha256": "0AFBD2AF19CD282FD44531829727DC71FB6352E3A9F0F550C5BA030EE281A7CB"
+  },
+  {
+    "path": "VERIFICATION.md",
+    "bytes": 9408,
+    "sha256": "3735BDC3F69619705D767BD47EC1166894BD58C6258B85C08A6CBDA8CEAEAF61"
+  }
+]

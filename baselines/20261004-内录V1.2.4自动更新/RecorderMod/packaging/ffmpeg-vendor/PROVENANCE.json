@@ -1,0 +1,13 @@
+{
+  "changes": "None; original executables copied byte-for-byte from existing local DLSS5Tool distribution.",
+  "source": "https://github.com/FFmpeg/FFmpeg/commit/db69d06eee",
+  "binaryRelease": "https://github.com/GyanD/codexffmpeg/releases/tag/7.1.1",
+  "version": "7.1.1-full_build-www.gyan.dev",
+  "sourceNotes": "UPSTREAM-README.txt identifies FFmpeg source and external dependency revisions. This directory does not claim to contain a complete corresponding-source bundle.",
+  "provider": "https://www.gyan.dev/ffmpeg/builds/",
+  "hashes": {
+    "ffmpeg.exe": "B1383F5D07470D503EDECDAEE4BDDC5891E986E916A698299B357F79CFE445FD",
+    "ffprobe.exe": "012BDDDED3CBC5204055210D7FF4F0B3F7521BCA441A694939856D01909F5756"
+  },
+  "license": "GPL-3.0-or-later"
+}

@@ -1,0 +1,125 @@
+{
+  "Base": "V1.2.4",
+  "Version": "V1.2.5",
+  "FeatureChanges": false,
+  "Changed": 17,
+  "Added": 2,
+  "Unchanged": 252,
+  "Deleted": 0,
+  "Changes": [
+    {
+      "path": "CONTINUE-V1.2.5.md",
+      "kind": "added",
+      "before": null,
+      "after": "FC1713C21E1A8E13A1FE617B61BBBDD89A6B3A40F061DE770079A48A08025D32"
+    },
+    {
+      "path": "manifest.json",
+      "kind": "changed",
+      "before": "09BD2327B4F64D1F6783B6C9C9AC0C4FC876BC8F71FCB2B4B4FD671F6027CF24",
+      "after": "DC1C128F9801EB152CCFAE9444608074068B83D7AD04E37A7D10C59CF3595832"
+    },
+    {
+      "path": "packaging/build-development-installer.ps1",
+      "kind": "changed",
+      "before": "3BAF03D571923DFD3AC018FBCC43129260E3F9ED1339574A4974CF445E86329E",
+      "after": "780FCD07D02B39DD8FF19AFAC1BA7E66CE281C56A3A1FEEDA47A71DC62177B6F"
+    },
+    {
+      "path": "packaging/build-r6-support.ps1",
+      "kind": "changed",
+      "before": "5A3C6FCD29ED4D685AC49190243E3910B38CEEAB8F7C91853391116BC4545F01",
+      "after": "AB0844D987783D6A37D28DA75418324079AC6F3DC6B36E3BE5DC761BFA4BE259"
+    },
+    {
+      "path": "packaging/build-release.ps1",
+      "kind": "changed",
+      "before": "539334969952EE0D25E7554DF43EA40A39122323F4A6FFE538AAD4D8C6FB7FE1",
+      "after": "1552376FB4864897DF273FD5E2378F1538FE1D7006786E3DCAC1321F1D2F860B"
+    },
+    {
+      "path": "packaging/ExecutableShell.cs.in",
+      "kind": "changed",
+      "before": "F2ACD034F6B338C63C873EEC54110E1C4B8F57A5DE272C7B488BB714C283B1AA",
+      "after": "E2B7BC5B8C37FD75D138FE16D3ACE5BDC0BB9FB6D49C6B88155DB9DA6DBC23E2"
+    },
+    {
+      "path": "packaging/Installer.cs",
+      "kind": "changed",
+      "before": "545179DFDE916AFF71FBE320538F56C6B83C2FB2CCC80EE2D0AD7A9E409266A6",
+      "after": "6EF57DA775AA23EC514F5CC95C7BDF449C6DB2BEBE04A7B856AB59BBFE762629"
+    },
+    {
+      "path": "packaging/Loader.cs.in",
+      "kind": "changed",
+      "before": "1688E555D11462AFA2EC7B28EA889819A559928FF3F27B994C6734A3A078427A",
+      "after": "B058F3CB349E3AA2A299895B5164407AD79BB55DF3BAF9966D1F81B299F9AE41"
+    },
+    {
+      "path": "packaging/test-update-installer.ps1",
+      "kind": "changed",
+      "before": "6BDA46DEFBCE1CEAB2BDB14202187CE340101606CF709CB7BCCE4130CF1F358D",
+      "after": "99B63FFC2B22508F7E2104AC457D7DDD1521607A56B737CE475304321778DB70"
+    },
+    {
+      "path": "packaging/UPDATE-VERIFICATION-V1.2.5.json",
+      "kind": "added",
+      "before": null,
+      "after": "6BD22BA3F0C5117E976AFDC7665355A6ED9D7E30A6F63362AF5A9E7643E8ECB6"
+    },
+    {
+      "path": "packaging/UpdateInstallerTests.cs",
+      "kind": "changed",
+      "before": "535D24713F01D5F3709F695CA0BE7A13DBAE8916ABE2CDA288B59B8E173053D7",
+      "after": "3BE7D7B966B3BB774B1D5F2C2A727E4D239BBC327C0833429455792F72FDD546"
+    },
+    {
+      "path": "packaging/USER-GUIDE.txt",
+      "kind": "changed",
+      "before": "C99151FBAEB8FB36BF80CF35B51812E4600867F2C20C045A56500A0D5360D898",
+      "after": "F7C619B4B092CDC27EE522CBDB383036EBBB3F844A81BF1E3E544D582304D2AD"
+    },
+    {
+      "path": "packaging/V1AssemblyInfo.cs",
+      "kind": "changed",
+      "before": "198B50E100316AC91ECC32A9CEC7A764501925803A5293442E571BB3896DCDEC",
+      "after": "097E8B27B683F9071CD1B7D1A6A7BC828DAF9FB095C57C94C9160BA44F770D9C"
+    },
+    {
+      "path": "packaging/V1Installer.cs",
+      "kind": "changed",
+      "before": "205B19DF3D5B2D9B1B3EEEAB775297CA0F59D94AF1D628927A93B5249AF03C47",
+      "after": "D4DB208BAF9592DF96E5D1609F15C129C9D1AAFAC4162B83D8AF4788B05D4A96"
+    },
+    {
+      "path": "packaging/verify-r6-payload.ps1",
+      "kind": "changed",
+      "before": "2C1089EC29BC47284BB8AED40933463ECF2E43A0A94CFC0736E7EF74EF207AB6",
+      "after": "326D84BDFEA24D8F17A4A79B783EEF8AB23985F01105B71CD9326D9964DE83C3"
+    },
+    {
+      "path": "README.md",
+      "kind": "changed",
+      "before": "82C70B2197C4CDE5679CB4A60131B1A7B0E6E95683D78E62008172F7EFA5C366",
+      "after": "46F23C9D76F71AEFC50014CC178025DD24BDE2453A4F2C77598ED78B85525326"
+    },
+    {
+      "path": "src/Plugin.cs",
+      "kind": "changed",
+      "before": "700F3E5B578E86A7C98026188B90E81BD649AB46CE5A08EBA1F92280E74ED8D2",
+      "after": "0C606A6542A2D71551E0B8A28F886E6B16E53F011D927FB9BE7932BF61F72AB4"
+    },
+    {
+      "path": "src/RecorderUpdateClient.cs",
+      "kind": "changed",
+      "before": "34C4F84B0769CFEDAF578E7E716F9C26A48A9DC198DBC089AAE939C965E27F3A",
+      "after": "455D1EDA350A651F0B7451078490A69F10834393DE139858D702C310B6B50855"
+    },
+    {
+      "path": "src/RecorderUpdateDownload.cs",
+      "kind": "changed",
+      "before": "F7C4339495E5987BB08EBC588C97C435AF28297430CA6C1286B16A054F897EC0",
+      "after": "400614318EFFEA4225F5148D33267D3CF5F4EA8C3431BEAAFB43D3F1AA1449D0"
+    }
+  ]
+}

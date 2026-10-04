@@ -1,0 +1,41 @@
+AzureArchive Recorder 1.2.4 update helper protocol
+
+Files within a unique task directory:
+  %TEMP%/AzureArchiveRecorderApply/{GUID-N}/job.json
+  %TEMP%/AzureArchiveRecorderApply/{GUID-N}/payload.zip
+  %TEMP%/AzureArchiveRecorderApply/{GUID-N}/更新内录MOD.exe
+All directory ancestors, JSON/status/restart paths and payload/install paths reject reparse points.
+
+Invocation: 更新内录MOD.exe --job <absolute task directory>/job.json
+The launcher must use no shell, hide the helper, and disable recording/processing during Applying.
+Only idle AA and explicit update confirmation may create this job.
+The helper must be extracted from payload mods/AzureArchiveRecorder/1.2.4/更新内录MOD.exe.
+
+job.json fields (case-sensitive serialized names):
+Root: absolute canonical AA root. ParentPid: current AA PID.
+ParentStartUtcTicks: UTC Process.StartTime ticks, Int64.
+Version: "1.2.4". PayloadPath: exact task directory/payload.zip.
+PayloadSha256: 64 hex. PayloadSize: Int64 byte count. Token: random 64 hex.
+The host executable hash is compiled from the verified AA reference, not supplied by the job.
+
+status.json fields:
+State: Applying, Completed, Failed, Restarting.
+Error: null or bounded error detail. Message: display text.
+InstallationUncertain: bool, always present. Failed => true after a completed install or actual rollback failure; other prewrite/fully rolled-back failures => false.
+The parent must remain unable to record after Completed/Restarting, unconfirmed rollback, or helper disappearance without a terminal status. Missing uncertainty on Failed should be treated as true.
+Completed message: 内录MOD更新完成，AA即将重启
+
+On OK only, atomically write restart.json with {"Token":"<job.Token>"}, then request normal AA exit.
+The helper waits up to ten minutes total after Completed, validates the token, retains the original OS process handle, waits for its normal exit with ExitCode 0, rechecks the exact AA executable/root, and starts that executable with no shell and its own root as WorkingDirectory. It never kills a process or invokes arbitrary commands. AA reopens with normal window visibility; only the helper is hidden.
+No token / invalid token / parent exited before OK => no restart. Reusing a job directory is rejected without overwriting its existing status. Small task evidence is retained. After success or confirmed complete rollback, only the identity-verified payload.zip in this same task directory is deleted after its read handle closes. Uncertain outcomes retain the ZIP. There is no recursive cleanup.
+
+InstallCore.ApplyUpdate(root, payloadStream, parentPid, parentStartUtcTicks, Action<string> progress)
+Compiled into the new-version helper alongside Installer.cs and DlssComponents.cs. The ordinary installer still requires AA closed.
+ValidateUpdateArchive validates product/version, fixed version-directory filenames, allowed runtime/shared ownership, all per-file hashes, exact ZIP membership, no directory/link entries, and canonical paths.
+Only differing next.Files are written. Old version DLL/manifest/helper stay in LegacyFiles; unchanged shared files are skipped. Existing generated ownership comes solely from the local old receipt. All enabled recorder profiles migrate with unknown fields retained; disabled profiles and cfg remain untouched. Any unreceipted target is refused, even with identical bytes. Receipt/profile/files use the existing Transaction rollback.
+Future old helper ownership: only known versions strictly older than receipt.Version, exact 更新内录MOD.exe filename, and helper version >=1.2.4; arbitrary old EXE names are refused.
+
+Reproducible verification:
+  packaging/test-update-installer.ps1: 21 isolated update/real protected-helper checks, 2 future ownership fixtures, 2 read-only IL protection checks.
+  packaging/test-v1-installers.ps1 -GameRoot <read-only reference AA> -Suite Core: 74 installer regression checks including V1.2.3 upgrades.
+These tests use synthetic AA/encoder/payload fixtures and do not claim actual Unity/GPU recording coverage.
