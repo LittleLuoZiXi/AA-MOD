@@ -1,11 +1,11 @@
 {
   "SchemaVersion": 1,
   "Product": "AzureArchiveRecorder",
-  "Version": "1.2.5",
+  "Version": "1.2.4",
   "MinimumVersion": "1.2.4",
   "HostSha256": "260FC3ECC5F38DAB5230BA624A52E495708D861196DDA72486C1250760FE6EFF",
-  "BaselinePath": "baselines/20261004-内录V1.2.5自动更新测试",
-  "DownloadUrl": "https://github.com/LittleLuoZiXi/AA-MOD/releases/download/recorder-v1.2.5/AARecorder-V1.2.5-update.zip",
-  "Sha256": "A8B29275C5E93B0587E07C84495AADA212A9E711551173F8A6871A281F295AD2",
-  "Size": 255740342
+  "BaselinePath": "baselines/20261004-内录V1.2.4自动更新",
+  "DownloadUrl": "https://github.com/LittleLuoZiXi/AA-MOD/releases/download/recorder-v1.2.4/AARecorder-V1.2.4-update.zip",
+  "Sha256": "161C01C77A3CC68E7F20343F9AC143232CF421F7AC83F1ED9D1EED96354676AD",
+  "Size": 255740337
 }
