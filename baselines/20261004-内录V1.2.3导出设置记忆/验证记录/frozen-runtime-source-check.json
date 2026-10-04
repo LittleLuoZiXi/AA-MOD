@@ -1,0 +1,530 @@
+{
+  "passed": true,
+  "method": "Read-only code-object comparison of the explicit headless runtime contract and every collected vendored module, excluding source filenames and line maps; no archived code executed, no GPU inference",
+  "runtime": "E:\\AzureArchive_100_fix\\mods\\AzureArchiveRecorder\\runtime",
+  "executable_sha256": "E7575D00D221CCE43FE602E056B6D79218778659C623182B6AA8E0667E2D98E8",
+  "required_modules": [
+    "dlss5tool",
+    "dlss5tool.app_settings",
+    "dlss5tool.cuda_hdr_yuv",
+    "dlss5tool.cuda_interop",
+    "dlss5tool.cuda_sdr_yuv",
+    "dlss5tool.cuda_session",
+    "dlss5tool.dlss_engine",
+    "dlss5tool.dlss_host_process",
+    "dlss5tool.encoding_contract",
+    "dlss5tool.frame_generation",
+    "dlss5tool.frame_timeline",
+    "dlss5tool.gpu_export_process",
+    "dlss5tool.gpu_export_runtime",
+    "dlss5tool.gpu_flow",
+    "dlss5tool.gpu_video_export",
+    "dlss5tool.guidance_client",
+    "dlss5tool.guidance_color",
+    "dlss5tool.guidance_execution",
+    "dlss5tool.guidance_flow",
+    "dlss5tool.guidance_parameters",
+    "dlss5tool.guidance_public",
+    "dlss5tool.guidance_transport",
+    "dlss5tool.guidance_visualization",
+    "dlss5tool.host_queue",
+    "dlss5tool.i18n",
+    "dlss5tool.image_sequence",
+    "dlss5tool.mod_paths",
+    "dlss5tool.nvenc_yuv",
+    "dlss5tool.nvofa",
+    "dlss5tool.packet_mux",
+    "dlss5tool.parallel_export",
+    "dlss5tool.parallel_export_worker",
+    "dlss5tool.paths",
+    "dlss5tool.performance_profiles",
+    "dlss5tool.render_cache",
+    "dlss5tool.shared_cache_budget",
+    "dlss5tool.super_resolution",
+    "dlss5tool.video_export"
+  ],
+  "uncollected_optional_modules": [
+    "dlss5tool.__main__",
+    "dlss5tool.about_dialog",
+    "dlss5tool.amd_devtest",
+    "dlss5tool.amd_devtest_ui",
+    "dlss5tool.app_version",
+    "dlss5tool.delta_update",
+    "dlss5tool.depth_acceleration",
+    "dlss5tool.diagnostics",
+    "dlss5tool.export_queue",
+    "dlss5tool.frame_generation_ui",
+    "dlss5tool.gui",
+    "dlss5tool.guidance_cache",
+    "dlss5tool.guidance_export",
+    "dlss5tool.guidance_export_ui",
+    "dlss5tool.guidance_inputs",
+    "dlss5tool.guidance_settings_ui",
+    "dlss5tool.guidance_worker",
+    "dlss5tool.image_sequence_dialog",
+    "dlss5tool.preview_audio",
+    "dlss5tool.preview_comparison",
+    "dlss5tool.preview_decoder",
+    "dlss5tool.queue_list",
+    "dlss5tool.shared_render_preview",
+    "dlss5tool.ui_icons",
+    "dlss5tool.ui_theme",
+    "dlss5tool.ui_widgets",
+    "dlss5tool.update_helper",
+    "dlss5tool.updater"
+  ],
+  "checks": [
+    {
+      "module": "enhance",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\enhance.py",
+      "source_sha256": "AFEB7B169249614E0152D3A4C4EFF98376E69E38379F8EEF7F43B1C6B5DAD19A",
+      "passed": true,
+      "frozen_semantic_sha256": "7FA1287A89F2D50A831A9836AD2A830BD6A958A6B2F5979BA4411CDFC4981027",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\__init__.py",
+      "source_sha256": "64E1F051D653E741C07A2DBBF556CC19533C82A76DE7A91179BF129D324A03F0",
+      "passed": true,
+      "frozen_semantic_sha256": "BDD63D6C1786F1D4CA87749536BC5FC1AA6ED9BF95CBCF907C282C20451DFC7E",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.app_settings",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\app_settings.py",
+      "source_sha256": "08E451F3E63303ED200E2996D9ECDA6EBFC1C7898248F27ACD9D6A93924248B2",
+      "passed": true,
+      "frozen_semantic_sha256": "52DCD42698BCA8C96CC6CF9EB7CBD4E2B3D2640E71558AA64B84ABD4ABD01063",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.cuda_hdr_yuv",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\cuda_hdr_yuv.py",
+      "source_sha256": "DDADEB728153D03E91FB01CC1517C30B56CC9E686CF0D24608B43B7B48685C8E",
+      "passed": true,
+      "frozen_semantic_sha256": "BA20BFD677B231837695EC4BFB988F75B7C9B08C021DB095966559655CFD8EE7",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.cuda_interop",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\cuda_interop.py",
+      "source_sha256": "889FDD69BDA85A868F57CE972AE7457B697F5169A4DBD9540C1553783E88A6B7",
+      "passed": true,
+      "frozen_semantic_sha256": "C8EDAC61C10A6A4C304EE6C6E6032F9EEE6D21920FC69D32E863F860BC60AB38",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.cuda_sdr_yuv",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\cuda_sdr_yuv.py",
+      "source_sha256": "2FB4E65777CE5A4F9B625E51B034DC683F3311DA3E9874B7AE24CA2CEEEC9755",
+      "passed": true,
+      "frozen_semantic_sha256": "92147C9DB55511F202295B260D803BF15D8A1D29EB7779F9922E4704629AA1A3",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.cuda_session",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\cuda_session.py",
+      "source_sha256": "07FBF8248B8141203BE719D31AA02AEE7E5420DEE090A3DF0D3378D51446FB55",
+      "passed": true,
+      "frozen_semantic_sha256": "BC7C3DA638F11C88151D31A92FC09B1768CABE842FF51FB40F27F5A706324158",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.dlss_engine",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\dlss_engine.py",
+      "source_sha256": "2DFE3D9071891678A14F746921E9EEC678A6C1D701D3E5EA715F73B69E16E64A",
+      "passed": true,
+      "frozen_semantic_sha256": "8CF783FB19242A446B02BEFA005F890BF4996142D6ED6E1026B31B0C429EFBCD",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.dlss_host_process",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\dlss_host_process.py",
+      "source_sha256": "4ABAD88265D9F08A2D4142C59B4C933B5B32221B228FE89BF3AF9650A9A7E9BD",
+      "passed": true,
+      "frozen_semantic_sha256": "722DF9493938AF445CD03649C7802F8F6DD36C3CE67896C4A9CB9F255F231BFC",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.encoding_contract",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\encoding_contract.py",
+      "source_sha256": "01C9451C573B798F8C62EAF57194C089453CE9ECEE86ABA3695624CC70C50CFF",
+      "passed": true,
+      "frozen_semantic_sha256": "8CE8C33FC10FE245D51E89C40972AFE7B789E01BF374B8FAE10419AC0AA1DC8F",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.frame_generation",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\frame_generation.py",
+      "source_sha256": "80BAA80F6C643C12A3642971429786E5A2215EB57161C34F47A3F3A2F116ECF9",
+      "passed": true,
+      "frozen_semantic_sha256": "4E7700A1C78F85EF2DAE3C35F0D74D6C91D59E3A74F52A05A20FD97792F8EAE8",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.frame_timeline",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\frame_timeline.py",
+      "source_sha256": "26FAA6C04032B2499D65955B8E71F6145A29A7087B99828CC59AF6463624BA90",
+      "passed": true,
+      "frozen_semantic_sha256": "F6BE48867DA6985F9EDB5B8F9609D09C89B20952746E56D9DA1559E28A25553D",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.gpu_export_process",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\gpu_export_process.py",
+      "source_sha256": "371E91E6054FC5E3C4DCE17FDC24A660750BA251B25B78F3BC59C71681830ABD",
+      "passed": true,
+      "frozen_semantic_sha256": "997820619EA388ECC5D379714908B6A6467790127D043E53E5B11A41043A33B3",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.gpu_export_runtime",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\gpu_export_runtime.py",
+      "source_sha256": "844BAADFB94C03408C514DFC9E63C482B775F8C01F7F919E0EFCB8B850220D94",
+      "passed": true,
+      "frozen_semantic_sha256": "07E2953B0D10DCAB090DE8AD6119E1A492E472741FEB285C52764773A7C6E92E",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.gpu_flow",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\gpu_flow.py",
+      "source_sha256": "52382520DA96A0F2C2A5DA93369E96050F1E5A58F4E59FECE471A7DCF9C995E3",
+      "passed": true,
+      "frozen_semantic_sha256": "00F6D82CA18149B945FC89087479FC2F71B9C135B1C9E6F2FE629732C9BF34BC",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.gpu_video_export",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\gpu_video_export.py",
+      "source_sha256": "04E562CEA6D35AFB2003D614560D4FD23A86A9328812509416F9D2A9FC53177B",
+      "passed": true,
+      "frozen_semantic_sha256": "54046DB42AC5DB32DD938A19CE08EE8AB36E70BEDCA83DDE358027288FBCA0F9",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.guidance_client",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\guidance_client.py",
+      "source_sha256": "71F6242967D1531061E6FB458E02A14BBA3A5F128D0CF73BA8BA114FA6AC3A48",
+      "passed": true,
+      "frozen_semantic_sha256": "E741A52EB896053EAC0F9266E4DC03247AD174FB01527A1239F1C10529EA190A",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.guidance_color",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\guidance_color.py",
+      "source_sha256": "D1E1649F91E41D8E6C3DA2BFD960CCE195332A867F697DF76A1CDDFD3731C052",
+      "passed": true,
+      "frozen_semantic_sha256": "6D819117156E5E65A4BDB3E911C256496D82DE107E8A7E7DF6FCE85DCEBFED6F",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.guidance_execution",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\guidance_execution.py",
+      "source_sha256": "6A1EFD745D9F5D0A848E391AAC6F320CDB4B034AC4F9AB370236D3D7927BE87C",
+      "passed": true,
+      "frozen_semantic_sha256": "3BD5BCB97D434736FF9F5F9CA4650A8F516F2B12303AA9D915263CF4344DB4F4",
+      "matching_optimization_levels": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "module": "dlss5tool.guidance_flow",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\guidance_flow.py",
+      "source_sha256": "E1B3DF6D85A7B7A26E217BB68A10456E7BE2960DC55662ADE6347659ADAD704E",
+      "passed": true,
+      "frozen_semantic_sha256": "D6B72C8F1F2CDC63BDCB4FD449B03DE91C39655F72F916B4813FA3D2C0BF9C85",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.guidance_parameters",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\guidance_parameters.py",
+      "source_sha256": "4FB0BA6724A77558D7678766F1BC502B1A568BE9C4C4644888FB9C10D8ABFCDC",
+      "passed": true,
+      "frozen_semantic_sha256": "B1876DABB1EFDB0DE3493C8793B11588634FA237DCBB789D230DF0D4ABA91852",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.guidance_public",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\guidance_public.py",
+      "source_sha256": "FD7F223B53398DD6A3194E8352810EF58E569A8FEDCF8347ADF0FF4499677090",
+      "passed": true,
+      "frozen_semantic_sha256": "06C168A83F6ED9E516815B644E17608A99E80D1E20882726A91D4AD2E50D59B4",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.guidance_transport",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\guidance_transport.py",
+      "source_sha256": "8651F56DF322282438BC0CB0D907054C322E2FEA04A6D45F65249060A17F3EF9",
+      "passed": true,
+      "frozen_semantic_sha256": "460FFB562DA903AF1A9F52C1AC7078D8973777E9DB8317A3056AA0B4AF26B166",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.guidance_visualization",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\guidance_visualization.py",
+      "source_sha256": "9E815632700A585A948ABD2D96B880F7E0C0231F41918E614EC4EFF77B2AB65E",
+      "passed": true,
+      "frozen_semantic_sha256": "F9B6F4857DAD6F1BF8C9EC31C5585F4A9802B5033A46B840BE7F5982ED4503ED",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.host_queue",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\host_queue.py",
+      "source_sha256": "C1210CA01DBFABF715E252760D638CDCDAE8A1D3B328C4FB11C53355DE68F427",
+      "passed": true,
+      "frozen_semantic_sha256": "89E526841C299DD061AA4F5C0238BB266A25BFBB941D8B3FB80320A4A206D7B2",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.i18n",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\i18n.py",
+      "source_sha256": "093CC247D8924B2AFA8D6E66AE203EAEF1BAEC50B827848B38906FC6621B240C",
+      "passed": true,
+      "frozen_semantic_sha256": "1CD7CC4C518EE41B01960F4EE61A35EB4FEDBAD3A4F697C97B43C19273C6FA55",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.image_sequence",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\image_sequence.py",
+      "source_sha256": "7DB2826E69030379B5B18742194EBF7299BFDBCC6F5876974C66074960498CE6",
+      "passed": true,
+      "frozen_semantic_sha256": "17F57102FCC9054B4FEDE9A0508A8B5C92BE67740909AD40419BCD0464BF6CC8",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.mod_paths",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\mod_paths.py",
+      "source_sha256": "6AE4924BC3EDB24A24D5241D36A5A4D2A2A72B159A73CDCFD568AEB974616A0B",
+      "passed": true,
+      "frozen_semantic_sha256": "8345C7301C82E77CB8ADF1A83EDB10507159696C6093F6EF7B01B6BCDDEEDB7B",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.nvenc_yuv",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\nvenc_yuv.py",
+      "source_sha256": "F40DC5E9BFFEC35060CAD71357A68CCBB56889786136B23E458926BDB0932B4B",
+      "passed": true,
+      "frozen_semantic_sha256": "1638165986778A95FF29E3F64DD7160028FB7B9D33E1C1C56B9ED5541759A445",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.nvofa",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\nvofa.py",
+      "source_sha256": "36CA59432ACDF311B6FA50CBC79144FB2DB5317B7D94EC67D81D2FA8F7BC405B",
+      "passed": true,
+      "frozen_semantic_sha256": "CD4E2CD93C85986B350A79763FAC759F6F307DD5C4AC65A18BFC7C699241027B",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.packet_mux",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\packet_mux.py",
+      "source_sha256": "9ED61974BD3A77BA9A72C08E04439672A8900B01FD0DCC6FB184C4689C8ED9EF",
+      "passed": true,
+      "frozen_semantic_sha256": "48225CE290A02FB2970CAA6AF7EC3973B3119B5FD5B5920ED24CC0749E3591FD",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.parallel_export",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\parallel_export.py",
+      "source_sha256": "692D777CD8E48D32F912DC671F81A5AF7BF6F337CB681BEBCFE8D0490A4A40CC",
+      "passed": true,
+      "frozen_semantic_sha256": "F5976013A2A9065716C22A8CCC4AB520E836A84EC8925847CB4B7306607D3ED6",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.parallel_export_worker",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\parallel_export_worker.py",
+      "source_sha256": "65FC4C346FC5DFC06F0512BE295B78035538AB5D8D1E1568FD5CD3FB074DB6FD",
+      "passed": true,
+      "frozen_semantic_sha256": "9E637CD062D723A974D5423F8C72EF8835DAAF29796942EC6001AF382FF2222D",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.paths",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\paths.py",
+      "source_sha256": "8808C9A1FF21F59875C853984ED6E3BEDD0D8F7B81652DEAD356CDB590C16B1C",
+      "passed": true,
+      "frozen_semantic_sha256": "5DCEAD8105A32BF6DC6BBBA5920918D5B0042A7508639D979F7CA7D05DD8E12D",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.performance_profiles",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\performance_profiles.py",
+      "source_sha256": "709327EC8FEC01CFE8938602F2737CB7FE76B84D7060C0FEEBC3EF7437C8351A",
+      "passed": true,
+      "frozen_semantic_sha256": "4F9F80F035A447D3F065010E1BF6697EEEC984DD7E6FFB7AEB55046B72320F01",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.render_cache",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\render_cache.py",
+      "source_sha256": "EA9236260458549D4615DFF183D644774A7327C9B2C0DC18253A4D4923BEEFDB",
+      "passed": true,
+      "frozen_semantic_sha256": "7666F1CD8F47EDE06E3E1ED36BBD40CD7DD040503520A3B60F044F0B414911AA",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.shared_cache_budget",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\shared_cache_budget.py",
+      "source_sha256": "5A122C416017691D378B6BF4C9B74F94FB36D016E4F6DAD545EFB23EA88FE322",
+      "passed": true,
+      "frozen_semantic_sha256": "D20033D3BA0326980C1D3789161868FB370AAF27759A808CA4777B55C828F511",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.super_resolution",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\super_resolution.py",
+      "source_sha256": "79E0DBEFD77104EC11157E1D9F78C59CDDA5F937FE86F930770F29A9E3204D0C",
+      "passed": true,
+      "frozen_semantic_sha256": "1F3C6AF11DBC5DB82BAB7E1C97164DC6474456E91992A9AE3CE6E829C6F06E75",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "dlss5tool.video_export",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\bridge\\vendor\\dlss5tool\\video_export.py",
+      "source_sha256": "3D5F14095ED7805A22F2D13A83210C641EED043AF4EA82D8F5C59787AEBC9A15",
+      "passed": true,
+      "frozen_semantic_sha256": "E9BED7890F69BBAA4BB889998F6CC14598A8963046CC2ACE633171E79C9D4BAD",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "module": "enhance_entry",
+      "source": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\enhance_entry.py",
+      "source_sha256": "6F003D76B31E23F6C8C4BB0223804D12FF4E6D833EBFBA96CB9124D1BBB8FF63",
+      "passed": true,
+      "frozen_semantic_sha256": "369FB301DCB3206EAC00B4842445B8941389EA534362F4944629AD4504515793",
+      "matching_optimization_levels": [
+        0,
+        1
+      ]
+    },
+    {
+      "data": "gpu_profiles.json",
+      "passed": true,
+      "source_sha256": "F606C193831D62E90A71D5998D94CAD398834544265B97445442F2F7F000DF64",
+      "frozen_sha256": "F606C193831D62E90A71D5998D94CAD398834544265B97445442F2F7F000DF64"
+    },
+    {
+      "data": "no_gui_or_model_modules",
+      "passed": true,
+      "unexpected": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "Status": "ProtectedRuntimeAccepted",
+  "BuildProof": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\build-proof.json",
+  "SourceStable": true,
+  "SourceReport": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\build-source-stability.json",
+  "InstalledIntoGame": true,
+  "UpdatedUtc": "2026-10-04T10:15:35.3948389Z",
+  "RuntimeEvidence": "D:\\test2\\开发\\V1.2.3\\AA验证\\smoke-runs\\20261004-181310-972-preferences\\summary.json",
+  "RuntimeChecks": 113.0,
+  "InstallationEvidence": "D:\\test2\\开发\\V1.2.3\\部署记录\\formal-installation-result.json"
+}

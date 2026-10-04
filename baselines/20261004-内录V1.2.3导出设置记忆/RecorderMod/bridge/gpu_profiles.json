@@ -1,0 +1,10 @@
+{
+  "source": "https://github.com/banbanzhige/DLSS5Tool/releases/tag/zip",
+  "verified_date": "2026-09-27",
+  "profiles": {
+    "20": { "supported": false, "reason": "上游未发布 RTX 20 系配置/运行库，暂不支持。" },
+    "30": { "supported": true, "sha256": "6eb209e764f39872625debd6abaf45e2bb6322f6f270f781f70c059ae30b3927", "asset": "30.-310.8.SF-v2.zip", "zip_sha256": "01626f7ffe14c54928e9b2eaa09baf1886fa9200b247bbb51895f935f301886c" },
+    "40": { "supported": true, "sha256": "ceb6432f6fbdf44d886014bcd47241932bf8b67439feef9bbdd0961436662650", "asset": "40.zip", "zip_sha256": "3fdeb4f3b44165bfd31d98e288a46dc16eedd40168819c8ed6f73c45fc92c7a1" },
+    "50": { "supported": true, "sha256": "e16bcf15e16e13f527491cdf7845b2fe6521a738d8f7c9c721866a8496e1fc8e", "asset": "50.zip", "zip_sha256": "e730e1ea95b0a4f6420b9b1bbb1c2948cbb1bc9241aebfdeb10efef8a3bc906a" }
+  }
+}

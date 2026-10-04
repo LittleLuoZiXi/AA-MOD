@@ -1,0 +1,20 @@
+{
+  "Passed": true,
+  "Root": "E:\\AzureArchive_100_fix",
+  "Version": "1.2.3",
+  "VerifiedInstalledFiles": 201,
+  "PluginSha256": "2FB5E3052423E059E6DBFCFD25B324344A075327874AD28275DB5B6C0BA1FB89",
+  "ProtectedOtherFiles": 13,
+  "OtherFilesUnchanged": true,
+  "ProfileFiles": 4,
+  "ChangedProfiles": [
+    "profiles\\Recorder\\modconfig.json"
+  ],
+  "ExistingExportPreferencesPreserved": true,
+  "DlssInstalled": false,
+  "OldReceiptRoot": "C:\\Users\\Luo Tian Xing\\Downloads\\AzureArchive_100_fix",
+  "LocalReceiptRebasedAfterFullOwnedHashVerification": true,
+  "Backup": "D:\\test2\\开发\\V1.2.3\\部署记录\\安装前备份-20261004-181638",
+  "BuildProof": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\build-proof.json",
+  "CompletedUtc": "2026-10-04T10:16:53.5858779Z"
+}

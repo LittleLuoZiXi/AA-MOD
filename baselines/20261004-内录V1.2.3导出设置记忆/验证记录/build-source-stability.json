@@ -1,0 +1,781 @@
+{
+  "Passed": true,
+  "Files": 77,
+  "Changes": [],
+  "BuildProof": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\build-proof.json",
+  "CheckedUtc": "2026-10-04T10:12:25.2941879Z",
+  "Before": [
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\manifest.json",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8956903Z",
+      "Sha256": "28B43A1607800BDF6F6EEBB1DC8600AC6C8EE8F7C361E1075BD9025A0DB7C176"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\AzureArchive.Recorder.csproj",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8746245Z",
+      "Sha256": "D9ACE4D0E4DF17F21ED3E3DE47DDE7ADEA49E6C330ABA28B58D7EAF4FF3DC15E"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\ChoiceProbe.cs",
+      "LastWriteTimeUtc": "2026-10-02T03:19:30.0000000Z",
+      "Sha256": "B097CA417AFD096A9EA18887DD499EA8376C98E4BE838A83BE078BE57ABCCB98"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\DailyExportNaming.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:02.0000000Z",
+      "Sha256": "7D48ACD8FBD1EBB73221A470451197F3976D148B7F1B75560FB5D192DE00C9E1"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\Deployment.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:02.0000000Z",
+      "Sha256": "1073344662C1396DE7A3F300442D3F2DEC7097D30C614EBD49AE9329BFE4A156"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\DiagnosticHostReady.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:27:16.0000000Z",
+      "Sha256": "D7A6B3708D030DFD66854338E3F567E8506ED215D02F26996B9729B5E9964E26"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\DlssComponents.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:04.0000000Z",
+      "Sha256": "0B1CBC6A991881FE104253B2AFDBA9E236C14F7EF3AB599B5DDCF8C9DB5D9441"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\Encoder.cs",
+      "LastWriteTimeUtc": "2026-10-02T10:25:36.0000000Z",
+      "Sha256": "A16F591190222CCCE2A22E424A335160907DF7F4A630F0E3CB8B5308BA34E537"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\EncoderWorkQueue.cs",
+      "LastWriteTimeUtc": "2026-10-02T09:56:56.0000000Z",
+      "Sha256": "ECF3BA7F9CA8684FABC1D8E48FD95211FA92890993DE64F29B2C0FCDAB74317B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\EnhancementMonitor.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:06.0000000Z",
+      "Sha256": "2F9B6EC38042B77BF5AF0B931F96F0CF38DDB6B15004A326203086F738A867C8"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\FolderPicker.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:02:56.7490156Z",
+      "Sha256": "4D4EE0A8CF9637562A38BE06163E3DCB135FF2AD576B77D3EC374551BA40D421"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\FrameReadback.cs",
+      "LastWriteTimeUtc": "2026-10-02T09:54:44.0000000Z",
+      "Sha256": "62345D15D7A5D209E1BFC0B68FC9E96587C8CBA44F655C7FE8E2AED5379953A9"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\GpuProfiles.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:10.0000000Z",
+      "Sha256": "B766E219DA0C6C57D349618D9C4157593FFBDBBE906285AA588131DFF40D2E94"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\MonitorResolution.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:10.0000000Z",
+      "Sha256": "583270FFBD3CE9E59AC93825596B266B49B512762E97897D636CA21F03D1514F"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeCaptureTimeline.cs",
+      "LastWriteTimeUtc": "2026-10-02T05:46:14.0000000Z",
+      "Sha256": "CC439ACC34D39CFA99BBB99E5BAD61783B71AFA8409357D33467BD1F7578AB2E"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeCompositeSchedule.cs",
+      "LastWriteTimeUtc": "2026-10-02T09:20:52.0000000Z",
+      "Sha256": "C10212FE890E57202629054D843B7A405F869E1995DF5034A8DCBCE286F7CF5C"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeLiveCaptureTimeline.cs",
+      "LastWriteTimeUtc": "2026-10-02T09:29:06.0000000Z",
+      "Sha256": "C3582AE8B2D38838C745088D7DBE2ED303F3245E2B07D88BA41E7343DDDCBFBC"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeRecorderTutorial.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:02:56.7460331Z",
+      "Sha256": "73D69732966F12231AC1D3BE1018C82F2B7019778545AE812289C77684A0679B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeRecorderUi.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:04:03.6479643Z",
+      "Sha256": "2FC68CDF4C76DB014C822ECA262C6946F0DCA377E8BD07733AD137A0732B3BA0"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeRecorderUi.Timing.cs",
+      "LastWriteTimeUtc": "2026-10-02T06:05:34.0000000Z",
+      "Sha256": "4E5804560EBD89790B88856749BCA638F916BB4E0CF85ECF945679E1AD8685D5"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeTimingSmoke.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:30:32.0000000Z",
+      "Sha256": "02B4CFFDFCA9534B930F415FC369CE94B9CB069322ED5EC4C03D0906F179DA0B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NullableAttributes.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:43:14.0000000Z",
+      "Sha256": "ABF2574F0FEC7FD24F383D49776E150D57D1C82FC830C4F33610A79A08D39415"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\OptionalHooks.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:43:14.0000000Z",
+      "Sha256": "A035039EDFCF1D92E347062A302F7D02CA8A995A7F530BDFF1CFFB5123917C11"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\Plugin.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:10:21.1271041Z",
+      "Sha256": "83CC9AF4DDE6EDC4FAC36AB70045CB1670F1EC9858265C9BD4F813FFDC651A67"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\PreferencesDiagnostics.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:10:56.2695980Z",
+      "Sha256": "5483C0628A76ADC9C0B31AA1A854711711670DDB7996B4696D405E834900B119"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\PreflightDiagnostics.cs",
+      "LastWriteTimeUtc": "2026-10-02T04:12:24.0000000Z",
+      "Sha256": "8C82DDB3E34F877756A1BE09FC93C6C60040E4F2BD9A16235DECF6296DC621E6"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingCameras.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:11:40.0000000Z",
+      "Sha256": "BA35853265250D095814C8EDB39FC7E39AE8294008EB8954949F36AC400BF05C"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingChoices.cs",
+      "LastWriteTimeUtc": "2026-10-01T16:06:00.0000000Z",
+      "Sha256": "6F2B141809998D6AB6DAC159CFA7CC53A332B080D8339F99878CC185CA259EF1"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingControls.cs",
+      "LastWriteTimeUtc": "2026-10-02T10:30:10.0000000Z",
+      "Sha256": "F2A57BDE707DD4B80F73157BA0EEE5D299592837AB7E7137CDB2B1967E34F031"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingDurationPlan.cs",
+      "LastWriteTimeUtc": "2026-10-02T03:33:48.0000000Z",
+      "Sha256": "95B886E5AD11B84901CEA577CFFC7244AA1BEC5772760DC81ED148E2FE2D9B17"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingFastClock.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:42:14.0000000Z",
+      "Sha256": "CAC7374254458CEC56E8746D6809839C524FFC3C6AEEFA16E24ACF3C0D0B8BD6"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingLiveClock.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:42:14.0000000Z",
+      "Sha256": "352DFF01237EA5A4437D90BACFB426AEC4F61211D75910880F8C79FC4F6049EA"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingNativeClock.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:15:08.0000000Z",
+      "Sha256": "9EDA0FAB7ABC053DCC5144F27C529933375483ED83B6466A96556FE6039B1BCB"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingPreflight.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:42:14.0000000Z",
+      "Sha256": "38B1FC2B1045DF6CBCF09F0F16DC1BF599A725CDA7F87AAFEF5BD801E4B03B96"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingUiSmoke.cs",
+      "LastWriteTimeUtc": "2026-10-02T05:56:36.0000000Z",
+      "Sha256": "87580981435BD68134B47CEA1C82229D796E90EA5D5A7D3770C05B2FA4D61F15"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\TimingDiagnostics.cs",
+      "LastWriteTimeUtc": "2026-10-02T04:24:04.0000000Z",
+      "Sha256": "5DB340C20BB031B15F56AA50CBB3DEAE7447D37B947CF094B14AEDCE2A4344AA"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\UiDiagnostics.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:07:21.9506729Z",
+      "Sha256": "9BEC33E39A1DE4325F6A9DD2F65640749168FB83DA6281585BB5697DC3E13548"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-development-installer.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9562717Z",
+      "Sha256": "7A2E3F7E97B296C6FEC96E3B6D5C40C228D0400BC6E4694A797348DE17C83D01"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-dlss-supplement.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "13E0F6490BF46501E2E0324FADF35311E05B9E1D89E6DADDA2C430793A964161"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-enhancer.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "0099FDFA1341A672581AE68F9D1392EFF7A2B75D36D531485352A3E080C35C4C"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-handoff.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:48.0000000Z",
+      "Sha256": "8252C224CD2EA657297667DE09BACA60BD57C04869DA8843BD8EEBB6C9453296"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-r6-support.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8806320Z",
+      "Sha256": "9CDF58CC064126A7EC70E2A9D86F1E39B3FF85245C6A27281713AE085419A05C"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-release.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9297152Z",
+      "Sha256": "43A1A6466CA7863A062BDB8B0D290F791600BB9B62BB48E6DD5D8444B890538A"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-v1-online-support.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:48.0000000Z",
+      "Sha256": "EFF4C270A764DE9FFAF767F0451EAC859C04C04C7A966887B17AB26E708AC86D"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\DependencyTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "C006C3EC6DD5FE3812F34A00D9FF85231351066711ABFBD441A4954F727E1EF0"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\DLSS-SUPPLEMENT-GUIDE.txt",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "C654F0CC9C3BB533EF3817F4211946162EC1407CEFCEA361235A003A6274173D"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\DlssSupplementInstaller.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "80A6999D2014BD78235959C5A905FF683E8D0AAC5CB29B285EFD63A089529273"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\ExecutableShell.cs.in",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8956903Z",
+      "Sha256": "C98F1AC783F694526CFA1274AFF42BF64268CE9471E6B991FEE14B40060C2A0D"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\export-handoff-zip.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:48.0000000Z",
+      "Sha256": "8306E8663BB5BA47728647557FDAB2BBEF0A486856AA35CC4A622F0EAB011B61"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\FfmpegTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "2A2E31002EEEE28F756CB8B57816CC2C4E3CB70744B2EC02335AF446003DD06E"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\Installer.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9006982Z",
+      "Sha256": "DBE79683213C4AC07C3BC657EF785ECC98661501390E06DA1E8E5E6554A09292"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\Loader.cs.in",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8796402Z",
+      "Sha256": "2F05A2998B1A2232A5757C09FE0474C68758716982A290DE84DC35B7FDB739F6"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\LocalVerificationInstall.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "41541AE935D65C300B86DAB81C83F374EEE3670B29FAF7ACDB4246A2B6456E6F"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\obfuscar.xml",
+      "LastWriteTimeUtc": "2026-10-01T15:45:48.0000000Z",
+      "Sha256": "548074CE4C7CAC66313C121AE54618D2849644C4693FAD01515FE558B644A25B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\OnlineDlssInstall.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:34.0000000Z",
+      "Sha256": "743AB895C2806368ADF2FD8790A613E32BA5A9D722CA79D64AC30A93E4B56F03"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\protect-executable.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:50.0000000Z",
+      "Sha256": "DE54EC4623F5B6202197ED9A2812F8BE1919C9215F89433DC924F41FE98BA265"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\ProtectionTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:34.0000000Z",
+      "Sha256": "2E6B10FFCAECA5ACA02C606745561968CFB3E7539F6D0EBCDC450A8EDF0D3AC1"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\R6InstallerTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:34.0000000Z",
+      "Sha256": "062A560FEBD087B51FAA819DDD93C935BCD496FFF899543E8BD913FB9422CF0B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\rebuild-v1-installer-ui.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:50.0000000Z",
+      "Sha256": "45580BDFF374117928C91E73D7EB81D68108BBA6A08B1A04EF30EC2CC5D3A3B9"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\rebuild-v11-installer-ui.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "9397DEB6FA8A582ADDE61F5946FB38228E65B208332AB35630CB80DE25D2BF67"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\SafetyTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:34.0000000Z",
+      "Sha256": "1A04CC62AD4922172A46EC440A399C14B3C1329566ECA8F5586DB76B93E1943E"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\save-v1-baseline.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "409AA38055F9AB275253F3DC2F891607D04A94FB48998FC0E994C76FBBF11337"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\save-v11-baseline.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "D086F160AA0811653A7F3F771083A04AD5EF3B73AD0B316AE2CA41C3E9FC5421"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\test-r6-installers.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "82CB0CFC25F1F839CD98B2EDB40E7824748D7A47A4B472BFA14D828AFF145504"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\test-v1-delivered.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "FFC06000B84E6F9E1B3CFEFD644F8F11184558195BD97B441D23BC500B01E279"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\test-v1-installers.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:06:56.9328764Z",
+      "Sha256": "321800C94BD9BD6CFACD2BB5437992335BFFFE4BB6FAF4375FFE04A1D01848DB"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\test-v1-real-exe.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8796402Z",
+      "Sha256": "0724A3A2444192C0522862F390E4B0EEF8DA54D222AB29996557866A5F254B97"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\THIRD-PARTY.txt",
+      "LastWriteTimeUtc": "2026-10-01T15:45:36.0000000Z",
+      "Sha256": "27A95D584F6B8EF388980933696A78EBF94CD86EA7E44E115E7FECB929E62B21"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\USER-GUIDE.txt",
+      "LastWriteTimeUtc": "2026-10-04T10:08:40.5978438Z",
+      "Sha256": "A173F04ED502E84E0ACD21B633B277DC351539638072B9C855F5AEC39EFA4B88"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1AssemblyInfo.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8836804Z",
+      "Sha256": "4676D452833FC5B83C5CB12448420CB8A95C698D55FB07A1EE3B050752556C87"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1DeliveredTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "4D2A5E36D3EA9C8961C16C0D3722A1A5EB8677B9D5BCB0EBB9394100EAEB56B8"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1ExeDriver.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8876960Z",
+      "Sha256": "314273726E59288B8786C8B83AD8F1EB60BE5E8512F73D49B255590D5316AAA3"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1Hardware.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "399545616AA59F5305B88229D9365453D29E27FED69E865207934B173D4537C4"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1Installer.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8906953Z",
+      "Sha256": "7ACA372E61462A0874F8E8D5A6355B9E0D4090A5DF54D0F686251AD997F58060"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1InstallerTests.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9642828Z",
+      "Sha256": "725F0361008ED4040D9E63E639B6F9FA0896926E5252F8A76A550D0589204286"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\VariantSwitchTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "9295DD954E37394DFF4C9BF6BFCBD565EB0ABD7D0FF9FF3AEA00197EA3823CC8"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\verify-r6-payload.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9572729Z",
+      "Sha256": "5ADA39534970AD547A56AB6976BCEC327035703F15145B8034517D2413260A09"
+    }
+  ],
+  "After": [
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\manifest.json",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8956903Z",
+      "Sha256": "28B43A1607800BDF6F6EEBB1DC8600AC6C8EE8F7C361E1075BD9025A0DB7C176"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\AzureArchive.Recorder.csproj",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8746245Z",
+      "Sha256": "D9ACE4D0E4DF17F21ED3E3DE47DDE7ADEA49E6C330ABA28B58D7EAF4FF3DC15E"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\ChoiceProbe.cs",
+      "LastWriteTimeUtc": "2026-10-02T03:19:30.0000000Z",
+      "Sha256": "B097CA417AFD096A9EA18887DD499EA8376C98E4BE838A83BE078BE57ABCCB98"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\DailyExportNaming.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:02.0000000Z",
+      "Sha256": "7D48ACD8FBD1EBB73221A470451197F3976D148B7F1B75560FB5D192DE00C9E1"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\Deployment.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:02.0000000Z",
+      "Sha256": "1073344662C1396DE7A3F300442D3F2DEC7097D30C614EBD49AE9329BFE4A156"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\DiagnosticHostReady.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:27:16.0000000Z",
+      "Sha256": "D7A6B3708D030DFD66854338E3F567E8506ED215D02F26996B9729B5E9964E26"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\DlssComponents.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:04.0000000Z",
+      "Sha256": "0B1CBC6A991881FE104253B2AFDBA9E236C14F7EF3AB599B5DDCF8C9DB5D9441"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\Encoder.cs",
+      "LastWriteTimeUtc": "2026-10-02T10:25:36.0000000Z",
+      "Sha256": "A16F591190222CCCE2A22E424A335160907DF7F4A630F0E3CB8B5308BA34E537"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\EncoderWorkQueue.cs",
+      "LastWriteTimeUtc": "2026-10-02T09:56:56.0000000Z",
+      "Sha256": "ECF3BA7F9CA8684FABC1D8E48FD95211FA92890993DE64F29B2C0FCDAB74317B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\EnhancementMonitor.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:06.0000000Z",
+      "Sha256": "2F9B6EC38042B77BF5AF0B931F96F0CF38DDB6B15004A326203086F738A867C8"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\FolderPicker.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:02:56.7490156Z",
+      "Sha256": "4D4EE0A8CF9637562A38BE06163E3DCB135FF2AD576B77D3EC374551BA40D421"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\FrameReadback.cs",
+      "LastWriteTimeUtc": "2026-10-02T09:54:44.0000000Z",
+      "Sha256": "62345D15D7A5D209E1BFC0B68FC9E96587C8CBA44F655C7FE8E2AED5379953A9"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\GpuProfiles.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:10.0000000Z",
+      "Sha256": "B766E219DA0C6C57D349618D9C4157593FFBDBBE906285AA588131DFF40D2E94"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\MonitorResolution.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:42:10.0000000Z",
+      "Sha256": "583270FFBD3CE9E59AC93825596B266B49B512762E97897D636CA21F03D1514F"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeCaptureTimeline.cs",
+      "LastWriteTimeUtc": "2026-10-02T05:46:14.0000000Z",
+      "Sha256": "CC439ACC34D39CFA99BBB99E5BAD61783B71AFA8409357D33467BD1F7578AB2E"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeCompositeSchedule.cs",
+      "LastWriteTimeUtc": "2026-10-02T09:20:52.0000000Z",
+      "Sha256": "C10212FE890E57202629054D843B7A405F869E1995DF5034A8DCBCE286F7CF5C"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeLiveCaptureTimeline.cs",
+      "LastWriteTimeUtc": "2026-10-02T09:29:06.0000000Z",
+      "Sha256": "C3582AE8B2D38838C745088D7DBE2ED303F3245E2B07D88BA41E7343DDDCBFBC"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeRecorderTutorial.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:02:56.7460331Z",
+      "Sha256": "73D69732966F12231AC1D3BE1018C82F2B7019778545AE812289C77684A0679B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeRecorderUi.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:04:03.6479643Z",
+      "Sha256": "2FC68CDF4C76DB014C822ECA262C6946F0DCA377E8BD07733AD137A0732B3BA0"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeRecorderUi.Timing.cs",
+      "LastWriteTimeUtc": "2026-10-02T06:05:34.0000000Z",
+      "Sha256": "4E5804560EBD89790B88856749BCA638F916BB4E0CF85ECF945679E1AD8685D5"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NativeTimingSmoke.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:30:32.0000000Z",
+      "Sha256": "02B4CFFDFCA9534B930F415FC369CE94B9CB069322ED5EC4C03D0906F179DA0B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\NullableAttributes.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:43:14.0000000Z",
+      "Sha256": "ABF2574F0FEC7FD24F383D49776E150D57D1C82FC830C4F33610A79A08D39415"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\OptionalHooks.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:43:14.0000000Z",
+      "Sha256": "A035039EDFCF1D92E347062A302F7D02CA8A995A7F530BDFF1CFFB5123917C11"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\Plugin.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:10:21.1271041Z",
+      "Sha256": "83CC9AF4DDE6EDC4FAC36AB70045CB1670F1EC9858265C9BD4F813FFDC651A67"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\PreferencesDiagnostics.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:10:56.2695980Z",
+      "Sha256": "5483C0628A76ADC9C0B31AA1A854711711670DDB7996B4696D405E834900B119"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\PreflightDiagnostics.cs",
+      "LastWriteTimeUtc": "2026-10-02T04:12:24.0000000Z",
+      "Sha256": "8C82DDB3E34F877756A1BE09FC93C6C60040E4F2BD9A16235DECF6296DC621E6"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingCameras.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:11:40.0000000Z",
+      "Sha256": "BA35853265250D095814C8EDB39FC7E39AE8294008EB8954949F36AC400BF05C"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingChoices.cs",
+      "LastWriteTimeUtc": "2026-10-01T16:06:00.0000000Z",
+      "Sha256": "6F2B141809998D6AB6DAC159CFA7CC53A332B080D8339F99878CC185CA259EF1"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingControls.cs",
+      "LastWriteTimeUtc": "2026-10-02T10:30:10.0000000Z",
+      "Sha256": "F2A57BDE707DD4B80F73157BA0EEE5D299592837AB7E7137CDB2B1967E34F031"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingDurationPlan.cs",
+      "LastWriteTimeUtc": "2026-10-02T03:33:48.0000000Z",
+      "Sha256": "95B886E5AD11B84901CEA577CFFC7244AA1BEC5772760DC81ED148E2FE2D9B17"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingFastClock.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:42:14.0000000Z",
+      "Sha256": "CAC7374254458CEC56E8746D6809839C524FFC3C6AEEFA16E24ACF3C0D0B8BD6"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingLiveClock.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:42:14.0000000Z",
+      "Sha256": "352DFF01237EA5A4437D90BACFB426AEC4F61211D75910880F8C79FC4F6049EA"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingNativeClock.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:15:08.0000000Z",
+      "Sha256": "9EDA0FAB7ABC053DCC5144F27C529933375483ED83B6466A96556FE6039B1BCB"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingPreflight.cs",
+      "LastWriteTimeUtc": "2026-10-02T11:42:14.0000000Z",
+      "Sha256": "38B1FC2B1045DF6CBCF09F0F16DC1BF599A725CDA7F87AAFEF5BD801E4B03B96"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\RecordingUiSmoke.cs",
+      "LastWriteTimeUtc": "2026-10-02T05:56:36.0000000Z",
+      "Sha256": "87580981435BD68134B47CEA1C82229D796E90EA5D5A7D3770C05B2FA4D61F15"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\TimingDiagnostics.cs",
+      "LastWriteTimeUtc": "2026-10-02T04:24:04.0000000Z",
+      "Sha256": "5DB340C20BB031B15F56AA50CBB3DEAE7447D37B947CF094B14AEDCE2A4344AA"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\src\\UiDiagnostics.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:07:21.9506729Z",
+      "Sha256": "9BEC33E39A1DE4325F6A9DD2F65640749168FB83DA6281585BB5697DC3E13548"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-development-installer.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9562717Z",
+      "Sha256": "7A2E3F7E97B296C6FEC96E3B6D5C40C228D0400BC6E4694A797348DE17C83D01"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-dlss-supplement.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "13E0F6490BF46501E2E0324FADF35311E05B9E1D89E6DADDA2C430793A964161"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-enhancer.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "0099FDFA1341A672581AE68F9D1392EFF7A2B75D36D531485352A3E080C35C4C"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-handoff.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:48.0000000Z",
+      "Sha256": "8252C224CD2EA657297667DE09BACA60BD57C04869DA8843BD8EEBB6C9453296"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-r6-support.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8806320Z",
+      "Sha256": "9CDF58CC064126A7EC70E2A9D86F1E39B3FF85245C6A27281713AE085419A05C"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-release.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9297152Z",
+      "Sha256": "43A1A6466CA7863A062BDB8B0D290F791600BB9B62BB48E6DD5D8444B890538A"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\build-v1-online-support.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:48.0000000Z",
+      "Sha256": "EFF4C270A764DE9FFAF767F0451EAC859C04C04C7A966887B17AB26E708AC86D"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\DependencyTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "C006C3EC6DD5FE3812F34A00D9FF85231351066711ABFBD441A4954F727E1EF0"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\DLSS-SUPPLEMENT-GUIDE.txt",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "C654F0CC9C3BB533EF3817F4211946162EC1407CEFCEA361235A003A6274173D"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\DlssSupplementInstaller.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "80A6999D2014BD78235959C5A905FF683E8D0AAC5CB29B285EFD63A089529273"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\ExecutableShell.cs.in",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8956903Z",
+      "Sha256": "C98F1AC783F694526CFA1274AFF42BF64268CE9471E6B991FEE14B40060C2A0D"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\export-handoff-zip.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:48.0000000Z",
+      "Sha256": "8306E8663BB5BA47728647557FDAB2BBEF0A486856AA35CC4A622F0EAB011B61"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\FfmpegTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "2A2E31002EEEE28F756CB8B57816CC2C4E3CB70744B2EC02335AF446003DD06E"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\Installer.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9006982Z",
+      "Sha256": "DBE79683213C4AC07C3BC657EF785ECC98661501390E06DA1E8E5E6554A09292"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\Loader.cs.in",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8796402Z",
+      "Sha256": "2F05A2998B1A2232A5757C09FE0474C68758716982A290DE84DC35B7FDB739F6"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\LocalVerificationInstall.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:28.0000000Z",
+      "Sha256": "41541AE935D65C300B86DAB81C83F374EEE3670B29FAF7ACDB4246A2B6456E6F"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\obfuscar.xml",
+      "LastWriteTimeUtc": "2026-10-01T15:45:48.0000000Z",
+      "Sha256": "548074CE4C7CAC66313C121AE54618D2849644C4693FAD01515FE558B644A25B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\OnlineDlssInstall.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:34.0000000Z",
+      "Sha256": "743AB895C2806368ADF2FD8790A613E32BA5A9D722CA79D64AC30A93E4B56F03"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\protect-executable.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:50.0000000Z",
+      "Sha256": "DE54EC4623F5B6202197ED9A2812F8BE1919C9215F89433DC924F41FE98BA265"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\ProtectionTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:34.0000000Z",
+      "Sha256": "2E6B10FFCAECA5ACA02C606745561968CFB3E7539F6D0EBCDC450A8EDF0D3AC1"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\R6InstallerTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:34.0000000Z",
+      "Sha256": "062A560FEBD087B51FAA819DDD93C935BCD496FFF899543E8BD913FB9422CF0B"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\rebuild-v1-installer-ui.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:50.0000000Z",
+      "Sha256": "45580BDFF374117928C91E73D7EB81D68108BBA6A08B1A04EF30EC2CC5D3A3B9"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\rebuild-v11-installer-ui.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "9397DEB6FA8A582ADDE61F5946FB38228E65B208332AB35630CB80DE25D2BF67"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\SafetyTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:34.0000000Z",
+      "Sha256": "1A04CC62AD4922172A46EC440A399C14B3C1329566ECA8F5586DB76B93E1943E"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\save-v1-baseline.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "409AA38055F9AB275253F3DC2F891607D04A94FB48998FC0E994C76FBBF11337"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\save-v11-baseline.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "D086F160AA0811653A7F3F771083A04AD5EF3B73AD0B316AE2CA41C3E9FC5421"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\test-r6-installers.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "82CB0CFC25F1F839CD98B2EDB40E7824748D7A47A4B472BFA14D828AFF145504"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\test-v1-delivered.ps1",
+      "LastWriteTimeUtc": "2026-10-01T15:45:54.0000000Z",
+      "Sha256": "FFC06000B84E6F9E1B3CFEFD644F8F11184558195BD97B441D23BC500B01E279"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\test-v1-installers.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:06:56.9328764Z",
+      "Sha256": "321800C94BD9BD6CFACD2BB5437992335BFFFE4BB6FAF4375FFE04A1D01848DB"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\test-v1-real-exe.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8796402Z",
+      "Sha256": "0724A3A2444192C0522862F390E4B0EEF8DA54D222AB29996557866A5F254B97"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\THIRD-PARTY.txt",
+      "LastWriteTimeUtc": "2026-10-01T15:45:36.0000000Z",
+      "Sha256": "27A95D584F6B8EF388980933696A78EBF94CD86EA7E44E115E7FECB929E62B21"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\USER-GUIDE.txt",
+      "LastWriteTimeUtc": "2026-10-04T10:08:40.5978438Z",
+      "Sha256": "A173F04ED502E84E0ACD21B633B277DC351539638072B9C855F5AEC39EFA4B88"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1AssemblyInfo.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8836804Z",
+      "Sha256": "4676D452833FC5B83C5CB12448420CB8A95C698D55FB07A1EE3B050752556C87"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1DeliveredTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "4D2A5E36D3EA9C8961C16C0D3722A1A5EB8677B9D5BCB0EBB9394100EAEB56B8"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1ExeDriver.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8876960Z",
+      "Sha256": "314273726E59288B8786C8B83AD8F1EB60BE5E8512F73D49B255590D5316AAA3"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1Hardware.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "399545616AA59F5305B88229D9365453D29E27FED69E865207934B173D4537C4"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1Installer.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.8906953Z",
+      "Sha256": "7ACA372E61462A0874F8E8D5A6355B9E0D4090A5DF54D0F686251AD997F58060"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\V1InstallerTests.cs",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9642828Z",
+      "Sha256": "725F0361008ED4040D9E63E639B6F9FA0896926E5252F8A76A550D0589204286"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\VariantSwitchTests.cs",
+      "LastWriteTimeUtc": "2026-10-01T15:45:42.0000000Z",
+      "Sha256": "9295DD954E37394DFF4C9BF6BFCBD565EB0ABD7D0FF9FF3AEA00197EA3823CC8"
+    },
+    {
+      "Path": "D:\\test2\\开发\\V1.2.3\\RecorderMod\\packaging\\verify-r6-payload.ps1",
+      "LastWriteTimeUtc": "2026-10-04T10:03:22.9572729Z",
+      "Sha256": "5ADA39534970AD547A56AB6976BCEC327035703F15145B8034517D2413260A09"
+    }
+  ]
+}

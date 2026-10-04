@@ -1,0 +1,89 @@
+{
+  "Variant": "protected-V1.2.3",
+  "Product": "AzureArchiveRecorder",
+  "Version": "1.2.3",
+  "Installer": "D:\\test2\\开发\\V1.2.3\\交付\\AzureArchive内录V1.2.3-加壳安装.exe",
+  "InstallerSha256": "06D81933A62A23B8DBDD71145FE16396DA67990E543371A0B7CA2F5C33B67853",
+  "Uninstaller": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\stage\\mods\\AzureArchiveRecorder\\卸载内录MOD.exe",
+  "UninstallerSha256": "8F57C85DED4FCB6DA64E5E8E53DAB6544F3D96CE40BF8B09BB48AE6044F562CF",
+  "DlssUninstaller": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\卸载DLSS补充MOD.exe",
+  "DlssUninstallerSha256": "BA583C0D8C3A51035632F568DF102BA00990EDD7B39BC760760F5470B19BC247",
+  "Plugin": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\stage\\mods\\AzureArchiveRecorder\\1.2.3\\AzureArchive.Recorder.dll",
+  "PluginSha256": "2FB5E3052423E059E6DBFCFD25B324344A075327874AD28275DB5B6C0BA1FB89",
+  "CoreSha256": "A489A8F281D493149F89036EF98DE35558C070D0F03364476998ACA7F7C8C2A6",
+  "TutorialResourcesBeforeObfuscation": [
+    {
+      "Resource": "recorder.tutorial.arona.page-01.png",
+      "Bytes": 913589,
+      "Sha256": "CC93D8406298B915997B11C44A4A2158781BD773B689814C361AA6A134C45DB2"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-02.png",
+      "Bytes": 917396,
+      "Sha256": "8D1EDDF8ABFA4987D83FB2D85585ADEDC5B539B0D78D871FF9B93B61B2A3B5F3"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-03.png",
+      "Bytes": 883550,
+      "Sha256": "F6712A9F501B8D449529DC09B966C76FC300D710F59BCF11E4FC1A46956E7D06"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-04.png",
+      "Bytes": 868242,
+      "Sha256": "114B835625B810F6BB0DF5E72CFA4623FC3879E1BB21E370FF155F79130E09FD"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-05.png",
+      "Bytes": 961080,
+      "Sha256": "A03A2B1761A4C4575F96A8B99B31E658F83D0DCA9DB2D1232CB5F533EF411790"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-06.png",
+      "Bytes": 831776,
+      "Sha256": "0B678773819BDAEB5EE047F0E11F231A9E3F2E0A218DCB068C7F0021D539726A"
+    }
+  ],
+  "TutorialResources": [
+    {
+      "Resource": "recorder.tutorial.arona.page-01.png",
+      "Bytes": 913589,
+      "Sha256": "CC93D8406298B915997B11C44A4A2158781BD773B689814C361AA6A134C45DB2"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-02.png",
+      "Bytes": 917396,
+      "Sha256": "8D1EDDF8ABFA4987D83FB2D85585ADEDC5B539B0D78D871FF9B93B61B2A3B5F3"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-03.png",
+      "Bytes": 883550,
+      "Sha256": "F6712A9F501B8D449529DC09B966C76FC300D710F59BCF11E4FC1A46956E7D06"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-04.png",
+      "Bytes": 868242,
+      "Sha256": "114B835625B810F6BB0DF5E72CFA4623FC3879E1BB21E370FF155F79130E09FD"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-05.png",
+      "Bytes": 961080,
+      "Sha256": "A03A2B1761A4C4575F96A8B99B31E658F83D0DCA9DB2D1232CB5F533EF411790"
+    },
+    {
+      "Resource": "recorder.tutorial.arona.page-06.png",
+      "Bytes": 831776,
+      "Sha256": "0B678773819BDAEB5EE047F0E11F231A9E3F2E0A218DCB068C7F0021D539726A"
+    }
+  ],
+  "Protection": "Obfuscar + AES-256-CBC + GZip + in-memory loading; installer and both uninstallers also protected",
+  "Payload": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\install-payload.zip",
+  "PayloadFiles": 201,
+  "BuildDirectory": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241",
+  "Stage": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\stage",
+  "RuntimeSource": "E:\\AzureArchive_100_fix\\mods\\AzureArchiveRecorder\\runtime",
+  "InstallerSource": "D:\\test2\\开发\\V1.2.3\\交付\\构建记录\\protected-V1.2.3-20261004-181200-c35dd241\\Installer.generated.cs",
+  "SharedSourceSha256": "0B1CBC6A991881FE104253B2AFDBA9E236C14F7EF3AB599B5DDCF8C9DB5D9441",
+  "NoBundledDlssNative": true,
+  "BuiltUtc": "2026-10-04T10:12:25.2300529Z",
+  "InstalledIntoGame": false
+}

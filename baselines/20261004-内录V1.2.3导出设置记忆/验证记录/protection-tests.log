@@ -1,0 +1,5 @@
+PASS 1: AzureArchive内录V1.2.3-加壳安装.exe: only encrypted AES-sized resource; no directly readable installer ZIP
+PASS 2: AzureArchive内录V1.2.3-加壳安装.exe: AES/GZip and Assembly.Load(byte[]) present; no direct file-persistence/core-file-loading APIs in shell IL
+PASS 3: 卸载内录MOD.exe: only encrypted AES-sized resource; no directly readable installer ZIP
+PASS 4: 卸载内录MOD.exe: AES/GZip and Assembly.Load(byte[]) present; no direct file-persistence/core-file-loading APIs in shell IL
+ALL 4 READ-ONLY PROTECTION CHECKS PASSED

@@ -1,0 +1,196 @@
+START: V1.2.3 product and current-path whitelist are 1.2.3
+PASS 1: V1.2.3 product and current-path whitelist are 1.2.3
+START: 0.2.1 development migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 2: 0.2.1 development migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 development upgraded from 0.2.1 can switch variants twice without losing settings
+PASS 3: V1.2.3 development upgraded from 0.2.1 can switch variants twice without losing settings
+START: 0.2.1 protected migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 4: 0.2.1 protected migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 protected upgraded from 0.2.1 can switch variants twice without losing settings
+PASS 5: V1.2.3 protected upgraded from 0.2.1 can switch variants twice without losing settings
+START: 1.0.0 development migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 6: 1.0.0 development migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 development upgraded from 1.0.0 can switch variants twice without losing settings
+PASS 7: V1.2.3 development upgraded from 1.0.0 can switch variants twice without losing settings
+START: 1.0.0 protected migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 8: 1.0.0 protected migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 protected upgraded from 1.0.0 can switch variants twice without losing settings
+PASS 9: V1.2.3 protected upgraded from 1.0.0 can switch variants twice without losing settings
+START: 1.1.0 development migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 10: 1.1.0 development migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 development upgraded from 1.1.0 can switch variants twice without losing settings
+PASS 11: V1.2.3 development upgraded from 1.1.0 can switch variants twice without losing settings
+START: 1.1.0 protected migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 12: 1.1.0 protected migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 protected upgraded from 1.1.0 can switch variants twice without losing settings
+PASS 13: V1.2.3 protected upgraded from 1.1.0 can switch variants twice without losing settings
+START: 1.2.0 development migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 14: 1.2.0 development migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 development upgraded from 1.2.0 can switch variants twice without losing settings
+PASS 15: V1.2.3 development upgraded from 1.2.0 can switch variants twice without losing settings
+START: 1.2.0 protected migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 16: 1.2.0 protected migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 protected upgraded from 1.2.0 can switch variants twice without losing settings
+PASS 17: V1.2.3 protected upgraded from 1.2.0 can switch variants twice without losing settings
+START: 1.2.1 development migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 18: 1.2.1 development migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 development upgraded from 1.2.1 can switch variants twice without losing settings
+PASS 19: V1.2.3 development upgraded from 1.2.1 can switch variants twice without losing settings
+START: 1.2.1 protected migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 20: 1.2.1 protected migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 protected upgraded from 1.2.1 can switch variants twice without losing settings
+PASS 21: V1.2.3 protected upgraded from 1.2.1 can switch variants twice without losing settings
+START: 1.2.2 development migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 22: 1.2.2 development migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 development upgraded from 1.2.2 can switch variants twice without losing settings
+PASS 23: V1.2.3 development upgraded from 1.2.2 can switch variants twice without losing settings
+START: 1.2.2 protected migrates all enabled profiles and cleans only receipted unchanged old files
+PASS 24: 1.2.2 protected migrates all enabled profiles and cleans only receipted unchanged old files
+START: V1.2.3 protected upgraded from 1.2.2 can switch variants twice without losing settings
+PASS 25: V1.2.3 protected upgraded from 1.2.2 can switch variants twice without losing settings
+START: Modified old DLL and manifest survive upgrade and later uninstall without staying enabled
+PASS 26: Modified old DLL and manifest survive upgrade and later uninstall without staying enabled
+START: Unreceipted old version is retained while profiles select only V1
+PASS 27: Unreceipted old version is retained while profiles select only V1
+START: Cancelling old-version replacement produces no file or directory changes
+PASS 28: Cancelling old-version replacement produces no file or directory changes
+START: Malformed old receipt rejected without mutation: unknown-version
+Expected rejection: 卸载清单身份不匹配，已停止，未删除任何文件。
+PASS 29: Malformed old receipt rejected without mutation: unknown-version
+START: Malformed old receipt rejected without mutation: wrong-version-owned-path
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 30: Malformed old receipt rejected without mutation: wrong-version-owned-path
+START: Malformed old receipt rejected without mutation: foreign-product-path
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 31: Malformed old receipt rejected without mutation: foreign-product-path
+START: Malformed old receipt rejected without mutation: path-traversal
+Expected rejection: 安装清单路径无效：mods/AzureArchiveRecorder/runtime/../../OtherMod/keep.dll
+PASS 32: Malformed old receipt rejected without mutation: path-traversal
+START: Malformed old receipt rejected without mutation: duplicate-path
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 33: Malformed old receipt rejected without mutation: duplicate-path
+START: Malformed old receipt rejected without mutation: non-hex-hash
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 34: Malformed old receipt rejected without mutation: non-hex-hash
+START: Malformed old receipt rejected without mutation: foreign-root
+Expected rejection: 卸载清单身份不匹配，已停止，未删除任何文件。
+PASS 35: Malformed old receipt rejected without mutation: foreign-root
+START: Malformed inactive profile blocks migration before first file write
+Expected rejection: 传入的对象无效，应为“:”或“}”。 (7): {broken
+PASS 36: Malformed inactive profile blocks migration before first file write
+START: Payload hash mismatch leaves the old installation completely intact
+Expected rejection: 安装包文件校验失败：mods/AzureArchiveRecorder/1.2.3/AzureArchive.Recorder.dll
+PASS 37: Payload hash mismatch leaves the old installation completely intact
+START: Failed receipt commit rolls back new files, all profiles and deleted legacy files
+Expected transaction-stage failure: System.IO.IOException: 另一个进程正在使用此文件，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalReplace(String sourceFileName, String destinationFileName, String destinationBackupFileName, Boolean ignoreMetadataErrors)
+   在 InstallCore.Atomic(String file, Byte[] bytes)
+   在 InstallCore.Install(String root, Stream payload, Action`1 progress, Func`2 confirmDependencies, Func`2 confirmReinstall, IEnumerable`1 ffmpegCandidates, Boolean searchDefaultFfmpegLocations, Func`1 confirmBundledFfmpeg, Func`2 confirmDlssMissing)
+   在 V1InstallerTests.Install(String variant, Action`1 adjust)
+   在 V1InstallerTests.MustFailAtIoOperation(Action action, String message, String requiredCaller, String[] ioFrames)
+PASS 38: Failed receipt commit rolls back new files, all profiles and deleted legacy files
+START: Unknown V1 destination conflicts are not overwritten
+Expected rejection: 目标位置存在不属于此安装器的文件，已停止以避免覆盖：D:\test2\开发\V1.2.3\V1.2.3安装测试\test-20261004-180702-995ca535\fixtures\unknown-current-conflict\mods\AzureArchiveRecorder\1.2.3\AzureArchive.Recorder.dll
+PASS 39: Unknown V1 destination conflicts are not overwritten
+START: V1 uninstall retains settings, tutorial state, naming counter and modified/unknown files
+PASS 40: V1 uninstall retains settings, tutorial state, naming counter and modified/unknown files
+START: Failed uninstall deletion restores profiles and earlier deleted files
+Expected transaction-stage failure: System.IO.IOException: 文件“D:\test2\开发\V1.2.3\V1.2.3安装测试\test-20261004-180702-995ca535\fixtures\uninstall-rollback\mods\AzureArchiveRecorder\runtime\EnhanceHost.exe”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalDelete(String path, Boolean checkHost)
+   在 InstallCore.Uninstall(String root, Action`1 progress)
+   在 V1InstallerTests.MustFailAtIoOperation(Action action, String message, String requiredCaller, String[] ioFrames)
+PASS 41: Failed uninstall deletion restores profiles and earlier deleted files
+START: Modified V1.0 DLL/manifest remain after V1.2.3 upgrade and uninstall without staying enabled
+PASS 42: Modified V1.0 DLL/manifest remain after V1.2.3 upgrade and uninstall without staying enabled
+START: V1.0 upgrade receipt-write failure rolls back both profiles and prior file cleanup
+Expected transaction-stage failure: System.IO.IOException: 另一个进程正在使用此文件，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalReplace(String sourceFileName, String destinationFileName, String destinationBackupFileName, Boolean ignoreMetadataErrors)
+   在 InstallCore.Atomic(String file, Byte[] bytes)
+   在 InstallCore.Install(String root, Stream payload, Action`1 progress, Func`2 confirmDependencies, Func`2 confirmReinstall, IEnumerable`1 ffmpegCandidates, Boolean searchDefaultFfmpegLocations, Func`1 confirmBundledFfmpeg, Func`2 confirmDlssMissing)
+   在 V1InstallerTests.Install(String variant, Action`1 adjust)
+   在 V1InstallerTests.MustFailAtIoOperation(Action action, String message, String requiredCaller, String[] ioFrames)
+PASS 43: V1.0 upgrade receipt-write failure rolls back both profiles and prior file cleanup
+START: V1.1 cancellation leaves the complete installation untouched
+PASS 44: V1.1 cancellation leaves the complete installation untouched
+START: V1.1 modified old files survive upgrade and uninstall
+PASS 45: V1.1 modified old files survive upgrade and uninstall
+START: V1.1 failed upgrade receipt commit restores every file and profile
+Expected transaction-stage failure: System.IO.IOException: 另一个进程正在使用此文件，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalReplace(String sourceFileName, String destinationFileName, String destinationBackupFileName, Boolean ignoreMetadataErrors)
+   在 InstallCore.Atomic(String file, Byte[] bytes)
+   在 InstallCore.Install(String root, Stream payload, Action`1 progress, Func`2 confirmDependencies, Func`2 confirmReinstall, IEnumerable`1 ffmpegCandidates, Boolean searchDefaultFfmpegLocations, Func`1 confirmBundledFfmpeg, Func`2 confirmDlssMissing)
+   在 V1InstallerTests.Install(String variant, Action`1 adjust)
+   在 V1InstallerTests.MustFailAtIoOperation(Action action, String message, String requiredCaller, String[] ioFrames)
+PASS 46: V1.1 failed upgrade receipt commit restores every file and profile
+START: V1.2 cancellation leaves the complete installation untouched
+PASS 47: V1.2 cancellation leaves the complete installation untouched
+START: V1.2 modified old files survive upgrade and uninstall
+PASS 48: V1.2 modified old files survive upgrade and uninstall
+START: V1.2 failed upgrade receipt commit restores every file and profile
+Expected transaction-stage failure: System.IO.IOException: 另一个进程正在使用此文件，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalReplace(String sourceFileName, String destinationFileName, String destinationBackupFileName, Boolean ignoreMetadataErrors)
+   在 InstallCore.Atomic(String file, Byte[] bytes)
+   在 InstallCore.Install(String root, Stream payload, Action`1 progress, Func`2 confirmDependencies, Func`2 confirmReinstall, IEnumerable`1 ffmpegCandidates, Boolean searchDefaultFfmpegLocations, Func`1 confirmBundledFfmpeg, Func`2 confirmDlssMissing)
+   在 V1InstallerTests.Install(String variant, Action`1 adjust)
+   在 V1InstallerTests.MustFailAtIoOperation(Action action, String message, String requiredCaller, String[] ioFrames)
+PASS 49: V1.2 failed upgrade receipt commit restores every file and profile
+START: 0.2.1 receipt cannot claim V1.2.3 paths through Files
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 50: 0.2.1 receipt cannot claim V1.2.3 paths through Files
+START: 0.2.1 receipt cannot claim V1.2.3 paths through LegacyFiles
+Expected rejection: 旧版清单路径无效。
+PASS 51: 0.2.1 receipt cannot claim V1.2.3 paths through LegacyFiles
+START: 1.0.0 receipt cannot claim V1.2.3 paths through Files
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 52: 1.0.0 receipt cannot claim V1.2.3 paths through Files
+START: 1.0.0 receipt cannot claim V1.2.3 paths through LegacyFiles
+Expected rejection: 旧版清单路径无效。
+PASS 53: 1.0.0 receipt cannot claim V1.2.3 paths through LegacyFiles
+START: 1.1.0 receipt cannot claim V1.2.3 paths through Files
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 54: 1.1.0 receipt cannot claim V1.2.3 paths through Files
+START: 1.1.0 receipt cannot claim V1.2.3 paths through LegacyFiles
+Expected rejection: 旧版清单路径无效。
+PASS 55: 1.1.0 receipt cannot claim V1.2.3 paths through LegacyFiles
+START: 1.2.0 receipt cannot claim V1.2.3 paths through Files
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 56: 1.2.0 receipt cannot claim V1.2.3 paths through Files
+START: 1.2.0 receipt cannot claim V1.2.3 paths through LegacyFiles
+Expected rejection: 旧版清单路径无效。
+PASS 57: 1.2.0 receipt cannot claim V1.2.3 paths through LegacyFiles
+START: 1.2.1 receipt cannot claim V1.2.3 paths through Files
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 58: 1.2.1 receipt cannot claim V1.2.3 paths through Files
+START: 1.2.1 receipt cannot claim V1.2.3 paths through LegacyFiles
+Expected rejection: 旧版清单路径无效。
+PASS 59: 1.2.1 receipt cannot claim V1.2.3 paths through LegacyFiles
+START: 1.2.2 receipt cannot claim V1.2.3 paths through Files
+Expected rejection: 卸载清单包含越界、重复或无效项目。
+PASS 60: 1.2.2 receipt cannot claim V1.2.3 paths through Files
+START: 1.2.2 receipt cannot claim V1.2.3 paths through LegacyFiles
+Expected rejection: 旧版清单路径无效。
+PASS 61: 1.2.2 receipt cannot claim V1.2.3 paths through LegacyFiles
+START: Current installer rejects a 0.2.1 payload without mutation
+Expected rejection: 卸载清单身份不匹配，已停止，未删除任何文件。
+PASS 62: Current installer rejects a 0.2.1 payload without mutation
+START: Current installer rejects a 1.0.0 payload without mutation
+Expected rejection: 卸载清单身份不匹配，已停止，未删除任何文件。
+PASS 63: Current installer rejects a 1.0.0 payload without mutation
+START: Current installer rejects a 1.1.0 payload without mutation
+Expected rejection: 卸载清单身份不匹配，已停止，未删除任何文件。
+PASS 64: Current installer rejects a 1.1.0 payload without mutation
+START: Current installer rejects a 1.2.0 payload without mutation
+Expected rejection: 卸载清单身份不匹配，已停止，未删除任何文件。
+PASS 65: Current installer rejects a 1.2.0 payload without mutation
+START: Current installer rejects a 1.2.1 payload without mutation
+Expected rejection: 卸载清单身份不匹配，已停止，未删除任何文件。
+PASS 66: Current installer rejects a 1.2.1 payload without mutation
+START: Current installer rejects a 1.2.2 payload without mutation
+Expected rejection: 卸载清单身份不匹配，已停止，未删除任何文件。
+PASS 67: Current installer rejects a 1.2.2 payload without mutation
+ALL 67 V1.2.3 Core CHECKS PASSED: D:\test2\开发\V1.2.3\V1.2.3安装测试\test-20261004-180702-995ca535\fixtures
