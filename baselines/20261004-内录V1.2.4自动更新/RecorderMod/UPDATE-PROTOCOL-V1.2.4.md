@@ -46,11 +46,17 @@ status.json 使用 State / Error / Message / InstallationUncertain；状态为 A
 
 保护使用既有 Obfuscar + AES/GZip 内存装载；安装器、卸载器和新增更新助手都走保护构建。保护不保证不可逆向，仓库公开源码属于用户已授权的决定。
 
+## 公开资产名称与版本说明
+
+每个正式版本均上传既有保护构建生成的安装 EXE，公开名称固定为“内录MOD{version}版本安装包.exe”；文件名不注明保护。源码包使用 AARecorder-V{version}-Source.zip，更新包使用 AARecorder-V{version}-update.zip。发布重命名只复制文件，不重新封装或改变二进制字节。
+
+本次 V1.2.4 沿用已存在的基线目录 baselines/20261004-内录V1.2.4自动更新，正式说明仅介绍功能。该说明方式只适用于本次，后续版本的长期规则见 RELEASING.md。发布状态以 Release、同基线的 delivery-checks.json 和生产清单为准。
+
 ## 发布顺序
 
 - 先完成代码、安装器、下载协议、回滚、真实 UI 与最终加壳版本验证。
-- 将完整源码和构建/验证摘要上传为新的独立 baseline，并记下提交号。
-- 为同一构建创建 Release，上传加壳安装 EXE 和完整更新 ZIP。不要上传未加壳的运行 EXE。
+- 将完整源码和构建/验证摘要保存到对应版本 baseline，并记下提交号；本次按用户授权更新既有 V1.2.4 基线，后续版本默认创建独立基线。
+- 为同一构建创建或更新 Release，上传对应安装 EXE、完整源码 ZIP 和更新 ZIP。安装包采用“内录MOD{version}版本安装包.exe”公开名称；必须来自既有保护构建。
 - 核验 Release 资产下载到的大小和 SHA-256 与本地一致。
 - 最后才提交 stable.json，填写已经存在的 baseline、真实 Release URL、大小、哈希及宿主限制。更新清单是启用分发的最后一步；不能先指向不存在或未验收的文件。
 - 当前版本的用户不会反复安装同一版本；下一版本发布时沿用此流程。

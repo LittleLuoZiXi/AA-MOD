@@ -1,54 +1,90 @@
-{
-  "Version": "1.2.4",
-  "BaselineVersion": "1.2.3",
-  "SourceFileCount": 269,
-  "ChangedFiles": [
-    "manifest.json",
-    "packaging/build-development-installer.ps1",
-    "packaging/build-r6-support.ps1",
-    "packaging/build-release.ps1",
-    "packaging/ExecutableShell.cs.in",
-    "packaging/Installer.cs",
-    "packaging/Loader.cs.in",
-    "packaging/protect-executable.ps1",
-    "packaging/ProtectionTests.cs",
-    "packaging/test-v1-installers.ps1",
-    "packaging/USER-GUIDE.txt",
-    "packaging/V1AssemblyInfo.cs",
-    "packaging/V1Installer.cs",
-    "packaging/V1InstallerTests.cs",
-    "packaging/verify-r6-payload.ps1",
-    "README.md",
-    "src/AzureArchive.Recorder.csproj",
-    "src/NativeRecorderTutorial.cs",
-    "src/NativeRecorderUi.cs",
-    "src/NativeRecorderUi.Timing.cs",
-    "src/Plugin.cs",
-    "src/UiDiagnostics.cs"
-  ],
-  "AddedFiles": [
-    "src/RecorderUpdateClient.cs",
-    "src/RecorderUpdateDownload.cs",
-    "src/RecorderUpdateSession.cs",
-    "src/NativeRecorderUi.Update.cs",
-    "src/UpdateDiagnostics.cs",
-    "tests/RecorderUpdateTests.cs",
-    "tests/test-recorder-update.ps1",
-    "tests/RecorderUpdateSessionTests.cs",
-    "tests/test-update-session.ps1",
-    "tests/run-update-ui-smoke.ps1",
-    "packaging/UpdateInstallerCore.cs",
-    "packaging/UpdateHelper.cs",
-    "packaging/UpdateInstallerTests.cs",
-    "packaging/test-update-installer.ps1",
-    "packaging/UPDATE-PROTOCOL-V1.2.4.txt",
-    "packaging/UPDATE-VERIFICATION-V1.2.4.json",
-    "UPDATE-PROTOCOL-V1.2.4.md",
-    "CONTINUE-V1.2.4.md"
-  ],
-  "DeletedFiles": [],
-  "PreviousBaselinePreserved": true,
-  "PublishedToGitHub": false,
-  "NoTimingAlgorithmChange": true,
-  "NoDlssAlgorithmChange": true
-}
+[
+  {
+    "Path": "CONTINUE-V1.2.4.md",
+    "Kind": "Changed",
+    "BeforeSha256": "B40CAF7458AE805F454C93809A76EA1AE598D3AE9E1FD4420D6713A919AF3990",
+    "AfterSha256": "15CAED6BE5BBF91685A6D347561F717BAF1BEC8F0B8DF605DCE94F5E47FCCCB0",
+    "GitBlobSha1": "9500951228160a7a7ef612ba4300ed48424b3578",
+    "Category": "Publication documentation"
+  },
+  {
+    "Path": "packaging/test-update-installer.ps1",
+    "Kind": "Changed",
+    "BeforeSha256": "6BDA46DEFBCE1CEAB2BDB14202187CE340101606CF709CB7BCCE4130CF1F358D",
+    "AfterSha256": "E40F0F4E1D68A2956FEECA722F1E9994443650613B8673B89382721BD837ED69",
+    "GitBlobSha1": "eddbfc3d4c3d9dd2cbffa55aa368de92a4f1636c",
+    "Category": "Accepted source or test file"
+  },
+  {
+    "Path": "packaging/UPDATE-PROTOCOL-V1.2.4.txt",
+    "Kind": "Changed",
+    "BeforeSha256": "445375749C46E52E1C6E263DB90A1F02BC8E6322F98565680F93AD385C6B8D5B",
+    "AfterSha256": "176ABF8D9A81B7F8F684D808C0259A6F596038410CABF02D40342B879F7B0B79",
+    "GitBlobSha1": "f2ebe0cd9ac2d16db0cc603a3bb377fdb587e8a6",
+    "Category": "Publication documentation"
+  },
+  {
+    "Path": "packaging/UPDATE-VERIFICATION-V1.2.4.json",
+    "Kind": "Changed",
+    "BeforeSha256": "1AAB1A59E3FD8AFDC496C858E06FA8FBEC4D204F1CD27E98BAB66D4E3BBB9616",
+    "AfterSha256": "B101AACED8CC43AD19237F2798F5D004938696E47B0B6A0C45002362F2E803D6",
+    "GitBlobSha1": "e82fa9b6a7103e48f48e9a88dc0782dcf720945e",
+    "Category": "Publication documentation"
+  },
+  {
+    "Path": "packaging/UpdateHelper.cs",
+    "Kind": "Changed",
+    "BeforeSha256": "F557982C8D1BDA7927774079BAFAFD2052E58FB0C143ECC6DDBAADF1870D54F2",
+    "AfterSha256": "C6BF8CA26443D26331045848A237A8686FD614DEFE022F976E7C28B7D77E9631",
+    "GitBlobSha1": "d54c0d892ca699a0d61eddc729678c16347698ef",
+    "Category": "Accepted source or test file"
+  },
+  {
+    "Path": "packaging/UpdateInstallerTests.cs",
+    "Kind": "Changed",
+    "BeforeSha256": "535D24713F01D5F3709F695CA0BE7A13DBAE8916ABE2CDA288B59B8E173053D7",
+    "AfterSha256": "918CDFD92B8ED80153370DDF0D95EF39156F47B684BF99EA274FDACCD005C1FD",
+    "GitBlobSha1": "f6b378d8448f86f1d1aa981f753a52f39c984345",
+    "Category": "Accepted source or test file"
+  },
+  {
+    "Path": "README.md",
+    "Kind": "Changed",
+    "BeforeSha256": "82C70B2197C4CDE5679CB4A60131B1A7B0E6E95683D78E62008172F7EFA5C366",
+    "AfterSha256": "D0150FF76FD375624CCD4ED91D9356EA508F02E506771CDABB8D5BF9E7B86694",
+    "GitBlobSha1": "4e46697773f61416cf26354ae54e112dcc3fa98c",
+    "Category": "Publication documentation"
+  },
+  {
+    "Path": "RELEASING.md",
+    "Kind": "Added",
+    "BeforeSha256": null,
+    "AfterSha256": "E9087DD2F1B3F387F1E2116A1B7769FE8954A2E335D8403366EAEEBF72C8DAE3",
+    "GitBlobSha1": "fa432ca302e07ca3f84879c0880aeee90093afcd",
+    "Category": "Publication documentation"
+  },
+  {
+    "Path": "src/RecorderUpdateSession.cs",
+    "Kind": "Changed",
+    "BeforeSha256": "4FA31361DF50BFF84A6FC8C559B9349F814FA854BBC894A59CC3E5A34DD97B80",
+    "AfterSha256": "8B08315D3BA802AF8787EFA92DC7A287C5281CE71A0E7739A38EFA3E8FA56E75",
+    "GitBlobSha1": "3239a6e702dcf86904b0fcbd7ce3948c7b09b198",
+    "Category": "Accepted source or test file"
+  },
+  {
+    "Path": "tests/RecorderUpdateSessionTests.cs",
+    "Kind": "Changed",
+    "BeforeSha256": "9F4DB261FFCE00340944E11848BF6C69FC7296288389D5F3EC28C6019C4F118D",
+    "AfterSha256": "04298E617A0D6F47CA2A471C0F26D4B52F5E29E87306FCCCC9D7DCC1A251C4A9",
+    "GitBlobSha1": "5c01ebf295c6e66734d494d719c2f7d2e90d9292",
+    "Category": "Accepted source or test file"
+  },
+  {
+    "Path": "UPDATE-PROTOCOL-V1.2.4.md",
+    "Kind": "Changed",
+    "BeforeSha256": "8189A6F0E16F3C98E170C68EC0584A34C3324EF4428924BBA2EF771E2EF68C3F",
+    "AfterSha256": "6935E66056294FE8EF6C44B3AC57A3F68F1739711A38CF16B3ECA44EEBD04F99",
+    "GitBlobSha1": "331c794bef266911fd30c44af4df0716c33f7c30",
+    "Category": "Publication documentation"
+  }
+]

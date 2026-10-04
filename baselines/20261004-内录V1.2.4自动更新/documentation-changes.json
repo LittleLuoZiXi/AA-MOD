@@ -1,0 +1,33 @@
+{
+  "Version": "1.2.4",
+  "Scope": "Publication documentation in an exported copy; accepted build-input source bytes are preserved",
+  "Documents": [
+    {
+      "Path": "README.md",
+      "Change": "Describe V1.2.4 functions, installation and persistent settings; use final public filenames and current acceptance state."
+    },
+    {
+      "Path": "CONTINUE-V1.2.4.md",
+      "Change": "Replace earlier staging states and artifact hashes with the accepted release, architecture and accurate verification boundaries."
+    },
+    {
+      "Path": "UPDATE-PROTOCOL-V1.2.4.md",
+      "Change": "Document public asset naming and the authorized existing V1.2.4 baseline publication; keep protocol fields and behavior intact."
+    },
+    {
+      "Path": "packaging/UPDATE-PROTOCOL-V1.2.4.txt",
+      "Change": "Describe child-process environment contract, current helper check count and public installer naming."
+    },
+    {
+      "Path": "packaging/UPDATE-VERIFICATION-V1.2.4.json",
+      "Change": "Replace earlier local snapshot metadata with accurate completed verification summary and accepted artifact hashes, without raw diagnostic logs."
+    },
+    {
+      "Path": "RELEASING.md",
+      "Change": "Record persistent installer and source/update asset requirements, plus the one-time function-only V1.2.4 release-note instruction."
+    }
+  ],
+  "OriginalDeveloperTreeEdited": false,
+  "HistoricalVersionDocumentsRetained": true,
+  "CurrentReleaseNotes": "版本说明.md"
+}

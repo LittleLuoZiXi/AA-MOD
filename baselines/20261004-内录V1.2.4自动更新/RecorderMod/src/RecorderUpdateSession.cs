@@ -114,6 +114,9 @@ internal sealed class RecorderUpdateSession : IDisposable
                     UseShellExecute = false, CreateNoWindow = true, WindowStyle = ProcessWindowStyle.Hidden,
                     WorkingDirectory = _taskRoot
                 };
+                // Doorstop marks the current AA process disabled after injection. Never pass
+                // that process-local marker to the helper, including already-published helpers.
+                start.Environment.Remove("DOORSTOP_DISABLE");
                 start.ArgumentList.Add("--job"); start.ArgumentList.Add(jobPath);
                 _helper = _startHelper(start) ?? throw new IOException("更新助手未启动。");
                 Set(RecorderUpdateSessionState.Applying, "正在安装内录 MOD 更新…");

@@ -28,6 +28,29 @@ public static class RecorderUpdateSessionTests
     private static void Check(bool condition, string label) { if (!condition) throw new Exception("FAIL: " + label); _passed++; Console.WriteLine("PASS: " + label); }
     private static async Task RunAsync(string output)
     {
+        // Doorstop tests run before any fixture work and restore process-local state.
+        var previousDisable = Environment.GetEnvironmentVariable("DOORSTOP_DISABLE");
+        var previousSentinel = Environment.GetEnvironmentVariable("AA_RECORDER_UPDATE_TEST_ENV");
+        try
+        {
+            foreach (var inherited in new[] { "TRUE", "FALSE" })
+            {
+                Environment.SetEnvironmentVariable("DOORSTOP_DISABLE", inherited);
+                Environment.SetEnvironmentVariable("AA_RECORDER_UPDATE_TEST_ENV", "keep-original");
+                using var inheritedTest = new Fixture(output, "inherited-disable-" + inherited);
+                await inheritedTest.Session.PrepareAndStartAsync(inheritedTest.Info, inheritedTest.Zip);
+                Check(inheritedTest.Start != null && inheritedTest.Session.Snapshot.State == RecorderUpdateSessionState.Applying, "inherited environment still dispatches verified helper");
+                Check(!inheritedTest.Start!.Environment.ContainsKey("DOORSTOP_DISABLE"), "helper must not inherit Doorstop disable marker " + inherited);
+                Check(inheritedTest.Start.Environment["AA_RECORDER_UPDATE_TEST_ENV"] == "keep-original", "helper retains unrelated environment");
+                Check(Environment.GetEnvironmentVariable("DOORSTOP_DISABLE") == inherited, "running AA process environment is not changed");
+                Check(inheritedTest.Start.WorkingDirectory == inheritedTest.TaskRoot, "helper keeps its validated task working directory");
+            }
+        }
+        finally
+        {
+            Environment.SetEnvironmentVariable("DOORSTOP_DISABLE", previousDisable);
+            Environment.SetEnvironmentVariable("AA_RECORDER_UPDATE_TEST_ENV", previousSentinel);
+        }
         using (var good = new Fixture(output, "valid"))
         {
             Check(!await good.Session.RequestRestartAsync(), "restart denied before installation");

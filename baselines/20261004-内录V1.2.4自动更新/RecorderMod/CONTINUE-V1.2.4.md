@@ -1,53 +1,49 @@
-# V1.2.4 自动更新开发交接
+# V1.2.4 开发交接
 
-状态：2026-10-04 已完成本地开发、隔离验证及加壳构建，等待用户验收；尚未发布 GitHub Release 或生产 stable.json。正式 E:\AzureArchive_100_fix 仍使用已验收 V1.2.3，未安装本次 V1.2.4。
+V1.2.4 已由用户完成验收，本目录是本次正式发布的源码。仓库为 LittleLuoZiXi/AA-MOD，分支为 mods/recorder，基线沿用 baselines/20261004-内录V1.2.4自动更新/RecorderMod。发布记录以 GitHub Release 和同基线的 delivery-checks.json 为准，不再以早期本地交付文档中的等待状态或旧产物摘要为准。
 
-用户最新要求先上传 V1.2.3 已完成：公开仓库 LittleLuoZiXi/AA-MOD，mods/recorder 分支，提交 2ebd5f1dfcafdaba842c08149a660f31d37b580e；基线路径 baselines/20261004-内录V1.2.3导出设置记忆。251 个源文件与本地交付逐字节相同，另有13个版本说明/验证文件，历史1000个文件未改。发布回执在上一版交付/GitHub发布记录.json。不要把开发中的 V1.2.4 混入已验证 V1.2.3。
+## 功能与结构
 
-## 当前文件位置
+本版在设置记忆基础上提供自动更新：打开内录面板后台检查，同意后下载，显示进度并支持暂停、继续、终止；文件安装完成后只显示 OK，用户确认后重启 AA。帧率、DLSS 选项和输出位置继续记忆；提前统计总时长仍每次默认关闭。
 
-- 当前源码：D:\test2\开发\V1.2.4\RecorderMod
-- 当前交付：D:\test2\开发\V1.2.4\交付
-- 最终构建：交付/构建记录/protected-V1.2.4-20261004-195610-ac1ca051
-- 上一份 protected-V1.2.4-20261004-195316-eafc8498 为候选，不作为最终交付。
-- 复用的私有 AA 测试宿主：D:\test2\开发\V1.2.3\AA验证。其 Unity 身份 aa123test / AARecTest123，新增配置方案 Update124；不属于正式 AA 或 V1.2.3 原始源码。
-- 最终 UI 证据：上述私有宿主/smoke-runs/20261004-195938-005-update-v124。
-- 不清理已发布源码或用户数据，开发依赖仍在当前工作目录；源码 ZIP 排除依赖、构建输出、真实 AA 和用户工程。
+主要模块：
+- src/Plugin.cs：录制生命周期、工程快照、计时、相机与音频、状态恢复，以及更新期间的录制限制。
+- src/NativeRecorderUi*.cs：原生风格入口、设置、进度、教程、时长确认和自动更新界面。
+- src/RecorderUpdateClient.cs：固定仓库清单、版本、宿主摘要、来源和大小限制。
+- src/RecorderUpdateDownload.cs：异步下载、暂停续传、终止、Range/ETag 检查与 SHA-256 校验。
+- src/RecorderUpdateSession.cs：再次核对 ZIP、创建独立临时任务、启动助手、读取状态及写入用户确认。
+- packaging/UpdateInstallerCore.cs：事务安装、收据和 profile 版本更新、旧文件归属与回滚。
+- packaging/UpdateHelper.cs：核对原 AA 进程、执行更新、等待 OK 和正常退出，再启动同一目录的 AA。
+- src/RecordingPreflight.cs、Recording*Clock.cs、*Timeline.cs：可选完整预演、时间表、视频采样和音频推进。
+- src/Encoder.cs、EncoderWorkQueue.cs、FrameReadback.cs：编码队列、GPU 图像读取和 MP4 输出。
+- bridge/、src/DlssComponents.cs 及相关 DLSS 文件：增强桥接与组件识别，沿用已有实现。
 
-## 实现边界
+自动更新不改录制、采样、音频、AUTO 分支或 DLSS 算法。默认普通内录直接开始，开启提前统计后才进行完整预演。具体既有录制实现可结合历史版本交接阅读；历史文档的发布状态和摘要仅代表其记录时间。
 
-保留 V1.2.3 的帧率、DLSS偏好和成品目录记忆；提前统计总时长仍不记忆。不改变录制、采样、音频、编码、AUTO 选择或 DLSS 算法。自动更新不下载/安装 DLSS 本机组件。
+## 更新边界
 
-新增四个运行模块：RecorderUpdateClient（固定仓库信息）、RecorderUpdateDownload（暂停续传/终止/校验）、RecorderUpdateSession（载荷复核与助手协议）、NativeRecorderUi.Update（原生模态界面）。Plugin.cs 仅接版本、关闭时收尾及录制门禁；其它原生 UI 文件接入遮罩/输入阻断。更新检查失败不覆盖保存设置失败等已有重要提示。
+生产清单固定在 UPDATE-PROTOCOL-V1.2.4.md 记录的仓库地址。只有适用于当前宿主的更高版本才提示；用户拒绝不影响普通内录。下载和安装分别校验完整包及文件摘要，拒绝不明路径或归属。
 
-packaging 的 InstallCore 扩为 partial，更新安装实现在 UpdateInstallerCore.cs，独立进程在 UpdateHelper.cs。旧文件被占用时保留旧版本目录，新版本独立写入；同内容共享文件跳过。收据、启用的 profile 内录版本与新文件在事务中提交，配置 cfg 和其它 MOD 不动。未知文件冲突拒绝，失败回滚；无法确认完整回滚或已更新但重启失败时持续禁止旧进程录制。
+助手只修改内录 MOD 已拥有的文件、收据及已启用 profile 的内录版本，保留 cfg、其他 MOD、用户工程和视频。新版本使用独立目录，当前占用的旧版本文件保留在归属记录中。只有匹配的 OK 确认及原进程正常退出才重启，助手不强制结束 AA。
 
-助手持有原 AA 进程句柄，校验 PID、启动时间、路径与宿主摘要。只有收到用户 OK 对应的 token、原 AA 正常退出且退出码为0才重启；不强制结束 AA。成功或完整回滚后只删除本次任务已验证的 payload.zip；不确定时保留现场，不递归清理其它临时目录。
+启动更新助手以及重新启动 AA 时，分别从子进程环境中移除 DOORSTOP_DISABLE；不修改父进程、用户或系统环境，其他环境变量和工作目录继续保留。
 
-未来1.2.4→1.2.5的旧更新助手归属已验证；1.2.4之前不存在的伪造助手和未知EXE会被拒绝。更新协议、字段、固定 URL 和发布步骤见 UPDATE-PROTOCOL-V1.2.4.md；助手具体协议另见 packaging/UPDATE-PROTOCOL-V1.2.4.txt。
+## 构建
 
-## 实测结果和限制
+使用 PowerShell 7 调用 packaging/build-release.ps1，GameRoot 只用于读取兼容宿主引用，OutputDirectory 使用新的构建目录，FrozenRuntimeDirectory 可指向已校验的本 MOD runtime。构建和保护流程见 packaging/BUILD-V1.2.1.md；正式发布安装器必须来自既有保护构建流程，按 RELEASING.md 复制为公开文件名。
 
-- 检查/下载模块：.NET6、C#10编译通过，按同款 Obfuscar 规则混淆后89项通过，含固定外部 JSON 字段兼容；使用内存 HTTP，不访问真实生产下载。
-- 更新协调器：.NET6、C#10无警告编译，56项隔离测试通过；真实空文件、路径与 ZIP 边界、旧助手兼容、状态不确定禁录和明确重启确认均覆盖。此测试的控制台原始输出未单独落盘，保留测试源码和生成的测试程序集位置，结果来源为实际执行记录。
-- 安装助手：21项更新/真实加壳助手测试、2项未来版本归属检查、2项助手保护检查通过，使用合成 AA 进程和独立文件，不是正式 Unity 用户进程。
-- 完整安装卸载核心：74项回归通过，保留配置、其它 MOD、用户源码，拒绝危险/未知路径和无效收据。
-- 最终加壳插件在真实隔离 AA：33项 UI 检查通过，进程退出0，180项受保护正式用户文件不变，隔离配置恢复。7张PNG逐张检查，中文、下载条、暂停/继续/终止、拒绝恢复输入、最后唯一OK正确。
-- UI 测试使用真实下载器和内存响应；检查新版本、安装及重启是明确标记的诊断模拟。真实助手安装/重启由前述独立进程测试覆盖；不能将其表述为完整真实 GitHub→Unity 更新端到端验收。
-- 最终完整载荷203 ZIP项、202文件全部哈希通过，新增助手路径/哈希正确，无捆绑 DLSS 原生组件；安装器/卸载器/助手共6项只读IL保护检查通过；桥接冻结运行时代码沿用42项验证。
-- 未重新测试长剧情录制、RTX DLSS 或实际 GitHub资产下载；代码未修改这些算法，生产更新清单尚未发布。
+依赖包括 Python 3.12.14、PyInstaller 6.11.1、Obfuscar 2.2.50、固定 FFmpeg 与 AA/BepInEx 引用。大型依赖不放入本源码压缩包；不要把开发 DLL 或内部验证 EXE 当成正式发布资产。
 
-前三轮UI诊断修正了测试初始化过早进入Studio和同帧点击NGUI未刷新控件的问题。相关失败证据保留，最终只以上述195938运行计入通过，不把失败重试算作产品验收。
+本次验收产物摘要：
+- 内录MOD1.2.4版本安装包.exe：255266304 字节；SHA-256 1269E0BF1CD63EA6C0E437EDFB517DEDF3828C5AA60B294B2D8CD7410185D9F7。
+- AARecorder-V1.2.4-update.zip：255740337 字节；SHA-256 161C01C77A3CC68E7F20343F9AC143232CF421F7AC83F1ED9D1EED96354676AD。
+- 插件 DLL：FC0E7D360A0A58343A45A6B804A7B27571D2A02EF645597B906AF96135DA9889。
+- 更新助手：D084C3C0A8A562A188641EECF5561ACC2C59E066426F7B312AA6A7BAD2CEEC86。
 
-最终构建期间88个记录的输入均稳定。构建后仅修正 verify-r6-payload.ps1 的版本允许列表和新增助手检查；它是构建后核验工具，不参与生成运行产物。当前源树与构建输入比较只允许此一个验证脚本差异；运行源码、模板、保护与构建脚本均与最终产物一致。
+## 已有验证与后续开发
 
-## 最终摘要
+已有检查覆盖下载协议、会话边界、助手和安装归属；检查结果摘要见 packaging/UPDATE-VERIFICATION-V1.2.4.json。真实隔离 AA 中的 33 项更新界面检查通过，中文面板、下载进度、暂停/继续/终止和唯一 OK 均有确认。环境传递后的实际插件加载也已核验。
 
-- 加壳安装器 SHA256：912F2784BC22CCB0232309E00CFDD0736CA4053D16A166BDBDA8442412682034
-- 加壳插件 SHA256：FA48BC612B5C0B59174CD81253E6CEE75E6D78B913322BC6DBA52510C8C69486
-- 加壳更新助手 SHA256：DA5F2FB628F9216BF17E472AEDDF20CEB5F459B63FD4C0F303D8FB4F3E578D65
-- 更新 ZIP：255740322字节，SHA256 C1440ABD133B98D1F5FAC8F316922C022AB7695C48DBC3036E434E3A587D6DDB
+这些开发检查包含内存下载响应、合成安装夹具和隔离宿主，不能单独视为一次完整线上更新。正式流程已由用户另行验收。本机无 NVIDIA 显卡，未执行 RTX/DLSS 测试，也未因本版重新测试所有长剧情。
 
-构建方式沿用 PowerShell7 packaging/build-release.ps1，GameRoot 指向正式宿主以读取引用，OutputDirectory 使用新目录，FrozenRuntimeDirectory 指向已装 runtime。依赖为 Python3.12.14/PyInstaller6.11.1/Obfuscar2.2.50/固定 FFmpeg；从 V1.2.3 已验证环境离线复制，没有新下载 DLSS。
-
-下一步由用户验收本地安装包。确认后按协议先归档源码，再发布同构建 Release 资产，最后上传真实 stable.json 才启用在线分发。不能先指向不存在或未经验证的包。原 V1.2.3 没有更新检查能力，首次升级到 V1.2.4 需使用安装包；后续版本由本功能提示。
+后续版本遵循 RELEASING.md：代码、构建、必要验证、完整源码和同构建资产完成后，再最后发布 stable.json。发布时保留每版对应的安装 EXE；面向用户的名称固定为“内录MOD{version}版本安装包.exe”。

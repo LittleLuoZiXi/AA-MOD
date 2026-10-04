@@ -36,6 +36,8 @@ Only differing next.Files are written. Old version DLL/manifest/helper stay in L
 Future old helper ownership: only known versions strictly older than receipt.Version, exact 更新内录MOD.exe filename, and helper version >=1.2.4; arbitrary old EXE names are refused.
 
 Reproducible verification:
-  packaging/test-update-installer.ps1: 21 isolated update/real protected-helper checks, 2 future ownership fixtures, 2 read-only IL protection checks.
+  packaging/test-update-installer.ps1: 25 isolated update/real protected-helper checks, 2 future ownership fixtures, 2 read-only IL protection checks.
   packaging/test-v1-installers.ps1 -GameRoot <read-only reference AA> -Suite Core: 74 installer regression checks including V1.2.3 upgrades.
 These tests use synthetic AA/encoder/payload fixtures and do not claim actual Unity/GPU recording coverage.
+Launch environment: remove DOORSTOP_DISABLE only from the child ProcessStartInfo environment before starting the update helper or restarting AA. Parent/user/system environments are unchanged; all unrelated variables are retained.
+Public installer asset: 内录MOD{version}版本安装包.exe. Build it through the existing protected release pipeline, then copy to this public name without changing bytes. See RELEASING.md.

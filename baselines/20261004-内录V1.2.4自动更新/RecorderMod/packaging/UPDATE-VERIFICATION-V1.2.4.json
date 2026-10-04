@@ -1,65 +1,63 @@
 {
   "Version": "1.2.4",
-  "RecordedUtc": "2026-10-04T11:48:47.8210293Z",
-  "UpdateTests": {
-    "Count": 21,
-    "Kind": "Synthetic isolated AA process/payload; real protected helper executable and protocol",
+  "UserAcceptance": "Completed by the user before formal publication",
+  "RecordedDate": "2026-10-04",
+  "Basis": "Previously completed development verification; no tests rerun for publication staging",
+  "Transport": {
+    "Assertions": 89,
     "Passed": true,
-    "Evidence": "D:\\test2\\开发\\V1.2.4\\RecorderMod\\packaging\\update-test-output\\b75a1a185c564ce0a09ded3711c30277\\update-installer-tests.log"
+    "ProtectedAssembly": true,
+    "Network": "Fixed in-memory responses"
   },
-  "FutureHelperOwnership": {
-    "Count": 2,
-    "Kind": "Simulated 1.2.5 core upgrades 1.2.4, retains helper and uninstalls safely; unknown EXE refused",
+  "Session": {
+    "Assertions": 66,
+    "Passed": true
+  },
+  "UpdateHelper": {
+    "Checks": 25,
+    "OwnershipCompatibilityChecks": 2,
+    "ProtectionChecks": 2,
     "Passed": true,
-    "Evidence": "D:\\test2\\开发\\V1.2.4\\RecorderMod\\packaging\\update-test-output\\b75a1a185c564ce0a09ded3711c30277\\future-helper-tests.log"
+    "Fixture": "Isolated synthetic processes and files"
+  },
+  "UnityUi": {
+    "Checks": 33,
+    "Passed": true,
+    "Host": "Isolated Unity application",
+    "Download": "Actual downloader with in-memory transport",
+    "UiInstallAndRestart": "Simulated callbacks"
+  },
+  "ActualProcessLoading": {
+    "HelperRestartEnvironment": true,
+    "SessionEnvironmentRelay": true,
+    "Host": "Isolated Unity application"
+  },
+  "Payload": {
+    "Files": 202,
+    "HashVerificationPassed": true
   },
   "Protection": {
-    "Count": 2,
-    "ProtectedHelperSha256": "691C2B46399CB1DADAB49E6A6DE06D2D8F95F104B9479B0DA9A81C52CF19B817",
-    "Passed": true,
-    "Evidence": "D:\\test2\\开发\\V1.2.4\\RecorderMod\\packaging\\update-test-output\\b75a1a185c564ce0a09ded3711c30277\\protection-tests.log"
+    "Checks": 6,
+    "Passed": true
   },
-  "InstallerCoreRegression": {
-    "Count": 74,
-    "Passed": true,
-    "Evidence": "D:\\test2\\开发\\V1.2.4\\RecorderMod\\packaging\\core-test-output\\test-20261004-194742-0b1b1568\\run.log"
+  "FrozenRuntime": {
+    "Files": 42,
+    "Passed": true
   },
-  "Protocol": "UPDATE-PROTOCOL-V1.2.4.txt",
-  "SourceSha256": [
-    {
-      "Sha256": "545179DFDE916AFF71FBE320538F56C6B83C2FB2CCC80EE2D0AD7A9E409266A6",
-      "File": "Installer.cs"
-    },
-    {
-      "Sha256": "C16399968C1205602B53076738278B205F7F1F69C37E5230E7100536C034A539",
-      "File": "UpdateInstallerCore.cs"
-    },
-    {
-      "Sha256": "F557982C8D1BDA7927774079BAFAFD2052E58FB0C143ECC6DDBAADF1870D54F2",
-      "File": "UpdateHelper.cs"
-    },
-    {
-      "Sha256": "535D24713F01D5F3709F695CA0BE7A13DBAE8916ABE2CDA288B59B8E173053D7",
-      "File": "UpdateInstallerTests.cs"
-    },
-    {
-      "Sha256": "539334969952EE0D25E7554DF43EA40A39122323F4A6FFE538AAD4D8C6FB7FE1",
-      "File": "build-release.ps1"
-    },
-    {
-      "Sha256": "522AD04276D9C8B5F3C7DA1A55A9902842DA07CBB89A44C3DB74F91462732888",
-      "File": "protect-executable.ps1"
-    },
-    {
-      "Sha256": "6BDA46DEFBCE1CEAB2BDB14202187CE340101606CF709CB7BCCE4130CF1F358D",
-      "File": "test-update-installer.ps1"
-    },
-    {
-      "Sha256": "9A665CA48B1F07E52BE905D2EBC8F34EEEF6F5EEBCD86C061800966974EA2021",
-      "File": "V1InstallerTests.cs"
-    }
+  "ArtifactSha256": {
+    "Installer": "1269E0BF1CD63EA6C0E437EDFB517DEDF3828C5AA60B294B2D8CD7410185D9F7",
+    "Plugin": "FC0E7D360A0A58343A45A6B804A7B27571D2A02EF645597B906AF96135DA9889",
+    "Updater": "D084C3C0A8A562A188641EECF5561ACC2C59E066426F7B312AA6A7BAD2CEEC86",
+    "UpdateZip": "161C01C77A3CC68E7F20343F9AC143232CF421F7AC83F1ED9D1EED96354676AD"
+  },
+  "Limits": [
+    "Development fixture checks do not themselves constitute a full public GitHub update run.",
+    "NVIDIA DLSS execution was not tested on this computer.",
+    "Long-story timing was not retested for this version."
   ],
-  "FormalAAChanged": false,
-  "FullReleaseBuilt": false,
-  "RealUnityRecordingTested": false
+  "CurrentReferences": [
+    "CONTINUE-V1.2.4.md",
+    "UPDATE-PROTOCOL-V1.2.4.md",
+    "RELEASING.md"
+  ]
 }

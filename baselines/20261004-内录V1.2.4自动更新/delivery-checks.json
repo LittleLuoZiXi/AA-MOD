@@ -1,27 +1,31 @@
 {
   "Version": "1.2.4",
-  "Status": "LocalVerificationPassedAwaitingUserAcceptance",
-  "SourceFilesVerified": 269,
-  "PreviousV123SourceFilesUnchanged": 251,
+  "UserAcceptance": "Completed",
+  "SourceBaseline": "baselines/20261004-内录V1.2.4自动更新/RecorderMod",
+  "SourceManifest": "source-manifest.json",
+  "PublicSourceFiles": 270,
+  "SourceZipEntriesVerified": 271,
+  "AllSourceZipEntriesMatch": true,
+  "AcceptedDeveloperFilesUnchanged": 270,
+  "ExistingAcceptedInstallerAndUpdatePackageBytesPreserved": true,
   "Files": [
     {
-      "Name": "AzureArchive内录V1.2.4-加壳安装.exe",
-      "Bytes": 255266816,
-      "Sha256": "912F2784BC22CCB0232309E00CFDD0736CA4053D16A166BDBDA8442412682034"
+      "Name": "内录MOD1.2.4版本安装包.exe",
+      "Bytes": 255266304,
+      "Sha256": "1269E0BF1CD63EA6C0E437EDFB517DEDF3828C5AA60B294B2D8CD7410185D9F7"
     },
     {
-      "Name": "AzureArchive内录V1.2.4-最新源码.zip",
-      "Bytes": 7020710,
-      "Sha256": "6C48D36E62E8AB3483EF344F2C51803C2BB32455992A9A8339EAD098CC3CD0F5"
+      "Name": "AARecorder-V1.2.4-Source.zip",
+      "Bytes": 7028643,
+      "Sha256": "DACB2ACDF323F90E5E9227E868C91AEC8DBBCA97FC58F55AC3EA1CD5512FD84C"
     },
     {
       "Name": "AARecorder-V1.2.4-update.zip",
-      "Bytes": 255740322,
-      "Sha256": "C1440ABD133B98D1F5FAC8F316922C022AB7695C48DBC3036E434E3A587D6DDB"
+      "Bytes": 255740337,
+      "Sha256": "161C01C77A3CC68E7F20343F9AC143232CF421F7AC83F1ED9D1EED96354676AD"
     }
   ],
-  "PublishedToGitHub": false,
-  "FormalAAInstalled": false,
-  "V123PublishedCommit": "2ebd5f1dfcafdaba842c08149a660f31d37b580e",
-  "RecordedUtc": "2026-10-04T12:05:14.6865337Z"
+  "PublicationPreparation": "Copied accepted build artifacts and indexed source; updated publication documentation only",
+  "NewBuildsOrTestsRunForThisPublication": false,
+  "CompletedUtc": "2026-10-04T13:10:00.4698045Z"
 }

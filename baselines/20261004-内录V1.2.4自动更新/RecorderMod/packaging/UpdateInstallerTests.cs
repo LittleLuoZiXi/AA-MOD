@@ -63,6 +63,65 @@ public static class UpdateInstallerTests
         if(mutate!=null)mutate(job);File.WriteAllText(Path.Combine(directory,"job.json"),InstallCore.Json.Serialize(job));return directory;
     }
     static Process StartHelper(string directory){return Process.Start(new ProcessStartInfo(Path.Combine(directory,InstallCore.UpdateHelperName),"--job \""+Path.Combine(directory,"job.json")+"\""){UseShellExecute=false,CreateNoWindow=true,WindowStyle=ProcessWindowStyle.Hidden});}
+    static ProcessStartInfo HelperStartInfo(string directory)
+    {
+        return new ProcessStartInfo(Path.Combine(directory,InstallCore.UpdateHelperName),"--job \""+Path.Combine(directory,"job.json")+"\""){UseShellExecute=false,CreateNoWindow=true,WindowStyle=ProcessWindowStyle.Hidden};
+    }
+    static void RestartEnvironmentTests(string selected=null)
+    {
+        foreach(var variant in new[]{"true","empty"}) {
+            if(selected!=null&&selected!=variant)continue;
+            using(var f=new Fixture()) {
+                var job=Job(f);var start=HelperStartInfo(job);
+                var marker="keep-"+Guid.NewGuid().ToString("N");
+                start.EnvironmentVariables["DOORSTOP_DISABLE"]=variant=="empty"?"":"TRUE";
+                start.EnvironmentVariables["DOORSTOP_INITIALIZED"]="preserve-initialized";
+                start.EnvironmentVariables["AARECORDER_RESTART_TEST_MARKER"]=marker;
+                var currentDisable=Environment.GetEnvironmentVariables()["DOORSTOP_DISABLE"];
+                using(var process=Process.Start(start)) {
+                    Check(Until(()=>Status(job)!=null&&Status(job).State=="Completed",10000),"environment helper never completed");
+                    File.WriteAllText(Path.Combine(job,"restart.json"),InstallCore.Json.Serialize(new UpdateRestartRequest{Token=new string('B',64)}));
+                    Thread.Sleep(350);f.Stop();
+                    Check(process.WaitForExit(5000)&&process.ExitCode==0,"environment helper failed");
+                    Check(Until(()=>File.Exists(f.PathOf("restarted.flag")),3000),"environment restart missing");
+                    var probe=InstallCore.Json.Deserialize<Dictionary<string,string>>(File.ReadAllText(f.PathOf("restart-environment.json")));
+                    Check(probe["DisablePresent"]=="False","DOORSTOP_DISABLE survived restart ("+variant+"); Doorstop would skip BepInEx");
+                    Check(probe["DisableValue"]=="<absent>","restart retained disable value");
+                    Check(probe["PreserveMarker"]==marker&&probe["Initialized"]=="preserve-initialized","restart changed unrelated environment");
+                    Check(String.Equals(probe["WorkingDirectory"],f.Root,StringComparison.OrdinalIgnoreCase),"restart working directory changed");
+                    Check(Status(job).State=="Restarting"&&!File.Exists(Path.Combine(job,"payload.zip")),"environment restart did not finish normal cleanup");
+                }
+                Check(Object.Equals(Environment.GetEnvironmentVariables()["DOORSTOP_DISABLE"],currentDisable),"launching helper changed test parent environment");
+                Pass("protected helper removes inherited DOORSTOP_DISABLE="+(variant=="empty"?"<empty>":"TRUE")+" only; preserves other environment and game working directory");
+            }
+        }
+    }
+    [System.Runtime.InteropServices.DllImport("kernel32.dll",CharSet=System.Runtime.InteropServices.CharSet.Unicode,SetLastError=true)]
+    static extern bool SetEnvironmentVariableW(string name,string value);
+    static void RestartStartInfoTests()
+    {
+        var names=new[]{"DOORSTOP_DISABLE","DOORSTOP_INITIALIZED","AARECORDER_RESTART_TEST_MARKER"};
+        var original=Environment.GetEnvironmentVariables();
+        try {
+            foreach(var disable in new[]{"TRUE",""}) {
+                Check(SetEnvironmentVariableW("DOORSTOP_DISABLE",disable),"cannot set native disable fixture");
+                Check(SetEnvironmentVariableW("DOORSTOP_INITIALIZED","preserve-initialized"),"cannot set initialized fixture");
+                Check(SetEnvironmentVariableW("AARECORDER_RESTART_TEST_MARKER","preserve-other"),"cannot set marker fixture");
+                var before=Environment.GetEnvironmentVariables();
+                Check(before.Contains("DOORSTOP_DISABLE")&&(string)before["DOORSTOP_DISABLE"]==disable,"native fixture must include disable key even when empty");
+                var method=typeof(UpdateHelperProgram).GetMethod("CreateRestartStartInfo",new[]{typeof(string)});
+                Check(method!=null,"production restart factory missing");
+                var root=Path.GetDirectoryName(fake);
+                var start=(ProcessStartInfo)method.Invoke(null,new object[]{root});
+                Check(!start.EnvironmentVariables.ContainsKey("DOORSTOP_DISABLE"),"restart factory retained inherited disable key");
+                Check(start.EnvironmentVariables["DOORSTOP_INITIALIZED"]=="preserve-initialized"&&start.EnvironmentVariables["AARECORDER_RESTART_TEST_MARKER"]=="preserve-other","restart factory changed unrelated keys");
+                Check(!start.UseShellExecute&&start.CreateNoWindow&&start.WindowStyle==ProcessWindowStyle.Normal&&start.WorkingDirectory==root&&start.FileName==Path.Combine(root,"AzureArchive.exe"),"restart factory changed launch configuration");
+                var after=Environment.GetEnvironmentVariables();
+                Check(before.Count==after.Count&&before.Keys.Cast<string>().All(key=>Object.Equals(before[key],after[key])),"restart factory mutated its own process environment");
+                Pass("production restart factory leaves own environment untouched with "+(disable.Length==0?"empty":"TRUE")+" disable key and preserves launch settings");
+            }
+        }finally{foreach(var name in names)Check(SetEnvironmentVariableW(name,original.Contains(name)?(string)original[name]:null),"failed to restore fixture environment");}
+    }
     static void FutureLegacyTests()
     {
         foreach(var unknown in new[]{false,true})using(var f=new Fixture()) {
@@ -85,6 +144,7 @@ public static class UpdateInstallerTests
     {
         try {
             workspace=Path.GetFullPath(args[0]);fake=Path.GetFullPath(args[1]);helper=Path.GetFullPath(args[2]);Directory.CreateDirectory(workspace);
+            if(args.Length>3&&args[3]=="--restart-environment"){RestartEnvironmentTests(args.Length>4?args[4]:null);RestartStartInfoTests();Console.WriteLine("ALL "+passed+" RESTART ENVIRONMENT CHECKS PASSED");return 0;}
             if(args.Length>3&&args[3]=="--future"){FutureLegacyTests();Console.WriteLine("ALL "+passed+" FUTURE HELPER OWNERSHIP CHECKS PASSED");return 0;}
             using(var f=new Fixture())using(var locked=new FileStream(f.PathOf(InstallCore.Mod+"1.2.3/AzureArchive.Recorder.dll"),FileMode.Open,FileAccess.Read,FileShare.Read))using(var ffmpeg=new FileStream(f.PathOf(InstallCore.Mod+"runtime/ffmpeg/ffmpeg.exe"),FileMode.Open,FileAccess.Read,FileShare.Read)){
                 f.Apply();f.CheckSentinels();var next=InstallCore.Json.Deserialize<Receipt>(File.ReadAllText(f.PathOf(InstallCore.ReceiptName)));
@@ -114,6 +174,7 @@ public static class UpdateInstallerTests
             using(var f=new Fixture()){var job=Job(f);using(var process=StartHelper(job)){Check(Until(()=>Status(job)!=null&&Status(job).State=="Completed",10000),"helper never completed before abnormal exit test");File.WriteAllText(Path.Combine(job,"restart.json"),InstallCore.Json.Serialize(new UpdateRestartRequest{Token=new string('B',64)}));Thread.Sleep(350);f.Put("stop.flag","abnormal");Check(f.Parent.WaitForExit(5000)&&f.Parent.ExitCode==7,"abnormal fixture did not return nonzero");Check(process.WaitForExit(5000)&&process.ExitCode!=0,"helper restarted abnormal exit");Check(!File.Exists(f.PathOf("restarted.flag"))&&Status(job).State=="Failed"&&Status(job).InstallationUncertain,"abnormal exit status must retain recording lock");Check(File.Exists(Path.Combine(job,"payload.zip")),"uncertain restart failure removed repair payload");}Pass("matching OK followed by abnormal AA exit never restarts and keeps InstallationUncertain true");}
             using(var f=new Fixture())using(var locked=new FileStream(f.PathOf(InstallCore.Mod+"使用说明.txt"),FileMode.Open,FileAccess.Read,FileShare.Read)){var before=File.ReadAllText(f.PathOf(InstallCore.ReceiptName));var job=Job(f);using(var process=StartHelper(job)){Check(process.WaitForExit(10000)&&process.ExitCode!=0,"protected helper did not report rollback");}Check(Status(job).State=="Failed"&&!Status(job).InstallationUncertain&&!File.Exists(Path.Combine(job,"payload.zip")),"known rollback did not safely remove verified payload");Check(File.ReadAllText(f.PathOf(InstallCore.ReceiptName))==before&&!Directory.Exists(f.PathOf(InstallCore.Mod+InstallCore.Version)),"helper rollback left changed installation");Pass("fully rolled-back protected helper removes only its validated payload ZIP");}
             using(var f=new Fixture()){var job=Job(f);var data=UpdateHelperProgram.ReadJob(job);data.PayloadPath=f.Payload;Check(!UpdateHelperProgram.TryDeleteVerifiedPayload(job,data)&&File.Exists(f.Payload)&&File.Exists(Path.Combine(job,"payload.zip")),"cleanup accepted external payload");data.PayloadPath=Path.Combine(job,"payload.zip");data.PayloadSha256=new string('0',64);Check(!UpdateHelperProgram.TryDeleteVerifiedPayload(job,data)&&File.Exists(data.PayloadPath),"cleanup removed identity-mismatched payload");Pass("payload cleanup refuses outside-task and hash-mismatched files");}
+            RestartEnvironmentTests();RestartStartInfoTests();
             Console.WriteLine("ALL "+passed+" UPDATE INSTALLER CHECKS PASSED");return 0;
         }catch(Exception ex){Console.Error.WriteLine(ex);return 1;}
     }

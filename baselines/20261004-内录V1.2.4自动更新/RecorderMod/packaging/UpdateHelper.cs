@@ -67,6 +67,15 @@ public static class UpdateHelperProgram
             File.Delete(path);return true;
         }catch{return false;} // Cleanup cannot turn a successful install into an error.
     }
+    public static ProcessStartInfo CreateRestartStartInfo(string root)
+    {
+        var start=new ProcessStartInfo(InstallCore.Within(root,"AzureArchive.exe")){UseShellExecute=false,WorkingDirectory=root,CreateNoWindow=true,WindowStyle=ProcessWindowStyle.Normal};
+        // Doorstop sets this process-local guard after loading BepInEx. A restarted
+        // AA must initialize Doorstop afresh; even an empty inherited value disables it.
+        // Change only the child's environment, preserving the helper and all other keys.
+        start.EnvironmentVariables.Remove("DOORSTOP_DISABLE");
+        return start;
+    }
     static string StreamHash(Stream stream){using(var sha=SHA256.Create())return BitConverter.ToString(sha.ComputeHash(stream)).Replace("-","");}
     [STAThread] public static int Main(string[] args)
     {
@@ -110,7 +119,7 @@ public static class UpdateHelperProgram
                         if(parent.ExitCode!=0)throw new IOException("AA 未正常退出，自动重启已停止，请手动启动 AA。");
                         InstallCore.ValidateGame(job.Root,true);
                         WriteStatus(directory,"Restarting",null,"正在重新启动 AA…");
-                        var start=new ProcessStartInfo(InstallCore.Within(job.Root,"AzureArchive.exe")){UseShellExecute=false,WorkingDirectory=job.Root,CreateNoWindow=true,WindowStyle=ProcessWindowStyle.Normal};
+                        var start=CreateRestartStartInfo(job.Root);
                         using(var restarted=Process.Start(start)){if(restarted==null)throw new IOException("AA 未能启动，请手动启动。");}
                     }
                 }finally{if(owns)mutex.ReleaseMutex();}
