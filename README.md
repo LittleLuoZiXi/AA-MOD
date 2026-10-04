@@ -14,7 +14,7 @@
 | 2026-10-04 | V1.2.3 / 1.2.3（用户已验证） | 记住帧率、DLSS 偏好和输出目录；提前统计总时长不记忆 | [版本说明](baselines/20261004-内录V1.2.3导出设置记忆/版本说明.md) · [文件变化](baselines/20261004-内录V1.2.3导出设置记忆/文件变更清单.md) |
 | 2026-10-04 | **V1.2.4 / 1.2.4（当前正式版）** | GitHub自动更新、下载暂停继续终止、确认后重启 | [版本说明](baselines/20261004-内录V1.2.4自动更新/版本说明.md) |
 
-需要查看最新代码时，进入 [V1.2.4 的 RecorderMod](baselines/20261004-内录V1.2.4自动更新/RecorderMod)。下载使用请前往 [V1.2.4 发布页面](https://github.com/LittleLuoZiXi/AA-MOD/releases/tag/recorder-v1.2.4)，选择“内录MOD1.2.4版本安装包.exe”。
+需要查看最新代码时，进入 [V1.2.4 的 RecorderMod](baselines/20261004-内录V1.2.4自动更新/RecorderMod)。下载使用请前往 [V1.2.4 发布页面](https://github.com/LittleLuoZiXi/AA-MOD/releases/tag/recorder-v1.2.4)，选择“内录MOD1.2.4版本安装包”。
 
 ## 目录与使用
 
@@ -27,7 +27,7 @@
 
 此分支保存完整源码。V1.2.4 新增后台检查更新、下载进度、暂停／继续／终止，以及安装完成后确认重启 AA。继续保留帧率、DLSS 偏好和输出目录记忆；“提前统计总时长”默认关闭且不记忆。
 
-从 V1.2.4 起，每个版本在 Releases 提供一个“内录MOD<版本号>版本安装包.exe”，供用户直接下载。更新 ZIP 供 MOD 自动更新使用，源码 ZIP 供开发者使用。安装包放到 AA 根目录后双击运行；V1.2.3 及更早版本首次升级请使用安装包。AA 本体、运行库和本地测试数据不进入源码目录。后续发布规范见 [RELEASING.md](baselines/20261004-内录V1.2.4自动更新/RecorderMod/RELEASING.md)。
+从 V1.2.4 起，每个版本在 Releases 提供一个安装 EXE，下载入口统一显示为“内录MOD<版本号>版本安装包”，不添加其他构建标记。当前直接下载：[内录MOD1.2.4版本安装包](https://github.com/LittleLuoZiXi/AA-MOD/releases/download/recorder-v1.2.4/MOD1.2.4.exe)。GitHub 会归一化附件文件名；今后发布时保留本地中文文件名，并在发布页提供对应的中文直接下载入口，以最终附件地址为准。更新 ZIP 供 MOD 自动更新使用，源码 ZIP 供开发者使用。安装包放到 AA 根目录后双击运行；V1.2.3 及更早版本首次升级请使用安装包。AA 本体、运行库和本地测试数据不进入源码目录。后续发布规范见 [RELEASING.md](baselines/20261004-内录V1.2.4自动更新/RecorderMod/RELEASING.md)。
 
 第三方代码、美术素材的来源与许可说明保留在各基线项目内。历史文档中的绝对路径是当时的开发环境记录，应改用自己的实际目录。
 
