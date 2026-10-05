@@ -1,5 +1,5 @@
 #requires -Version 7.0
-param([string]$GameRoot='',[int]$TimeoutSeconds=210,[switch]$CoreOnly)
+param([string]$GameRoot='',[int]$TimeoutSeconds=210,[switch]$CoreOnly,[switch]$UpdateOnly)
 $ErrorActionPreference='Stop'
 $modRoot=Split-Path $PSScriptRoot -Parent
 if(!$GameRoot){$GameRoot=Join-Path $modRoot 'test-host'}
@@ -20,7 +20,7 @@ $evidence=Join-Path $GameRoot 'evidence'
 if(Test-Path -LiteralPath (Join-Path $evidence 'result.json')) {
     $archive=Join-Path $evidence ('runs\'+(Get-Date -Format 'yyyyMMdd-HHmmss-fff'))
     [IO.Directory]::CreateDirectory($archive)|Out-Null
-    foreach($name in @('result.json','progress.txt','comparison.png','comparison.ppm','failure.ppm','Unity-player.log','ui-hierarchy.json','user-data-preserved.json')) {
+    foreach($name in @('result.json','progress.txt','comparison.png','comparison.ppm','failure.ppm','Unity-player.log','ui-hierarchy.json','user-data-preserved.json','update-prompt.ppm','update-prompt.png','update-downloading.ppm','update-downloading.png')) {
         $item=Join-Path $evidence $name
         if(Test-Path -LiteralPath $item){Copy-Item -LiteralPath $item -Destination $archive}
     }
@@ -43,7 +43,8 @@ $before|ConvertTo-Json -Depth 5|Set-Content -LiteralPath (Join-Path $evidence 'p
 $psi=[Diagnostics.ProcessStartInfo]::new()
 $psi.FileName=$exe;$psi.WorkingDirectory=$GameRoot;$psi.UseShellExecute=$false;$psi.WindowStyle='Hidden';$psi.CreateNoWindow=$true
 $null=$psi.Environment.Remove('DOORSTOP_DISABLE')
-foreach($arg in @('--revision-compare-probe','-screen-fullscreen','0','-screen-width','1280','-screen-height','720','-logFile',(Join-Path $evidence 'Unity-player.log'))){$psi.ArgumentList.Add($arg)}
+$probeArgument=if($UpdateOnly){'--revision-update-probe'}else{'--revision-compare-probe'}
+foreach($arg in @($probeArgument,'-screen-fullscreen','0','-screen-width','1280','-screen-height','720','-logFile',(Join-Path $evidence 'Unity-player.log'))){$psi.ArgumentList.Add($arg)}
 if($CoreOnly){$psi.ArgumentList.Add('--revision-core-only')}
 $process=[Diagnostics.Process]::Start($psi);$clock=[Diagnostics.Stopwatch]::StartNew()
 "Started isolated AA verification (PID $($process.Id))."
@@ -60,6 +61,9 @@ try {
     [ordered]@{unchanged=$unchanged;count=$before.Count}|ConvertTo-Json|Set-Content -LiteralPath (Join-Path $evidence 'user-data-preserved.json') -Encoding utf8
     if(!$unchanged){throw 'Protected user data changed.'}
 }
-if(Test-Path -LiteralPath (Join-Path $evidence 'result.json')){Get-Content -LiteralPath (Join-Path $evidence 'result.json')}
+if(!(Test-Path -LiteralPath (Join-Path $evidence 'result.json'))){throw 'The isolated probe did not produce a result.'}
+$report=Get-Content -LiteralPath (Join-Path $evidence 'result.json') -Raw|ConvertFrom-Json
+$report|ConvertTo-Json -Depth 10
+if(!$report.passed){throw 'The isolated probe reported a failure.'}
 "Native process exit: $exitCode"
 if($exitCode -ne 0){exit 1}

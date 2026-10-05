@@ -1,0 +1,19 @@
+{
+  "SchemaVersion": 1,
+  "Product": "AzureArchiveRevisionCompare",
+  "Version": "1.1.0",
+  "Files": [
+    {
+      "Name": "AzureArchive.RevisionCompare.dll",
+      "Url": "https://raw.githubusercontent.com/LittleLuoZiXi/AA-MOD/refs/heads/mods/revision-compare/updates/revision-compare/files/1.1.0/AzureArchive.RevisionCompare.dll",
+      "Sha256": "2afa0301758f5b50efa64f8382ac61973df17f37f7d8ae1804a6fd741bb8b3bb",
+      "Size": 198656
+    },
+    {
+      "Name": "manifest.json",
+      "Url": "https://raw.githubusercontent.com/LittleLuoZiXi/AA-MOD/refs/heads/mods/revision-compare/updates/revision-compare/files/1.1.0/manifest.json",
+      "Sha256": "d2ae07f2f26162e67789b822db907f4605822d5c00d6339fa8ff8f5c765046f7",
+      "Size": 344
+    }
+  ]
+}

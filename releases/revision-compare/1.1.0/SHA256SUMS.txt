@@ -1,0 +1,3 @@
+791134a2371275139ce2ab68cdeb5257d7666340747201e18099d7d883b90562  剧本改稿同步 MOD  一键安装.exe
+2afa0301758f5b50efa64f8382ac61973df17f37f7d8ae1804a6fd741bb8b3bb  ../../../updates/revision-compare/files/1.1.0/AzureArchive.RevisionCompare.dll
+d2ae07f2f26162e67789b822db907f4605822d5c00d6339fa8ff8f5c765046f7  ../../../updates/revision-compare/files/1.1.0/manifest.json

@@ -1,0 +1,567 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Reflection;
+using System.Security.Cryptography;
+using System.Text;
+using System.Web.Script.Serialization;
+using System.Threading;
+using System.Text.RegularExpressions;
+
+
+namespace AzureArchive.RevisionCompare.UpdateApplication
+{
+    public sealed class OwnedFile { public string Path; public string Sha256; }
+    public sealed class DeploymentRollbackException : IOException { public DeploymentRollbackException(string message, Exception inner) : base(message, inner) {} }
+    public sealed class OwnedProfile { public string Profile; public string Version; }
+    public sealed class InstallReceipt
+    {
+        public int Schema = 1;
+        public string ProductId, ProductName, Version, Root;
+        public List<OwnedFile> Files = new List<OwnedFile>();
+        public List<OwnedProfile> Profiles = new List<OwnedProfile>();
+    }
+    public sealed class OperationResult
+    {
+        public string Message;
+        public List<string> Preserved = new List<string>();
+        public override string ToString() { return Message + (Preserved.Count == 0 ? "" : "\r\n\r\n已保留：\r\n• " + String.Join("\r\n• ", Preserved.ToArray())); }
+    }
+    internal sealed class FileChange { public string Path; public byte[] Before, After; }
+
+    public static class DeploymentCore
+    {
+        public const string ProductId = "azurearchive.revisioncompare";
+        public const string ProductName = "AzureArchiveRevisionCompare";
+        public static string Version;
+
+        public const string ModDirectory = "mods/AzureArchiveRevisionCompare";
+        public const string ReceiptRelative = ModDirectory + "/install-receipt.json";
+        public static string DllRelative { get { return ModDirectory + "/" + Version + "/AzureArchive.RevisionCompare.dll"; } }
+        public static string ManifestRelative { get { return ModDirectory + "/" + Version + "/manifest.json"; } }
+        static readonly UTF8Encoding Utf8 = new UTF8Encoding(false, true);
+        static readonly JavaScriptSerializer Json = new JavaScriptSerializer { MaxJsonLength = 16 * 1024 * 1024 };
+
+        public static string NormalizeRoot(string path)
+        {
+            string full = Path.GetFullPath(path);
+            return full.Length == Path.GetPathRoot(full).Length ? full : full.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+        }
+        public static string Hash(byte[] bytes) { using (var sha = SHA256.Create()) return BitConverter.ToString(sha.ComputeHash(bytes)).Replace("-", "").ToLowerInvariant(); }
+        static byte[] Serialize(object value) { return Utf8.GetBytes(Json.Serialize(value)); }
+        static bool Same(byte[] a, byte[] b) { return a == null ? b == null : b != null && Hash(a) == Hash(b); }
+        public static void RejectLinks(string path)
+        {
+            for (string current = Path.GetFullPath(path); !String.IsNullOrEmpty(current); current = Path.GetDirectoryName(current))
+            {
+                FileAttributes attributes;
+                try { attributes = File.GetAttributes(current); }
+                catch (FileNotFoundException) { continue; }
+                catch (DirectoryNotFoundException) { continue; }
+                // Inspect attributes directly: Exists() can return false for a dangling link.
+                if ((attributes & FileAttributes.ReparsePoint) != 0)
+                    throw new IOException("为避免误写，不能使用目录联接或符号链接：" + current);
+            }
+        }
+        public static string Within(string root, string relative)
+        {
+            if (String.IsNullOrWhiteSpace(relative) || Path.IsPathRooted(relative) || relative.IndexOf(':') >= 0)
+                throw new IOException("无效的安装路径。");
+            foreach (string part in relative.Split('/', '\\'))
+                if (part.Length == 0 || part == "." || part == "..") throw new IOException("安装路径超出允许范围。");
+            string path = Path.GetFullPath(Path.Combine(root, relative.Replace('/', Path.DirectorySeparatorChar)));
+            if (!path.StartsWith(NormalizeRoot(root).TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar) + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase))
+                throw new IOException("安装路径超出 AA 目录。");
+            RejectLinks(path);
+            return path;
+        }
+        static bool SupportedVersion(string version) { return UpdateVersion.IsValid(version); }
+        static bool AllowedPayload(string relative, string version)
+        {
+            return SupportedVersion(version) && (relative == ModDirectory + "/" + version + "/AzureArchive.RevisionCompare.dll" || relative == ModDirectory + "/" + version + "/manifest.json");
+        }
+        static bool IsHash(string value)
+        {
+            if (value == null || value.Length != 64) return false;
+            foreach (char c in value) if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f'))) return false;
+            return true;
+        }
+        static void ValidateProfileName(string profile)
+        {
+            if (String.IsNullOrWhiteSpace(profile) || profile == "." || profile == ".." || profile.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0 || profile.TrimEnd(' ', '.') != profile)
+                throw new IOException("ActiveProfile.txt 中的配置名称无效。");
+        }
+        static string ProfileRelative(string profile) { ValidateProfileName(profile); return "profiles/" + profile + "/modconfig.json"; }
+        public static void ValidateGame(string root)
+        {
+            RejectLinks(root);
+            if (!File.Exists(Within(root, "AzureArchive.exe")) || !Directory.Exists(Within(root, "AzureArchive_Data")))
+                throw new IOException("请选择含 AzureArchive.exe 和 AzureArchive_Data 的 AA 根目录。");
+            foreach (Process process in Process.GetProcessesByName("AzureArchive"))
+                using (process) { throw new IOException("请先关闭所有 AzureArchive 窗口，再安装或卸载。"); }
+        }
+        static InstallReceipt NewReceipt(string root)
+        {
+            return new InstallReceipt { ProductId = ProductId, ProductName = ProductName, Version = Version, Root = root };
+        }
+        public static InstallReceipt ReadReceipt(string root)
+        {
+            string path = Within(root, ReceiptRelative);
+            if (!File.Exists(path)) return null;
+            InstallReceipt receipt;
+            try { receipt = Json.Deserialize<InstallReceipt>(File.ReadAllText(path, Utf8)); }
+            catch (Exception ex) { throw new IOException("安装收据损坏，已停止，未删除文件。", ex); }
+            if (receipt == null || receipt.Schema != 1 || receipt.ProductId != ProductId || receipt.ProductName != ProductName || !SupportedVersion(receipt.Version) || !String.Equals(receipt.Root, root, StringComparison.OrdinalIgnoreCase) || receipt.Files == null || receipt.Profiles == null)
+                throw new IOException("安装收据不属于本 MOD 或此 AA 目录，已停止。");
+            var paths = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            foreach (OwnedFile file in receipt.Files)
+                if (file == null || !AllowedPayload(file.Path, receipt.Version) || !IsHash(file.Sha256) || !paths.Add(file.Path)) throw new IOException("安装收据包含不允许的文件记录。");
+            var profiles = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            foreach (OwnedProfile profile in receipt.Profiles)
+            {
+                if (profile == null || profile.Version != receipt.Version || !profiles.Add(profile.Profile)) throw new IOException("安装收据包含不允许的配置记录。");
+                ValidateProfileName(profile.Profile);
+            }
+            return receipt;
+        }
+        static Dictionary<string, object> ReadProfile(string path, out IList enabled)
+        { return ReadProfileBytes(path, Current(path), out enabled); }
+        static Dictionary<string, object> ReadProfileBytes(string path, byte[] bytes, out IList enabled)
+        {
+            Dictionary<string, object> config;
+            try { config = bytes != null ? Json.DeserializeObject(Utf8.GetString(bytes).TrimStart('\uFEFF')) as Dictionary<string, object> : new Dictionary<string, object>(); }
+            catch (Exception ex) { throw new IOException("当前配置 JSON 无法读取，已停止，未覆盖配置：" + path, ex); }
+            if (config == null) throw new IOException("modconfig.json 必须为 JSON 对象。");
+            object existing;
+            if (!config.TryGetValue("EnabledMods", out existing)) enabled = new ArrayList();
+            else
+            {
+                IList source = existing as IList;
+                if (source == null) throw new IOException("EnabledMods 必须为 JSON 数组。");
+                enabled = new ArrayList(source);
+            }
+            config["EnabledMods"] = enabled;
+            return config;
+        }
+        static bool IsOurItem(object item)
+        {
+            var map = item as Dictionary<string, object>; object name;
+            return map != null && map.TryGetValue("name", out name) && name is string && String.Equals((string)name, ProductName, StringComparison.OrdinalIgnoreCase);
+        }
+        static bool ExactOwnedItem(object item, string version)
+        {
+            var map = item as Dictionary<string, object>; object name, itemVersion;
+            return map != null && map.Count == 2 && map.TryGetValue("name", out name) && (name as string) == ProductName && map.TryGetValue("version", out itemVersion) && (itemVersion as string) == version;
+        }
+        static byte[] Current(string path) { return File.Exists(path) ? File.ReadAllBytes(path) : null; }
+        static void AddChange(List<FileChange> changes, string path, byte[] after)
+        { AddExpectedChange(changes, path, Current(path), after); }
+        static void AddExpectedChange(List<FileChange> changes, string path, byte[] before, byte[] after)
+        {
+            if (!Same(before, after)) changes.Add(new FileChange { Path = path, Before = before, After = after });
+        }
+        static void AtomicWrite(string path, byte[] bytes)
+        {
+            RejectLinks(path);
+            if (bytes == null) { if (File.Exists(path)) File.Delete(path); return; }
+            string temporary = path + ".revisioncompare-" + Guid.NewGuid().ToString("N") + ".tmp";
+            try
+            {
+                using (var stream = new FileStream(temporary, FileMode.CreateNew, FileAccess.Write, FileShare.None)) { stream.Write(bytes, 0, bytes.Length); stream.Flush(true); }
+                if (File.Exists(path)) File.Replace(temporary, path, null, true); else File.Move(temporary, path);
+            }
+            finally { if (File.Exists(temporary)) File.Delete(temporary); }
+        }
+        static void EnsureDirectory(string path, List<string> created)
+        {
+            RejectLinks(path);
+            if (Directory.Exists(path)) return;
+            string parent = Path.GetDirectoryName(path);
+            if (!Directory.Exists(parent)) EnsureDirectory(parent, created);
+            Directory.CreateDirectory(path); created.Add(path);
+        }
+        static void Commit(List<FileChange> changes)
+        {
+            var done = new List<FileChange>(); var created = new List<string>();
+            try
+            {
+                foreach (FileChange change in changes)
+                {
+                    RejectLinks(change.Path);
+                    if (!Same(Current(change.Path), change.Before)) throw new IOException("操作期间文件发生变化，请重试：" + change.Path);
+                    if (change.After != null) EnsureDirectory(Path.GetDirectoryName(change.Path), created);
+                    AtomicWrite(change.Path, change.After); done.Add(change);
+                }
+            }
+            catch (Exception original)
+            {
+                var failures = new List<string>();
+                for (int i = done.Count - 1; i >= 0; --i)
+                {
+                    FileChange change = done[i];
+                    try
+                    {
+                        if (!Same(Current(change.Path), change.After)) throw new IOException("文件已被其他程序修改。");
+                        AtomicWrite(change.Path, change.Before);
+                    }
+                    catch { failures.Add(change.Path); }
+                }
+                for (int i = created.Count - 1; i >= 0; --i)
+                    try { if (Directory.Exists(created[i]) && Directory.GetFileSystemEntries(created[i]).Length == 0) Directory.Delete(created[i]); } catch { }
+                if (failures.Count > 0) throw new DeploymentRollbackException("操作未完成，以下文件无法自动恢复，请保留安装器并检查：" + String.Join("、", failures.ToArray()), original);
+                throw new IOException("操作未完成，已恢复本次文件更改：" + original.Message, original);
+            }
+        }
+        public static OperationResult Install(string selectedRoot, byte[] plugin, byte[] manifest)
+        {
+            string root = NormalizeRoot(selectedRoot); ValidateGame(root);
+            if (plugin == null || plugin.Length < 2 || plugin[0] != 'M' || plugin[1] != 'Z') throw new IOException("内嵌插件无效。");
+            Dictionary<string, object> metadata;
+            try { metadata = Json.DeserializeObject(Utf8.GetString(manifest)) as Dictionary<string, object>; }
+            catch (Exception ex) { throw new IOException("内嵌 manifest.json 无效。", ex); }
+            object name, version;
+            if (metadata == null || !metadata.TryGetValue("name", out name) || (name as string) != ProductName || !metadata.TryGetValue("version_number", out version) || (version as string) != Version)
+                throw new IOException("内嵌 manifest.json 的名称或版本不匹配。");
+            string activePath = Within(root, "ActiveProfile.txt");
+            if (!File.Exists(activePath)) throw new IOException("未找到 ActiveProfile.txt，请先启动 AA 创建配置，关闭 AA 后重试。");
+            string active = File.ReadAllText(activePath, Utf8).Trim(); ValidateProfileName(active);
+            string profilePath = Within(root, ProfileRelative(active));
+            if (!Directory.Exists(Path.GetDirectoryName(profilePath))) throw new IOException("当前 profile 目录不存在，请先在 AA 中建立有效配置。");
+            string receiptPath = Within(root, ReceiptRelative); byte[] receiptBefore = Current(receiptPath);
+            InstallReceipt receipt = ReadReceipt(root) ?? NewReceipt(root);
+            var changes = new List<FileChange>();
+            string previousVersion = receipt.Version; bool migrating = receipt.Version != Version;
+            var previousChanges = new List<FileChange>();
+            if (migrating)
+            {
+                // This local migration owns only the active profile; never silently migrate other profiles.
+                if (receipt.Files.Count != 2 || receipt.Profiles.Count != 1 || !String.Equals(receipt.Profiles[0].Profile, active, StringComparison.OrdinalIgnoreCase))
+                    throw new IOException("旧收据不属于当前配置的完整安装，无法自动迁移。");
+                foreach (OwnedFile old in receipt.Files)
+                {
+                    byte[] bytes = Current(Within(root, old.Path));
+                    if (bytes == null || Hash(bytes) != old.Sha256) throw new IOException("旧安装文件缺失或已修改，迁移已停止并保留原内容：" + old.Path);
+                    previousChanges.Add(new FileChange { Path = Within(root, old.Path), Before = bytes, After = null });
+                }
+                receipt.Files.Clear();
+            }
+            var payload = new Dictionary<string, byte[]> { { DllRelative, plugin }, { ManifestRelative, manifest } };
+            foreach (var entry in payload)
+            {
+                string path = Within(root, entry.Key); byte[] before = Current(path);
+                OwnedFile owned = receipt.Files.Find(delegate(OwnedFile f) { return f.Path == entry.Key; });
+                if (before != null && (owned == null || Hash(before) != owned.Sha256))
+                    throw new IOException("该文件不是本安装器拥有的原始文件，已保留并停止：" + path);
+                AddExpectedChange(changes, path, before, entry.Value);
+                if (owned == null) receipt.Files.Add(new OwnedFile { Path = entry.Key, Sha256 = Hash(entry.Value) }); else owned.Sha256 = Hash(entry.Value);
+            }
+            byte[] profileBefore = Current(profilePath);
+            IList enabled; var config = ReadProfileBytes(profilePath, profileBefore, out enabled);
+            bool found = false; int ourCount = 0;
+            foreach (object item in enabled) if (IsOurItem(item)) ++ourCount;
+            if (ourCount > 1) throw new IOException("当前配置有重复的本 MOD 条目，已停止并保留配置。");
+            if (migrating && ourCount != 1) throw new IOException("旧收据对应的本 MOD 配置项缺失，迁移已停止。");
+            for (int i = 0; i < enabled.Count; ++i)
+            {
+                object item = enabled[i];
+                if (IsOurItem(item))
+                {
+                    found = true;
+                    if (!ExactOwnedItem(item, migrating ? previousVersion : Version)) throw new IOException("当前 profile 已有本 MOD 的不同或修改过的条目，请先在 AA 中检查该条目。");
+                    if (migrating)
+                    {
+                        enabled[i] = new Dictionary<string, object> { { "name", ProductName }, { "version", Version } };
+                        receipt.Profiles[0].Version = Version;
+                        AddExpectedChange(changes, profilePath, profileBefore, Serialize(config));
+                    }
+                }
+            }
+            if (!found)
+            {
+                enabled.Add(new Dictionary<string, object> { { "name", ProductName }, { "version", Version } });
+                AddExpectedChange(changes, profilePath, profileBefore, Serialize(config));
+                if (!receipt.Profiles.Exists(delegate(OwnedProfile p) { return String.Equals(p.Profile, active, StringComparison.OrdinalIgnoreCase); })) receipt.Profiles.Add(new OwnedProfile { Profile = active, Version = Version });
+            }
+            changes.AddRange(previousChanges);
+            receipt.Version = Version;
+            AddExpectedChange(changes, receiptPath, receiptBefore, Serialize(receipt));
+            ValidateGame(root);
+            Commit(changes);
+            return new OperationResult { Message = (migrating ? "本地升级完成。" : "本地部署完成。") + "已在当前配置「" + active + "」启用剧情改稿同步 MOD " + Version + "。" };
+        }
+        public static OperationResult Uninstall(string selectedRoot)
+        {
+            string root = NormalizeRoot(selectedRoot); ValidateGame(root);
+            string receiptPath = Within(root, ReceiptRelative); byte[] receiptBefore = Current(receiptPath);
+            InstallReceipt receipt = ReadReceipt(root);
+            if (receipt == null) return new OperationResult { Message = "未找到本安装器的收据，未删除任何文件或配置。" };
+            var result = new OperationResult { Message = "卸载完成，其他 MOD 和用户配置已保留。" };
+            var changes = new List<FileChange>(); var remainingFiles = new List<OwnedFile>(); var remainingProfiles = new List<OwnedProfile>();
+            foreach (OwnedFile owned in receipt.Files)
+            {
+                string path = Within(root, owned.Path); byte[] bytes = Current(path);
+                if (bytes == null) continue;
+                if (Hash(bytes) != owned.Sha256) { result.Preserved.Add(owned.Path + "（安装后被修改）"); remainingFiles.Add(owned); }
+                else AddExpectedChange(changes, path, bytes, null);
+            }
+            foreach (OwnedProfile profile in receipt.Profiles)
+            {
+                string path = Within(root, ProfileRelative(profile.Profile)); if (!File.Exists(path)) continue;
+                try
+                {
+                    byte[] profileBefore = Current(path);
+                    IList enabled; var config = ReadProfileBytes(path, profileBefore, out enabled); int count = 0, index = -1;
+                    for (int i = 0; i < enabled.Count; ++i) if (IsOurItem(enabled[i])) { ++count; index = i; }
+                    if (count == 0) continue;
+                    if (count != 1 || !ExactOwnedItem(enabled[index], profile.Version)) { remainingProfiles.Add(profile); result.Preserved.Add("配置「" + profile.Profile + "」中的 MOD 条目（已被修改）"); continue; }
+                    enabled.RemoveAt(index); AddExpectedChange(changes, path, profileBefore, Serialize(config));
+                }
+                catch (IOException) { remainingProfiles.Add(profile); result.Preserved.Add("配置「" + profile.Profile + "」（无法安全读取）"); }
+            }
+            receipt.Files = remainingFiles; receipt.Profiles = remainingProfiles;
+            AddExpectedChange(changes, receiptPath, receiptBefore, remainingFiles.Count + remainingProfiles.Count == 0 ? null : Serialize(receipt));
+            Commit(changes);
+            if (result.Preserved.Count > 0) result.Message = "已移除可安全确认的安装内容；修改过的内容和对应收据已保留。";
+            foreach (string directory in new[] { ModDirectory + "/" + receipt.Version, ModDirectory })
+            {
+                string path = Within(root, directory);
+                if (Directory.Exists(path) && Directory.GetFileSystemEntries(path).Length == 0) Directory.Delete(path);
+            }
+            return result;
+        }
+    }
+
+}
+
+namespace AzureArchive.RevisionCompare.UpdateApplication
+{
+    public static class UpdateVersion
+    {
+        public static bool IsValid(string value)
+        {
+            if (String.IsNullOrEmpty(value) || value.Length > 128 || !Regex.IsMatch(value, @"^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(-[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?(\+[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?$")) return false;
+            string precedence = value.Split('+')[0]; int dash = precedence.IndexOf('-');
+            if (dash >= 0) foreach (string part in precedence.Substring(dash + 1).Split('.')) if (Digits(part) && part.Length > 1 && part[0] == '0') return false;
+            return true;
+        }
+        static bool Digits(string value) { return Regex.IsMatch(value, "^[0-9]+$"); }
+        static int Number(string a, string b) { int length = a.Length.CompareTo(b.Length); return length == 0 ? String.CompareOrdinal(a, b) : length; }
+        public static int Compare(string a, string b)
+        {
+            if (!IsValid(a) || !IsValid(b)) throw new IOException("更新版本号无效。");
+            string left = a.Split('+')[0], right = b.Split('+')[0]; int la = left.IndexOf('-'), rb = right.IndexOf('-');
+            string[] lc = (la < 0 ? left : left.Substring(0, la)).Split('.'), rc = (rb < 0 ? right : right.Substring(0, rb)).Split('.');
+            for (int i = 0; i < 3; i++) { int result = Number(lc[i], rc[i]); if (result != 0) return result; }
+            if (la < 0 || rb < 0) return (la < 0 ? 1 : 0).CompareTo(rb < 0 ? 1 : 0);
+            string[] lp = left.Substring(la + 1).Split('.'), rp = right.Substring(rb + 1).Split('.');
+            for (int i = 0; i < Math.Min(lp.Length, rp.Length); i++)
+            {
+                bool ln = Digits(lp[i]), rn = Digits(rp[i]);
+                int result = ln && rn ? Number(lp[i], rp[i]) : ln != rn ? (ln ? -1 : 1) : String.CompareOrdinal(lp[i], rp[i]);
+                if (result != 0) return result;
+            }
+            return lp.Length.CompareTo(rp.Length);
+        }
+    }
+    public sealed class UpdateJob
+    {
+        public string Root, CurrentVersion, TargetVersion, Token, AssemblySha256, ManifestSha256, HostSha256;
+        public long AssemblySize, ManifestSize, ParentStartUtcTicks;
+        public int ParentPid;
+    }
+    public sealed class UpdateStatus
+    {
+        public string State, Message, Error;
+        public bool InstallationUncertain;
+    }
+    public static class UpdateApplyHelper
+    {
+        static readonly JavaScriptSerializer Json = new JavaScriptSerializer { MaxJsonLength = 1024 * 1024 };
+        static readonly UTF8Encoding Utf8 = new UTF8Encoding(false, true);
+        static bool HashValid(string value) { return value != null && Regex.IsMatch(value, "^[0-9a-fA-F]{64}$"); }
+        public static void Status(string directory, string state, string message, string error, bool uncertain)
+        {
+            string path = DeploymentCore.Within(directory, "status.json"), temp = DeploymentCore.Within(directory, "status.new");
+            if (error != null && error.Length > 2000) error = error.Substring(0, 2000);
+            File.WriteAllText(temp, Json.Serialize(new UpdateStatus { State = state, Message = message, Error = error, InstallationUncertain = uncertain }), Utf8);
+            if (File.Exists(path)) File.Replace(temp, path, null, true); else File.Move(temp, path);
+        }
+        static byte[] ReadPayload(string directory, string name, long size, string hash, long maximum)
+        {
+            string path = DeploymentCore.Within(directory, name);
+            using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read))
+            {
+                if (size <= 0 || size > maximum || stream.Length != size) throw new IOException("更新文件大小不符：" + name);
+                using (var memory = new MemoryStream())
+                {
+                    stream.CopyTo(memory); byte[] bytes = memory.ToArray();
+                    if (!String.Equals(DeploymentCore.Hash(bytes), hash, StringComparison.OrdinalIgnoreCase)) throw new IOException("更新文件 SHA-256 不符：" + name);
+                    return bytes;
+                }
+            }
+        }
+        public static void ValidateMetadata(byte[] plugin, byte[] manifest, string version)
+        {
+            var metadata = Json.DeserializeObject(Utf8.GetString(manifest).TrimStart('\uFEFF')) as Dictionary<string, object>;
+            object name, number;
+            if (metadata == null || !metadata.TryGetValue("name", out name) || (name as string) != DeploymentCore.ProductName || !metadata.TryGetValue("version_number", out number) || (number as string) != version) throw new IOException("更新 manifest 的名称或版本不符。");
+            using (var stream = new MemoryStream(plugin, false))
+            using (var assembly = Mono.Cecil.AssemblyDefinition.ReadAssembly(stream))
+            {
+                if (assembly.Name.Name != "AzureArchive.RevisionCompare") throw new IOException("更新插件的程序集名称不符。");
+                var types = new List<Mono.Cecil.TypeDefinition>(); AddTypes(assembly.MainModule.Types, types);
+                Mono.Cecil.CustomAttribute identity = null;
+                foreach (var type in types)
+                {
+                    if (type.Name.IndexOf("Probe", StringComparison.OrdinalIgnoreCase) >= 0) throw new IOException("更新包含开发探针，已拒绝安装。");
+                    foreach (var attribute in type.CustomAttributes)
+                        if (attribute.AttributeType.FullName == "BepInEx.BepInPlugin") { if (identity != null) throw new IOException("更新包含多个插件身份。"); identity = attribute; }
+                }
+                if (identity == null || identity.ConstructorArguments.Count != 3 || (identity.ConstructorArguments[0].Value as string) != DeploymentCore.ProductId || (identity.ConstructorArguments[1].Value as string) != DeploymentCore.ProductName || (identity.ConstructorArguments[2].Value as string) != version) throw new IOException("更新插件 BepInPlugin 身份或版本不符。");
+            }
+        }
+        static void AddTypes(IEnumerable<Mono.Cecil.TypeDefinition> source, List<Mono.Cecil.TypeDefinition> result)
+        { foreach (var type in source) { result.Add(type); AddTypes(type.NestedTypes, result); } }
+        static bool Signal(string directory, string name, string token)
+        {
+            string path = DeploymentCore.Within(directory, name);
+            if (!File.Exists(path)) return false;
+            if (new FileInfo(path).Length > 1024) throw new IOException("更新确认文件无效。");
+            return File.ReadAllText(path, Utf8) == token;
+        }
+        static Process Parent(UpdateJob job)
+        {
+            Process parent = Process.GetProcessById(job.ParentPid);
+            try
+            {
+                var handle = parent.Handle;
+                if (parent.HasExited || parent.StartTime.ToUniversalTime().Ticks != job.ParentStartUtcTicks || !String.Equals(Path.GetFullPath(parent.MainModule.FileName), DeploymentCore.Within(job.Root, "AzureArchive.exe"), StringComparison.OrdinalIgnoreCase)) throw new IOException("AA 进程身份校验失败。");
+                return parent;
+            }
+            catch { parent.Dispose(); throw; }
+        }
+        static InstallReceipt ValidateInstallation(UpdateJob job)
+        {
+            InstallReceipt receipt = DeploymentCore.ReadReceipt(job.Root);
+            if (receipt == null || receipt.Version != job.CurrentVersion || receipt.Files.Count != 2 || receipt.Profiles.Count != 1) throw new IOException("本地安装收据不完整或版本不匹配。");
+            string active = File.ReadAllText(DeploymentCore.Within(job.Root, "ActiveProfile.txt"), Utf8).Trim();
+            if (!String.Equals(receipt.Profiles[0].Profile, active, StringComparison.OrdinalIgnoreCase)) throw new IOException("当前配置与安装收据不匹配。");
+            foreach (var file in receipt.Files)
+            {
+                string path = DeploymentCore.Within(job.Root, file.Path);
+                if (!File.Exists(path) || DeploymentCore.Hash(File.ReadAllBytes(path)) != file.Sha256) throw new IOException("已安装文件已被修改，已停止更新：" + file.Path);
+            }
+            string profilePath = DeploymentCore.Within(job.Root, "profiles/" + active + "/modconfig.json");
+            var config = Json.DeserializeObject(File.ReadAllText(profilePath, Utf8)) as Dictionary<string, object>; object enabled;
+            if (config == null || !config.TryGetValue("EnabledMods", out enabled) || !(enabled is IList)) throw new IOException("当前 MOD 配置无效。");
+            int count = 0;
+            foreach (object item in (IList)enabled)
+            {
+                var map = item as Dictionary<string, object>; object name, version;
+                if (map == null || !map.TryGetValue("name", out name) || !String.Equals(name as string, DeploymentCore.ProductName, StringComparison.OrdinalIgnoreCase)) continue;
+                count++;
+                if (map.Count != 2 || (name as string) != DeploymentCore.ProductName || !map.TryGetValue("version", out version) || (version as string) != job.CurrentVersion) throw new IOException("本 MOD 配置项已修改，已停止更新。");
+            }
+            if (count != 1) throw new IOException("本 MOD 配置项缺失或重复。");
+            if (File.Exists(DeploymentCore.Within(job.Root, DeploymentCore.DllRelative)) || Directory.Exists(DeploymentCore.Within(job.Root, DeploymentCore.DllRelative)) || File.Exists(DeploymentCore.Within(job.Root, DeploymentCore.ManifestRelative)) || Directory.Exists(DeploymentCore.Within(job.Root, DeploymentCore.ManifestRelative))) throw new IOException("目标版本已有文件，已停止以保留已有内容。");
+            return receipt;
+        }
+        static void Backup(string directory, UpdateJob job, InstallReceipt receipt)
+        {
+            string backup = DeploymentCore.Within(directory, "backup"); Directory.CreateDirectory(backup);
+            var paths = new List<string> { DeploymentCore.ReceiptRelative, "profiles/" + receipt.Profiles[0].Profile + "/modconfig.json" };
+            foreach (var file in receipt.Files) paths.Add(file.Path);
+            foreach (var relative in paths)
+            {
+                string destination = DeploymentCore.Within(backup, relative); Directory.CreateDirectory(Path.GetDirectoryName(destination));
+                File.Copy(DeploymentCore.Within(job.Root, relative), destination, false);
+            }
+        }
+        public static ProcessStartInfo RestartInfo(string root)
+        {
+            var start = new ProcessStartInfo(DeploymentCore.Within(root, "AzureArchive.exe")) { WorkingDirectory = root, UseShellExecute = false, CreateNoWindow = false, WindowStyle = ProcessWindowStyle.Normal };
+            start.EnvironmentVariables.Remove("DOORSTOP_DISABLE"); return start;
+        }
+        static void Restart(UpdateJob job)
+        {
+            DeploymentCore.ValidateGame(job.Root);
+            if (!String.Equals(DeploymentCore.Hash(File.ReadAllBytes(DeploymentCore.Within(job.Root, "AzureArchive.exe"))), job.HostSha256, StringComparison.OrdinalIgnoreCase)) throw new IOException("AA 可执行文件已改变，未自动启动。");
+            using (var child = Process.Start(RestartInfo(job.Root))) if (child == null) throw new IOException("AA 未能重新启动。");
+        }
+        public static int Run(string jobPath, string jobSha256)
+        {
+            string directory = null; UpdateJob job = null; bool exited = false, installed = false;
+            try
+            {
+                jobPath = Path.GetFullPath(jobPath); directory = Path.GetDirectoryName(jobPath); Guid taskId;
+                if (Path.GetFileName(jobPath) != "job.json" || !Guid.TryParseExact(Path.GetFileName(directory), "N", out taskId)) throw new IOException("更新任务目录无效。");
+                DeploymentCore.RejectLinks(jobPath);
+                if (File.Exists(DeploymentCore.Within(directory, "status.json")) || File.Exists(DeploymentCore.Within(directory, "authorize")) || File.Exists(DeploymentCore.Within(directory, "cancel"))) throw new IOException("更新任务已使用或已取消。");
+                byte[] jobBytes = File.ReadAllBytes(jobPath);
+                if (jobBytes.Length > 16384 || !HashValid(jobSha256) || !String.Equals(DeploymentCore.Hash(jobBytes), jobSha256, StringComparison.OrdinalIgnoreCase)) throw new IOException("更新任务校验失败。");
+                job = Json.Deserialize<UpdateJob>(Utf8.GetString(jobBytes));
+                if (job == null || job.ParentPid <= 0 || job.ParentStartUtcTicks <= 0 || !HashValid(job.Token) || !HashValid(job.AssemblySha256) || !HashValid(job.ManifestSha256) || !HashValid(job.HostSha256) || !Path.IsPathRooted(job.Root) || UpdateVersion.Compare(job.TargetVersion, job.CurrentVersion) <= 0) throw new IOException("更新任务字段无效或并非升级。");
+                job.Root = DeploymentCore.NormalizeRoot(job.Root); DeploymentCore.Version = job.TargetVersion;
+                if (!Directory.Exists(DeploymentCore.Within(job.Root, "AzureArchive_Data")) || !String.Equals(DeploymentCore.Hash(File.ReadAllBytes(DeploymentCore.Within(job.Root, "AzureArchive.exe"))), job.HostSha256, StringComparison.OrdinalIgnoreCase)) throw new IOException("AA 本体身份不符。");
+                byte[] plugin = ReadPayload(directory, "AzureArchive.RevisionCompare.dll", job.AssemblySize, job.AssemblySha256, 64L * 1024 * 1024);
+                byte[] manifest = ReadPayload(directory, "manifest.json", job.ManifestSize, job.ManifestSha256, 65536);
+                ValidateMetadata(plugin, manifest, job.TargetVersion);
+                string mutexName = "Local\\AARevisionCompareUpdate-" + DeploymentCore.Hash(Utf8.GetBytes(job.Root.ToUpperInvariant()));
+                using (var mutex = new Mutex(false, mutexName))
+                {
+                    bool owns = false;
+                    try
+                    {
+                        try { owns = mutex.WaitOne(0); } catch (AbandonedMutexException) { owns = true; }
+                        if (!owns) throw new IOException("此 AA 已有剧情 MOD 更新任务。");
+                        using (var parent = Parent(job))
+                        {
+                            ValidateInstallation(job);
+                            Status(directory, "AwaitingApproval", "更新已准备好，正在确认退出条件。", "", false);
+                            var timer = Stopwatch.StartNew(); bool approved = false;
+                            while (timer.Elapsed.TotalMinutes < 10)
+                            {
+                                if (Signal(directory, "cancel", job.Token)) { Status(directory, "Cancelled", "更新已取消。", "", false); return 2; }
+                                if (parent.HasExited) { Status(directory, "Cancelled", "AA 在更新授权前退出，未修改文件。", "", false); return 2; }
+                                if (Signal(directory, "authorize", job.Token)) { approved = true; break; }
+                                Thread.Sleep(100);
+                            }
+                            if (!approved) throw new IOException("等待更新授权超时，未修改文件。");
+                            Status(directory, "WaitingForExit", "授权已确认，正在等待 AA 正常退出。", "", false);
+                            timer.Restart();
+                            while (!parent.WaitForExit(100))
+                            {
+                                if (Signal(directory, "cancel", job.Token)) { Status(directory, "Cancelled", "更新已取消。", "", false); return 2; }
+                                if (timer.Elapsed.TotalMinutes > 5) throw new IOException("AA 未退出，未修改文件。");
+                            }
+                            if (Signal(directory, "cancel", job.Token)) { Status(directory, "Cancelled", "更新已取消。", "", false); return 2; }
+                            if (parent.ExitCode != 0) throw new IOException("AA 未正常退出，已停止自动更新。");
+                            exited = true; DeploymentCore.ValidateGame(job.Root);
+                            var receipt = ValidateInstallation(job); Backup(directory, job, receipt);
+                            Status(directory, "Applying", "正在安装剧情 MOD 更新…", "", false);
+                            DeploymentCore.Install(job.Root, plugin, manifest); installed = true;
+                            Restart(job);
+                            Status(directory, "Completed", "更新完成，已重新启动 AA。", "", false);
+                            return 0;
+                        }
+                    }
+                    finally { if (owns) mutex.ReleaseMutex(); }
+                }
+            }
+            catch (Exception error)
+            {
+                bool uncertain = error is DeploymentRollbackException;
+                string message = installed ? "更新已安装，但自动重启失败，请手动启动 AA。" : "更新未完成，原安装已保留。";
+                if (exited && !installed && !uncertain && job != null)
+                {
+                    try { Restart(job); message = "更新失败，原安装已恢复并重新启动 AA。"; }
+                    catch { message = "更新失败，原安装已保留，请手动启动 AA。"; }
+                }
+                if (directory != null) try { Status(directory, "Failed", message, error.Message, uncertain); } catch { }
+                return 1;
+            }
+        }
+    }
+}

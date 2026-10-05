@@ -3,8 +3,13 @@
 /test-host*/
 /evidence/
 /publish-source/
-/packaging/
-/tools/install-local.ps1
+/packaging/dist/
+/packaging/tools/
+/packaging/protected-build/
+/packaging/验证记录.txt
+/packaging/RevisionCompareInstaller.cs
+/packaging/InstallerTests.cs
+/packaging/test-installer.ps1
 *.dll
 *.exe
 *.pdb
@@ -13,6 +18,10 @@
 *.aap2
 *.log
 *.ppm
+
+# Explicit release payloads consumed by the updater and installer download
+!/updates/revision-compare/files/*/AzureArchive.RevisionCompare.dll
+!/releases/revision-compare/*/*.exe
 
 # Local editors and operating system files
 .vs/

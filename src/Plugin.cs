@@ -12,9 +12,10 @@ using UnityEngine.Events;
 
 namespace AzureArchive.RevisionCompare;
 
-[BepInPlugin("azurearchive.revisioncompare", "AzureArchiveRevisionCompare", "1.0.0")]
+[BepInPlugin("azurearchive.revisioncompare", "AzureArchiveRevisionCompare", RevisionComparePlugin.Version)]
 public sealed class RevisionComparePlugin : BasePlugin
 {
+    internal const string Version = "1.1.0";
     internal static RevisionComparePlugin Instance = null!;
     public override void Load()
     {
@@ -28,15 +29,16 @@ public sealed class RevisionComparePlugin : BasePlugin
             if (!skipPreview) ComparisonPreview.InstallHooks(harmony);
             Log.LogInfo("Initializing selection hooks.");
             harmony.PatchAll(typeof(RevisionComparePlugin).Assembly);
-            Log.LogInfo("Initializing revision behaviour.");
-            AddComponent<RevisionCompareBehaviour>();
             // The integration probe is compiled only into development builds.
             // Normal releases contain neither test hooks nor test commands.
             Log.LogInfo("Initializing development probe when present.");
             probe?.GetMethod("Install", BindingFlags.Static | BindingFlags.NonPublic)?.Invoke(null, new object[] { harmony });
+            GetType().Assembly.GetType("AzureArchive.RevisionCompare.UpdateIntegrationProbe")?.GetMethod("Install", BindingFlags.Static | BindingFlags.NonPublic)?.Invoke(null, new object[] { harmony });
+            Log.LogInfo("Initializing revision behaviour.");
+            AddComponent<RevisionCompareBehaviour>();
         }
         catch { harmony.UnpatchSelf(); throw; }
-        Log.LogInfo("RevisionCompare 1.0.0 ready: distinct automatic/manual previews retain previous and latest versions; open comparison stays pinned during current playback.");
+        Log.LogInfo($"RevisionCompare {Version} ready: distinct automatic/manual previews retain previous and latest versions; open comparison stays pinned during current playback.");
     }
 }
 
@@ -45,12 +47,14 @@ public sealed class RevisionCompareBehaviour : MonoBehaviour
     internal static RevisionCompareBehaviour? Instance;
     internal readonly NativeRevisionAdapter Adapter = new();
     internal NativeCompareUi? Ui;
+    internal RevisionUpdateController? Updater;
     internal NativeComparison? ActiveComparison;
     private UI.MXButton? playbackButton;
     private UnityAction? playbackListener;
     private string lastError = "";
     private float nextError;
     private MethodInfo? probeTick;
+    private MethodInfo? updateProbeTick;
     private int suppressPlaybackCapture;
 
     public RevisionCompareBehaviour(IntPtr pointer) : base(pointer) { }
@@ -59,12 +63,17 @@ public sealed class RevisionCompareBehaviour : MonoBehaviour
         Instance = this;
         Ui = new NativeCompareUi(OpenComparison, RestoreComparison, CloseComparison, Report);
         probeTick = GetType().Assembly.GetType("AzureArchive.RevisionCompare.IntegrationProbe")?.GetMethod("Tick", BindingFlags.Static | BindingFlags.NonPublic);
+        var updateProbe = GetType().Assembly.GetType("AzureArchive.RevisionCompare.UpdateIntegrationProbe");
+        Updater = updateProbe?.GetMethod("CreateController", BindingFlags.Static | BindingFlags.NonPublic)?.Invoke(null, null) as RevisionUpdateController;
+        Updater ??= new RevisionUpdateController(message => RevisionComparePlugin.Instance.Log.LogInfo(message));
+        updateProbeTick = updateProbe?.GetMethod("Tick", BindingFlags.Static | BindingFlags.NonPublic);
     }
 
     public void Update()
     {
         try
         {
+            bool updateConsumedEscape = Updater?.Update() == true;
             var inspector = ScriptNodeInspector.instance;
             Adapter.Observe(inspector);
             if (inspector != null && AuthoringEditorSession.Current != null)
@@ -83,8 +92,9 @@ public sealed class RevisionCompareBehaviour : MonoBehaviour
                 CloseComparison();
                 UnbindPlaybackButton();
             }
-            if (Input.GetKeyDown(KeyCode.Escape) && Ui?.IsVisible == true) CloseComparison();
+            if (!updateConsumedEscape && Input.GetKeyDown(KeyCode.Escape) && Ui?.IsVisible == true) CloseComparison();
             probeTick?.Invoke(null, new object[] { this });
+            updateProbeTick?.Invoke(null, new object[] { this });
         }
         catch (Exception error) { Report(error.InnerException?.Message ?? error.Message); }
     }
@@ -170,6 +180,7 @@ public sealed class RevisionCompareBehaviour : MonoBehaviour
 
     public void OnDestroy()
     {
+        Updater?.Dispose(); Updater = null;
         UnbindPlaybackButton(); Ui?.Dispose(); Ui = null; Adapter.Clear();
         if (Instance == this) Instance = null;
     }
