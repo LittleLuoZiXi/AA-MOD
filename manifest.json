@@ -1,0 +1,7 @@
+{
+  "name": "AzureArchiveRevisionCompare",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/LittleLuoZiXi/AA-MOD/tree/mods/revision-compare",
+  "description": "记录自动或手动播放的完整对话配置，保留上一版供小窗对比与单条恢复，相同内容重复播放不覆盖历史。",
+  "dependencies": []
+}

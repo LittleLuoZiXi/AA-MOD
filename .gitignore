@@ -1,0 +1,21 @@
+# Generated outputs and local AA installations
+/build/
+/test-host*/
+/evidence/
+/publish-source/
+/packaging/
+/tools/install-local.ps1
+*.dll
+*.exe
+*.pdb
+*.zip
+*.7z
+*.aap2
+*.log
+*.ppm
+
+# Local editors and operating system files
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
